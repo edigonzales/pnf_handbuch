@@ -12,6 +12,8 @@ Contents:
    :maxdepth: 2
 
    example
+   strasse
+   toleranz
 
 
 Indices and tables

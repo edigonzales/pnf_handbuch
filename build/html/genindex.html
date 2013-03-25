@@ -1,265 +1,104 @@
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Stichwortverzeichnis &mdash; PNF/HRM-Handbuch 1.0 Dokumentation</title>
-    
-    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <title>Stichwortverzeichnis &mdash; PNF/HRM-Handbuch v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/qgis.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
+        URL_ROOT:    '#',
         VERSION:     '1.0',
-        COLLAPSE_INDEX: false,
+        COLLAPSE_MODINDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
-    <script type="text/javascript" src="_static/bootstrap/js/bootstrap.js"></script>
-    <link rel="top" title="PNF/HRM-Handbuch 1.0 Dokumentation" href="index.html" />
-    <!-- without this part, the responsive-css for bootstrap kill some rules
-        TODO: remove this, or make this obsolete ?? -->
-    <style>
-    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
-        padding-bottom: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-top: 0px;
-    }
-    .navbar .brand {
-        background-image: url("http://plugins.qgis.org/static/images/blue/logo.png");
-        background-repeat: no-repeat;
-        height: 42px;
-        padding-left: 60px;
-    }
-    .navbar-inverse .navbar-inner {
-        background-color:none;
-    }
-    </style>
-
-    <script>
-        var currentPage = 'genindex.html'; // coming from sphinx, always without starting '/'
-        var currentLang = 'en';
-        $(document).ready(function(){
-            var search = new RegExp('\/[a-zA-Z_]{2,8}\/'+ currentPage, 'gi');
-            var langPlusPage = window.location.href.match(search);
-            if (langPlusPage==undefined){
-                // it's possible this is a index.html page called without 'index.html', try without the currentPage
-                search = new RegExp('\/[a-zA-Z_]{2,8}\/$', 'gi');
-                langPlusPage = window.location.href.match(search);
-            }
-            if (langPlusPage == undefined || langPlusPage.length != 1){
-                alert('This is an documentation error, please report back to QGIS devs.');
-                return;
-            }
-            langPlusPage = langPlusPage[0];
-            currentLang = langPlusPage.replace(currentPage, '');
-            // code below is not going to work because we need the compile time run path to the images
-            //var allLanguages = ['af','ar','bg','ca_ES','cs_CZ','da_DK','de','el_GR','en','es','et_EE','eu_ES','fa','fi','fr','gl_ES','he','hr_HR','hu','id','is','it','ja','ka_GE','ko_KR','lo','lt','lv','mn','nl','no','pl_PL','pt_BR','pt_PT','ro','ru','sk','sl_SI','sq_AL','sr_Cyrl','sr_Latn','sv','sw','ta','th','tr','uk','vi','xh','zh_CN','zh_TW'];
-            //var html = '';
-            //for (var i = 0; i<allLanguages.length; i++){
-            //    var lang = allLanguages[i];
-            //    html+='<li id="flag_'+lang+'" onclick="gotoLang(\''+lang+'\');"><img src="_static/img/flags/'+lang+'.png" title="'+lang+'" alt="'+lang+'"/></li>\n'
-            //}
-            // put the html (a list li-elements into the locale lu):
-            //$('#locales').html(html);
-
-            // put some style around the current locale flag, we have to remove the '/' here
-            $('#flag_'+currentLang.replace(/\//g,'')).css('background-color', '#cccccc');
-        })
-
-        // load current page in a different language
-        function gotoLang(lang){
-            var currentUrl = window.location.href;
-            var newUrl = currentUrl.replace(currentLang, '/'+lang+'/');
-            window.location.href = newUrl;
-        }
-    </script>
-
-
-
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-
+    <link rel="top" title="PNF/HRM-Handbuch v1.0 documentation" href="index.html" /> 
   </head>
   <body>
-
-    <!-- bootstrap stuff from fluid.html example -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">QGIS</a>
-          <div class="nav-collapse collapse">
-            <p class="navbar-text pull-right">
-              <!-- to be used later? -->
-              <!--Logged in as <a href="#" class="navbar-link">Username</a>-->
-            </p>
-            <ul class="nav">
-              <li><a href="index.html">QGIS Home</a></li>
-              <!-- <li><a href="http://download.qgis.org/">Download</a></li> -->
-              <li xxclass="active"><a href="docs/index.html">Documentation</a></li>
-              <li><a href="website/community/index.html">Community</a></li>
-              <li><a href="website/development/index.html">Development</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <!-- bootstrap stuff from fluid.html example -->
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <!-- sidebar -->
-            <div>
-            <ul id="locales">
-                <li id="flag_en" onclick="gotoLang('en');"><img src="_static/img/flags/en.png" title="en" alt="en"></li>
-                <!-- <li id="flag_af" onclick="gotoLang('af');"><img src="_static/img/flags/af.png" title="af" alt="af"></li> -->
-                <!-- <li id="flag_ar" onclick="gotoLang('ar');"><img src="_static/img/flags/ar.png" title="ar" alt="ar"></li> -->
-                <!-- <li id="flag_bg" onclick="gotoLang('bg');"><img src="_static/img/flags/bg.png" title="bg" alt="bg"></li> -->
-                <!-- <li id="flag_ca_ES" onclick="gotoLang('ca_ES');"><img src="_static/img/flags/ca_ES.png" title="ca_ES" alt="ca_ES"></li> -->
-                <!-- <li id="flag_cs_CZ" onclick="gotoLang('cs_CZ');"><img src="_static/img/flags/cs_CZ.png" title="cs_CZ" alt="cs_CZ"></li> -->
-                <!-- <li id="flag_da_DK" onclick="gotoLang('da_DK');"><img src="_static/img/flags/da_DK.png" title="da_DK" alt="da_DK"></li> -->
-                <li id="flag_de" onclick="gotoLang('de');"><img src="_static/img/flags/de.png" title="de" alt="de"></li>
-                <!-- <li id="flag_el_GR" onclick="gotoLang('el_GR');"><img src="_static/img/flags/el_GR.png" title="el_GR" alt="el_GR"></li> -->
-                <!-- <li id="flag_es" onclick="gotoLang('es');"><img src="_static/img/flags/es.png" title="es" alt="es"></li> -->
-                <!-- <li id="flag_et_EE" onclick="gotoLang('et_EE');"><img src="_static/img/flags/et_EE.png" title="et_EE" alt="et_EE"></li> -->
-                <!-- <li id="flag_eu_ES" onclick="gotoLang('eu_ES');"><img src="_static/img/flags/eu_ES.png" title="eu_ES" alt="eu_ES"></li> -->
-                <!-- <li id="flag_fa" onclick="gotoLang('fa');"><img src="_static/img/flags/fa.png" title="fa" alt="fa"></li> -->
-                <!-- <li id="flag_fi" onclick="gotoLang('fi');"><img src="_static/img/flags/fi.png" title="fi" alt="fi"></li> -->
-                <li id="flag_fr" onclick="gotoLang('fr');"><img src="_static/img/flags/fr.png" title="fr" alt="fr"></li>
-                <!-- <li id="flag_gl_ES" onclick="gotoLang('gl_ES');"><img src="_static/img/flags/gl_ES.png" title="gl_ES" alt="gl_ES"></li> -->
-                <!-- <li id="flag_he" onclick="gotoLang('he');"><img src="_static/img/flags/he.png" title="he" alt="he"></li> -->
-                <!-- <li id="flag_hr_HR" onclick="gotoLang('hr_HR');"><img src="_static/img/flags/hr_HR.png" title="hr_HR" alt="hr_HR"></li> -->
-                <!-- <li id="flag_hu" onclick="gotoLang('hu');"><img src="_static/img/flags/hu.png" title="hu" alt="hu"></li> -->
-                <!-- <li id="flag_id" onclick="gotoLang('id');"><img src="_static/img/flags/id.png" title="id" alt="id"></li> -->
-                <!-- <li id="flag_is" onclick="gotoLang('is');"><img src="_static/img/flags/is.png" title="is" alt="is"></li> -->
-                <li id="flag_it" onclick="gotoLang('it');"><img src="_static/img/flags/it.png" title="it" alt="it"></li>
-                <li id="flag_ja" onclick="gotoLang('ja');"><img src="_static/img/flags/ja.png" title="ja" alt="ja"></li>
-                <!-- <li id="flag_ka_GE" onclick="gotoLang('ka_GE');"><img src="_static/img/flags/ka_GE.png" title="ka_GE" alt="ka_GE"></li> -->
-                <!-- <li id="flag_ko_KR" onclick="gotoLang('ko_KR');"><img src="_static/img/flags/ko_KR.png" title="ko_KR" alt="ko_KR"></li> -->
-                <!-- <li id="flag_lo" onclick="gotoLang('lo');"><img src="_static/img/flags/lo.png" title="lo" alt="lo"></li> -->
-                <!-- <li id="flag_lt" onclick="gotoLang('lt');"><img src="_static/img/flags/lt.png" title="lt" alt="lt"></li> -->
-                <!-- <li id="flag_lv" onclick="gotoLang('lv');"><img src="_static/img/flags/lv.png" title="lv" alt="lv"></li> -->
-                <!-- <li id="flag_mn" onclick="gotoLang('mn');"><img src="_static/img/flags/mn.png" title="mn" alt="mn"></li> -->
-                <li id="flag_nl" onclick="gotoLang('nl');"><img src="_static/img/flags/nl.png" title="nl" alt="nl"></li>
-                <!-- <li id="flag_no" onclick="gotoLang('no');"><img src="_static/img/flags/no.png" title="no" alt="no"></li> -->
-                <!-- <li id="flag_pl_PL" onclick="gotoLang('pl_PL');"><img src="_static/img/flags/pl_PL.png" title="pl_PL" alt="pl_PL"></li> -->
-                <!-- <li id="flag_pt_BR" onclick="gotoLang('pt_BR');"><img src="_static/img/flags/pt_BR.png" title="pt_BR" alt="pt_BR"></li> -->
-                <!-- <li id="flag_pt_PT" onclick="gotoLang('pt_PT');"><img src="_static/img/flags/pt_PT.png" title="pt_PT" alt="pt_PT"></li> -->
-                <!-- <li id="flag_ro" onclick="gotoLang('ro');"><img src="_static/img/flags/ro.png" title="ro" alt="ro"></li> -->
-                <li id="flag_ru" onclick="gotoLang('ru');"><img src="_static/img/flags/ru.png" title="ru" alt="ru"></li>
-                <!-- <li id="flag_sk" onclick="gotoLang('sk');"><img src="_static/img/flags/sk.png" title="sk" alt="sk"></li> -->
-                <!-- <li id="flag_sl_SI" onclick="gotoLang('sl_SI');"><img src="_static/img/flags/sl_SI.png" title="sl_SI" alt="sl_SI"></li> -->
-                <!-- <li id="flag_sq_AL" onclick="gotoLang('sq_AL');"><img src="_static/img/flags/sq_AL.png" title="sq_AL" alt="sq_AL"></li> -->
-                <!-- <li id="flag_sr_Cyrl" onclick="gotoLang('sr_Cyrl');"><img src="_static/img/flags/sr_Cyrl.png" title="sr_Cyrl" alt="sr_Cyrl"></li> -->
-                <!-- <li id="flag_sr_Latn" onclick="gotoLang('sr_Latn');"><img src="_static/img/flags/sr_Latn.png" title="sr_Latn" alt="sr_Latn"></li> -->
-                <!-- <li id="flag_sv" onclick="gotoLang('sv');"><img src="_static/img/flags/sv.png" title="sv" alt="sv"></li> -->
-                <!-- <li id="flag_sw" onclick="gotoLang('sw');"><img src="_static/img/flags/sw.png" title="sw" alt="sw"></li> -->
-                <!-- <li id="flag_ta" onclick="gotoLang('ta');"><img src="_static/img/flags/ta.png" title="ta" alt="ta"></li> -->
-                <!-- <li id="flag_th" onclick="gotoLang('th');"><img src="_static/img/flags/th.png" title="th" alt="th"></li> -->
-                <!-- <li id="flag_tr" onclick="gotoLang('tr');"><img src="_static/img/flags/tr.png" title="tr" alt="tr"></li> -->
-                <!-- <li id="flag_uk" onclick="gotoLang('uk');"><img src="_static/img/flags/uk.png" title="uk" alt="uk"></li> -->
-                <!-- <li id="flag_vi" onclick="gotoLang('vi');"><img src="_static/img/flags/vi.png" title="vi" alt="vi"></li> -->
-                <!-- <li id="flag_xh" onclick="gotoLang('xh');"><img src="_static/img/flags/xh.png" title="xh" alt="xh"></li> -->
-                <!-- <li id="flag_zh_CN" onclick="gotoLang('zh_CN');"><img src="_static/img/flags/zh_CN.png" title="zh_CN" alt="zh_CN"></li> -->
-                <!-- <li id="flag_zh_TW" onclick="gotoLang('zh_TW');"><img src="_static/img/flags/zh_TW.png" title="zh_TW" alt="zh_TW"></li> -->
-            </ul><span style="clear:both">&nbsp;</span>
-            </div>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9">
-          <div cclass="hero-unit">
     <div class="related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="#" title="Allgemeiner Index"
              accesskey="I">Index</a></li>
-        <li><a href="index.html">PNF/HRM-Handbuch 1.0 Dokumentation</a> &raquo;</li> 
+        <li><a href="index.html">PNF/HRM-Handbuch v1.0 documentation</a> &raquo;</li> 
       </ul>
-    </div>
+    </div>  
 
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
             
 
-<h1 id="index">Stichwortverzeichnis</h1>
+   <h1 id="index">Stichwortverzeichnis</h1>
 
-<div class="genindex-jumpbox">
- <a href="#S"><strong>S</strong></a>
- | <a href="#Z"><strong>Z</strong></a>
- 
-</div>
+   <a href="#S"><strong>S</strong></a> | <a href="#Z"><strong>Z</strong></a> 
+
+   <hr />
+
+   
 <h2 id="S">S</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="example.html#index-0">Stefan</a>
-  </dt>
+<table width="100%" class="indextable"><tr><td width="33%" valign="top">
+<dl>
 
-  </dl></td>
-</tr></table>
+<dt><a href="strasse.html#index-2">Stefan</a>, <a href="example.html#index-0">[1]</a></dt></dl></td><td width="33%" valign="top"><dl>
+</dl></td></tr></table>
 
 <h2 id="Z">Z</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="example.html#index-0">Ziegler</a>
-  </dt>
+<table width="100%" class="indextable"><tr><td width="33%" valign="top">
+<dl>
 
-  </dl></td>
-</tr></table>
-
+<dt><a href="strasse.html#index-2">Ziegler</a>, <a href="example.html#index-0">[1]</a></dt></dl></td><td width="33%" valign="top"><dl>
+</dl></td></tr></table>
 
 
 
           </div>
-        </div><!--/span-->
-      <hr>
-    </div><!--/.fluid-container-->
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
 
+   
+
+          <div id="searchbox" style="display: none">
+            <h3>Schnellsuche</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Los" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
     <div class="related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="#" title="Allgemeiner Index"
              >Index</a></li>
-        <li><a href="index.html">PNF/HRM-Handbuch 1.0 Dokumentation</a> &raquo;</li> 
+        <li><a href="index.html">PNF/HRM-Handbuch v1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
-        &copy; Copyright 2013, Amt für Geoinformation Kt. Solothurn.
-      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 erstellt.
+      &copy; Copyright 2013, Amt für Geoinformation Kt. Solothurn.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.4 erstellt.
     </div>
   </body>
 </html>
