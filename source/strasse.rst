@@ -26,7 +26,23 @@ BB.Strasse_Weg
 
 Lagedifferenz
 ^^^^^^^^^^^^^
-Wird eien Differenz zwischen der Geometrie aus der AV und aktuelle Orthofoto grosser als die Toleranz gemäss :ref:`Toleranz` dedektiert
+=============
+
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (gemäss :ref:`toleranz`) dedektiert so ist das Obejket in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von interpertier Schwierigkeit (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich kann eine Feldkontolle sinnvoll sein.
+
+==========================
+Benötigende Layer im QGIS: 
+==========================
+Strasse/ Lagekontrolle
+
+
+Beispiele:
+
+
+
+
+
+
 
 Prosatext, dh. Erläuterung/Erklärungen. Dann Beispiele von Mängeln, die korrigiert werden müssen. Und dann noch Mängel, die nicht korrigiert werden müssen.
 Erklärung wie Mängel korrigiert werden müssen. Z.B. Einlenkerthematik.
