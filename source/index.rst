@@ -3,17 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to pnf_handbuch's documentation!
-========================================
+Handbuch PNF und HRM Kt. Solothurn
+=================================================================
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
-   example
-   strasse
    toleranz
+   strasse
+   bebautes_gebiet
+   landwirtschaft
+   
 
 
 Indices and tables
