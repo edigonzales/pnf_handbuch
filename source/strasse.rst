@@ -1,8 +1,8 @@
 Strasse
 =======
-Bei diese Gruppe werden die Elemente der Stassen aus der amtlichen Vermessung überprüft auf dessen Vollständigkeit und Richtigkeit in der Lage wie auch in der Darstellung.
+Bei diese Gruppe werden alle Elemente der Stassen aus der amtlichen Vermessung auf dessen Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
 
-Folgende Bodenbedeckungsarten und Einzelobjektarten werden heirbei überprüft:
+Folgende Objekte werden geprüft:
 
 ==================  ==================
 Topic  		    Art    
@@ -24,13 +24,14 @@ Einzelobjekt        Fahrspur
 
 BB.Strasse_Weg  
 --------------  
-
+.. index:: Strasse, Weg      
+                               
 Lagedifferenz  
-^^^^^^^^^^^^^
+^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) dedektiert so ist das Objekt in der AV zu korrigieren.                                                 
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren.                                                 
 Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von interpertier Schwierigkeit (z.B. durch 
-Schatten oder Sichthindernisse wie Bäume) nicht möglich kann eine Feldkontolle sinnvoll sein. 
+Schatten oder Sichthindernisse wie Bäume) nicht möglich kann eine Feldkontrolle sinnvoll sein. 
 
 Benötigende Layer im QGIS:
 
@@ -66,15 +67,15 @@ Beispiele:
 |   :width:  550px                                                    |   :width:  550px                                                      |
 |   :target: _static/Strasse_Lagedifferenz_TS3.png                    |   :target: _static/Strasse_Lagedifferenz_TS4.png                      |
 |                                                                     |                                                                       |
-|   ``BB.Strasse_Weg?? ist **nicht** zu korrigieren, weil die         |   ``BB.Strasse_Weg`` ist **nicht** zu korrigieren, weil Lagedifferenz |
-|   Lagedifferenz kleiner als die Toleranz (TS3: 1.5 m) ist.          |   kleiner als die Toleranz (TS4: 1.5 m) ist.                          |
+|   ``BB.Strasse_Weg`` ist **nicht** zu korrigieren, weil die         |   ``BB.Strasse_Weg`` ist **nicht** zu korrigieren, weil die           |
+|   Lagedifferenz kleiner als die Toleranz (TS3: 1.5 m) ist.          |   Lagedifferenz kleiner als die Toleranz (TS4: 1.5 m) ist.            |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 
 Objekt fehlt/Löschen  
 ^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto eine befestigte Strasse/Weg zu erkennen, die nicht als Bodenbedekung oder als Einzelobjekt in der AV vorhanden ist, ist diese im Rahmen der PNF/Homogenisierung neu zu erfassen. 
-Ist in der AV eine befestigte Strasse/Weg vorhanden, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist und auch die Kriterein der ``EO.Fahrspur`` resp. ``EO.schmaler_Weg`` nicht erfüllt, ist dieses Objekt zu löschen. Ebenfalls zu löschen sind private befetigte Gartenwege.
+Ist auf dem aktuellen Orthofoto eine befestigte Strasse/Weg zu erkennen, die nicht als Bodenbedeckung oder als Einzelobjekt in der AV vorhanden ist, ist diese im Rahmen der PNF/Homogenisierung neu zu erfassen. 
+Ist in der AV eine befestigte Strasse/Weg vorhanden, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist und auch die Kriterien der ``EO.Fahrspur`` resp. ``EO.schmaler_Weg`` nicht erfüllt, ist dieses Objekt zu löschen. Ebenfalls zu löschen sind private befestigte Gartenwege.
 
 Benötigende Layer im QGIS:
 
@@ -93,37 +94,49 @@ Beispiele:
 |   :width: 550px                                                     |   :width: 550px                                                       |
 |   :target: _static/Strasse_fehlt_TS3.png                            |   :target: _static/Strasse_leoschen.png                               |
 |                                                                     |                                                                       |
-|   ``BB.Strasse_Weg`` fehlt. ``BB.Strasse_Weg`` ist zu erfassen      |   ``BB.Strasse_Weg`` ist zu löschen                                   |
+|   ``BB.Strasse_Weg`` fehlt in der  AV. ``BB.Strasse_Weg`` ist zu    |   ``BB.Strasse_Weg`` ist zu löschen                                   |
+|   erfassen                                                          |                                                                       |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
-Objekt umattribieren
-^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                            
-Mit dem aktuellen Orthofoto ist zu kontrollieren, ob alle befestigten Strassen und Weg als ``BB.Strasse_Weg`` erfasst sind. Anderfalls müssen die Strassen und Weg umattribuiert werden in ``BB.Strasse_Weg, EO.Fahrspur oder EO.schmaler_Weg``.  
+Objekt umattribuieren
+^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                            
+Mit dem aktuellen Orthofoto ist zu kontrollieren, ob alle befestigten Strassen und Weg als ``BB.Strasse_Weg`` erfasst sind. Andernfalls müssen die Strassen und Weg umattribuiert werden in ``BB.Strasse_Weg, EO.Fahrspur oder EO.schmaler_Weg``.  
                                                                                                                                                                                                                                                                                                                                      
 Benötigende Layer im QGIS:
 
 .. code-block:: none
 
    Strasse/ Lagekontrolle   
+   
+Beispiele:                            
+                                                                                                                       
+                                                                                    
+.. _Strasse_umattribuieren:                                              
+                                                                                    
+.. figure:: _static/Strasse_umattribuieren.png                          
+   :width: 550px                                                                    
+   :target: _static/Strasse_umattribuieren.png                          
+                                                                                    
+   ``BB.Strasse_Weg`` ist in ``EO.Fahrspur`` um zu attribuieren
+   
               
 
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  
 BB.Strasse_Weg unterbrochen
 +++++++++++++++++++++++++++
-Das Objekt ``BB.Strasse_Weg`` darf z.B. bei Hofdurchfahrten oder bei niveaugleichen Kreuzungen nicht unterbrochen sein. Ist dies der Fall, muss dies im Rahmen der PNF/Homogenisierung bereinigt werden. Ziel ist es ein zusammenhängendes Strassen-/Wegnetz zu erhalten . 
-Genauere Erläuterung über die Erfassung der Niveauüberggänge sind im *Handbuch der amtlichen Vermessung Kanton Solothurn* zu finden.                 
+Das Objekt ``BB.Strasse_Weg`` darf z.B. bei Hofdurchfahrten oder bei niveaugleichen Kreuzungen nicht unterbrochen sein. Ist dies der Fall, muss dies im Rahmen der PNF/Homogenisierung bereinigt werden. Ziel ist es ein zusammenhängendes Strassen-/Wegnetz zu erhalten. 
+Genauere Erläuterung über die Erfassung der Niveauübergänge sind im *Handbuch der amtlichen Vermessung Kanton Solothurn* zu finden.                 
     
 Benötigende Layer im QGIS:
 
 .. code-block:: none
 
    Strasse/ Lagekontrolle 
-   Stasse/ Checklayer/ BB.BoFlaeche
 
 BB.Strasse_Weg zu grosses Objekt
 ++++++++++++++++++++++++++++++++
-Grosse Strassenobjekte (>10'000 m2) der ``BB.Strasse_Weg`` sind zu unterteilen.
+Grosse Strassenobjekte (>10'000 m2) der ``BB.Strasse_Weg`` sind zu unterteilen. Da bekannt ist, dass grosse Objekte bei der Datenverarbeitung Schwierigkeiten bereiten.
 
 Benötigende Layer im QGIS:
 
@@ -148,14 +161,14 @@ Benötigende Layer im QGIS:
    Strasse/ Lagekontrolle   
   
   
-Parallele Darstellung innerhalb der Toleranz
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Parallele Darstellung
++++++++++++++++++++++
 Nicht parallele Darstellungen der ``BB.Strasse_Weg`` werden im Rahmen der PNF/Homogenisierung **nicht** korrigiert.
 
 
 Durch Felspartien überdeckte Strassen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                        
-Bei den Strassen die durch Felspartien überdeckt sind gelten die Darstellungsrichtline gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn*. Unterscheidet sich die Dartsellung in der AV von der von Richtlinie, ist entsprechend zu korigieren.           
++++++++++++++++++++++++++++++++++++++                                                                                                                                                                                       
+Bei den Strassen die durch Felspartien überdeckt sind gelten die Darstellungsrichtline gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn*. Unterscheidet sich die Darstellung in der AV von der von Richtlinie, ist sie entsprechend zu korrigieren.           
                                                                                                                                                                                                                                                              
 
 Beispiele:       
@@ -176,7 +189,7 @@ Beispiele:
 |   :width: 550px                                                                      |    :width: 550px                                                                      |
 |   :target: _static/Strasse_Verkehrsveraengung.png                                    |    :target: _static/Strasse_pave.png                                                  |
 |                                                                                      |                                                                                       |
-|   Befestigte Strassenverengungen ohne Nievauunterschied gehört zu ``BB.Strasse_Weg``.|    Befahrbarer Teil des Kreisels (Pavé) gehört zu ``BB.Strasse_Weg``.                 | 
+|   Befestigte Strassenverengungen ohne Niveauunterschied gehört zu ``BB.Strasse_Weg``.|    Befahrbarer Teil des Kreisels (Pavé) gehört zu ``BB.Strasse_Weg``.                 | 
 |                                                                                      |                                                                                       |
 +--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+         
                       
@@ -184,10 +197,12 @@ Beispiele:
 BB.Trottoir                                                                 
 -----------  
 
+.. index:: Trottoir
+
 Lagedifferenz  
 ^^^^^^^^^^^^^
                                                                                                                                                                                  
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) dedektiert so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst.
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst.
 
 Benötigende Layer im QGIS:
 
@@ -231,10 +246,12 @@ Darstellung nicht nach Richtlinie
 BB.Verkehrsinsel                                                                
 ----------------  
 
+.. index:: Verkehrsinsel 
+
 Lagedifferenz  
 ^^^^^^^^^^^^^
                                                                                                                                                                                  
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) dedektiert so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst.
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst.
 
 Benötigende Layer im QGIS:
 
@@ -248,7 +265,7 @@ Objekt fehlt/löschen
 ^^^^^^^^^^^^^^^^^^^^    
 
 Ist auf dem aktuellen Orthofoto eine Verkehrsinsel zu erkennen, die nicht in der AV vorhanden ist, ist diese im Rahmen der PNF/Homogenisierung neu zu erfassen. 
-Falls in der AV eine Verkehrsinsel vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen. Ebenfalls zu löschenn sind temporär angelegte Verkehrsinseln oder befestigte Verkehrsinsel ohne Niveauunterschied die in der AV erfasst sind.
+Falls in der AV eine Verkehrsinsel vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen. Ebenfalls zu löschen sind temporär angelegte Verkehrsinseln oder befestigte Verkehrsinsel ohne Niveauunterschied die in der AV erfasst sind.
  
                                                                                                                                                                                        
 Benötigende Layer im QGIS:
@@ -259,8 +276,8 @@ Benötigende Layer im QGIS:
                                                                                                                                                                                                                                                                                         
 Objekt umattribieren
 ^^^^^^^^^^^^^^^^^^^^ 
-Verkehrsinsel sind sind komplet von ``BB.Strasse_Weg`` umgeben. Strassenveränegungen die humusiert sind werden als ``BB.uebrige_humusierte`` attribuiert.
-Humusierte Trennstreifen z.B. bei Autobahnen oder zwischen Strassen und z.B. Radwegen gehören zur ``BB.uebrige_humusierte`` und **nicht** zu den ``BB.Verkehrsinseln``.
+Verkehrsinsel sind komplett von ``BB.Strasse_Weg`` umgeben. Strassenverengungen die humusiert sind werden als ``BB.uebrige_humusierte`` attribuiert.
+Humusierte Trennstreifen z.B. bei Autobahnen oder zwischen Strassen und z.B. Radwegen ist die Bodenbedeckung ``BB.uebrige_humusierte`` und **nicht** ``BB.Verkehrsinsel``.
 
 Benötigende Layer im QGIS
 
@@ -277,7 +294,7 @@ Beispiele:
 |   :width: 550px                                                                      |   :width: 550px                                                               |
 |   :target: _static/Strasse_Verkehrsinsel_Strassenveraengung.png                      |   :target: _static/Strasse_Verkehrsinsel_Trennstreifen.png                    |
 |                                                                                      |                                                                               |
-|   Humusierte Strassenveränegungen sind als ``BB.uebrige_humusierte`` zu attribuieren |   Humusierte Trenstreifen sind als ``BB.uebrige_humusierte`` zu attribuieren  | 
+|   Humusierte Strassenverenegungen sind als ``BB.uebrige_humusierte`` zu attribuieren |   Humusierte Trenstreifen sind als ``BB.uebrige_humusierte`` zu attribuieren  | 
 +--------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+   
 
                                                                                          
@@ -297,15 +314,19 @@ Beispiele:
                                                                                     
 .. _Verkehrsinsel_Fussgaengerstreifen:                                              
                                                                                     
-.. figure:: _static/Verkehrsinsel_Fussgaengerstreifen.png                           
+.. figure:: _static/Strasse_Verkehrsinsel_Fussgaengerstreifen.png                           
    :width: 550px                                                                    
-   :target: _static/Verkehrsinsel_Fussgaengerstreifen.png                           
+   :target: _static/Strasse_Verkehrsinsel_Fussgaengerstreifen.png                           
                                                                                     
    ``BB.Verkehrsinsel`` ist beim Fussgängersteifen **nicht** zu unterteilen
                                                                                        
 
 EO.Lärmschutzwand               
 -----------------
+
+.. index:: Lärmschutzwand
+
+
 ????? wirklich machen??????
 
 
@@ -334,10 +355,11 @@ Benötigende Layer im QGIS::
 
 EO.Tunnel_Unterführung_Galerie 
 ------------------------------
+.. index:: Tunnel, Unterführung, Galerie  
 
 Lagekontrolle             
 ^^^^^^^^^^^^^                                                                                                                                                                 
-Wird lediglich durch eine Plausibilitätsprüfung (z.B. Treffen die Geometrien ``BB.Strasse_Weg`` und ``EO.Tunnel_Unterführung_Galerie`` aufeinander) kontrolliert. Die Lage wird jeweils nicht mittels einer Feldkontrolle kontrolliert. Korrekturen in der Lage werden im Rahmen der PNF/Homogenisierung demanch selten bis nie durchgeführt. 
+Wird lediglich durch eine Plausibilitätsprüfung (z.B. Treffen die Geometrien ``BB.Strasse_Weg`` und ``EO.Tunnel_Unterführung_Galerie`` aufeinander) kontrolliert. Die Lage wird jeweils nicht mittels einer Feldkontrolle kontrolliert. Korrekturen in der Lage werden im Rahmen der PNF/Homogenisierung demnach selten bis nie durchgeführt. 
 
 Benötigende Layer im QGIS::
     
@@ -349,7 +371,7 @@ Falls ``BB.Strasse_Weg`` durch einen Tunnel, Galerie oder Unterführung unterbro
 
 Darstellung nicht nach Richtlinie    
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
-Falls in der AV  nicht jede Röhre des Tunnels einzel dargestellt ist, wird dies im Rahmen der PNF/Homogenisierung **nicht** korrigiert.     
+Falls in der AV  nicht jede Röhre des Tunnels Einzel dargestellt ist, wird dies im Rahmen der PNF/Homogenisierung **nicht** korrigiert.     
 
 Benötigende Layer im QGIS::
     
@@ -357,6 +379,7 @@ Benötigende Layer im QGIS::
 
 EO.Pfeiler    
 ----------
+.. index:: Pfeiler
 Lagekontrolle             
 ^^^^^^^^^^^^^                                                                                                                                                                 
 Wird lediglich durch eine Plausibilitätsprüfung (z.B. Liegen die Pfeiler innerhalb der ``EO.Brücke_Passerelle``) kontrolliert. Die Lage wird jeweils nicht mittels einer Feldkontrolle kontrolliert. Korrekturen in der Lage werden im Rahmen der PNF/Homogenisierung demanch selten bis nie durchgeführt.       
@@ -377,21 +400,24 @@ Benötigende Layer im QGIS::
                                                     
 EO.Brücke_Passerelle                                   
 --------------------
+.. index:: Brücke, Passerelle
 Lagekontrolle  
 ^^^^^^^^^^^^^ 
-Wird lediglich durch eine Plausibilitätsprüfung kontrolliert. Die Lage wird jeweils nicht mittels einer Feldkontrolle kontrolliert. Korrekturen in der Lage werden im Rahmen der PNF/Homogenisierung demanch selten bis nie durchgeführt. 
+Wird lediglich durch eine Plausibilitätsprüfung kontrolliert. Die Lage wird jeweils nicht mittels einer Feldkontrolle kontrolliert. Korrekturen in der Lage werden im Rahmen der PNF/Homogenisierung demnach selten bis nie durchgeführt. 
 
  
 Objekt fehlt/umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Fehlende Objekte sind zu erfassen gemäss *Handbuches der amtlichen Vermessung Kanton Solothurn*. Falls die Brücke/Passerelle falsch attribuiert ist dies entsprechend zu korrigieren.       
+Fehlende Objekte sind zu erfassen gemäss *Handbuches der amtlichen Vermessung Kanton Solothurn*. Falls die Brücke/Passerelle falsch attribuiert ist, ist dies entsprechend zu korrigieren.       
                                          
 EO.schmaler_Weg
 ---------------   
 
+.. index:: Weg, Wanderweg
+
 Lagekontrolle 
 ^^^^^^^^^^^^^ 
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) dedektiert so ist das Objekt in der AV zu korrigieren. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren. 
 Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Bei den Wanderwege, die ihren Verlauf jährlich ändern (Graswege) ist keine Korrektur vorzunehmen.
      
 
@@ -412,66 +438,95 @@ Beispiele:
 |   :target: _static/Strasse_schmaler_weg.png                                |   :target: _static/Strasse_Lagedifferenz_schmaler_Weg.png             |       
 |                                                                            |                                                                       |       
 |   ``EO.schmaler_Weg`` ist **nicht** zu korrigieren, weil auf dem Orthofoto |   ``EO.schmaler_Weg`` ist zu korrigieren, weil die Lagedifferenz      |       
-|   der Verlauf nicht klar ersichtlich ist.                                  |   grösser als die Toleranz (TS4: 1.5m) ist.                           |       
+|   der Verlauf nicht klar ersichtlich ist.                                  |   grösser als die Toleranz (TS4: 1.5m) ist und weil der Verlauf auf   | 
+|									     |   dem Orthofoto klar zu erkennen ist.                                 |              
 +----------------------------------------------------------------------------+-----------------------------------------------------------------------+       
                                                                                                                                                                
 
                                                                                         
 Objekt fehlt/Löschen  
 ^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto eine befestigte Strasse/Weg zu erkennen, die nicht als Bodenbedekung oder als Einzelobjekt in der AV vorhanden ist, ist diese im Rahmen der PNF/Homogenisierung neu zu erfassen. 
-Ist in der AV eine befestigte Strasse/Weg vorhanden, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist und auch die Kriterein der ``EO.Fahrspur`` resp. ``EO.schmaler_Weg`` nicht erfüllt, ist dieses Objekt zu löschen. Ebenfalls zu löschen sind private befetigte Gartenwege.
+Ist ein Wanderweg im Layer `Wanderwege` vorhanden der nicht in der AV erfasst ist, ist dieser im Rahmen der PNF/Homogenisierung neu ab dem Orthofoto zu digitalisieren. Es werden nur offizielle Wanderwege neu erfasst. 
+Wanderwege dürfen nicht unterbrochen sein. Das heisst Wanderwege sind auch darzustellen, wenn sie im Feld nicht ersichtlich sind (z.B. bei Graswegen). Falls Wanderwege in der AV vorhanden sind, die nicht mehr existieren, werden diese gelöscht. 
+
 
 Benötigende Layer im QGIS:
                                                                                                                                                          
 .. code-block:: none
 
    Strasse/ Lagekontrolle
-
-
-Beispiele:
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
 
 
 Objekt umattribieren
 ^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                            
-Mit dem aktuellen Orthofoto ist zu kontrollieren, ob alle befestigten Strassen und Weg als ``BB.Strasse_Weg`` erfasst sind. Anderfalls müssen die Strassen und Weg umattribuiert werden in ``BB.Strasse_Weg, EO.Fahrspur oder EO.schmaler_Weg``.  
+Sind im TS2 ``EO.schmaler_Weg`` erfasst, sind diese neu als ``BB.Strasse_Weg`` zu erfassen. Fusswege im TS2, sind immer der Bodenbedeckung (``BB.Strasse/Weg``) zuzuweisen.
+
+                                                                                                                                                                                                                                                                                                                                     
+Benötigende Layer im QGIS:
+
+.. code-block:: none
+
+   Strasse/ Checklayer/EO.schmaler_Weg in TS 2   
+              
+
+EO.Fahrspur                     
+----------- 
+.. index:: Fahrspuren
+
+Lagekontrolle 
+^^^^^^^^^^^^^
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren. 
+Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Ist der Verlauf auf dem Orthofoto nicht klar ersichtlich, ist keine Korrektur vorzunehmen. 
+
+
+Objekt fehlt/Löschen  
+^^^^^^^^^^^^^^^^^^^^
+**Neu Fahrspuren werden im Rahmen der PNF/Homogenisierung nicht erhoben**. ``EO.Fahrspuren`` die nicht mehr existieren sind zu löschen. Für die Kontrolle ob eine Fahrspur noch existiert kann eine Feldkontolle sinnvoll sein. 
+
+Benötigende Layer im QGIS:
+
+.. code-block:: none
+
+   Strasse/ Lagekontrolle   
+                                
+
+Beispiele:
+              
++--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+|.. _Strasse_Fahrspur_fehlt:                                                           | .. _Strasse_Fahrspur_loeschen:                                                        |
+|                                                                                      |                                                                                       |                                                                                                   
+|.. figure:: _static/Strasse_Fahrspur_fehlt.png                                        | .. figure:: _static/Strasse_Fahrspur_loeschen.png                                     |
+|   :width: 550px                                                                      |    :width: 550px                                                                      |
+|   :target: _static/Strasse_Fahrspur_fehlt.png                                        |    :target: _static/Strasse_Fahrspur_loeschen.png                                     |                              
+|                                                                                      |                                                                                       |
+|   ``EO.Fahrspur`` wird **nicht** erfasst.                                            |    ``EO.Fahrspur`` ist zu löschen.                                                    |
+|                                                                                      |                                                                                       |
++--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+ 
+                                                                                 
+           
+
+Objekt umattribieren
+^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                            
+Befestigte ``EO.Fahrspuren`` sind in ``BB.Strasse_Weg`` und ``EO.Fahrspuren`` die als Fusswege genutzt werden sind in ``EO.schmaler_Weg`` umzuattribuieren.
                                                                                                                                                                                                                                                                                                                                      
 Benötigende Layer im QGIS:
 
 .. code-block:: none
 
    Strasse/ Lagekontrolle   
-              
-
-Darstellung nicht nach Richtlinie       
-
-
-EO.Fahrspur                     
------------                              
-                                                 
-
-                                                                                 
-           
-
-
-
-
-
-
-
-
-.. index:: Stefan, Ziegler
+   
+Beispiele:                            
+                                                                                                                       
++--------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+                                                                                 
+|.. _Strasse_Fahrspur_umattribuieren:                                                  | .. _Strasse_Fahrspur_umattribuieren_korr:                                               | 
+|                                                                                      |                                                                                         | 
+|.. figure:: _static/Strasse_Fahrspur_umattribuieren.png                               | .. figure:: _static/Strasse_Fahrspur_umattribuieren_korr.png                            | 
+|   :width: 550px                                                                      |    :width: 550px                                                                        | 
+|   :target: _static/Strasse_Fahrspur_umattribuieren.png                               |    :target: _static/Strasse_Fahrspur_umattribuieren_korr.png                            | 
+|                                                                                      |                                                                                         | 
+|   ``EO.Fahrspur`` ist in ``EO.schmaler_Weg`` umzuattribuieren                        |    ``EO.schmaler_Weg`` ist aus der Geometrie ``EO.Fahrspur`` zu konstruieren...??? oder | 
+|                                                                                      |    ab dem Orthofoto zu digitalisieren????                                               |
++--------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+ 
+                                                                                                                                                        
 

@@ -11,11 +11,12 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   allgemein
    toleranz
    strasse
    bebautes_gebiet
    landwirtschaft
-   
+   seltene_Objekte  
 
 
 Indices and tables
