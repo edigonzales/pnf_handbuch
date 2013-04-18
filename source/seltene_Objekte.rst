@@ -1,6 +1,6 @@
 Bebautes Gebiet
 ===============
-In dieser Mängelgruppe werden Objekte überprüft die eher selten sind. Folgende Objekte werden geprüft:
+In dieser Mängelgruppe werden Objekte überprüft, deren vorkommen eher selten sind. Folgende Objekte werden geprüft:
 
 ==================  =====================================    
 Topic  		    Art    
@@ -50,7 +50,7 @@ BB.Sportanlage befestigt/ BB.Sportanlage humusiert/ BB.Friedhof/ BB.Parkanlage h
 
 Lagedifferenz
 ^^^^^^^^^^^^^
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst.
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst.
 
 Benötigende Layer im QGIS:
 
@@ -100,8 +100,8 @@ BB.Böschungsbauwerk
 -------------------
 Lagedifferenz
 ^^^^^^^^^^^^^
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren. 
-Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst.   
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst.   
 
 Benötigende Layer im QGIS:    
 
@@ -128,8 +128,8 @@ BB.Hoch_Flachmoor
 -----------------
 Lagedifferenz                                                                                                                                                               
 ^^^^^^^^^^^^^
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren. 
-Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst.   
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst.   
 
 Benötigende Layer im QGIS:    
 
@@ -163,8 +163,8 @@ Lagedifferenz
 ^^^^^^^^^^^^^  
 Möglichkeiten ??????????
 
-1. ???Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren.
-   Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Bei Objekten bei denen die Abgrenzungen auf dem Orthofoto nicht genau zu erkennen sind,
+1. ???Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren.
+   Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Bei Objekten bei denen die Abgrenzungen auf dem Orthofoto nicht genau zu erkennen sind,
    sind so zu belassen.    
    
 2. **Lagedifferenzen werden nicht korrigiert!**
@@ -193,8 +193,8 @@ BB.Steinbruch/ BB. Kiesgrube/ BB.übriger Abbau/ BB.Deponie
 
 Lagedifferenz  
 ^^^^^^^^^^^^^             
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. 
-Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst.  
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst.  
 
 .. note::
    Lagedifferenzen aufgrund von bauarbeiten, müssen über die laufende Nachführung abgerechnet werden.
@@ -223,7 +223,8 @@ Benötigende Layer im QGIS:
 
 .. code-block:: none
 
-   Seltene Objekte/ Lagekontrolle   
+   Seltene Objekte/ Lagekontrolle 
+   Seltene Objekte/ Lagekontrolle/ Abbaustellen (AFU)
 
 EO.Brunnen
 ----------
@@ -243,8 +244,8 @@ EO.Mast, Antenne/ EO. Mast, Leitung/ EO. Hochspannungsfreileitung
 -----------------------------------------------------------------
 Lagedifferenz                                                                                                                                                               
 ^^^^^^^^^^^^^
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. 
-Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
 
 Benötigende Layer im QGIS:       
 
@@ -297,6 +298,7 @@ Benötigende Layer im QGIS:
    Seltene Objekte/ Checklayer        
 
 Beispiele:
+
 +-------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
 |.. _seltene_Objekte_Mast_Leitung_Richtlinien:                                        |.. _seltene_Objekte_Mast_Leitung_Richtlinien:                                       |
 |                                                                                     |                                                                                    |
@@ -315,13 +317,13 @@ Objekt fehlt/ löschen
 Es werden keine **neuen** ``EO.Einzelner Fels`` erfasst. Falls in der AV ``EO.Einzelner Fels`` vorhaden sind, die keine erratische Blöcke oder kein einzelner wichtiger Fels
  sind, sind diese aus der AV zu löschen.
 
-EO. Gondelbahn, Sesselbahn, EO. Materialseilbahn, EO. Skilift
+EO. Gondelbahn/ Sesselbahn/ EO. Materialseilbahn/ EO. Skilift
 -------------------------------------------------------------
 
 Lagedifferenz                                                                                                                                                               
 ^^^^^^^^^^^^^
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. 
-Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
 
 Benötigende Layer im QGIS:       
 
@@ -333,18 +335,90 @@ Objekt fehlt/ löschen/ umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
 Ist auf dem aktuellen Orthofoto eine Gondelbahn, Sesselbahn, Materialseilbahn oder ein Skilift zu erkennen, die nicht in der AV ist, 
 ist diese/ dieser im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV eine Gondelbahn, Sesselbahn, Materialseilbahn oder ein Skilift vorhanden ist,  
-welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder nicht mehr bewirtschaftet wird, ist dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen. 
+welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder nicht mehr bewirtschaftet wird, ist dieses Objekt zu löschen oder evtl. einer anderen EO.Art zu zuweisen.
+
+Benötigende Layer im QGIS:       
+
+.. code-block:: none   
+
+   Seltene Objekte/ Lagekontrolle  
+
+   
+EO. Aussichtsturm/ EO. Hochkamin/ EO. Uferverbauung/ EO. Lawinenverbauung/ EO. massiver Sockel/ EO. Ruine/ archäologisches Objekt/ EO. Landungssteg
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Lagedifferenz                                                                                                                                                               
+^^^^^^^^^^^^^
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
+
+Benötigende Layer im QGIS:       
+
+.. code-block:: none   
+
+   Seltene Objekte/ Lagekontrolle  
+
+Objekt fehlt/ löschen/ umattribuieren   
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+Ist auf dem aktuellen Orthofoto eine Objekt zu erkennen, das nicht in der AV ist, ist diese/ dieser im Rahmen der PNF/Homogenisierung **nicht** neu zu erfassen. Falls in der AV eine Objekt vorhanden ist,  
+welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder den Aufnahmekriterien gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht genügt, ist dieses Objekt zu löschen oder evtl. einer anderen EO.Art zu zuweisen.
+
+Benötigende Layer im QGIS:       
+
+.. code-block:: none   
+
+   Seltene Objekte/ Lagekontrolle  
    
 
+EO. Denkmal/ EO. Grotte, Höhleneingang/ EO. wichtiger Einzelbaum/ EO. Kruzifix, Bildstock
+-----------------------------------------------------------------------------------------
 
+Lagedifferenz                                                                                                                                                               
+^^^^^^^^^^^^^
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
 
+Benötigende Layer im QGIS:       
 
+.. code-block:: none   
 
+   Seltene Objekte/ Lagekontrolle  
 
+Objekt fehlt/ löschen/ umattribuieren   
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+Ist auf dem aktuellen Orthofoto eine Objekt zu erkennen, das nicht in der AV ist, ist diese/ dieser im Rahmen der PNF/Homogenisierung **nicht** neu zu erfassen. Falls in der AV eine Objekt vorhanden ist,  
+welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder den Aufnahmekriterien gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht genügt, ist dieses Objekt zu löschen oder evtl. einer anderen EO.Art zu zuweisen.
+Zur Überprüfung ob die``EO. Grotte, Höhleneingang``, welche in der AV erfasst ist, wirklich existiert, kann eine Feldkontrolle sinnvoll sein oder eine Abklährung mit einer orstkundigen Person 
 
+Benötigende Layer im QGIS:       
 
+.. code-block:: none   
 
+   Seltene Objekte/ Lagekontrolle    
 
+EO. Druckleitung/ EO. Fähre/ EO. Achse
+--------------------------------------
+Lagedifferenz                                                                                                                                                               
+^^^^^^^^^^^^^
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
+
+Benötigende Layer im QGIS:       
+
+.. code-block:: none   
+
+   Seltene Objekte/ Lagekontrolle  
+
+Objekt fehlt/ löschen/ umattribuieren   
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+Ist auf dem aktuellen Orthofoto eine Objekt zu erkennen, das nicht in der AV ist, ist diese/ dieser im Rahmen der PNF/Homogenisierung **nicht** neu zu erfassen. Falls in der AV eine Objekt vorhanden ist,  
+welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder den Aufnahmekriterien gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht genügt, ist dieses Objekt zu löschen oder evtl. einer anderen EO.Art zu zuweisen.
+
+Benötigende Layer im QGIS:       
+
+.. code-block:: none   
+
+   Seltene Objekte/ Lagekontrolle    
 
 
 
