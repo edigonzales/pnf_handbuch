@@ -1,6 +1,6 @@
 Gewässer
 ========
-Bei diese Gruppe werden alle Elemente des Gewässers aus der amtlichen Vermessung auf dessen Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
+Bei dieser Gruppe werden alle Elemente des Gewässers aus der amtlichen Vermessung auf dessen Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
 
 Folgende Objekte werden geprüft:
 
@@ -25,8 +25,8 @@ BB.stehendes Gewässer
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren.                                                 
-Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
 
 Benötigende Layer im QGIS:
 
@@ -52,7 +52,7 @@ Beispiele:
 
 Objekt fehlt/Löschen  
 ^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto eine stehendes Gewässer zu erkennen welches öffentlich ist oder das Flächenkriterium erfüllt und nicht in der AV ist, ist diese im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
+Ist auf dem aktuellen Orthofoto ein stehendes Gewässer zu erkennen, welches öffentlich ist oder das Flächenkriterium erfüllt und nicht in der AV ist, ist diese im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
 Ist in der AV ein stehendes Gewässer vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
 
 Benötigende Layer im QGIS:
@@ -78,8 +78,8 @@ Beispiele:
                                                                       
 Objekt umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                            
-Sind in der AV ``BB.stehendes Gewässer`` erfasst die einen befestigten Abschluss haben sind diese umzuattribuieren nach ``BB.Wasserbecken``. 
-Schwimmteich gehören zu ``BB.stehendes Gewässer``. Genauere Erläuterung über die Erfassung der Schwimmteiche sind im *Handbuch der amtlichen Vermessung Kanton Solothurn* zu finden.  
+Sind in der AV ``BB.stehendes Gewässer`` erfasst, die einen befestigten Abschluss haben, sind diese umzuattribuieren nach ``BB.Wasserbecken``. 
+Schwimmteiche gehören zu ``BB.stehendes Gewässer``. Genauere Erläuterung über die Erfassung der Schwimmteiche sind im *Handbuch der amtlichen Vermessung Kanton Solothurn* zu finden.  
 
 
 Benötigende Layer im QGIS:
@@ -97,8 +97,8 @@ BB.fliessendes Gewässer
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren.                                                 
-Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
 
 Benötigende Layer im QGIS:
 
@@ -123,7 +123,7 @@ Beispiele:
 
 Objekt fehlt/Löschen  
 ^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto eine fliessendes Gewässer zu erkennen das nicht in der AV vorhaden ist, ist diese im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
+Ist auf dem aktuellen Orthofoto eine fliessendes Gewässer zu erkennen, das nicht in der AV vorhaden ist, ist diese im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
 Ist in der AV eine fliessendes Gewässer vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
 
 Benötigende Layer im QGIS:
@@ -140,7 +140,7 @@ Beispiele:
                                                                        
 Objekt umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                            
-Sind in der AV ``BB.fliessendes Gewässer`` erfasst deren Breite kleiner als 50 cm sind, sind diese umzuattribuieren auf ``EO.Rinnsal``. 
+Sind in der AV ``BB.fliessendes Gewässer`` erfasst, deren Breite kleiner als 50 cm sind, sind diese umzuattribuieren auf ``EO.Rinnsal``. 
 
 
 Benötigende Layer im QGIS:
@@ -156,12 +156,12 @@ BB.Schilfgürtel
 
 Lagedifferenz  
 ^^^^^^^^^^^^^   
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren.                                                 
-Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
    
 Objekt fehlt/Löschen/ umattribuieren  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto eine Schilfgürtel vorhanden welches das Flächenkriterium erfüllt und nicht in der AV ist, ist diese im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
+Ist auf dem aktuellen Orthofoto ein Schilfgürtel vorhanden, welcher das Flächenkriterium erfüllt und nicht in der AV ist, ist dieser im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
 Ist in der AV eine Schilfgürtel vorhanden, der auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
    
 
@@ -181,7 +181,7 @@ Falls keine solche Daten vorhanden sind, sind die Objekte aus der AV zu entferne
    
 Objekt fehlt
 ^^^^^^^^^^^^^
-Es ist zu kontrollieren ob bei jeder Brücken und bei jedem Durchlass unter Strassen/Bahn ein ``EO.einged. öff. Gewässer`` erfasst ist. Fehlenden Objekte sind zu erfassen. 
+Es ist zu kontrollieren, ob bei jeder Brücke und bei jedem Durchlass unter Strassen/Bahn ein ``EO.einged. öff. Gewässer`` erfasst ist. Fehlende Objekte sind zu erfassen. 
    
    
    
@@ -195,7 +195,7 @@ Die Lage wird jeweils nicht mittels einer Feldkontrolle kontrolliert. Korrekture
    
 Objekt fehlt/ umattribuieren   
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
-Fehlende Objekte sind zu erfassen gemäss `Handbuches der amtlichen Vermessung Kanton Solothurn`. Falls die Brücke/Passerelle falsch attribuiert ist, ist dies entsprechend zu korrigieren. 
+Fehlende Objekte sind zu erfassen gemäss `Handbuch der amtlichen Vermessung Kanton Solothurn`. Falls die Brücke/Passerelle falsch attribuiert ist, ist dies entsprechend zu korrigieren. 
 Bei Brücken gilt das Prinzip der Vogelperspektive d.h. Die über der Brücke resp. Passerelle verlaufende Bodenbedeckung wird durchgezogen. ????????????? >4m????????
    
    
@@ -208,8 +208,8 @@ EO.Rinnsal
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren.                                                 
-Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
 
 Benötigende Layer im QGIS:
 
@@ -228,7 +228,7 @@ Benötigende Layer im QGIS:
 
 Objekt fehlt/Löschen  
 ^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto ein Rinnsal zu erkennen das nicht in der AV vorhanden ist, ist diese im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
+Ist auf dem aktuellen Orthofoto ein Rinnsal zu erkennen, das nicht in der AV vorhanden ist, ist dieses im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
 Ist in der AV ein fliessendes Gewässer vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
                     
 Benötigende Layer im QGIS:

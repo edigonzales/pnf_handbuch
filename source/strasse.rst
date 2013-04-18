@@ -1,6 +1,6 @@
 Strasse
 =======
-Bei diese Gruppe werden alle Elemente der Stassen aus der amtlichen Vermessung auf dessen Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
+Bei dieser Gruppe werden alle Elemente der Strassen aus der amtlichen Vermessung auf deren Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
 
 Folgende Objekte werden geprüft:
 
@@ -29,9 +29,9 @@ BB.Strasse_Weg
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren.                                                 
-Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von interpertier Schwierigkeit (z.B. durch 
-Schatten oder Sichthindernisse wie Bäume) nicht möglich kann eine Feldkontrolle sinnvoll sein. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretier-Schwierigkeiten (z.B. durch 
+Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann eine Feldkontrolle sinnvoll sein. 
 
 Benötigende Layer im QGIS:
 
@@ -152,7 +152,7 @@ Strassen und Wege die der Erschliessung mehrerer Liegenschaften oder mehrerer Ge
 
 Befestigte Strassenverengungen ohne Höhenunterschied und befahrbarer Teil des Kreisels (Pavé)    
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Befestigte Strassenverengungen ohne Niveauunterschied gehören zu ``BB.Strasse_Weg`` (siehe :ref:`Beispiel <Strasse_Strassenveraengung>`). Das selbe gilt für den befahrbarer Teil des Kreisels (Pavé) (siehe :ref:`Beispiel <Strasse_pave>`).                 
+Befestigte Strassenverengungen ohne Niveauunterschied gehören zu ``BB.Strasse_Weg`` (siehe :ref:`Beispiel <Strasse_Strassenveraengung>`). Dasselbe gilt für den befahrbarer Teil des Kreisels (Pavé) (siehe :ref:`Beispiel <Strasse_pave>`).                 
 
 Benötigende Layer im QGIS:
 
@@ -168,7 +168,7 @@ Nicht parallele Darstellungen der ``BB.Strasse_Weg`` werden im Rahmen der PNF/Ho
 
 Durch Felspartien überdeckte Strassen
 +++++++++++++++++++++++++++++++++++++                                                                                                                                                                                       
-Bei den Strassen die durch Felspartien überdeckt sind gelten die Darstellungsrichtline gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn*. Unterscheidet sich die Darstellung in der AV von der von Richtlinie, ist sie entsprechend zu korrigieren.           
+Bei den Strassen, die durch Felspartien überdeckt sind, gelten die Darstellungsrichtline gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn*. Unterscheidet sich die Darstellung in der AV von der von Richtlinie, ist sie entsprechend zu korrigieren.           
                                                                                                                                                                                                                                                              
 
 Beispiele:       
@@ -202,7 +202,7 @@ BB.Trottoir
 Lagedifferenz  
 ^^^^^^^^^^^^^
                                                                                                                                                                                  
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst.
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst.
 
 Benötigende Layer im QGIS:
 
@@ -228,7 +228,7 @@ Beispiele:
 Objekt fehlt/ löschen/ umattribuieren      
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    
 
-Ist auf dem aktuellen Orthofoto eine Trottoir zu erkennen, das nicht in der AV vorhanden ist, ist diese im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV eine Trottoir vorhanden ist, dass auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen. 
+Ist auf dem aktuellen Orthofoto ein Trottoir zu erkennen, das nicht in der AV vorhanden ist, ist dieses im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV ein Trottoir vorhanden ist, dass auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen. 
 
 Benötigende Layer im QGIS:
 
@@ -251,7 +251,7 @@ BB.Verkehrsinsel
 Lagedifferenz  
 ^^^^^^^^^^^^^
                                                                                                                                                                                  
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst.
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst.
 
 Benötigende Layer im QGIS:
 
@@ -265,7 +265,7 @@ Objekt fehlt/löschen
 ^^^^^^^^^^^^^^^^^^^^    
 
 Ist auf dem aktuellen Orthofoto eine Verkehrsinsel zu erkennen, die nicht in der AV vorhanden ist, ist diese im Rahmen der PNF/Homogenisierung neu zu erfassen. 
-Falls in der AV eine Verkehrsinsel vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen. Ebenfalls zu löschen sind temporär angelegte Verkehrsinseln oder befestigte Verkehrsinsel ohne Niveauunterschied die in der AV erfasst sind.
+Falls in der AV eine Verkehrsinsel vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen. Ebenfalls zu löschen sind temporär angelegte Verkehrsinseln oder befestigte Verkehrsinsel ohne Niveauunterschied, die in der AV erfasst sind.
  
                                                                                                                                                                                        
 Benötigende Layer im QGIS:
@@ -276,7 +276,7 @@ Benötigende Layer im QGIS:
                                                                                                                                                                                                                                                                                         
 Objekt umattribieren
 ^^^^^^^^^^^^^^^^^^^^ 
-Verkehrsinsel sind komplett von ``BB.Strasse_Weg`` umgeben. Strassenverengungen die humusiert sind werden als ``BB.uebrige_humusierte`` attribuiert.
+Verkehrsinseln sind komplett von ``BB.Strasse_Weg`` umgeben. Strassenverengungen die humusiert sind werden als ``BB.uebrige_humusierte`` attribuiert.
 Humusierte Trennstreifen z.B. bei Autobahnen oder zwischen Strassen und z.B. Radwegen ist die Bodenbedeckung ``BB.uebrige_humusierte`` und **nicht** ``BB.Verkehrsinsel``.
 
 Benötigende Layer im QGIS
@@ -332,7 +332,7 @@ EO.Lärmschutzwand
 
 Objekt feht
 ^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto eine Lärmschutzwand zuerkennen, die nicht in der AV erfasst ist, muss überprüft werden, ob sie die Aufnahmekriterien gemäss *Handbuches der amtlichen Vermessung Kanton Solothurn* erfüllt. Falls dies der Fall ist, ist die Lärmschutzwand terrestrisch zu erfassen.
+Ist auf dem aktuellen Orthofoto eine Lärmschutzwand zu erkennen, die nicht in der AV erfasst ist, muss überprüft werden, ob sie die Aufnahmekriterien gemäss *Handbuches der amtlichen Vermessung Kanton Solothurn* erfüllt. Falls dies der Fall ist, ist die Lärmschutzwand terrestrisch zu erfassen.
                                                                                                    
 .. note::
    Lärmschutzwände sind über die laufende Nachführung abzurechnen   
@@ -380,6 +380,7 @@ Benötigende Layer im QGIS::
 EO.Pfeiler    
 ----------
 .. index:: Pfeiler
+
 Lagekontrolle             
 ^^^^^^^^^^^^^                                                                                                                                                                 
 Wird lediglich durch eine Plausibilitätsprüfung (z.B. Liegen die Pfeiler innerhalb der ``EO.Brücke_Passerelle``) kontrolliert. Die Lage wird jeweils nicht mittels einer Feldkontrolle kontrolliert. Korrekturen in der Lage werden im Rahmen der PNF/Homogenisierung demanch selten bis nie durchgeführt.       
@@ -401,6 +402,7 @@ Benötigende Layer im QGIS::
 EO.Brücke_Passerelle                                   
 --------------------
 .. index:: Brücke, Passerelle
+
 Lagekontrolle  
 ^^^^^^^^^^^^^ 
 Wird lediglich durch eine Plausibilitätsprüfung kontrolliert. Die Lage wird jeweils nicht mittels einer Feldkontrolle kontrolliert. Korrekturen in der Lage werden im Rahmen der PNF/Homogenisierung demnach selten bis nie durchgeführt. 
@@ -417,8 +419,8 @@ EO.schmaler_Weg
 
 Lagekontrolle 
 ^^^^^^^^^^^^^ 
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren. 
-Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Bei den Wanderwege, die ihren Verlauf jährlich ändern (Graswege) ist keine Korrektur vorzunehmen.
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. 
+Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Bei den Wanderwegen, die ihren Verlauf jährlich ändern (z.B. Graswege), ist keine Korrektur vorzunehmen.
      
 
 Benötigende Layer im QGIS:
@@ -446,8 +448,8 @@ Beispiele:
                                                                                         
 Objekt fehlt/Löschen  
 ^^^^^^^^^^^^^^^^^^^^
-Ist ein Wanderweg im Layer `Wanderwege` vorhanden der nicht in der AV erfasst ist, ist dieser im Rahmen der PNF/Homogenisierung neu ab dem Orthofoto zu digitalisieren. Es werden nur offizielle Wanderwege neu erfasst. 
-Wanderwege dürfen nicht unterbrochen sein. Das heisst Wanderwege sind auch darzustellen, wenn sie im Feld nicht ersichtlich sind (z.B. bei Graswegen). Falls Wanderwege in der AV vorhanden sind, die nicht mehr existieren, werden diese gelöscht. 
+Ist ein Wanderweg im Layer `Wanderwege` vorhanden, der nicht in der AV erfasst ist, ist dieser im Rahmen der PNF/Homogenisierung neu ab dem Orthofoto zu digitalisieren. Es werden nur offizielle Wanderwege neu erfasst. 
+Wanderwege dürfen nicht unterbrochen sein. Das heisst, Wanderwege sind auch darzustellen, wenn sie im Feld nicht ersichtlich sind (z.B. bei Graswegen). Falls Wanderwege in der AV vorhanden sind, die nicht mehr existieren, werden diese gelöscht. 
 
 
 Benötigende Layer im QGIS:
@@ -476,13 +478,13 @@ EO.Fahrspur
 
 Lagekontrolle 
 ^^^^^^^^^^^^^
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert so ist das Objekt in der AV zu korrigieren. 
-Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Ist der Verlauf auf dem Orthofoto nicht klar ersichtlich, ist keine Korrektur vorzunehmen. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist der Verlauf auf dem Orthofoto nicht klar ersichtlich, ist keine Korrektur vorzunehmen. 
 
 
 Objekt fehlt/Löschen  
 ^^^^^^^^^^^^^^^^^^^^
-**Neu Fahrspuren werden im Rahmen der PNF/Homogenisierung nicht erhoben**. ``EO.Fahrspuren`` die nicht mehr existieren sind zu löschen. Für die Kontrolle ob eine Fahrspur noch existiert kann eine Feldkontolle sinnvoll sein. 
+**Neue Fahrspuren werden im Rahmen der PNF/Homogenisierung nicht erhoben**. ``EO.Fahrspuren`` die nicht mehr existieren, sind zu löschen. Für die Kontrolle ob eine Fahrspur noch existiert, kann eine Feldkontolle sinnvoll sein. 
 
 Benötigende Layer im QGIS:
 

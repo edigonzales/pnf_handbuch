@@ -251,10 +251,6 @@ Benötigende Layer im QGIS:
 .. code-block:: none   
 
    Seltene Objekte/ Lagekontrolle    
-   Seltene Objekte/ Lagekontrolle/Freileitungen (ARP)
-   Seltene Objekte/ Lagekontrolle/Radio- und Fernsehsender
-   Seltene Objekte/ Lagekontrolle/Mobilfunkantennen UMTS
-   Seltene Objekte/ Lagekontrolle/Mobilfunkantennen GSM
  
 Beispiel:
 .. _seltene_Objekte_Mast_Leitung_Lagedifferenz:                           
@@ -274,6 +270,20 @@ Objekt fehlt/ löschen
 |  Zur Vollständigkeitskontrolle der Hochspannungsfreileitung und deren Masten können die Daten Freileitungen (ARP) verwendet werden. Dazu ist nicht zu vergässen die voltage ( |pfeil| auf Objekt klicken ) zu prüfen. Nur Leitungen mit > 50kV werden in der AV geführt. 
    Hochspannungsfreileitung und deren Masten die auf dem aktuellen Orthofoto nicht mehr vorhandnen sind oder bei deren die Spannung der Hochspannungsfreileitung < 50kV ist, ist zu löschen.
 |  Als Volständigekitskontrolle der Antennen dienen die Daten vom Bund über Radio-/ Fernsehsender und Mobilfunkantennen. Auch hier sind die Objekte die auf dem aktuellen Orthofoto nicht mehr zu erkennen sind zu löschen.
+|  Fehlende Masten bei Gondelbahn und Sesselbahn sind zu erfassen. Hingegen sind die erfassten Masten bei Materialseilbahn und Skilift zu löschen.
+
+
+
+Benötigende Layer im QGIS:       
+
+.. code-block:: none   
+
+   Seltene Objekte/ Lagekontrolle    
+   Seltene Objekte/ Lagekontrolle/Freileitungen (ARP)
+   Seltene Objekte/ Lagekontrolle/Radio- und Fernsehsender
+   Seltene Objekte/ Lagekontrolle/Mobilfunkantennen UMTS
+   Seltene Objekte/ Lagekontrolle/Mobilfunkantennen GSM
+
 
 Darstellung nicht nach Richtlinie 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -297,8 +307,34 @@ Beispiele:
 |   ``EO.Masten`` ist als Linie darzustellen und nicht als Symbol.                    |   ``EO.Hochspannungsleitung`` ist nur mit eine Linie darzustellen.                 |
 +-------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+     
 
-                                                                      
- 
+EO. Einzelner Fels
+------------------                                                                      
+
+Objekt fehlt/ löschen
+^^^^^^^^^^^^^^^^^^^^^ 
+Es werden keine **neuen** ``EO.Einzelner Fels`` erfasst. Falls in der AV ``EO.Einzelner Fels`` vorhaden sind, die keine erratische Blöcke oder kein einzelner wichtiger Fels
+ sind, sind diese aus der AV zu löschen.
+
+EO. Gondelbahn, Sesselbahn, EO. Materialseilbahn, EO. Skilift
+-------------------------------------------------------------
+
+Lagedifferenz                                                                                                                                                               
+^^^^^^^^^^^^^
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grosser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. 
+Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. 
+
+Benötigende Layer im QGIS:       
+
+.. code-block:: none   
+
+   Seltene Objekte/ Lagekontrolle   
+
+Objekt fehlt/ löschen/ umattribuieren   
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+Ist auf dem aktuellen Orthofoto eine Gondelbahn, Sesselbahn, Materialseilbahn oder ein Skilift zu erkennen, die nicht in der AV ist, 
+ist diese/ dieser im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV eine Gondelbahn, Sesselbahn, Materialseilbahn oder ein Skilift vorhanden ist,  
+welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder nicht mehr bewirtschaftet wird, ist dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen. 
+   
 
 
 
