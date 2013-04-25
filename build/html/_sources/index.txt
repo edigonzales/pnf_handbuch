@@ -14,9 +14,11 @@ Contents:
    allgemein
    toleranz
    strasse
+   gewaesser
    bebautes_gebiet
    landwirtschaft
-   seltene_Objekte  
+   seltene_Objekte
+   bestockte_flaeche 
 
 
 Indices and tables
