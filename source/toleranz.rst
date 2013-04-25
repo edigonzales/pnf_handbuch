@@ -1,19 +1,19 @@
 .. _ref_Tz:
 
-Toleranz
-========
+Toleranzen
+==========
 
 
-Abgrenzungen weden im Projket periodische Nachführung und Homogenisierung nur korrigiert, falls sie ausserhalb folgender Toleranzwerte liegen:
+Abgrenzungen weden im Projekt *periodische Nachführung und Homogenisierung* nur korrigiert, falls sie ausserhalb folgender Toleranzwerte liegen:
 
 
 +----------------------------+-----------+-----------+-----------+-----------------------------------------------+
-|Beschreibung                |    TS2    |    TS3    |    TS4    | Betrifft Bodenbedeckungsarten                 |
+|Beschreibung                |    TS2    |    TS3    |    TS4    | Bodenbedeckungsarten                          |
 +============================+===========+===========+===========+===============================================+
-| befestigte Fläche **ohne** |   1.0 m   |   1.5 m   |   1.5 m   | Strass_Weg, Sportanlage_befestigt             |
+| befestigte Fläche **ohne** |   1.0 m   |   1.5 m   |   1.5 m   | Strasse_Weg, Sportanlage_befestigt            |
 | Abschluss                  |           |           |           |                                               |
 +----------------------------+-----------+-----------+-----------+-----------------------------------------------+
-| befestigte Fläche **mit**  |   0.5 m   |   1.0 m   |   1.5 m   | Strass_Weg, Sportanlage_befestigt             |
+| befestigte Fläche **mit**  |   0.5 m   |   1.0 m   |   1.5 m   | Strasse_Weg, Sportanlage_befestigt            |
 | Abschluss                  |           |           |           |                                               | 
 +----------------------------+-----------+-----------+-----------+-----------------------------------------------+
 | unbefestigte Fläche        |   2.0 m   |   3.0 m   |   3.0 m   | Acker_Wiese, Reben, Obstkultur,               |
@@ -27,4 +27,5 @@ Abgrenzungen weden im Projket periodische Nachführung und Homogenisierung nur k
 |                            |           |           |           | Deponie, übriger Abbau, übrige_vegetationslose|
 +----------------------------+-----------+-----------+-----------+-----------------------------------------------+
 
+|
 
