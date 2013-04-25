@@ -163,17 +163,17 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #333333;
+  color: #3F3F3F;
   background-color: #ffffff;
 }
 
 a {
-  color: #0088cc;
+  color: #3F3F3F;
   text-decoration: none;
 }
 
 a:hover {
-  color: #005580;
+  color: #777777;
   text-decoration: underline;
 }
 

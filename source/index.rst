@@ -6,7 +6,7 @@
 Handbuch PNF und HRM Kt. Solothurn
 =================================================================
 
-Contents:
+Inhalt:
 
 .. toctree::
    :maxdepth: 2
@@ -19,10 +19,8 @@ Contents:
    seltene_Objekte  
 
 
-Indices and tables
+Index
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
