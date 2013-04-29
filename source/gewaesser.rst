@@ -18,17 +18,16 @@ Einzelobjekt                   Quelle
 
 
 
-BB.stehendes Gewässer  
----------------------  
+BB.stehendes_Gewaesser  
+----------------------  
 .. index:: stehendes Gewässer, Weiher, See, Biotop, Schwimmteich    
                                
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
-Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
 
-Benötigende Layer im QGIS:
+Benötigte Layer im QGIS:
 
 .. code-block:: none
 
@@ -44,7 +43,7 @@ Beispiele:
 |   :width: 550px                                                         |   :width: 550px                                                                   |
 |   :target: _static/Gewasser_stehendes_Gewaesser_Lagedifferenz.png       |   :target: _static/Gewasser_stehendes_Gewaesser_Lagedifferenz_korr.png            |
 |                                                                         |                                                                                   |
-|   ``BB.stehendes Gewässer`` ist zu korrigieren, weil die Lagedifferenz  |   ``BB.stehendes Gewässer`` ist zu korrigieren gemäss den rot dargestellten       |
+|   ``BB.stehendes_Gewaesser`` ist zu korrigieren, weil die Lagedifferenz |   ``BB.stehendes_Gewaesser`` ist zu korrigieren gemäss den rot dargestellten      |
 |   grösser als die Toleranz (TS3: 3.0 m) ist.                            |   Linien.                                                                         |
 +-------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
                                                                                                                                                    
@@ -52,15 +51,15 @@ Beispiele:
 
 Objekt fehlt/Löschen  
 ^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto ein stehendes Gewässer zu erkennen, welches öffentlich ist oder das Flächenkriterium erfüllt und nicht in der AV ist, ist diese im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
-Ist in der AV ein stehendes Gewässer vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
+Ist auf dem aktuellen Orthofoto ein stehendes Gewässer zu erkennen, welches öffentlich ist oder das Flächenkriterium erfüllt und nicht in der AV ist, ist dieses im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
+Ist in der AV ein stehendes Gewässer vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Flächenkriterium nicht erfüllt, ist dieses Objekt zu löschen.
 
-Benötigende Layer im QGIS:
+Benötigte Layer im QGIS:
 
 .. code-block:: none
 
-   Gewässer/ Lagekontrolle
-   Gewässer/Checklayer/BB.stehendes_Gewaesser < 100 m2
+   Gewässer / Lagekontrolle
+   Gewässer / Checklayer / BB.stehendes_Gewaesser < 100 m2
 
 Beispiele:
 
@@ -78,29 +77,27 @@ Beispiele:
                                                                       
 Objekt umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                            
-Sind in der AV ``BB.stehendes Gewässer`` erfasst, die einen befestigten Abschluss haben, sind diese umzuattribuieren nach ``BB.Wasserbecken``. 
-Schwimmteiche gehören zu ``BB.stehendes Gewässer``. Genauere Erläuterung über die Erfassung der Schwimmteiche sind im *Handbuch der amtlichen Vermessung Kanton Solothurn* zu finden.  
+Sind in der AV stehende Gewässer erfasst, die einen befestigten Abschluss haben, sind diese nach ``BB.Wasserbecken`` umzuattribuieren. Schwimmteiche gehören zu ``BB.stehendes_Gewaesser``. Genauere Erläuterung über die Erfassung der Schwimmteiche sind im *Handbuch der amtlichen Vermessung Kanton Solothurn* zu finden.  
 
 
-Benötigende Layer im QGIS:
+Benötigte Layer im QGIS:
 
 .. code-block:: none
 
-   Gewässer/ Lagekontrolle   
+   Gewässer / Lagekontrolle   
    
 
                                                           
-BB.fliessendes Gewässer
------------------------   
+BB.fliessendes_Gewaesser
+------------------------   
 .. index:: fliessendes Gewässer, Bach, Fluss
 
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
-Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
 
-Benötigende Layer im QGIS:
+Benötigte Layer im QGIS:
 
 .. code-block:: none
 
@@ -109,45 +106,45 @@ Benötigende Layer im QGIS:
 
 Beispiele:
                               
-+-------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
-|.. _Gewaesser_fliessendes_Gewaesser_Lagedifferenz:                       |.. _Gewaesser_fliessendes_Gewaesser_Lagedifferenz_korr:                            |
-|                                                                         |                                                                                   |
-|.. figure:: _static/Gewaesser_fliessendes_Gewaesser_Lagedifferenz.png    |.. figure:: _static/Gewaesser_fliessendes_Gewaesser_Lagedifferenz_korr.png         |
-|   :width: 550px                                                         |   :width: 550px                                                                   |
-|   :target: _static/Gewaesser_fliessendes_Gewaesser_Lagedifferenz.png    |   :target: _static/Gewaesser_fliessendes_Gewaesser_Lagedifferenz_korr.png         |
-|                                                                         |                                                                                   |
-|   ``BB.fliessendes Gewässer`` ist zu korrigieren, weil die Lagedifferenz|   ``BB.fliessendes Gewässer`` ist zu korrigieren gemäss den rot dargestellten     |
-|   grösser als die Toleranz (TS3: 3.0 m) ist.                            |   Linien.                                                                         |
-+-------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
++--------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+|.. _Gewaesser_fliessendes_Gewaesser_Lagedifferenz:                        |.. _Gewaesser_fliessendes_Gewaesser_Lagedifferenz_korr:                            |
+|                                                                          |                                                                                   |
+|.. figure:: _static/Gewaesser_fliessendes_Gewaesser_Lagedifferenz.png     |.. figure:: _static/Gewaesser_fliessendes_Gewaesser_Lagedifferenz_korr.png         |
+|   :width: 550px                                                          |   :width: 550px                                                                   |
+|   :target: _static/Gewaesser_fliessendes_Gewaesser_Lagedifferenz.png     |   :target: _static/Gewaesser_fliessendes_Gewaesser_Lagedifferenz_korr.png         |
+|                                                                          |                                                                                   |
+|   ``BB.fliessendes_Gewaesser`` ist zu korrigieren, weil die Lagedifferenz|   ``BB.fliessendes_Gewaesser`` ist zu korrigieren gemäss den rot dargestellten    |
+|   grösser als die Toleranz (TS3: 3.0 m) ist.                             |   Linien.                                                                         |
++--------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
                                                                                                                                                       
 
-Objekt fehlt/Löschen  
+Objekt fehlt/löschen  
 ^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto eine fliessendes Gewässer zu erkennen, das nicht in der AV vorhaden ist, ist diese im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
-Ist in der AV eine fliessendes Gewässer vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
+Ist auf dem aktuellen Orthofoto ein fliessendes Gewässer zu erkennen, das nicht in der AV vorhaden ist, ist diese im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
+Ist in der AV ein fliessendes Gewässer vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
 
-Benötigende Layer im QGIS:
+Benötigte Layer im QGIS:
 
 .. code-block:: none
 
-   Gewässer/ Lagekontrolle
+   Gewässer / Lagekontrolle
    
 .. note::
-  Als Referenzdaten dienen zusätzlich die Daten aus dem Gewässerinformationssystem (GEWISSO) (siehe :ref:`ref_RefDaten`)  
+  Als Referenzdaten dienen zusätzlich die Daten aus dem Gewässerinformationssystem (GEWISSO) (siehe :ref:`ref_RefDaten`).
 
 Beispiele:   
    
                                                                        
 Objekt umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                            
-Sind in der AV ``BB.fliessendes Gewässer`` erfasst, deren Breite kleiner als 50 cm sind, sind diese umzuattribuieren auf ``EO.Rinnsal``. 
+Sind in der AV fliessende Gewässer erfasst, deren Breite kleiner als 50 cm sind, sind diese nach ``EO.Rinnsal`` umzuattribuieren. 
 
 
-Benötigende Layer im QGIS:
+Benötigte Layer im QGIS:
 
 .. code-block:: none
 
-   Gewässer/ Lagekontrolle     
+   Gewässer / Lagekontrolle     
    
    
 BB.Schilfgürtel   
@@ -156,24 +153,21 @@ BB.Schilfgürtel
 
 Lagedifferenz  
 ^^^^^^^^^^^^^   
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
-Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
    
-Objekt fehlt/Löschen/ umattribuieren  
+Objekt fehlt/löschen/umattribuieren  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto ein Schilfgürtel vorhanden, welcher das Flächenkriterium erfüllt und nicht in der AV ist, ist dieser im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
-Ist in der AV eine Schilfgürtel vorhanden, der auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
+Ist auf dem aktuellen Orthofoto ein Schilfgürtel vorhanden, welcher das Flächenkriterium erfüllt und nicht in der AV ist, ist dieser im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. Ist in der AV eine Schilfgürtel vorhanden, der auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
    
 
 
-EO.einged. öff. Gewässer
-------------------------   
+EO.eingedoltes_oeffentliches_Gewaesser
+--------------------------------------   
 .. index:: eingedoltes öffentliches Gewässer   
 
 Lagedifferenz/ Löschen  
 ^^^^^^^^^^^^^^^^^^^^^^   
-Sind zuverlässige Referenzdaten von eingedolten Gewässer (z.B. aus Leitungskataster) vorhanden, sind die Daten der AV nach diesen zu korrigieren. 
-Falls keine solche Daten vorhanden sind, sind die Objekte aus der AV zu entfernen.
+Sind zuverlässige Referenzdaten von eingedolten Gewässer (z.B. aus Leitungskataster) vorhanden, sind die Daten der AV nach diesen zu korrigieren. Falls keine solche Daten vorhanden sind, sind die Objekte aus der AV zu entfernen.
 
 .. important:: 
    Sind keine verlässlichen Geometrien vorhanden, ist auf die Darstellung eines eingedolten Gewässers in der AV zu verzichten.
@@ -181,7 +175,7 @@ Falls keine solche Daten vorhanden sind, sind die Objekte aus der AV zu entferne
    
 Objekt fehlt
 ^^^^^^^^^^^^^
-Es ist zu kontrollieren, ob bei jeder Brücke und bei jedem Durchlass unter Strassen/Bahn ein ``EO.einged. öff. Gewässer`` erfasst ist. Fehlende Objekte sind zu erfassen. 
+Es ist zu kontrollieren, ob bei jeder Brücke und bei jedem Durchlass unter Strassen/Bahn ein ``EO.eingedoltes_oeffentliches_Gewaesser`` erfasst ist. Fehlende Objekte sind zu erfassen. 
    
    
    
@@ -189,14 +183,12 @@ EO.Brücke, Passerelle
 ---------------------   
 Lagedifferenz
 ^^^^^^^^^^^^^
-Wird lediglich durch eine Plausibilitätsprüfung kontrolliert. 
-Die Lage wird jeweils nicht mittels einer Feldkontrolle kontrolliert. Korrekturen in der Lage werden im Rahmen der PNF/Homogenisierung demnach selten bis nie durchgeführt.   
+Wird lediglich durch eine Plausibilitätsprüfung kontrolliert. Die Lage wird jeweils nicht mittels einer Feldkontrolle kontrolliert. Korrekturen in der Lage werden im Rahmen der PNF/Homogenisierung selten bis nie durchgeführt.   
    
    
-Objekt fehlt/ umattribuieren   
+Objekt fehlt/umattribuieren   
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
-Fehlende Objekte sind zu erfassen gemäss `Handbuch der amtlichen Vermessung Kanton Solothurn`. Falls die Brücke/Passerelle falsch attribuiert ist, ist dies entsprechend zu korrigieren. 
-Bei Brücken gilt das Prinzip der Vogelperspektive d.h. Die über der Brücke resp. Passerelle verlaufende Bodenbedeckung wird durchgezogen. ????????????? >4m????????
+Fehlende Objekte sind gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* zu erfassen. Falls die Brücke/Passerelle falsch attribuiert ist, ist dies entsprechend zu korrigieren. Bei Brücken gilt das Prinzip der Vogelperspektive d.h. die über der Brücke resp. Passerelle verlaufende Bodenbedeckung wird durchgezogen. ????????????? >4m????????
    
    
    
@@ -208,14 +200,13 @@ EO.Rinnsal
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
-Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
 
-Benötigende Layer im QGIS:
+Benötigte Layer im QGIS:
 
 .. code-block:: none
 
-   Gewaesser/ Lagekontrolle   
+   Gewaesser / Lagekontrolle   
 
 .. _Gewaesser_Rinnsal:                       
                                                                          
@@ -226,33 +217,33 @@ Benötigende Layer im QGIS:
    ``BB.Rinnsal`` ist **nicht** zu korrigieren, weil die Lagedifferenz kleiner als die Toleranz (TS3: 3.0 m) ist.                            
                                                                                                                                                       
 
-Objekt fehlt/Löschen  
+Objekt fehlt/löschen  
 ^^^^^^^^^^^^^^^^^^^^
 Ist auf dem aktuellen Orthofoto ein Rinnsal zu erkennen, das nicht in der AV vorhanden ist, ist dieses im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
 Ist in der AV ein fliessendes Gewässer vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
                     
-Benötigende Layer im QGIS:
+Benötigte Layer im QGIS:
 
 .. code-block:: none
 
-   Gewässer/ Lagekontrolle
+   Gewässer / Lagekontrolle
    
 .. note::
-  Als Referenzdaten dienen zusätzlich die Daten aus dem Gewässerinformationssystem (GEWISSO) (siehe :ref:`ref_RefDaten`)  
+  Als Referenzdaten dienen zusätzlich die Daten aus dem Gewässerinformationssystem (GEWISSO) (siehe :ref:`ref_RefDaten`).  
 
 Beispiele:   
    
                                                                        
 Objekt umattribuieren
-^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                            
-Sind in der AV ``EO.Rinnsal`` erfasst deren Breite grösser als 50 cm sind, sind diese umzuattribuieren auf ``BB.fliessendes Gewässer``. 
+^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                          
+Sind in der AV Rinnsale erfasst deren Breite grösser als 50 cm sind, sind diese nach ``BB.fliessendes Gewässer`` umzuattribuieren. 
 
 
-Benötigende Layer im QGIS:
+Benötigte Layer im QGIS:
 
 .. code-block:: none
 
-   Gewässer/ Lagekontrolle     
+   Gewässer / Lagekontrolle     
    
                       
                        
@@ -266,7 +257,7 @@ Erfasste ``EO.Quellen`` in der AV sind zu löschen.
 
 .. code-block:: none
 
-   Gewässer/Checklayer/EO.Quelle
+   Gewässer / Checklayer / EO.Quelle
 
 
 
@@ -275,6 +266,7 @@ Objektnamen
 
 Die Objektnamen (BB und EO) der Gewässer sind mit den Daten des Gewässerinformationssystem (GEWISSO) zu kontrollieren und wenn nötig zu bereinigen.  
 
+|
 
 
 

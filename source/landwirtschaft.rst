@@ -14,10 +14,11 @@ Bodenbedeckung      uebrige_Intensivkultur
 
 BB.Acker_Wiese / BB.Weide
 -------------------------
+.. index:: Acker, Wiese, Weide
 
 Objekt umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^
-Falsch attribuierte Acker_Wiesen und Weiden sind der richtigen Bodenbedeckungsart zuzuweisen. Lagedifferenzen zwischen ``BB.Gartenanlage`` resp. bestockte Flächen und ``BB.Acker_Wiese`` resp. ``BB.Weide`` sind in den Mängelgruppen *Bebautes Gebiet* (LINK) und *Bestockte Flächen* (LINK) zu erfassen.
+Falsch attribuierte Acker_Wiesen und Weiden sind der richtigen Bodenbedeckungsart zuzuweisen. Lagedifferenzen zwischen ``BB.Gartenanlage`` resp. bestockten Flächen und ``BB.Acker_Wiese`` resp. ``BB.Weide`` sind in den Mängelgruppen :ref:`ref_BebautesGebiet` und :ref:`ref_BestockteFlaechen` zu erfassen.
 
 Benötigte Layer in QGIS:
 
@@ -40,6 +41,7 @@ Beispiele:
 
 BB.Weide
 --------
+.. Weide 
 
 Objekt umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^
@@ -54,12 +56,13 @@ Benötigte Layer in QGIS:
 
 BB.Reben / BB.Obstkultur / BB.uebrige_Intensivkulturen
 ------------------------------------------------------
+.. index:: Reben, Obstkultur, übrige Intensivkulturen  
 
 Die drei Bodenbedeckungsarten ``BB.Reben``, ``BB.Obstkultur`` und ``BB.uebrige_Intensivkulturen`` sind auf ihre Vollständigkeit, Aktualität sowie Lagekorrektheit zu prüfen:
 
 Lagedifferenz
 ^^^^^^^^^^^^^
-Die korrekte Lage ist mit dem aktuellen Orthofoto zu prüfen. Korrigiert werden Abweichungen ausserhalb der Toleranzbereiche (gemäss :ref:`toleranz`)
+Die korrekte Lage ist mit dem aktuellen Orthofoto zu prüfen. Korrigiert werden Abweichungen ausserhalb der Toleranzbereiche (siehe :ref:`ref_Tz`)
 
 Benötigte Layer in QGIS:
 
@@ -107,6 +110,7 @@ Alle Objekte
 ------------
 Überflüssige Unterteilungslinien sind zu löschen.
 
+|
 
 .. index:: Acker, Wiese, Weide, Acker_Wiese, Reben, Intensivkultur, uebrige_Intensivkultur
 

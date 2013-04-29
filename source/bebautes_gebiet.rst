@@ -1,6 +1,8 @@
+.. _ref_BebautesGebiet:
+
 Bebautes Gebiet
 ===============
-In dieser Mängelgruppe wird das bebaute Gebiet überprüft. Das bebaute Gebiet beinhaltet die TS2 und sämtliche Bauten inkl. Umschwung in der TS3 und TS4. Die Toleranzen bleiben TS-abhängig (LINK). Folgende Objekte werden geprüft:
+In dieser Mängelgruppe wird das bebaute Gebiet überprüft. Das bebaute Gebiet beinhaltet die TS2 und sämtliche Bauten inkl. Umschwung in der TS3 und TS4. Die Toleranzen bleiben TS-abhängig (siehe :ref:`ref_Tz`). Folgende Objekte werden geprüft:
 
 ==================  ==================
 Topic  		    Art    
@@ -31,7 +33,7 @@ Lagedifferenz
 Lagemässig fehlerhaft erfasste Gebäude (z.B. Verdrehungen des Grundrisses) zu korrigieren. Können die Gebäude nicht aus bestehenden Aufnahmen korrekt gerechnet werden, muss die Neuaufnahme terrestrisch erfolgen. 
 
 .. note::
-   Fehler aus der laufenden Nachführung können nicht über das Projekt PNF/HRM abgerechnet werden.
+   Fehler aus der laufenden Nachführung können nicht über die PNF/Homogenisierung abgerechnet werden.
 
 
 Benötigte Layer in QGIS:
