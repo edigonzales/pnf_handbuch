@@ -40,18 +40,18 @@ Lagedifferenz
                                
 Lagedifferenz  
 ^^^^^^^^^^^^^                                              
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und die interpetier Genauigkeit detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
-Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist auf dem Orthofoto nicht klahr ersichtlich, wo der Waldrand verläuft, wird in der AV keine Korrektur vorgenommen.
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und die interpretier Genauigkeit detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist auf dem Orthofoto nicht klar ersichtlich, wo der Waldrand verläuft, wird in der AV keine Korrektur vorgenommen.
 
 .. important:: 
    * Nicht mehr Wald generieren! Wald eher knapp als zu grosszügig definieren.
-   * Nur offensichtliche Unstimmigkeiten korrigieren. Falls die Waldgrenze auf dem Orthofoto nicht klahr ersichtlich ist, wird keine Korrektur in der AV vorgenommen.
+   * Nur offensichtliche Unstimmigkeiten korrigieren. Falls die Waldgrenze auf dem Orthofoto nicht klar ersichtlich ist, wird keine Korrektur in der AV vorgenommen.
    * Falls Bäume 10 m auseinander stehen ist diese Bestockung kein ``BB.geschlossener Wald``
 
 
 
 .. note::
-   Durch die Kreisförster wird im Zyklus von 10 Jahren der Wald anhand des Waldgesetz auf dem Waldplan erhoben. Als Grundlage für diese Walpläne dient die AV. Die Anpassungen auf dem Waldplan durch die Kreisförster sind jeweils bei der PNF zu berücksichtigen.
+   Durch die Kreisförster wird im Zyklus von 10 Jahren der Wald anhand des Waldgesetzes auf dem Waldplan erhoben. Als Grundlage für diese Waldpläne dient die AV. Die Anpassungen auf dem Waldplan durch die Kreisförster sind jeweils bei der PNF zu berücksichtigen.
    Stand der Waldpläne siehe Link Termin Waldplan???????????
 
 Benötigende Layer im QGIS:
@@ -90,7 +90,7 @@ Beispiele:
 |                                                                                            |                                                                                    |
 |   ``BB.geschlossener_Wald`` ist zu korrigieren, weil die Lagedifferenz                     |   ``BB.geschlossener_Wald`` ist zu korrigieren gemäss den rot dargestellten Linie. |
 |   grösser als die Toleranz (TS4: 6.0 m) und Interpretationsgenauigkeit ist.                |   Da die Bäume im rechten Bereich weiterauseinander stehen als 10 m, ist diese     |
-|   Hinweis: Die Dichte der Bestockung gegen Süden niemt ab (Distanz zwischen den Bäumen     |   Bestockung nicht zu erfassen.                                                    |
+|   Hinweis: Die Dichte der Bestockung gegen Süden nimmt ab (Distanz zwischen den Bäumen     |   Bestockung nicht zu erfassen.                                                    |
 |   > 10 m) und erfüllt die Kriterien des ``BB.geschlossener_Wald`` nicht mehr.              |                                                                                    |
 +--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+ 
 |.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz6:                                    |.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_korr6:                       | 
