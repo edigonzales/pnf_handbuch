@@ -36,16 +36,31 @@ BB.geschlossener_Wald
                                
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
-                         
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und die Interpretationsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
+.. index:: Wald, geschlossener Wald   
+                               
+Lagedifferenz  
+^^^^^^^^^^^^^                                              
+Wird eine Lagedifferenz zwischen der AV und dem aktuelle Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und die interpetier Genauigkeit detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
+Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist auf dem Orthofoto nicht klahr ersichtlich, wo der Waldrand verläuft, wird in der AV keine Korrektur vorgenommen.
+
+.. important:: 
+   * Nicht mehr Wald generieren! Wald eher knapp als zu grosszügig definieren.
+   * Nur offensichtliche Unstimmigkeiten korrigieren. Falls die Waldgrenze auf dem Orthofoto nicht klahr ersichtlich ist, wird keine Korrektur in der AV vorgenommen.
+   * Falls Bäume 10 m auseinander stehen ist diese Bestockung kein ``BB.geschlossener Wald``
+
+
+
+.. note::
+   Durch die Kreisförster wird im Zyklus von 10 Jahren der Wald anhand des Waldgesetz auf dem Waldplan erhoben. Als Grundlage für diese Walpläne dient die AV. Die Anpassungen auf dem Waldplan durch die Kreisförster sind jeweils bei der PNF zu berücksichtigen.
+   Stand der Waldpläne siehe Link Termin Waldplan???????????
 
 Benötigende Layer im QGIS:
 
 .. code-block:: none
 
-   Bestockte Fläche / Lagekontrolle   
+   Bestockte Fläche/ Lagekontrolle   
+   Waldplan?????????????????
                                 
-
 Beispiele:
 
 +--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+ 
@@ -56,7 +71,7 @@ Beispiele:
 |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz.png                  |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_korr.png     |
 |                                                                                            |                                                                                    |
 |   ``BB.geschlossener_Wald`` ist zu korrigieren, weil die Lagedifferenz                     |   ``BB.geschlossener_Wald`` ist zu korrigieren gemäss den rot dargestellten Linie  |
-|   grösser als die Toleranz (TS3: 3.0 m) und Interpretationsgenauigkeit ist.                |                                                                                    |
+|   grösser als die Toleranz (TS3: 6.0 m) und Interpretationsgenauigkeit ist.                |                                                                                    |
 +--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+        
 |.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz2:                                    |.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_korr2:                       | 
 |                                                                                            |                                                                                    |
@@ -65,17 +80,38 @@ Beispiele:
 |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz2.png                 |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz2_korr.png    |
 |                                                                                            |                                                                                    |
 |   ``BB.geschlossener_Wald`` ist zu korrigieren, weil die Lagedifferenz                     |   ``BB.geschlossener_Wald`` ist zu korrigieren gemäss den rot dargestellten Linie  |
-|   grösser als die Toleranz (TS3: 3.0 m) und Interpretationsgenauigkeit ist.                |                                                                                    |
+|   grösser als die Toleranz (TS4: 6.0 m) und Interpretationsgenauigkeit ist.                |                                                                                    |
 +--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+ 
-|.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_iO:                                  |                                                                                    | 
+|.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz3:                                    |.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_korr3:                       | 
 |                                                                                            |                                                                                    |
-|.. figure:: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_iO.png               |                                                                                    | 
-|   :width: 550px                                                                            |                                                                                    |
-|   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_iO.png               |                                                                                    |
+|.. figure:: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_3.png                |.. figure:: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_korr_3.png   | 
+|   :width: 550px                                                                            |   :width: 550px                                                                    |
+|   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_3.png                |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_korr_3.png   |
 |                                                                                            |                                                                                    |
-|   ``BB.geschlossener_Wald`` ist **nicht** zu korrigieren, weil die                         |                                                                                    |
-|   Lagedifferenz  grösser als die Toleranz (TS3: 3.0 m) und Interpretationsgenauigkeit ist. |                                                                                    |
+|   ``BB.geschlossener_Wald`` ist zu korrigieren, weil die Lagedifferenz                     |   ``BB.geschlossener_Wald`` ist zu korrigieren gemäss den rot dargestellten Linie. |
+|   grösser als die Toleranz (TS4: 6.0 m) und Interpretationsgenauigkeit ist.                |   Da die Bäume im rechten Bereich weiterauseinander stehen als 10 m, ist diese     |
+|   Hinweis: Die Dichte der Bestockung gegen Süden niemt ab (Distanz zwischen den Bäumen     |   Bestockung nicht zu erfassen.                                                    |
+|   > 10 m) und erfüllt die Kriterien des ``BB.geschlossener_Wald`` nicht mehr.              |                                                                                    |
 +--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+ 
+|.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz6:                                    |.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_korr6:                       | 
+|                                                                                            |                                                                                    |
+|.. figure:: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_6.png                |.. figure:: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_korr_6.png   | 
+|   :width: 550px                                                                            |   :width: 550px                                                                    |
+|   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_6.png                |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_korr_6.png   |
+|                                                                                            |                                                                                    |
+|   ``BB.geschlossener_Wald`` ist zu korrigieren, weil die Lagedifferenz                     |   ``BB.geschlossener_Wald`` ist zu korrigieren gemäss den rot dargestellten Linie. |
+|   grösser als die Toleranz (TS3: 6.0 m) und Interpretationsgenauigkeit ist.                |                                                                                    |
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+ 
+|.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_iO_2:                                |.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_iO:                          | 
+|                                                                                            |                                                                                    |
+|.. figure:: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_iO_2.png             |.. figure:: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_iO.png       | 
+|   :width: 550px                                                                            |   :width: 550px                                                                    |
+|   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_iO_2.png             |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_iO.png       |
+|                                                                                            |                                                                                    |
+|   ``BB.geschlossener_Wald`` ist **nicht** zu korrigieren, weil die                         |   ``BB.geschlossener_Wald`` ist **nicht** zu korrigieren, weil die                 |
+|   Lagedifferenz  kleiner als die Toleranz (TS3: 6.0 m).                                    |   Lagedifferenz  kleiner als die Toleranz (TS3: 6.0 m) und                         |
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+ 
+                                                                                                                                                                                       
 
 Objekt fehlt/löschen
 ^^^^^^^^^^^^^^^^^^^^
@@ -106,7 +142,7 @@ Objekt umattribuieren
 Ist in der AV geschlossener Wald erfasst, der das Flächenkriterium von 500m2 und die Breite > 12m nicht erfüllen, sind diese umzuattribuieren.    
 
 .. note::
-   | Waldstücke die durch ``BB.Strasse_Weg`` getrennt werden, gehören zu ``BB.geschlossener_Wald``. Einzelne Teilflächen sind für die Beurteilung des Flächenkriteriums als ein Fläche zu betrachten.
+   | Waldstücke die durch ``BB.Strasse_Weg`` getrennt werden, gehören zu ``BB.geschlossener_Wald``. Einzelne Teilflächen sind für die Beurteilung des Flächenkriteriums als eine Fläche zu betrachten.
    | Waldzungen deren Breite zwischen 6 m und 12 m liegt, werden ab einer Länge von 20 m nicht mehr als ``BB.geschlossener_Wald`` attribuiert. Waldzungen mit einer Breite kleiner 6 m gehören nicht zu ``BB.geschlossener_Wald``.
    
 Benötigende Layer im QGIS:
@@ -124,8 +160,19 @@ Beispiele:
 |   :width: 550px                                                             |   :width: 550px                                                                    |
 |   :target: _static/bestockte_Flaeche_geschlossener_Wald_umattribuieren.png  |   :target: _static/bestockte_Flaeche_geschlossener_Wald_umattribuieren_korr.png    |
 |                                                                             |                                                                                    |
-|   ``BB.geschlosener Wald`` > 12m ist umzuattribuieren in ``BB.Hecke``.      |   ``BB.geschlossener Wald`` ist zu korrigieren gemäss den rot dargestellten Linien.|
+|   ``BB.geschlosener Wald`` < 12m ist umzuattribuieren in ``BB.Hecke``.      |   ``BB.geschlossener Wald`` ist zu korrigieren gemäss den rot dargestellten Linien.|
 +-----------------------------------------------------------------------------+------------------------------------------------------------------------------------+                     
+|.. _bestockte_Flaeche_geschlossener_Wald_umattribuieren2:                    |.. _bestockte_Flaeche_geschlossener_Wald_umattribuieren_korr2:                      | 
+|                                                                             |                                                                                    |
+|.. figure:: _static/bestockte_Flaeche_geschlossener_Wald_umattribuieren_2.png|.. figure:: _static/bestockte_Flaeche_geschlossener_Wald_umattribuieren_korr_2.png  | 
+|   :width: 550px                                                             |   :width: 550px                                                                    |
+|   :target: _static/bestockte_Flaeche_geschlossener_Wald_umattribuieren_2.png|   :target: _static/bestockte_Flaeche_geschlossener_Wald_umattribuieren_korr_2.png  |
+|                                                                             |                                                                                    |
+|   Waldzungen mit Breite zwischen 6 m und 12 m gehört nur bis max. einer     |   ``BB.geschlossener Wald`` ist zu korrigieren gemäss den rot dargestellten Linien.|
+|   Länge von 20 m zu ``BB.geschlossener_Wald``.                              |                                                                                    |
++-----------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+
+ 
 
 BB.uebrige_Bestockte
 --------------------
@@ -134,7 +181,7 @@ BB.uebrige_Bestockte
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und die Interpretationsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz un der Interpretationsgenauigkeit, wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und die Interpretationsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz und der Interpretationsgenauigkeit, wird das Objekt nicht angepasst. 
 
 Benötigende Layer im QGIS:
 
@@ -149,7 +196,8 @@ Objekt umattribuieren
 Sind in der AV ``BB.uebrige_Bestockte``-Objekte erfasst, die zu ``BB.Hecke`` oder ``BB.geschlossener_Wald`` gehören, sind diese umzuattribuieren.
 
 .. note::
-   Aufforstungen gehören zu ``BB.geschlossener_Wald``.
+   * Aufforstungen gehören zu ``BB.geschlossener_Wald``.
+   * An ``BB.geschlossener_Wald`` draf kein ``BB.uebrige_Bestockte`` grenzen
 
 Beispiel:
 
@@ -173,6 +221,31 @@ Benötigende Layer im QGIS:
 
    Bestockte Fläche / Lagekontrolle  
 
+   
+BB.Parkanlage_bestockt
+----------------------
+.. index:: Parkanlage bestockt
+                               
+Lagedifferenz  
+^^^^^^^^^^^^^                        
+                         
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und die Interpretationsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz und der Interpretationsgenauigkeit, wird das Objekt nicht angepasst. 
+
+Benötigende Layer im QGIS:
+
+.. code-block:: none
+
+   Bestockte Fläche / Lagekontrolle   
+
+Objekt fehlt/löschen/ umattribuieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ist auf dem aktuellen Orthofoto eine betockte Parkanlage zu erkennen, die nicht in der AV erfasst ist, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung **nicht** neu in der AV als ``BB.Parkanlage_bestockt`` zu erfassen. 
+Ist in der AV eine ``BB.Parkanlage_bestockt`` erfasst, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Aufnahmekriterium nicht erfüllt, ist dieses Objekt zu löschen.
+Sind in der AV betockte Parkanlage erfasst, die gemäss Kriterium *Handbuches der amtlichen Vermessung Kanton Solothurn*  zu ``BB.übrige Bestockte``, ``BB.Hecke`` oder ``BB.geschlossener Wald`` gehören, sind die Objekte umzuattribuieren.
+.. code-block:: none
+
+   Bestockte Fläche / Lagekontrolle   
+
 
 BB.Hecke
 ---------
@@ -192,7 +265,12 @@ Benötigende Layer im QGIS:
 Objekt fehlt/löschen
 ^^^^^^^^^^^^^^^^^^^^^
 Ist auf dem aktuellen Orthofoto ein Bestockung zu erkennen, die das Flächenkriterium gemäss TVAV Art. 13 (???????????) erfüllt, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung neu in der AV als ``BB.Hecke`` zu erfassen. 
-Ist in der AV eine ``BB.Hecke`` erfasst, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Flächenkriterium gemäss TVAV Art. 13 nicht nicht erfüllt, ist dieses Objekt zu löschen.
+Ist in der AV eine ``BB.Hecke`` erfasst, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Flächenkriterium ??????? gemäss TVAV Art. 13 nicht nicht erfüllt, ist dieses Objekt zu löschen.
+
+.. code-block:: none
+
+   Bestockte Fläche / Lagekontrolle   
+
 
 Beispiel:
 
@@ -226,9 +304,20 @@ Beispiel:
    :target: _static/bestockte_Flaeche_Heck_umattribuieren.png  
                                                                   
    ``BB.Hecke`` ist umzuattribuieren in ``BB.geschlossener Wald``. Weil die Bachbreite kleiner 4m ist, wird die Bestockung als zusammenhängende Einheit betrachtet.
-|
-                                                                   
+
+EO.schmale_bestockte_Fläche
+---------------------------
+.. index:: schmale bestockte Fläche                                                             
   
+Objekt löschen
+^^^^^^^^^^^^^^
+                       
+Erfasste ``EO.schmale_bestockte_Fläche`` in der AV sind zu löschen. 
+
+.. code-block:: none
+
+   Bestockte Fläche/ Checklayer/EO.schmale_bestockte_Flaeche
+
    
                                                                                                                                                    
                                                                     
