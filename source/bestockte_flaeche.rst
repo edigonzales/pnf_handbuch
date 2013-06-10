@@ -2,7 +2,7 @@
 
 Bestockte Fläche
 =====================
-Bei dieser Gruppe werden alle bestockten Flächen aus der amtlichen Vermessung auf deren Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
+In dieser Gruppe werden alle bestockten Flächen aus der amtlichen Vermessung auf deren Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
 
 Folgende Objekte werden geprüft:
 
@@ -40,13 +40,13 @@ Lagedifferenz
                                
 Lagedifferenz  
 ^^^^^^^^^^^^^                                              
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und die interpretier Genauigkeit detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und der Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
 Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist auf dem Orthofoto nicht klar ersichtlich, wo der Waldrand verläuft, wird in der AV keine Korrektur vorgenommen.
 
 .. important:: 
-   * Nicht mehr Wald generieren! Wald eher knapp als zu grosszügig definieren.
+   * Nicht unnötig zusätzlichen Wald generieren! Wald eher knapp als zu grosszügig definieren.
    * Nur offensichtliche Unstimmigkeiten korrigieren. Falls die Waldgrenze auf dem Orthofoto nicht klar ersichtlich ist, wird keine Korrektur in der AV vorgenommen.
-   * Falls Bäume 10 m auseinander stehen ist diese Bestockung kein ``BB.geschlossener Wald``
+   * Falls Bäume 10 m auseinander stehen ist diese Bestockung kein ``BB.geschlossener Wald``.
 
 
 
@@ -58,7 +58,7 @@ Benötigende Layer im QGIS:
 
 .. code-block:: none
 
-   Bestockte Fläche/ Lagekontrolle   
+   Bestockte Fläche / Lagekontrolle   
    Waldplan?????????????????
                                 
 Beispiele:
@@ -70,8 +70,8 @@ Beispiele:
 |   :width: 550px                                                                            |   :width: 550px                                                                    |
 |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz.png                  |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_korr.png     |
 |                                                                                            |                                                                                    |
-|   ``BB.geschlossener_Wald`` ist zu korrigieren, weil die Lagedifferenz                     |   ``BB.geschlossener_Wald`` ist zu korrigieren gemäss den rot dargestellten Linie  |
-|   grösser als die Toleranz (TS3: 6.0 m) und Interpretationsgenauigkeit ist.                |                                                                                    |
+|   ``BB.geschlossener_Wald`` ist zu korrigieren, weil die Lagedifferenz                     |   ``BB.geschlossener_Wald`` ist zu korrigieren gemäss der rot dargestellten Linie. |
+|   grösser als die Toleranz (TS3: 6.0 m) und Feststellungsgenauigkeit ist.                  |                                                                                    |
 +--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+        
 |.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz2:                                    |.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_korr2:                       | 
 |                                                                                            |                                                                                    |
@@ -79,7 +79,7 @@ Beispiele:
 |   :width: 550px                                                                            |   :width: 550px                                                                    |
 |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz2.png                 |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz2_korr.png    |
 |                                                                                            |                                                                                    |
-|   ``BB.geschlossener_Wald`` ist zu korrigieren, weil die Lagedifferenz                     |   ``BB.geschlossener_Wald`` ist zu korrigieren gemäss den rot dargestellten Linie  |
+|   ``BB.geschlossener_Wald`` ist zu korrigieren, weil die Lagedifferenz                     |   ``BB.geschlossener_Wald`` ist zu korrigieren gemäss der rot dargestellten Linie  |
 |   grösser als die Toleranz (TS4: 6.0 m) und Interpretationsgenauigkeit ist.                |                                                                                    |
 +--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+ 
 |.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz3:                                    |.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_korr3:                       | 
@@ -88,7 +88,7 @@ Beispiele:
 |   :width: 550px                                                                            |   :width: 550px                                                                    |
 |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_3.png                |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_korr_3.png   |
 |                                                                                            |                                                                                    |
-|   ``BB.geschlossener_Wald`` ist zu korrigieren, weil die Lagedifferenz                     |   ``BB.geschlossener_Wald`` ist zu korrigieren gemäss den rot dargestellten Linie. |
+|   ``BB.geschlossener_Wald`` ist zu korrigieren, weil die Lagedifferenz                     |   ``BB.geschlossener_Wald`` ist zu korrigieren gemäss der rot dargestellten Linie. |
 |   grösser als die Toleranz (TS4: 6.0 m) und Interpretationsgenauigkeit ist.                |   Da die Bäume im rechten Bereich weiterauseinander stehen als 10 m, ist diese     |
 |   Hinweis: Die Dichte der Bestockung gegen Süden nimmt ab (Distanz zwischen den Bäumen     |   Bestockung nicht zu erfassen.                                                    |
 |   > 10 m) und erfüllt die Kriterien des ``BB.geschlossener_Wald`` nicht mehr.              |                                                                                    |
@@ -99,7 +99,7 @@ Beispiele:
 |   :width: 550px                                                                            |   :width: 550px                                                                    |
 |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_6.png                |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_korr_6.png   |
 |                                                                                            |                                                                                    |
-|   ``BB.geschlossener_Wald`` ist zu korrigieren, weil die Lagedifferenz                     |   ``BB.geschlossener_Wald`` ist zu korrigieren gemäss den rot dargestellten Linie. |
+|   ``BB.geschlossener_Wald`` ist zu korrigieren, weil die Lagedifferenz                     |   ``BB.geschlossener_Wald`` ist zu korrigieren gemäss der rot dargestellten Linie. |
 |   grösser als die Toleranz (TS3: 6.0 m) und Interpretationsgenauigkeit ist.                |                                                                                    |
 +--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+ 
 |.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_iO_2:                                |.. _bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_iO:                          | 
@@ -109,7 +109,7 @@ Beispiele:
 |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_iO_2.png             |   :target: _static/bestockte_Flaeche_geschlossener_Wald_Lagedifferenz_iO.png       |
 |                                                                                            |                                                                                    |
 |   ``BB.geschlossener_Wald`` ist **nicht** zu korrigieren, weil die                         |   ``BB.geschlossener_Wald`` ist **nicht** zu korrigieren, weil die                 |
-|   Lagedifferenz  kleiner als die Toleranz (TS3: 6.0 m).                                    |   Lagedifferenz  kleiner als die Toleranz (TS3: 6.0 m) und                         |
+|   Lagedifferenz  kleiner als die Toleranz (TS3: 6.0 m).                                    |   Lagedifferenz kleiner als die Toleranz (TS3: 6.0 m).                             |
 +--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+ 
                                                                                                                                                                                        
 
