@@ -692,7 +692,7 @@ Benötigte Layer in QGIS:
 
 Objekt löschen  
 ^^^^^^^^^^^^^^
-Auf dem Orthotofoto nicht mehr sichtbare und im Datensatz des Amtes für Umwelt nicht vorhandene Reservoir sind zu löschen.
+Nicht mehr vorhandene Reservoirs sind zu löschen. Eine Feldkontrolle ist nur durchzuführen falls die Situation auf dem Orthofoto nicht klar ist und im AfU-Datensatz kein Reservoir mehr vorhanden ist.
 
 
 Objekt umattribuieren  
