@@ -367,10 +367,9 @@ Benötigte Layer in QGIS:
     
     Strasse / Lagekontrolle 
 
-Objekt fehlt/umattribuieren/löschen   
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                  
-Falls ``BB.Strasse_Weg`` durch einen Tunnel, Galerie oder Unterführung unterbrochen wird, darf das ``EO.Tunnel_Unterführung_Galerie`` nicht fehlen. 
-Objekte die in der AV als ``EO.Tunnel_Unterfuehrung_Galerie`` erfasst sind, aber gemäss Handbuch nicht zu ``EO.Tunnel_Unterfuehrung_Galerie`` gehören, sind umzuattribuieren oder zu löschen.
+Objekt fehlt   
+^^^^^^^^^^^^                  
+Falls ``BB.Strasse_Weg`` durch einen Tunnel, Galerie oder Unterführung unterbrochen wird, darf das ``EO.Tunnel_Unterführung_Galerie`` nicht fehlen.    
 
 Benötigte Layer in QGIS:
 
@@ -380,15 +379,39 @@ Benötigte Layer in QGIS:
 
 Darstellung nicht nach Richtlinie    
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
-Falls in der AV  nicht jede Röhre des Tunnels Einzel dargestellt ist, wird dies im Rahmen der PNF/Homogenisierung **nicht** korrigiert. Befinden sich im Tunnel Trottoirs und / oder Fahrradwege, die gegenüber der Autofahrbahn einen
-Niveauunterschied aufweisen, so sind diese Abgrenzungen mit einem Linienelement zu erheben. ??? so machen?? oder keine Änderung??
-    
+Falls in der AV  nicht jede Röhre des Tunnels Einzel dargestellt ist, wird dies im Rahmen der PNF/Homogenisierung **nicht** korrigiert.     
 
 Benötigte Layer in QGIS:
 
 .. code-block:: none
     
-    Strasse / Lagekontrolle            
+    Strasse / Lagekontrolle 
+
+EO.Pfeiler    
+----------
+.. index:: Pfeiler
+
+Lagekontrolle             
+^^^^^^^^^^^^^                                                                                                                                                                 
+Wird lediglich durch eine Plausibilitätsprüfung (z.B. liegen die Pfeiler innerhalb der ``EO.Brücke_Passerelle``) kontrolliert. Die Lage wird nicht mittels einer Feldkontrolle kontrolliert. Korrekturen in der Lage werden im Rahmen der PNF/Homogenisierung selten bis nie durchgeführt.       
+
+Benötigte Layer in QGIS:
+
+.. code-block:: none
+    
+    Strasse / Lagekontrolle 
+
+Objekt löschen   
+^^^^^^^^^^^^^^    
+Pfeiler mit einer Seitenlänge < 50cm sind aus der AV zu löschen      
+                                 
+
+Benötigte Layer in QGIS:
+    
+.. code-block:: none
+    
+    Strasse / Lagekontrolle                                                      
+    Strasse / Checklayer / Pfeiler<0.25m2                 
                                                     
 EO.Brücke_Passerelle                                   
 --------------------
@@ -405,51 +428,16 @@ Benötigte Layer in QGIS:
     Strasse / Lagekontrolle 
 
  
-Objekt fehlt/umattribuieren/löschen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Fehlende Objekte sind zu erfassen gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn*. Objekte die in der AV als ``EO.Brücke_Passerelle`` erfasst sind, aber gemäss Handbuch nicht zu ``EO.Brücke_Passerelle`` gehören, sind umzuattribuieren oder zu löschen.
-Benötigte Layer in QGIS:
-
-.. code-block:: none
-    
-    Strasse / Lagekontrolle 
-    
-Darstellung nicht nach Richtlinie    
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^       
-Bei Brücken gilt die Vogelperspektive. Eine Korrektur der Ausdehnung auf die Widerlager oder die liechte Weite wird **nicht** vorgenommen.    
-    
-.. code-block:: none
-    
-    Strasse / Lagekontrolle     
-    
-
-EO.Pfeiler    
-----------
-.. index:: Pfeiler
-
-Lagekontrolle             
-^^^^^^^^^^^^^                                                                                                                                                                 
-Wird lediglich durch eine Plausibilitätsprüfung (z.B. liegen die Pfeiler innerhalb der ``EO.Brücke_Passerelle``) kontrolliert. Die Lage wird nicht mittels einer Feldkontrolle kontrolliert. Korrekturen in der Lage werden im Rahmen der PNF/Homogenisierung selten bis nie durchgeführt.       
+Objekt fehlt/umattribuieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Fehlende Objekte sind zu erfassen gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn*. Falls die Brücke/Passerelle falsch attribuiert ist, ist dies entsprechend zu korrigieren.       
 
 Benötigte Layer in QGIS:
 
 .. code-block:: none
     
     Strasse / Lagekontrolle 
-
-Objekt fehlt/umattribuieren/löschen/Darstellung nicht nach Richtlinie  
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
-Im Rahmen der PNF/Homogenisierung werden **keine** neuen ``EO.Pfeiler`` erfasst. Pfeiler mit einer Seitenlänge < 50cm sind aus der AV zu löschen. Pfeiler die nicht der richtigen Art zugewiesen sind, sind umzuattribuieren.      
-                                 
-
-Benötigte Layer in QGIS:
-    
-.. code-block:: none
-    
-    Strasse / Lagekontrolle                                                      
-    Strasse / Checklayer / Pfeiler<0.25m2       
-     
-    
+                                         
 EO.schmaler_Weg
 ---------------   
 
@@ -507,15 +495,7 @@ Benötigte Layer in QGIS:
 .. code-block:: none
 
    Strasse / Checklayer / EO.schmaler_Weg in TS 2   
-
-    
-Darstellung nicht nach Richtlinie    
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^       
-Der Elemententyp bei ``EO.schmaler_Weg`` ist Linienelement.  
-    
-.. code-block:: none
-    
-    Strasse / Lagekontrolle      
+              
 
 EO.Fahrspur                     
 ----------- 
@@ -581,12 +561,5 @@ Beispiele:
 |                                                                                      |    ab dem Orthofoto zu digitalisieren                                                   |
 +--------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+ 
         
-    
-Darstellung nicht nach Richtlinie    
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^       
-Der Elemententyp bei ``EO.Fahrspur`` ist Flächenelement.  
-    
-.. code-block:: none
-    
-    Strasse / Lagekontrolle      
+|
 

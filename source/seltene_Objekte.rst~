@@ -168,7 +168,7 @@ Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.
 
    
 BB.Fels / BB.Geroell_Sand / übrige vegetationslose    
--------------------------------------------------- 
+------------------------------------------------- 
 Lagedifferenz                                                              
 ^^^^^^^^^^^^^  
 Möglichkeiten ??????????
@@ -322,7 +322,7 @@ Benötigte Layer im QGIS:
 Beispiele:
 
 +-------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
-|.. _seltene_Objekte_Mast_Leitung_Richtlinien:                                        |.. _seltene_Objekte_Mast_Leitung_Richtlinien2:                                      |
+|.. _seltene_Objekte_Mast_Leitung_Richtlinien:                                        |.. _seltene_Objekte_Mast_Leitung_Richtlinien:                                       |
 |                                                                                     |                                                                                    |
 |.. figure:: _static/seltene_Objekte_Mast_Leitung_Richtlinien.png                     |.. figure:: _static/seltene_Objekte_Mast_Leitung_Richtlinien2.png                   |
 |   :width: 550px                                                                     |   :width: 550px                                                                    |
