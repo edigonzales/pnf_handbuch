@@ -139,6 +139,11 @@ Beispiele:
 BB.Wasserbecken
 ---------------
 
+Lagedifferenz  
+^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
 Objekt fehlt/löschen
 ^^^^^^^^^^^^^^^^^^^^
 Fehlende Wasserbecken und Schwimmteiche sind gemäss Kriterien des *Handbuches der amtlichen Vermessung Kanton Solothurn* zu erfassen. Falsch erfasste (z.B. zu kleine oder oberirdische Bassins aus Kunststoff, Holz etc.) sind zu löschen. Mauern um das Wasserbecken sind zu löschen.
@@ -172,6 +177,43 @@ Beispiele:
 |                                                                     |   entspricht alter Abgrenzung).                                       |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
+Objekt umattribuieren  
+^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
+BB.Lagerplatz
+-------------
+
+Lagedifferenz / Objekt fehlt
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Massive Lagedifferenzen resp. fehlende Lagerplätze sind nur bei Industrieanlagen o.ä. zu korrigieren resp. zu erfassen. Nicht erfasst werden fehlende Miststöcke etc.
+
+Benötigte Layer in QGIS:
+
+.. code-block:: none
+
+   Bebautes Gebiet / Lagekontrolle
+
+Beispiel:
+
+.. _fig_bebaut_40:
+
+.. figure:: _static/Bebaut_Lagerplatz_Lagedifferenz.png
+   :width: 550px
+   :target: _static/Bebaut_Lagerplatz_Lagedifferenz.png
+
+   Die Lagedifferenz ist zu korrigieren.
+
+
+Objekt löschen / Objekt umattribuieren / Darstellung nicht nach Richtlinie
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Lagerplätze, die als Gebäudeerschliessung attribuiert sind, werden **nicht** als Lagerplatz ausgeschieden.
 
 
 BB.Gebaeudeerschliessung
@@ -223,9 +265,9 @@ Beispiel:
    Bei beiden Gebäuden fehlt die Gebäuderschliessung.
 
 
-Objekt umattribuieren
-^^^^^^^^^^^^^^^^^^^^^
-???? Wäre so ein Fall. In Zuchwil ist Garten als Geb.erschliessung erfasst. Geometrisch korrekt. -> Müssen wir das hier explizit schreiben??
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 
 BB.Parkplatz
@@ -256,7 +298,8 @@ Beispiele:
 
 Objekt fehlt
 ^^^^^^^^^^^^
-???? Gibts fehlende Parkplätze???
+Fehlende Parkplätze, die als Gebäudeerschliessung attribuiert sind, werden nicht umattribuiert.
+
 
 Objekt umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^
@@ -278,10 +321,16 @@ Beispiele:
 |   :width: 550px                                                     |   :width: 550px                                                       |
 |   :target: _static/Bebaut_Parkplatz_loeschen.png                    |   :target: _static/Bebaut_Parkplatz_nicht_loeschen.png                |
 |                                                                     |                                                                       |
-|   ``BB.Parkplatz`` ist kleiner 100 m2 und wird zu                   |   Der westliche Teil des Parkplatzes ist kleiner 100 m2. Er wird      |
-|   ``BB.Gebaeudeerschliessung``umattribuiert.                        |   **nicht** umattribuiert, da er mit dem östlichen Teil eine Einheit  |
+|   ``BB.Parkplatz`` ist kleiner 100 m2 und wird zu                   |   Der östliche Teil des Parkplatzes ist kleiner 100 m2. Er wird       |
+|   ``BB.Gebaeudeerschliessung``umattribuiert.                        |   **nicht** umattribuiert, da er mit dem westlichen Teil eine Einheit |
 |                                                                     |   bildet.                                                             |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
+
+
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
 
 
 BB.uebrige_befestigte
@@ -296,6 +345,11 @@ Benötigte Layer in QGIS:
 .. code-block:: none
 
    Bebautes Gebiet / Lagekontrolle
+
+
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 
 BB.Gartenanlage
@@ -325,6 +379,7 @@ Beispiele:
 |   ``BB.Acker_Wiese`` ist zu löschen und alles ist als               |   ist falsch und gemäss roter Linie zu korrigieren.                   |
 |   ``BB.Gartenanlage`` zu attribuieren.                              |                                                                       |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
+
 
 Objekt fehlt
 ^^^^^^^^^^^^
@@ -357,9 +412,25 @@ Beispiele:
 |   Fehlende Gartenanlage ist **nicht** zu erfassen.                  |   Fehlende Gartenanlage ist **nicht** zu erfassen.                    |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
+Objekt umattribuieren  
+^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
 
 EO.Mauer
 --------
+
+Lagedifferenz
+^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+Objekt fehlt
+^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 Objekt löschen
 ^^^^^^^^^^^^^^
@@ -392,6 +463,10 @@ Benötigte Layer in QGIS:
 |                                                                     |   löschen.                                                            |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
+Objekt umattribuieren  
+^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
 Darstellung nicht nach Richtlinie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Die Modellbildung von Mauern ist zu kontrollieren und ggf. zu korrigieren. Jede Mauer (inkl. Anzug) entspricht einem EO.Objekt.
@@ -418,7 +493,7 @@ EO.unterirdisches_Gebaeude
 
 Lagefehler
 ^^^^^^^^^^
-Beispiele???? Gibts das??? (siehe Zuchwil, woher wissen?)
+Es sind lediglich Plausibilitätskontrollen möglich.
 
 Objekt fehlt
 ^^^^^^^^^^^^
@@ -451,9 +526,14 @@ Beispiel:
    Private Keller (``EO.unterirdisches_Gebaeude``) sind zu löschen.
 
 
+Objekt umattribuieren  
+^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
 Darstellung nicht nach Richtlinie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Scheibenstände sind als ``EO.unterirdisches_Gebaeude`` zu definieren. Jauchegrube?????
+Scheibenstände sind als ``EO.unterirdisches_Gebaeude`` zu definieren. 
 
 Benötigte Layer in QGIS:
 
@@ -464,6 +544,10 @@ Benötigte Layer in QGIS:
 
 EO.uebriger_Gebaeudeteil
 ------------------------
+
+Lagedifferenz  
+^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 Objekt löschen / fehlt / umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -515,6 +599,10 @@ Benötigte Layer in QGIS:
 EO.wichtige_Treppe
 ------------------
 
+Lagedifferenz
+^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
 Objekt fehlt
 ^^^^^^^^^^^^
 Wichtige Treppen bei öffentlichen Bauten und Anlagen sind zu erfassen.
@@ -559,6 +647,10 @@ Beispiele:
 |   Die Treppe ist zu löschen.                                        |   Die Treppe ist zu löschen.                                          |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
+Objekt umattribuieren  
+^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
 Darstellung nicht nach Richtlinie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Die Modellbildung von Treppen ist zu kontrollieren und ggf. zu korrigieren. Jede Treppe (inkl. einzelner Treppentritte) entspricht einem EO.Objekt.
@@ -594,6 +686,17 @@ Benötigte Layer in QGIS:
    Bebautes Gebiet / Lagekontrolle
    Bebautes Gebiet / Lagekontrolle / Reservoir (AfU)
 
+
+Objekt löschen  
+^^^^^^^^^^^^^^
+Auf dem Orthotofoto nicht mehr sichtbare und im Datensatz des Amtes für Umwelt nicht vorhandene Reservoir sind zu löschen.
+
+
+Objekt umattribuieren  
+^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
 Darstellung nicht nach Richtlinie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Der sichtbare Teil des Reservoirs muss als ``BB.Gebaeude``, der unsichtbare Teil als ``EO.Reservoir`` erfasst sein. Nicht korrekt erfasste Reservoirs sind zu korrigieren.
@@ -608,6 +711,11 @@ Benötigte Layer in QGIS:
 
 EO.Unterstand
 -------------
+
+Lagedifferenz
+^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
 
 Objekt fehlt
 ^^^^^^^^^^^^
@@ -629,6 +737,21 @@ Beispiel:
 
    Der Unterstand fehlt in der AV und ist aufnahmepflichtig.
 
+Objekt löschen  
+^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
+Objekt umattribuieren  
+^^^^^^^^^^^^^^^^^^^^^
+Siehe ``EO.uebriger_Gebaeudeteil``.
+
+
+Darstellung nicht nach Richtlinie
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
 
 EO.Silo_Turm_Gasometer
 ----------------------
@@ -643,8 +766,8 @@ Benötigte Layer in QGIS:
 
    Bebautes Gebiet / Lagekontrolle
 
-Umattribuieren
-^^^^^^^^^^^^^^
+Objekt umattribuieren
+^^^^^^^^^^^^^^^^^^^^^
 Silos ohne festes Fundament sind als Einzelobjekt zu erfassen. Silos mit festem Fundament sind als Gebäude im Topic BB zu erfassen.
 
 Benötigte Layer in QGIS:
@@ -664,6 +787,11 @@ Beispiel:
    Die Silos sind fest mit dem Boden verbunden und müssen im Topic BB als Gebäude erfasst werden.
 
 
+Darstellung nicht nach Richtlinie
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
 EO.alle
 -------
 Darstellung nicht nach Richtlinie
@@ -680,6 +808,11 @@ Benötigte Layer in QGIS:
 BB/EO.Objektname
 ----------------
 
+Lagedifferenz
+^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
 Objekt fehlt / Objekt löschen / Darstellung nicht nach Richtlinie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -692,6 +825,11 @@ Benötigte Layer in QGIS:
    Bebautes Gebiet / Lagekontrolle
    Bebautes Gebiet / Checklayer / BB.Objektname 'u.'
    Bebautes Gebiet / Checklayer / EO.Objektname 'u.'
+
+
+Objekt umattribuieren
+^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 
 Alle Objekte
