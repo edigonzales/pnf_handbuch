@@ -551,7 +551,9 @@ Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 Objekt löschen / fehlt / umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Freistehende** flächige übrige Gebäudeteile sind entweder zu löschen oder umzuattribuieren (z.B. ``EO.Unterstand``). Flächige übrige Gebäudeteile **innerhalb** eines Gebäudes sind in ein EO.Linienobjekt umzuattribuieren. EO.Linienelemente der Art ``EO.uebriger_Gebaeudeteil`` **ausserhalb** von Gebäuden sind entweder zu löschen oder in ein EO.Flächenelement zumzuwandeln.
+**Freistehende** flächige übrige Gebäudeteile sind entweder zu löschen oder umzuattribuieren (z.B. ``EO.Unterstand``). Flächige übrige Gebäudeteile **innerhalb** eines Gebäudes sind in ein EO.Linienobjekt umzuattribuieren. EO.Linienelemente der Art ``EO.uebriger_Gebaeudeteil`` **ausserhalb** von Gebäuden sind entweder zu löschen oder in ein EO.Flächenelement zumzuwandeln. 
+
+Zu kleine Zwischenstützen sowie nicht plausible Kleinstobjekte sind zu löschen (Layer: EO.Flächenelement < 1.5 m2).
 
 Benötigte Layer in QGIS:
 
@@ -561,6 +563,7 @@ Benötigte Layer in QGIS:
    Bebautes Gebiet / Checklayer / EO.Flächenelement 'übrig. Geb.teil' freistehend   
    Bebautes Gebiet / Checklayer / EO.Linienelement 'übrig. Geb.teil' ausserhalb Gebäude
    Bebautes Gebiet / Checklayer / EO.Flächenelement 'übrig. Geb.teil' innerhalb Gebäude
+   Bebautes Gebiet / Checklayer / EO.Flächenelement < 1.5 m2
 
 Beispiele:
 
