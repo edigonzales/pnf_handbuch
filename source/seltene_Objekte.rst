@@ -7,11 +7,12 @@ Topic  		    Art
 ==================  =====================================    
 Bodenbedeckung      Sportanlage_befestigt 
 Bodenbedeckung      Boeschungsbauwerke
-Bodenbedeckung      Sportanlage_humusiert
+Bodenbedeckung      Parkanlage_humusiert   
+Bodenbedeckung      Sportanlage_humusiert 
 Bodenbedeckung      Friedhof
 Bodenbedeckung      Hoch_Flachmoor
-Bodenbedeckung      uebrige_humusierte
-Bodenbedeckung      Parkanlage_bestockt
+Bodenbedeckung      uebrige_humusierte       
+Bodenbedeckung      Parkanlage_bestockt 
 Bodenbedeckung      Fels
 Bodenbedeckung      Geroell, Sand
 Bodenbedeckung      uebrige_vegetationslose
@@ -94,6 +95,11 @@ Benötigte Layer im QGIS:
 
    Seltene Objekte / Lagekontrolle  
 
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
+Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.            
+                                                                               
+   
 BB.Böschungsbauwerk 
 -------------------
 Lagedifferenz
@@ -119,6 +125,11 @@ Benötigte Layer im QGIS:
    Seltene Objekte / Checklayer / BB.Boeschungsbauwerk       
                                                           
 
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
+Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.   
+   
+   
 
 BB.Hoch_Flachmoor       
 -----------------
@@ -151,6 +162,11 @@ Benötigte Layer im QGIS:
 .. note::
    Es gibt keine kantonalen Hochmoore.                                                           
 
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
+Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.   
+
+   
 BB.Fels / BB.Geroell_Sand / übrige vegetationslose    
 ------------------------------------------------- 
 Lagedifferenz                                                              
@@ -170,19 +186,23 @@ Benötigte Layer im QGIS:
 
 Objekt fehlt/löschen/umattribuieren   
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto eine Fläche mit Fels, Geröll oder übrigen Vegetationslosen zu erkennen, die das Flächenkriterium erfüllt, ist diese im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV eine Fläche mit Fels, Geröll oder übrigen vegetationslos vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen.
+Ist auf dem aktuellen Orthofoto eine Fläche mit Fels, Geröll oder übrigen Vegetationslosen zu erkennen, die das Aufnahmekriterium gemäss ... erfüllt???, ist diese im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV eine Fläche mit Fels, Geröll oder übrigen vegetationslos vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen.
 
-????ACHTUNG: Abgrenzung zu Lagedifferenz, falls diese nicht korrigiert wird.
+????ACHTUNG: Abgrenzung zu Lagedifferenz, falls diese nicht korrigiert wird.                                      
 
 Benötigte Layer im QGIS:    
 
 .. code-block:: none
 
-   Seltene Objekte / Lagekontrolle   
-
+   Seltene Objekte / Lagekontrolle          
+   
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
+Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.       
+                      
   
 BB.Steinbruch / BB.Kiesgrube / BB.uebriger_Abbau / BB.Deponie
--------------------------------------------------------------
+-------------------------------------------------------------                
 
 Lagedifferenz  
 ^^^^^^^^^^^^^             
@@ -198,7 +218,7 @@ Benötigte Layer im QGIS:
    Seltene Objekte / Lagekontrolle   
 
    
-Objekt fehlt/löschen/umattribuieren   
+Objekt fehlt/löschen/umattribuieren                                                                      
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
 
 Ist auf dem aktuellen Orthofoto ein Steinbruch, Kiesgrube, übriger Abbau oder eine Deponie zu erkennen, die/der das Flächenkriterium erfüllt, ist diese/ dieser im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV ein Steinbruch, Kiesgrube, übriger Abbau oder eine Deponie vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder nicht mehr bewirtschaftet wird, ist dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen. 
@@ -216,19 +236,31 @@ Benötigte Layer im QGIS:
    Seltene Objekte / Lagekontrolle 
    Seltene Objekte / Lagekontrolle / Abbaustellen (AFU)
 
-EO.Brunnen
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
+Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.          
+                          
+   
+EO.Brunnen                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 ----------
-
-Objekt fehlt/ löschen
-^^^^^^^^^^^^^^^^^^^^^
-Brunnen mit öffentlichen Charakter, die in der AV nicht vorhanden sind, werden im Rahmen der PNF/Homogenisierung **nicht** erfasst. Private Brunnen die in der AV erfasst sind, sind zu löschen.
+Lagedifferenz                                                                                    
+^^^^^^^^^^^^^                                                               
+Im Rahmen der PNF/Homogenisierung werden keine Lagedifferenzen korrigiert. Sind Lagedifferenzen vorhanden die mittels Orthofoto ermittelt werden können, ist der ``EO.Brunnen`` zu löschen???    
+                                                                                                  
+Objekt fehlt/ löschen   
+^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                              
+Brunnen mit öffentlichen Charakter, die in der AV nicht vorhanden sind, werden im Rahmen der PNF/Homogenisierung **nicht** erfasst. Private Brunnen die in der AV erfasst sind, sind zu löschen.      
 
 Benötigte Layer im QGIS:    
 
 .. code-block:: none
 
    Seltene Objekte / Lagekontrolle   
-   
+                                              
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
+Darzustellen ist die äusseren Umrandung der Brunnen inkl. Brunnenstock (siehe *Handbuch der amtlichen Vermessung Kanton Solothurn*). Falls mehr Details (z.B. Brunnenstock einzel oder Füllbereich) des Brunnen dargestellt sind, sind diese zu korrigieren. ?????            
+
 
 EO.Mast_Antenne / EO. Mast_Leitung/ EO.Hochspannungsfreileitung
 ---------------------------------------------------------------
@@ -254,17 +286,17 @@ Beispiel:
       
    
   
-Objekt fehlt/löschen
-^^^^^^^^^^^^^^^^^^^^^
+Objekt fehlt/löschen/umattribuieren   
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    
 .. |pfeil| image:: _static/pfeil.png
 
 |  Zur Vollständigkeitskontrolle der Hochspannungsfreileitung und deren Masten kann der Layer "Freileitungen (ARP)" verwendet werden. In QGIS ist mit dem Abfragetool (|pfeil| auf Objekt klicken ) das Attribut "voltage" zu überprüfen. Nur Leitungen mit > 50kV werden in der AV geführt. 
    Hochspannungsfreileitungen und deren Masten, die auf dem aktuellen Orthofoto nicht mehr vorhandnen sind oder bei deren die Spannung der Hochspannungsfreileitung < 50kV ist, sind zu löschen.
 |  Als Volständigkeitskontrolle der Antennen dienen die Daten der Radio-/Fernsehsender und Mobilfunkantennen des Bundes. Auch hier sind die Objekte, die auf dem aktuellen Orthofoto nicht mehr zu erkennen sind, zu löschen.
 |  Fehlende Masten bei Gondelbahnen und Sesselbahnen sind zu erfassen. Hingegen sind die erfassten Masten bei Materialseilbahnen und Skilifte zu löschen.
-
-
-
+|  Objekte mit falscher Art sind umzuattribuieren.
+                                                                        
+        
 Benötigte Layer im QGIS:       
 
 .. code-block:: none   
@@ -275,7 +307,7 @@ Benötigte Layer im QGIS:
    Seltene Objekte / Lagekontrolle / Mobilfunkantennen UMTS
    Seltene Objekte / Lagekontrolle / Mobilfunkantennen GSM
 
-
+   
 Darstellung nicht nach Richtlinie 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Objekte der Arten ``EO.Mast_Antenne``, ``EO.Mast_Leitung`` und ``EO.Hochspannungsfreileitung``, die nicht gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* dargestellt sind, sind dementsprechend zu korrigieren.
@@ -301,12 +333,15 @@ Beispiele:
 
 EO.einzelner_Fels
 -----------------                                                                      
+ 
+Im Rahmen der PNF/Homogenisierung werden keine Lagedifferenzen korrigiert.  ????         
+                                                                           
 
 Objekt fehlt/löschen
 ^^^^^^^^^^^^^^^^^^^^^ 
 Es werden keine **neuen** Objekte der Art ``EO.einzelner_Fels`` erfasst. Falls in der AV Objekte der Art ``EO.Einzelner Fels`` vorhanden sind, die keine erratische Blöcke oder kein wichtiger Einzelsfels sind, sind diese aus der AV zu löschen.
 
-EO. Gondelbahn_Sesselbahn / EO. Materialseilbahn / EO.Skilift
+EO. Gondelbahn_Sesselbahn / EO. Materialseilbahn / EO.Skilift 
 -------------------------------------------------------------
 
 Lagedifferenz                                                                                                                                                               
@@ -319,7 +354,7 @@ Benötigte Layer im QGIS:
 
    Seltene Objekte / Lagekontrolle   
 
-Objekt fehlt/löschen/umattribuieren   
+Objekt fehlt/löschen/umattribuieren    
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
 Ist auf dem aktuellen Orthofoto eine Gondelbahn, Sesselbahn, Materialseilbahn oder ein Skilift zu erkennen, die nicht in der AV ist, ist diese/dieser im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV eine Gondelbahn, Sesselbahn, Materialseilbahn oder ein Skilift vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder nicht mehr bewirtschaftet wird, ist dieses Objekt zu löschen oder evtl. einer anderen EO.Art zu zuweisen.
 
@@ -327,8 +362,13 @@ Benötigte Layer im QGIS:
 
 .. code-block:: none   
 
-   Seltene Objekte / Lagekontrolle  
-
+   Seltene Objekte / Lagekontrolle        
+   
+Darstellung nicht nach Richtlinie 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Der Elemententyp ist Linienelement.      
+                                                                                                                                                                           
+               
    
 EO. Aussichtsturm / EO.Hochkamin / EO.Uferverbauung / EO.Lawinenverbauung / EO.massiver Sockel / EO.Ruine_archaeologisches_Objekt / EO.Landungssteg
 ---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -348,19 +388,24 @@ Objekt fehlt/löschen/umattribuieren
 Ist auf dem aktuellen Orthofoto eine Objekt zu erkennen, das nicht in der AV ist, ist dieses im Rahmen der PNF/Homogenisierung **nicht** neu zu erfassen. Falls in der AV ein Objekt vorhanden ist, welches auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder den Aufnahmekriterien gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht genügt, ist dieses Objekt zu löschen oder evtl. einer anderen EO.Art zu zuweisen.
 
 Benötigte Layer im QGIS:       
-
+                                                                                                                                                                  
 .. code-block:: none   
 
-   Seltene Objekte / Lagekontrolle  
+   Seltene Objekte / Lagekontrolle      
    
-
+Darstellung nicht nach Richtlinie    
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        
+Darstellung ist zu korrigieren falls sie vom *Handbuch der amtlichen Vermessung Kanton Solothurn* abweicht ??? von KKVA übernehmen in SO Handbuch steht nichts????   
+   
+   
+                                                                                                 
 EO.Denkmal / EO.Grotte_Hoehleneingang / EO.wichtiger_Einzelbaum / EO.Kruzifix_Bildstock
 ---------------------------------------------------------------------------------------
 
 Lagedifferenz                                                                                                                                                               
 ^^^^^^^^^^^^^
 Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
-
+                                                                                                                      
 Benötigte Layer im QGIS:       
 
 .. code-block:: none   
@@ -375,7 +420,11 @@ Benötigte Layer im QGIS:
 
 .. code-block:: none   
 
-   Seltene Objekte / Lagekontrolle    
+   Seltene Objekte / Lagekontrolle       
+
+Darstellung nicht nach Richtlinie    
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^         
+Darstellung ist zu korrigieren falls sie vom *Handbuch der amtlichen Vermessung Kanton Solothurn* abweicht ??? von KKVA übernehmen in SO Handbuch steht nichts????     
 
 EO. Druckleitung / EO.Faehre / EO. Achse
 ----------------------------------------
@@ -399,7 +448,9 @@ Benötigte Layer im QGIS:
 
    Seltene Objekte / Lagekontrolle    
 
-|
+Darstellung nicht nach Richtlinie    
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^         
+Darstellung ist zu korrigieren falls sie vom *Handbuch der amtlichen Vermessung Kanton Solothurn* abweicht ??? von KKVA übernehmen in SO Handbuch steht nichts????     |  
 
 
 

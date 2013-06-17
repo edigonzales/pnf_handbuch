@@ -172,6 +172,9 @@ Beispiele:
 |   Länge von 20 m zu ``BB.geschlossener_Wald``.                              |                                                                                    |
 +-----------------------------------------------------------------------------+------------------------------------------------------------------------------------+
 
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
+Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.
  
 
 BB.uebrige_Bestockte
@@ -221,6 +224,11 @@ Benötigende Layer im QGIS:
 
    Bestockte Fläche / Lagekontrolle  
 
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
+Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.   
+   
+   
    
 BB.Parkanlage_bestockt
 ----------------------
@@ -305,10 +313,17 @@ Beispiel:
                                                                   
    ``BB.Hecke`` ist umzuattribuieren in ``BB.geschlossener Wald``. Weil die Bachbreite kleiner 4m ist, wird die Bestockung als zusammenhängende Einheit betrachtet.
 
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
+Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.   
+   
+   
 EO.schmale_bestockte_Fläche
 ---------------------------
 .. index:: schmale bestockte Fläche                                                             
-  
+
+In den Daten der AV dürfen keine Objekte mit der Art ``EO.schmale_bestockte_Fläche`` erfasst sein.
+
 Objekt löschen
 ^^^^^^^^^^^^^^
                        
