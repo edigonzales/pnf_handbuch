@@ -169,6 +169,10 @@ Beispiele:
 |   ``BB.Gartenanlage`` zu attribuieren.                              |                                                                       |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
+Objekt löschen
+^^^^^^^^^^^^^^
+Sind in der AV Gartenanlagen  erfasst, die gemäss Kriterium *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht zu ``BB.Gartenanlage`` gehören, sind die Objekte löschen resp. umzuattribuieren.
+
 
 Objekt fehlt
 ^^^^^^^^^^^^

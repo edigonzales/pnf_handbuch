@@ -1,5 +1,7 @@
 Seltene Objekte
 ===============
+.. index:: seltene Objekte
+
 In dieser Mängelgruppe werden Objekte überprüft, die eher selten vorkommen. Folgende Objekte werden geprüft:
 
 ==================  =====================================    
@@ -48,6 +50,7 @@ Einzelobjekt        weitere
 
 BB.Sportanlage_befestigt / BB.Sportanlage_humusiert / BB.Friedhof / BB.Parkanlage_humusiert / BB.Parkanlage_bestockt / BB.uebrige_humusierte
 --------------------------------------------------------------------------------------------------------------------------------------------
+.. index:: Sportanlage_befestigt, Sportanlage_humusiert, Friedhof, Parkanlage_humusiert, Parkanlage_bestockt, übrige humusierte
 
 Lagedifferenz
 ^^^^^^^^^^^^^
@@ -100,8 +103,10 @@ Darstellung nicht nach Richtlinie
 Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.            
                                                                                
    
-BB.Böschungsbauwerk 
+BB.Boeschungsbauwerk 
 -------------------
+.. index:: Boeschungsbauwerk
+
 Lagedifferenz
 ^^^^^^^^^^^^^
 Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst.   
@@ -133,6 +138,8 @@ Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.
 
 BB.Hoch_Flachmoor       
 -----------------
+.. index:: Hochmoor, Flachmoor
+
 Lagedifferenz                                                                                                                                                               
 ^^^^^^^^^^^^^
 Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst.   
@@ -169,6 +176,9 @@ Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.
    
 BB.Fels / BB.Geroell_Sand / BB.uebrige_vegetationslose    
 ------------------------------------------------------ 
+.. index:: Fels, Geröll, Sand, übrige vegetationslose
+
+
 Lagedifferenz                                                              
 ^^^^^^^^^^^^^  
 Möglichkeiten ??????????
@@ -203,6 +213,7 @@ Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.
   
 BB.Steinbruch / BB.Kiesgrube / BB.uebriger_Abbau / BB.Deponie
 -------------------------------------------------------------                
+.. index:: Steinbruch, Kiesgrube, übriger Abbau, Deponie
 
 Lagedifferenz  
 ^^^^^^^^^^^^^             
@@ -243,6 +254,8 @@ Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.
    
 EO.Brunnen                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 ----------
+.. index:: Brunnen
+
 Lagedifferenz                                                                                    
 ^^^^^^^^^^^^^                                                               
 Im Rahmen der PNF/Homogenisierung werden keine Lagedifferenzen korrigiert. Sind Lagedifferenzen vorhanden die mittels Orthofoto ermittelt werden können, ist der ``EO.Brunnen`` zu löschen???    
@@ -263,7 +276,9 @@ Darzustellen ist die äusseren Umrandung der Brunnen inkl. Brunnenstock (siehe *
 
 
 EO.Mast_Antenne / EO. Mast_Leitung / EO.Hochspannungsfreileitung
----------------------------------------------------------------
+----------------------------------------------------------------
+.. index:: Mast_Antenne, Mast_Leitung, Antenne, Leitung, Hochspannungsfreileitung
+
 Lagedifferenz                                                                                                                                                               
 ^^^^^^^^^^^^^
 Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
@@ -333,7 +348,8 @@ Beispiele:
 
 EO.einzelner_Fels
 -----------------                                                                      
- 
+.. index:: Fels, einzelner Fels 
+
 Im Rahmen der PNF/Homogenisierung werden keine Lagedifferenzen korrigiert.  ????         
                                                                            
 
@@ -372,6 +388,7 @@ Der Elemententyp ist Linienelement.
    
 EO. Aussichtsturm / EO.Hochkamin / EO.Uferverbauung / EO.Lawinenverbauung / EO.massiver Sockel / EO.Ruine_archaeologisches_Objekt / EO.Landungssteg
 ---------------------------------------------------------------------------------------------------------------------------------------------------
+.. index:: Aussichtsturm, Hochkamin, Uferverbauung, massiver Sockel, Ruine, archäologisches Objekt, Landungssteg
 
 Lagedifferenz                                                                                                                                                               
 ^^^^^^^^^^^^^
@@ -401,6 +418,7 @@ Darstellung ist zu korrigieren falls sie vom *Handbuch der amtlichen Vermessung 
                                                                                                  
 EO.Denkmal / EO.Grotte_Hoehleneingang / EO.wichtiger_Einzelbaum / EO.Kruzifix_Bildstock
 ---------------------------------------------------------------------------------------
+.. index:: Denkmal, Grotte, Höhleneingang, wichtiger Einzelbau, Einzelbaum, Kruzifix, Bildstock
 
 Lagedifferenz                                                                                                                                                               
 ^^^^^^^^^^^^^
