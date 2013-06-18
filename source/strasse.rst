@@ -140,6 +140,9 @@ Benötigte Layer in QGIS:
 
    Stasse / Checklayer / BB.Strasse_Weg>10000m2 
 
+
+.. _ref_strasse_mehrere_liegenschaften:
+
 BB.Strasse_Weg bei Erschliessung mehrerer Liegenschaften 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                                                                                                                                                                                                                                                        
@@ -171,13 +174,13 @@ Beispiele:
 
 +--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
 |.. _Strasse_Hofdurchfahrt:                                                            | .. _Strasse_ueber_mehrere_parz:                                                       |
-|                                                                                      |                                                                                       |                                                                                                   
+|                                                                                      |                                                                                       |
 |.. figure:: _static/Strasse_Hofdurchfahrt.png                                         | .. figure:: _static/Strasse_ueber_mehrere_parz.png                                    |
 |   :width: 550px                                                                      |    :width: 550px                                                                      |
 |   :target: _static/Strasse_Hofdurchfahrt.png                                         |    :target: _static/Strasse_ueber_mehrere_parz.png                                    |                              
 |                                                                                      |                                                                                       |
-|   ``BB.Strasse_Weg`` draf bei Hofdurchfahrten nicht unterbrochen sein.               |    ``BB.Strasse_Weg`` bei Erschliessung mehrerer Liegenschaften wird nicht korrigiert.|                                                                               
-|                                                                                      |                                                                                       |
+|   ``BB.Strasse_Weg`` darf bei Hofdurchfahrten nicht unterbrochen sein.               |    ``BB.Strasse_Weg`` bei Erschliessung mehrerer Liegenschaften wird nicht            |                                                                            
+|                                                                                      |    korrigiert.                                                                        |
 +--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+   
 |.. _Strasse_Strassenveraengung:                                                       | .. _Strasse_pave:                                                                     |
 |                                                                                      |                                                                                       | 
@@ -224,7 +227,7 @@ Beispiele:
 Objekt fehlt/löschen/umattribuieren      
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    
 
-Ist auf dem aktuellen Orthofoto ein Trottoir zu erkennen, das nicht in der AV vorhanden ist, ist dieses im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV ein Trottoir vorhanden ist, dass auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen. 
+Ist auf dem aktuellen Orthofoto ein Trottoir zu erkennen, das nicht in der AV vorhanden ist, ist dieses im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV ein Trottoir vorhanden ist, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen. 
 
 Benötigte Layer in QGIS:
 
@@ -270,8 +273,8 @@ Benötigte Layer in QGIS:
                                                                                                                                         
   Strasse/ Lagekontrolle                                                                                                                                                         
                                                                                                                                                                                                                                                                                         
-Objekt umattribieren
-^^^^^^^^^^^^^^^^^^^^ 
+Objekt umattribuieren
+^^^^^^^^^^^^^^^^^^^^^
 Verkehrsinseln sind komplett von ``BB.Strasse_Weg`` umgeben. Strassenverengungen, die humusiert sind, werden als ``BB.uebrige_humusierte`` attribuiert.
 Bei humusierten Trennstreifen z.B. bei Autobahnen oder zwischen Strassen und z.B. Radwegen ist die Bodenbedeckung ``BB.uebrige_humusierte`` und **nicht** ``BB.Verkehrsinsel``.
 
@@ -416,7 +419,7 @@ Benötigte Layer in QGIS:
     
 Darstellung nicht nach Richtlinie    
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^       
-Bei Brücken gilt die Vogelperspektive. Eine Korrektur der Ausdehnung auf die Widerlager oder die liechte Weite wird **nicht** vorgenommen.    
+Bei Brücken gilt die Vogelperspektive. Eine Korrektur der Ausdehnung auf die Widerlager oder die lichte Weite wird **nicht** vorgenommen.    
     
 .. code-block:: none
     

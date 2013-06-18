@@ -2,6 +2,8 @@
 
 Bebautes Gebiet
 ===============
+.. index:: bebautes Gebiet
+
 In dieser Mängelgruppe wird das bebaute Gebiet überprüft. Das bebaute Gebiet beinhaltet die TS2 und sämtliche Bauten inkl. Umschwung in der TS3 und TS4. Die Toleranzen bleiben TS-abhängig (siehe :ref:`ref_Tz`). Folgende Objekte werden geprüft:
 
 ==================  ==================
@@ -27,10 +29,11 @@ Einzelobjekt        Objektname
 
 BB.Gebaeude
 -----------
+.. index:: Gebäude
 
 Lagedifferenz
 ^^^^^^^^^^^^^
-Lagemässig fehlerhaft erfasste Gebäude (z.B. Verdrehungen des Grundrisses) zu korrigieren. Können die Gebäude nicht aus bestehenden Aufnahmen korrekt gerechnet werden, muss die Neuaufnahme terrestrisch erfolgen. 
+Lagemässig fehlerhaft erfasste Gebäude (z.B. Verdrehungen des Grundrisses) sind zu korrigieren. Verkippungen von Gebäuden in Orthofotos sind keine Lagedifferenzen. Können die Gebäude nicht aus bestehenden Aufnahmen korrekt gerechnet werden, muss die Neuaufnahme terrestrisch erfolgen. 
 
 .. note::
    Fehler aus der laufenden Nachführung können nicht über die PNF/Homogenisierung abgerechnet werden.
@@ -54,7 +57,7 @@ Beispiele:
 
 Objekt fehlt
 ^^^^^^^^^^^^
-Fehlende Gebäude müssen terrestrisch erfasst werden. Betreffend Aufnahmepflicht gelten die Regeln des *Handbuches der amtlichen Vermessung Kanton Solothurn*. Eventuell muss während der Feldkontrolle die Aufnahmepflicht überprüft werden.
+Fehlende Gebäude müssen terrestrisch erfasst werden. Betreffend Aufnahmepflicht gelten die Regeln des *Handbuches der amtlichen Vermessung Kanton Solothurn*. 
 
 .. note::
    Sofern das Gebäude **nicht** älter als 10 Jahre ist, muss es über die laufende Nachführung abgerechnet werden.
@@ -105,7 +108,7 @@ Benötigte Layer in QGIS:
 
 Darstellung nicht nach Richtlinie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Aneinandergebaute Gebäude sind korrekt zu unterteilen. Terassenhäuser werden als ein Gebäude erfasst und mittels ``EO.uebriger_Gebaeudeteil`` getrennt. 
+Aneinandergebaute Gebäude sind - falls sie mehrere Adressen haben und baulich möglich resp. die Unterteilung sichtbar ist - korrekt zu unterteilen. Terassenhäuser werden als ein Gebäude erfasst und mittels ``EO.uebriger_Gebaeudeteil`` getrennt. 
 
 Benötigte Layer in QGIS:
 
@@ -136,224 +139,10 @@ Beispiele:
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 
-BB.Wasserbecken
----------------
-
-Lagedifferenz  
-^^^^^^^^^^^^^
-Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
-
-
-Objekt fehlt/löschen
-^^^^^^^^^^^^^^^^^^^^
-Fehlende Wasserbecken und Schwimmteiche sind gemäss Kriterien des *Handbuches der amtlichen Vermessung Kanton Solothurn* zu erfassen. Falsch erfasste (z.B. zu kleine oder oberirdische Bassins aus Kunststoff, Holz etc.) sind zu löschen. Mauern um das Wasserbecken sind zu löschen.
-
-Benötigte Layer in QGIS:
-
-.. code-block:: none
-
-   Bebautes Gebiet / Lagekontrolle
-   Bebautes Gebiet / Checklayer / BB.Wasserbecken mit EO.Mauer
-
-Beispiele:
-
-+---------------------------------------------------------------------+-----------------------------------------------------------------------+
-|.. _fig_bebaut_8:                                                    |.. _fig_bebaut_9:                                                      |
-|                                                                     |                                                                       |
-|.. figure:: _static/Bebaut_Wasserbecken_aufnehmen.png                |.. figure:: _static/Bebaut_Wasserbecken_nicht_aufnehmen.png            |
-|   :width: 550px                                                     |   :width: 550px                                                       |
-|   :target: _static/Bebaut_Wasserbecken_aufnehmen.png                |   :target: _static/Bebaut_Wasserbecken_nicht_aufnehmen.png            |
-|                                                                     |                                                                       |
-|   ``BB.Wasserbecken`` fehlt und ist zu erfassen.                    |   ``BB.Wasserbecken`` ist mit grosser Wahrscheinlichkeit **nicht** zu |
-|                                                                     |   erfassen.                                                           |
-+---------------------------------------------------------------------+-----------------------------------------------------------------------+
-|.. _fig_bebaut_10:                                                   |.. _fig_bebaut_11:                                                     |
-|                                                                     |                                                                       |
-|.. figure:: _static/Bebaut_Wasserbecken_mit_Mauer_falsch.png         |.. figure:: _static/Bebaut_Wasserbecken_mit_Mauer_richtig.png          |
-|   :width: 550px                                                     |   :width: 550px                                                       |
-|   :target: _static/Bebaut_Wasserbecken_mit_Mauer_falsch.png         |   :target: _static/Bebaut_Wasserbecken_mit_Mauer_richtig.png          |
-|                                                                     |                                                                       |
-|   Mauern entlang des Wasserbeckens werden nicht erfasst.            |   ``BB.Wasserbecken`` gemäss roter Linie erfassen. (Blaue Linie       |
-|                                                                     |   entspricht alter Abgrenzung).                                       |
-+---------------------------------------------------------------------+-----------------------------------------------------------------------+
-
-Objekt umattribuieren  
-^^^^^^^^^^^^^^^^^^^^^
-Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
-
-
-Darstellung nicht nach Richtlinie  
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
-
-
-BB.Lagerplatz
--------------
-
-Lagedifferenz / Objekt fehlt
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Massive Lagedifferenzen resp. fehlende Lagerplätze sind nur bei Industrieanlagen o.ä. zu korrigieren resp. zu erfassen. Nicht erfasst werden fehlende Miststöcke etc.
-
-Benötigte Layer in QGIS:
-
-.. code-block:: none
-
-   Bebautes Gebiet / Lagekontrolle
-
-Beispiel:
-
-.. _fig_bebaut_40:
-
-.. figure:: _static/Bebaut_Lagerplatz_Lagedifferenz.png
-   :width: 550px
-   :target: _static/Bebaut_Lagerplatz_Lagedifferenz.png
-
-   Die Lagedifferenz ist zu korrigieren.
-
-
-Objekt löschen / Objekt umattribuieren / Darstellung nicht nach Richtlinie
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Lagerplätze, die als Gebäudeerschliessung attribuiert sind, werden **nicht** als Lagerplatz ausgeschieden.
-
-
-BB.Gebaeudeerschliessung
-------------------------
-
-Lagedifferenz
-^^^^^^^^^^^^^
-Es werden nur grobe Lagedifferenzen korrigiert.
-
-Benötigte Layer in QGIS:
-
-.. code-block:: none
-
-   Bebautes Gebiet / Lagekontrolle
-
-Beispiele:
-
-+---------------------------------------------------------------------+-----------------------------------------------------------------------+
-|.. _fig_bebaut_12:                                                   |.. _fig_bebaut_13:                                                     |
-|                                                                     |                                                                       |
-|.. figure:: _static/Bebaut_Geberschliessung_falsch.png               |.. figure:: _static/Bebaut_Geberschliessung_nicht_korrigieren.png      |
-|   :width: 550px                                                     |   :width: 550px                                                       |
-|   :target: _static/Bebaut_Geberschliessung_falsch.png               |   :target: _static/Bebaut_Geberschliessung_nicht_korrigieren.png      |
-|                                                                     |                                                                       |
-|   ``BB.Gebaeuderschliessung`` ist grob falsch und muss korrigiert   |   ``BB.Gebaeuderschliessung`` ist **nicht** grob falsch und muss      |
-|   werden.                                                           |   **nicht** korrigiert werden.                                        |
-+---------------------------------------------------------------------+-----------------------------------------------------------------------+
-
-
-Objekt fehlt
-^^^^^^^^^^^^
-Fehlende Gebäudeerschliessungen sind zu erfassen.
-
-Benötigte Layer in QGIS:
-
-.. code-block:: none
-
-   Bebautes Gebiet / Lagekontrolle
-   Bebautes Gebiet / Checklayer / BB.Gebaeude ohne Gartenanlage oder Erschliessung
-
-Beispiel:
-
-.. _fig_bebaut_14:
-
-.. figure:: _static/Bebaut_Geberschliessung_fehlt.png
-   :width: 550px
-   :target: _static/Bebaut_Geberschliessung_fehlt.png
-
-   Bei beiden Gebäuden fehlt die Gebäuderschliessung.
-
-
-Darstellung nicht nach Richtlinie  
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
-
-
-BB.Parkplatz
-------------
-
-Lagedifferenz
-^^^^^^^^^^^^^
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und der Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. 
-
-Benötigte Layer in QGIS:
-
-.. code-block:: none
-
-   Bebautes Gebiet / Lagekontrolle
-
-Beispiele:
-
-+---------------------------------------------------------------------+-----------------------------------------------------------------------+
-|.. _fig_bebaut_15:                                                   |.. _fig_bebaut_16:                                                     |
-|                                                                     |                                                                       |
-|.. figure:: _static/Bebaut_Parkplatz_Lagefehler1.png                 |.. figure:: _static/Bebaut_Parkplatz_Lagefehler2.png                   |
-|   :width: 550px                                                     |   :width: 550px                                                       |
-|   :target: _static/Bebaut_Parkplatz_Lagefehler1.png                 |   :target: _static/Bebaut_Parkplatz_Lagefehler2.png                   |
-|                                                                     |                                                                       |
-|   ``BB.Parkplatz`` falsch definiert und muss korrigiert werden.     |   ``BB.Parkplatz`` falsch definiert falsch und muss korrigiert werden.|
-|   Ein Teil ist als Gartenanlage erfasst                             |                                                                       |
-+---------------------------------------------------------------------+-----------------------------------------------------------------------+
-
-Objekt fehlt
-^^^^^^^^^^^^
-Fehlende Parkplätze, die als Gebäudeerschliessung attribuiert sind, werden nicht umattribuiert.
-
-
-Objekt umattribuieren
-^^^^^^^^^^^^^^^^^^^^^
-Parkplätze kleiner 100 m2 sind zu löschen resp. umzuattribuieren. Können z.B. durch Strassen getrennte Parkplätze als Einheit angesehen werden, werden jedoch einzelne Parkplätz kleiner 100 m2 nicht gelöscht.
-
-Benötigte Layer in QGIS:
-
-.. code-block:: none
-
-   Bebautes Gebiet / Lagekontrolle
-   Bebautes Gebiet / Checklayer / BB.Parkplatz < 100 m2 
-
-Beispiele:
-
-+---------------------------------------------------------------------+-----------------------------------------------------------------------+
-|.. _fig_bebaut_17:                                                   |.. _fig_bebaut_18:                                                     |
-|                                                                     |                                                                       |
-|.. figure:: _static/Bebaut_Parkplatz_loeschen.png                    |.. figure:: _static/Bebaut_Parkplatz_nicht_loeschen.png                |
-|   :width: 550px                                                     |   :width: 550px                                                       |
-|   :target: _static/Bebaut_Parkplatz_loeschen.png                    |   :target: _static/Bebaut_Parkplatz_nicht_loeschen.png                |
-|                                                                     |                                                                       |
-|   ``BB.Parkplatz`` ist kleiner 100 m2 und wird zu                   |   Der östliche Teil des Parkplatzes ist kleiner 100 m2. Er wird       |
-|   ``BB.Gebaeudeerschliessung``umattribuiert.                        |   **nicht** umattribuiert, da er mit dem westlichen Teil eine Einheit |
-|                                                                     |   bildet.                                                             |
-+---------------------------------------------------------------------+-----------------------------------------------------------------------+
-
-
-Darstellung nicht nach Richtlinie  
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
-
-
-
-BB.uebrige_befestigte
----------------------
-
-Lagedifferenz / Objekt fehlt
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Wird eine Lagedifferenz bei Panzersperren zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und der Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Das Objekt muss erfasst werden falls es in der amtlichen Vermessung fehlt.
-
-Benötigte Layer in QGIS:
-
-.. code-block:: none
-
-   Bebautes Gebiet / Lagekontrolle
-
-
-Darstellung nicht nach Richtlinie  
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
-
 
 BB.Gartenanlage
 ---------------
+.. index:: Gartenanlage
 
 Lagedifferenz
 ^^^^^^^^^^^^^
@@ -414,7 +203,239 @@ Beispiele:
 
 Objekt umattribuieren  
 ^^^^^^^^^^^^^^^^^^^^^
+Sind in der AV Gebäudeerschliessungen erfasst, die gemäss Kriterium *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht zu ``BB.Gebaeudeerschliessungen`` gehören, sind die Objekte umzuattribuieren
+
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
+BB.Wasserbecken
+---------------
+.. index:: Wasserbecken
+
+Lagedifferenz  
+^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
+Objekt fehlt/löschen
+^^^^^^^^^^^^^^^^^^^^
+Fehlende Wasserbecken und Schwimmteiche sind gemäss Kriterien des *Handbuches der amtlichen Vermessung Kanton Solothurn* zu erfassen. Falsch erfasste (z.B. zu kleine oder oberirdische Bassins aus Kunststoff, Holz etc.) sind zu löschen. Oberirdische Bassins sind womöglich am Schattenwurf auf dem Orthofoto zu erkennen.
+
+Benötigte Layer in QGIS:
+
+.. code-block:: none
+
+   Bebautes Gebiet / Lagekontrolle
+   Bebautes Gebiet / Checklayer / BB.Wasserbecken mit EO.Mauer
+
+Beispiele:
+
++---------------------------------------------------------------------+-----------------------------------------------------------------------+
+|.. _fig_bebaut_8:                                                    |.. _fig_bebaut_9:                                                      |
+|                                                                     |                                                                       |
+|.. figure:: _static/Bebaut_Wasserbecken_aufnehmen.png                |.. figure:: _static/Bebaut_Wasserbecken_nicht_aufnehmen.png            |
+|   :width: 550px                                                     |   :width: 550px                                                       |
+|   :target: _static/Bebaut_Wasserbecken_aufnehmen.png                |   :target: _static/Bebaut_Wasserbecken_nicht_aufnehmen.png            |
+|                                                                     |                                                                       |
+|   ``BB.Wasserbecken`` fehlt und ist zu erfassen.                    |   ``BB.Wasserbecken`` ist mit grosser Wahrscheinlichkeit **nicht** zu |
+|                                                                     |   erfassen.                                                           |
++---------------------------------------------------------------------+-----------------------------------------------------------------------+
+
+Objekt umattribuieren  
+^^^^^^^^^^^^^^^^^^^^^
+Schwimmteiche sind gemäss Kriterien des *Handbuches der amtlichen Vermessung Kanton Solothurn* zu umzuattribuieren.
+
+
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Mauern um das Wasserbecken sind zu löschen.
+
+Benötigte Layer in QGIS:
+
+.. code-block:: none
+
+   Bebautes Gebiet / Lagekontrolle
+   Bebautes Gebiet / Checklayer / BB.Wasserbecken mit EO.Mauer
+
+Beispiele:
+
++---------------------------------------------------------------------+ 
+|.. _fig_bebaut_10:                                                   | 
+|                                                                     |
+|.. figure:: _static/Bebaut_Wasserbecken_mit_Mauer_falsch.png         |
+|   :width: 550px                                                     |
+|   :target: _static/Bebaut_Wasserbecken_mit_Mauer_falsch.png         |
+|                                                                     |
+|   Mauern entlang des Wasserbeckens werden nicht erfasst und müssen  |
+|   gelöscht werden.                                                  |
++---------------------------------------------------------------------+
+
+
+BB.Lagerplatz
+-------------
+.. index:: Lagerplatz
+
+Lagedifferenz / Objekt fehlt
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Massive Lagedifferenzen resp. fehlende Lagerplätze sind nur bei Industrieanlagen o.ä. zu korrigieren resp. zu erfassen. Nicht erfasst werden fehlende Miststöcke etc.
+
+Benötigte Layer in QGIS:
+
+.. code-block:: none
+
+   Bebautes Gebiet / Lagekontrolle
+
+Beispiel:
+
+.. _fig_bebaut_40:
+
+.. figure:: _static/Bebaut_Lagerplatz_Lagedifferenz.png
+   :width: 550px
+   :target: _static/Bebaut_Lagerplatz_Lagedifferenz.png
+
+   Die Lagedifferenz ist zu korrigieren.
+
+
+Objekt löschen / Objekt umattribuieren / Darstellung nicht nach Richtlinie
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Lagerplätze, die als Gebäudeerschliessung attribuiert sind, werden **nicht** als Lagerplatz ausgeschieden. Falls in der AV ein Lagerplatz vorhanden ist, der auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieser Objekt zu löschen.
+
+
+BB.Gebaeudeerschliessung
+------------------------
+.. index:: Gebäudeerschliessung
+
+Lagedifferenz
+^^^^^^^^^^^^^
+Es werden nur grobe Lagedifferenzen korrigiert.
+
+Benötigte Layer in QGIS:
+
+.. code-block:: none
+
+   Bebautes Gebiet / Lagekontrolle
+
+Beispiele:
+
++---------------------------------------------------------------------+-----------------------------------------------------------------------+
+|.. _fig_bebaut_12:                                                   |.. _fig_bebaut_13:                                                     |
+|                                                                     |                                                                       |
+|.. figure:: _static/Bebaut_Geberschliessung_falsch.png               |.. figure:: _static/Bebaut_Geberschliessung_nicht_korrigieren.png      |
+|   :width: 550px                                                     |   :width: 550px                                                       |
+|   :target: _static/Bebaut_Geberschliessung_falsch.png               |   :target: _static/Bebaut_Geberschliessung_nicht_korrigieren.png      |
+|                                                                     |                                                                       |
+|   ``BB.Gebaeuderschliessung`` ist grob falsch und muss korrigiert   |   ``BB.Gebaeuderschliessung`` ist **nicht** grob falsch und muss      |
+|   werden.                                                           |   **nicht** korrigiert werden.                                        |
++---------------------------------------------------------------------+-----------------------------------------------------------------------+
+
+
+Objekt fehlt / Objekt löschen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Fehlende Gebäudeerschliessungen sind zu erfassen. Falls in der AV eine Gebäudeerschliessung vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist diese Objekt zu löschen.
+
+Benötigte Layer in QGIS:
+
+.. code-block:: none
+
+   Bebautes Gebiet / Lagekontrolle
+   Bebautes Gebiet / Checklayer / BB.Gebaeude ohne Gartenanlage oder Erschliessung
+
+Beispiel:
+
+.. _fig_bebaut_14:
+
+.. figure:: _static/Bebaut_Geberschliessung_fehlt.png
+   :width: 550px
+   :target: _static/Bebaut_Geberschliessung_fehlt.png
+
+   Bei beiden Gebäuden fehlt die Gebäuderschliessung.
+
+
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Siehe :ref:`ref_strasse_mehrere_liegenschaften`. 
+
+
+BB.Parkplatz
+------------
+.. index:: Parkplatz
+
+Lagedifferenz
+^^^^^^^^^^^^^
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und der Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. 
+
+Benötigte Layer in QGIS:
+
+.. code-block:: none
+
+   Bebautes Gebiet / Lagekontrolle
+
+Beispiele:
+
++---------------------------------------------------------------------+-----------------------------------------------------------------------+
+|.. _fig_bebaut_15:                                                   |.. _fig_bebaut_16:                                                     |
+|                                                                     |                                                                       |
+|.. figure:: _static/Bebaut_Parkplatz_Lagefehler1.png                 |.. figure:: _static/Bebaut_Parkplatz_Lagefehler2.png                   |
+|   :width: 550px                                                     |   :width: 550px                                                       |
+|   :target: _static/Bebaut_Parkplatz_Lagefehler1.png                 |   :target: _static/Bebaut_Parkplatz_Lagefehler2.png                   |
+|                                                                     |                                                                       |
+|   ``BB.Parkplatz`` falsch definiert und muss korrigiert werden.     |   ``BB.Parkplatz`` falsch definiert falsch und muss korrigiert werden.|
+|   Ein Teil ist als Gartenanlage erfasst                             |                                                                       |
++---------------------------------------------------------------------+-----------------------------------------------------------------------+
+
+Objekt fehlt / Objekt löschen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Fehlende Parkplätze, die als Gebäudeerschliessung attribuiert sind, werden nicht umattribuiert.
+
+
+Objekt umattribuieren
+^^^^^^^^^^^^^^^^^^^^^
+Parkplätze kleiner 100 m2 sind zu löschen resp. umzuattribuieren. Können z.B. durch Strassen getrennte Parkplätze als Einheit angesehen werden, werden jedoch einzelne Parkplätz kleiner 100 m2 nicht gelöscht.
+
+Benötigte Layer in QGIS:
+
+.. code-block:: none
+
+   Bebautes Gebiet / Lagekontrolle
+   Bebautes Gebiet / Checklayer / BB.Parkplatz < 100 m2 
+
+Beispiele:
+
++---------------------------------------------------------------------+-----------------------------------------------------------------------+
+|.. _fig_bebaut_17:                                                   |.. _fig_bebaut_18:                                                     |
+|                                                                     |                                                                       |
+|.. figure:: _static/Bebaut_Parkplatz_loeschen.png                    |.. figure:: _static/Bebaut_Parkplatz_nicht_loeschen.png                |
+|   :width: 550px                                                     |   :width: 550px                                                       |
+|   :target: _static/Bebaut_Parkplatz_loeschen.png                    |   :target: _static/Bebaut_Parkplatz_nicht_loeschen.png                |
+|                                                                     |                                                                       |
+|   ``BB.Parkplatz`` ist kleiner 100 m2 und wird zu                   |   Der östliche Teil des Parkplatzes ist kleiner 100 m2. Er wird       |
+|   ``BB.Gebaeudeerschliessung``umattribuiert.                        |   **nicht** umattribuiert, da er mit dem westlichen Teil eine Einheit |
+|                                                                     |   bildet.                                                             |
++---------------------------------------------------------------------+-----------------------------------------------------------------------+
+
+
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
+
+BB.uebrige_befestigte
+---------------------
+.. index:: übrige befestigte
+
+Lagedifferenz / Objekt fehlt
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Wird eine Lagedifferenz bei Panzersperren zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und der Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Das Objekt muss erfasst werden falls es in der amtlichen Vermessung fehlt.
+
+Benötigte Layer in QGIS:
+
+.. code-block:: none
+
+   Bebautes Gebiet / Lagekontrolle
+
 
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -434,7 +455,7 @@ Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 Objekt löschen
 ^^^^^^^^^^^^^^
-Mauern, die nicht den Erfassungsrichtlinien gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* entsprechen sind zu löschen. Freistehende Mauer-Linienelemente und Maueranzüge < 30 cm sind ebenfalls zu löschen.
+Mauern, die nicht den Erfassungsrichtlinien gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* entsprechen sind zu löschen. Freistehende Mauer-Linienelemente und Maueranzüge < 30 cm sind ebenfalls zu löschen. Sind in der AV Mauern erfasst, die gemäss Kriterium *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht zu ``EO.Mauer`` gehören, sind die Objekte zu löschen.
 
 Benötigte Layer in QGIS:
 
@@ -490,6 +511,7 @@ Beispiel:
 
 EO.unterirdisches_Gebaeude
 --------------------------
+.. index:: unterirdisches Gebäude
 
 Lagefehler
 ^^^^^^^^^^
@@ -507,7 +529,7 @@ Benötigte Layer in QGIS:
 
 Objekt löschen
 ^^^^^^^^^^^^^^
-Nicht aufnahmepflichte unterirdische Gebäude sind zu löschen.
+Nicht aufnahmepflichte oder nicht mehr vorhandene unterirdische Gebäude sind zu löschen.
 
 Benötigte Layer in QGIS:
 
@@ -515,24 +537,9 @@ Benötigte Layer in QGIS:
 
    Bebautes Gebiet / Lagekontrolle
 
-Beispiel:
-
-.. _fig_bebaut_30:
-
-.. figure:: _static/Bebaut_unterGebaude_loeschen.png
-   :width: 550px
-   :target: _static/Bebaut_unterGebaude_loeschen.png
-
-   Private Keller (``EO.unterirdisches_Gebaeude``) sind zu löschen.
-
 
 Objekt umattribuieren  
 ^^^^^^^^^^^^^^^^^^^^^
-Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
-
-
-Darstellung nicht nach Richtlinie
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Scheibenstände sind als ``EO.unterirdisches_Gebaeude`` zu definieren. 
 
 Benötigte Layer in QGIS:
@@ -542,12 +549,21 @@ Benötigte Layer in QGIS:
    Bebautes Gebiet / Lagekontrolle
 
 
+Darstellung nicht nach Richtlinie
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
 EO.uebriger_Gebaeudeteil
 ------------------------
+.. index:: übriger Gebäudeteil
 
 Lagedifferenz  
 ^^^^^^^^^^^^^
 Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
+.. _ref_eo_uebriger_gebteil_umattr:
 
 Objekt löschen / fehlt / umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -601,6 +617,7 @@ Benötigte Layer in QGIS:
 
 EO.wichtige_Treppe
 ------------------
+.. index:: wichtige Treppe, Treppe
 
 Lagedifferenz
 ^^^^^^^^^^^^^
@@ -667,10 +684,11 @@ Benötigte Layer in QGIS:
 
 EO.Reservoir
 ------------
+.. index:: Reservoir
 
 Lagedifferenz
 ^^^^^^^^^^^^^
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und der Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren.
+Wird eine Lagedifferenz (Plausibilität beachten) zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und der Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren.
 
 Benötigte Layer in QGIS:
 
@@ -680,7 +698,7 @@ Benötigte Layer in QGIS:
 
 Objekt fehlt
 ^^^^^^^^^^^^
-Fehlende Reservoirs, die im Datensatz des Amtes für Umwelt vorhanden sind, sind zu erfassen.
+Fehlende Reservoirs, die im Datensatz des Amtes für Umwelt vorhanden sind, sind zu erfassen. Eventuell können Pläne bei der Gemeinde bezogen werden.
 
 Benötigte Layer in QGIS:
 
@@ -692,12 +710,12 @@ Benötigte Layer in QGIS:
 
 Objekt löschen  
 ^^^^^^^^^^^^^^
-Nicht mehr vorhandene Reservoirs sind zu löschen. Eine Feldkontrolle ist nur durchzuführen falls die Situation auf dem Orthofoto nicht klar ist und im AfU-Datensatz kein Reservoir mehr vorhanden ist.
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 
 Objekt umattribuieren  
 ^^^^^^^^^^^^^^^^^^^^^
-Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+Nicht mehr vorhandene Reservoirs sind zu löschen. Eine Feldkontrolle ist nur durchzuführen falls die Situation auf dem Orthofoto nicht klar ist und im AfU-Datensatz kein Reservoir mehr vorhanden ist.
 
 
 Darstellung nicht nach Richtlinie
@@ -714,6 +732,7 @@ Benötigte Layer in QGIS:
 
 EO.Unterstand
 -------------
+.. index:: Unterstand
 
 Lagedifferenz
 ^^^^^^^^^^^^^
@@ -742,12 +761,12 @@ Beispiel:
 
 Objekt löschen  
 ^^^^^^^^^^^^^^
-Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+Falls in der AV ein Unterstand vorhanden ist, der auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
 
 
 Objekt umattribuieren  
 ^^^^^^^^^^^^^^^^^^^^^
-Siehe ``EO.uebriger_Gebaeudeteil``.
+Siehe ``EO.uebriger_Gebaeudeteil`` :ref:`ref_eo_uebriger_gebteil_umattr`. 
 
 
 Darstellung nicht nach Richtlinie
@@ -758,6 +777,7 @@ Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 EO.Silo_Turm_Gasometer
 ----------------------
+.. index:: Silo, Turm, Gasometer, Silo_Turm_Gasometer
 
 Lagedifferenz / Objekt fehlt / Objekt löschen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -810,14 +830,10 @@ Benötigte Layer in QGIS:
 
 BB/EO.Objektname
 ----------------
+.. index:: Objektename
 
-Lagedifferenz
-^^^^^^^^^^^^^
-Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
-
-
-Objekt fehlt / Objekt löschen / Darstellung nicht nach Richtlinie
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Objekt fehlt / Objekt löschen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Fehlende oder nicht mehr korrekte Objektnamen sind nachzuführen. Objektnamen "u." (für unterirdische Bauten) sind zu löschen.
 
@@ -833,12 +849,4 @@ Benötigte Layer in QGIS:
 Objekt umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^
 Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
-
-
-Alle Objekte
-------------
-Überflüssige Unterteilungslinien sind zu löschen.
-
-
-.. index:: Acker, Wiese, Weide, Acker_Wiese, Reben, Intensivkultur, uebrige_Intensivkultur
 

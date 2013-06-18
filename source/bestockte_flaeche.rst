@@ -247,9 +247,9 @@ Benötigende Layer im QGIS:
 
 Objekt fehlt/löschen/ umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto eine betockte Parkanlage zu erkennen, die nicht in der AV erfasst ist, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung **nicht** neu in der AV als ``BB.Parkanlage_bestockt`` zu erfassen. 
+Ist auf dem aktuellen Orthofoto eine bestockte Parkanlage zu erkennen, die nicht in der AV erfasst ist, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung **nicht** neu in der AV als ``BB.Parkanlage_bestockt`` zu erfassen. 
 Ist in der AV eine ``BB.Parkanlage_bestockt`` erfasst, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Aufnahmekriterium nicht erfüllt, ist dieses Objekt zu löschen.
-Sind in der AV betockte Parkanlage erfasst, die gemäss Kriterium *Handbuches der amtlichen Vermessung Kanton Solothurn*  zu ``BB.übrige Bestockte``, ``BB.Hecke`` oder ``BB.geschlossener Wald`` gehören, sind die Objekte umzuattribuieren.
+Sind in der AV bestockte Parkanlagen erfasst, die gemäss Kriterium *Handbuch der amtlichen Vermessung Kanton Solothurn*  zu ``BB.übrige Bestockte``, ``BB.Hecke`` oder ``BB.geschlossener Wald`` gehören, sind die Objekte umzuattribuieren.
 .. code-block:: none
 
    Bestockte Fläche / Lagekontrolle   
@@ -272,7 +272,7 @@ Benötigende Layer im QGIS:
 
 Objekt fehlt/löschen
 ^^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto ein Bestockung zu erkennen, die das Flächenkriterium gemäss TVAV Art. 13 (???????????) erfüllt, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung neu in der AV als ``BB.Hecke`` zu erfassen. 
+Ist auf dem aktuellen Orthofoto eine Bestockung zu erkennen, die das Flächenkriterium gemäss TVAV Art. 13 (???????????) erfüllt, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung neu in der AV als ``BB.Hecke`` zu erfassen. 
 Ist in der AV eine ``BB.Hecke`` erfasst, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Flächenkriterium ??????? gemäss TVAV Art. 13 nicht nicht erfüllt, ist dieses Objekt zu löschen.
 
 .. code-block:: none
