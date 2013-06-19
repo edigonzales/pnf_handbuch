@@ -47,8 +47,8 @@ Beispiele:
 |   :width: 550px                                                     |   :width: 550px                                                       |
 |   :target: _static/Strasse_Lagedifferenz_Kreuzung.png               |   :target: _static/Strasse_Lagedifferenz_Kreuzung_korr.png            |
 |                                                                     |                                                                       |
-|   ``BB.Strasse_Weg`` ist zu korrigieren, weil die Lagedifferenz     |   ``BB.Strasse_Weg`` ist zu korrigieren gemäss den rot dargestellten  |
-|   grösser als die Toleranz (TS3: 1.5m) ist.                         |   Linien.                                                             |
+|   ``BB.Strasse_Weg`` ist zu korrigieren, weil die Lagedifferenz     |   ``BB.Strasse_Weg`` ist im Bereich der Toleranzüberschreitung zu     |
+|   grösser als die Toleranz (TS3: 1.5m) ist.                         |   korrigieren gemäss den rot dargestellten Linien.                    |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 |.. _Strasse_Lagedifferenz_TS2:                                       |.. _Strasse_Lagedifferenz_TS2_korr:                                    |
 |                                                                     |                                                                       |
@@ -176,7 +176,7 @@ Beispiele:
 |   :width: 550px                                                                      |    :width: 550px                                                                      |
 |   :target: _static/Strasse_Hofdurchfahrt.png                                         |    :target: _static/Strasse_ueber_mehrere_parz.png                                    |                              
 |                                                                                      |                                                                                       |
-|   ``BB.Strasse_Weg`` draf bei Hofdurchfahrten nicht unterbrochen sein.               |    ``BB.Strasse_Weg`` bei Erschliessung mehrerer Liegenschaften wird nicht korrigiert.|                                                                               
+|   ``BB.Strasse_Weg`` darf bei Hofdurchfahrten nicht unterbrochen sein.               |    ``BB.Strasse_Weg`` bei Erschliessung mehrerer Liegenschaften wird nicht korrigiert.|                                                                               
 |                                                                                      |                                                                                       |
 +--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+   
 |.. _Strasse_Strassenveraengung:                                                       | .. _Strasse_pave:                                                                     |
@@ -236,7 +236,7 @@ Benötigte Layer in QGIS:
 Darstellung nicht nach Richtlinie    
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                        
 
-???? Bei Strasseneinfahrten geht das ``BB.Trottoir`` der ``BB.Strasse_Weg`` vor, wenn das Trottoir baulich nicht unterbrochen ist.  ????? oder wir nicht korrigiert? 
+???? Bei Strasseneinfahrten geht das ``BB.Trottoir`` der ``BB.Strasse_Weg`` vor, wenn sich dieses baulich oder niveaumässig von der Strasse abhebt.  ????? oder wir nicht korrigiert? 
 
 
 BB.Verkehrsinsel                                                                
@@ -269,9 +269,11 @@ Benötigte Layer in QGIS:
 .. code-block:: none                                                                                                                                                                                                                                                                                                       
                                                                                                                                         
   Strasse/ Lagekontrolle                                                                                                                                                         
-                                                                                                                                                                                                                                                                                        
-Objekt umattribieren
-^^^^^^^^^^^^^^^^^^^^ 
+
+.. _ref_ver:  
+
+Objekt umattribuieren 
+^^^^^^^^^^^^^^^^^^^^^ 
 Verkehrsinseln sind komplett von ``BB.Strasse_Weg`` umgeben. Strassenverengungen, die humusiert sind, werden als ``BB.uebrige_humusierte`` attribuiert.
 Bei humusierten Trennstreifen z.B. bei Autobahnen oder zwischen Strassen und z.B. Radwegen ist die Bodenbedeckung ``BB.uebrige_humusierte`` und **nicht** ``BB.Verkehrsinsel``.
 
@@ -315,7 +317,75 @@ Beispiele:
    :target: _static/Strasse_Verkehrsinsel_Fussgaengerstreifen.png                           
                                                                                     
    ``BB.Verkehrsinsel`` ist bei Fussgängerstreifen **nicht** zu unterteilen
-                                                                                       
+ 
+
+BB.übrige_befestigte
+---------------------
+
+Lagedifferenz
+^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.         
+   
+
+
+Objekt fehlt/löschen/umattribuieren      
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
+Ist auf dem aktuellen Orthofoto eine übriger befestigte Fläche im Strassenbereich zu erkennen, ist diese im Rahmen der PNF/Homogenisierung **nicht** neu zu erfassen.
+Falls in der AV eine ``BB.übrige_befestigte `` Fläche im Strassenbereich vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen sind, sind dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen.  
+Parkplätze die das Flächenkriterium von 100m2 nicht erfüllen gehören nicht zu  ``BB.übrige_befestigte Fläche``, sodern sind zu löschen.
+
+Benötigte Layer im QGIS:    
+
+.. code-block:: none
+
+   Seltene Objekte / Lagekontrolle  
+   
+
+.. _strasse_uebrige_befestigte_loeschen:                                              
+                                                                                    
+.. figure:: _static/strasse_uebrige_befestigte_loeschen.png                         
+   :width: 550px                                                                    
+   :target: _static/strasse_uebrige_befestigte_loeschen.png                         
+                                                                                    
+   ``BB.übrige_befestigte`` ist zu löschen.
+   
+
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
+Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.         
+   
+   
+   
+BB.übrige_humusierte   
+---------------------
+
+Lagedifferenz
+^^^^^^^^^^^^^
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) festgestellt, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst.
+
+Benötigte Layer in QGIS:
+
+.. code-block:: none 
+
+   Strasse / Lagekontrolle         
+
+
+Objekt fehlt/löschen/umattribuieren      
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
+Ist auf dem aktuellen Orthofoto eine übriger humusierte Fläche (z.B. humusierte Trennstreifen zwischen Strassen und Radwegen) im Strassenbereich zu erkennen, ist diese im Rahmen der PNF/Homogenisierung neu zu erfassen.
+Falls in der AV eine ``BB.übrige_humusierte`` Fläche im Strassenbereich vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen sind, sind dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen.  
+ (siehe Verkehrsinsel :ref:`ref_ver`)
+
+Benötigte Layer im QGIS:    
+
+.. code-block:: none
+
+   Seltene Objekte / Lagekontrolle  
+   
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
+Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.         
+
 
 EO.Lärmschutzwand               
 -----------------

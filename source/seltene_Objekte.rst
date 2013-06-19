@@ -328,7 +328,7 @@ Beispiele:
 |   :width: 550px                                                                     |   :width: 550px                                                                    |
 |   :target: _static/seltene_Objekte_Mast_Leitung_Richtlinien.png                     |   :target: _static/seltene_Objekte_Mast_Leitung_Richtlinien2.png                   |
 |                                                                                     |                                                                                    |
-|   ``EO.Mast_Leitung`` ist als Linie darzustellen und nicht als Symbol.              |   ``EO.Hochspannungsfreileitung`` ist nur mit eine Linie darzustellen.             |
+|   ``EO.Mast_Leitung`` ist als Linie darzustellen und nicht als Symbol.              |   ``EO.Hochspannungsfreileitung`` ist nur mit einer Linie darzustellen.            |
 +-------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+     
 
 EO.einzelner_Fels
@@ -385,7 +385,7 @@ Benötigte Layer im QGIS:
 
 Objekt fehlt/löschen/umattribuieren   
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
-Ist auf dem aktuellen Orthofoto eine Objekt zu erkennen, das nicht in der AV ist, ist dieses im Rahmen der PNF/Homogenisierung **nicht** neu zu erfassen. Falls in der AV ein Objekt vorhanden ist, welches auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder den Aufnahmekriterien gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht genügt, ist dieses Objekt zu löschen oder evtl. einer anderen EO.Art zu zuweisen.
+Ist auf dem aktuellen Orthofoto ein Objekt zu erkennen, das nicht in der AV ist, ist dieses im Rahmen der PNF/Homogenisierung **nicht** neu zu erfassen. Falls in der AV ein Objekt vorhanden ist, welches auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder den Aufnahmekriterien gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht genügt, ist dieses Objekt zu löschen oder evtl. einer anderen EO.Art zu zuweisen.
 
 Benötigte Layer im QGIS:       
                                                                                                                                                                   

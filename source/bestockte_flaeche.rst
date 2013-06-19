@@ -273,7 +273,7 @@ Benötigende Layer im QGIS:
 Objekt fehlt/löschen
 ^^^^^^^^^^^^^^^^^^^^^
 Ist auf dem aktuellen Orthofoto ein Bestockung zu erkennen, die das Flächenkriterium gemäss TVAV Art. 13 (???????????) erfüllt, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung neu in der AV als ``BB.Hecke`` zu erfassen. 
-Ist in der AV eine ``BB.Hecke`` erfasst, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Flächenkriterium ??????? gemäss TVAV Art. 13 nicht nicht erfüllt, ist dieses Objekt zu löschen.
+Ist in der AV eine ``BB.Hecke`` erfasst, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Flächenkriterium ??????? oder eher 500m2??? gemäss TVAV Art. 13 nicht nicht erfüllt, ist dieses Objekt zu löschen.
 
 .. code-block:: none
 
