@@ -72,7 +72,7 @@ Benötigte Layer in QGIS:
 
 Objekt löschen
 ^^^^^^^^^^^^^^
-Gebäude, die kleiner 6 m2 sind oder nicht mehr vorhandens sind, sind zu löschen.
+Gebäude, die kleiner 6 m2 sind und keine Hausnummer haben oder nicht mehr vorhandens sind, sind zu löschen.
 
 Benötigte Layer in QGIS:
 
