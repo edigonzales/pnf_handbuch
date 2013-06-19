@@ -212,7 +212,7 @@ Kostenverteilung              Beschreibung
 ========================      =============================================================================                                            
 
 
-Die Kosten der periodischen Nachführung und Homogenisierung werden pauschal vom zuständigen Nachführungsgeometer resp. der zuständigen Nachführungsgeometerin in zwei Etappen (Detektierung, Bereinigung) offeriert.
+Die Kosten der periodischen Nachführung und Homogenisierung werden vom zuständigen Nachführungsgeometer resp. der zuständigen Nachführungsgeometerin in zwei Etappen (Detektierung, Bereinigung) offeriert.
                 
                                                                                                                                                                                           
 Dokumentation
