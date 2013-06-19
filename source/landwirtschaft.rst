@@ -1,5 +1,7 @@
 Landwirtschaft
 ==============
+.. index:: Landwirtschaft
+
 In dieser Gruppe werden folgende Objekte der Bodenbedeckung auf ihre Richtigkeit geprüft:
 
 ==================  ==================
@@ -16,9 +18,18 @@ BB.Acker_Wiese / BB.Weide
 -------------------------
 .. index:: Acker, Wiese, Weide
 
+Lagedifferenz
+^^^^^^^^^^^^^
+Lagedifferenzen zwischen ``BB.Gartenanlage`` resp. bestockten Flächen und ``BB.Acker_Wiese`` resp. ``BB.Weide`` sind in den Mängelgruppen :ref:`ref_BebautesGebiet` und :ref:`ref_BestockteFlaechen` zu erfassen.
+
+Objekt fehlt / Objekt löschen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
 Objekt umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^
-Falsch attribuierte Acker_Wiesen und Weiden sind der richtigen Bodenbedeckungsart zuzuweisen. Lagedifferenzen zwischen ``BB.Gartenanlage`` resp. bestockten Flächen und ``BB.Acker_Wiese`` resp. ``BB.Weide`` sind in den Mängelgruppen :ref:`ref_BebautesGebiet` und :ref:`ref_BestockteFlaechen` zu erfassen.
+Falsch attribuierte Acker_Wiesen und Weiden sind der richtigen Bodenbedeckungsart zuzuweisen. 
 
 Benötigte Layer in QGIS:
 
@@ -38,10 +49,18 @@ Beispiele:
 
    Die beiden Acker_Wiesen-Objekte (rosa Linie) sind in ``BB.Gartenanlage`` umzuattribuieren.
 
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
 
 BB.Weide
 --------
 .. Weide 
+
+Lagedifferenz / Objekt fehlt / Objekt löschen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 Objekt umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^
@@ -52,6 +71,11 @@ Benötigte Layer in QGIS:
 .. code-block:: none
 
    Landwirtschaft / Checklayer / BB.Weide
+
+
+Darstellung nicht nach Richtlinie
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 
 BB.Reben / BB.Obstkultur / BB.uebrige_Intensivkulturen
@@ -106,11 +130,9 @@ Benötigte Layer in QGIS:
    Landwirtschaft / Lagekontrolle
    Landwirtschaft / Checklayer / BB.Kulturen < 1000 m2
 
-Alle Objekte
-------------
-Überflüssige Unterteilungslinien sind zu löschen.
+Objekt umattribuieren / Darstellung nicht nach Richtlinie
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 |
-
-.. index:: Acker, Wiese, Weide, Acker_Wiese, Reben, Intensivkultur, uebrige_Intensivkultur
 

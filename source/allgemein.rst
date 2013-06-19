@@ -212,8 +212,13 @@ Kostenverteilung              Beschreibung
 ========================      =============================================================================                                            
 
 
+<<<<<<< HEAD
 Die Kosten der periodischen Nachführung und Homogenisierung werden pauschal vom zuständigen Nachführungsgeometer resp. der zuständigen Nachführungsgeometerin in zwei Etappen (Detektierung, Bereinigung) offeriert.
 Der Anteil der Feldarbeiten in Prozent am Gesamtaufwand bei der PNF und Harmonisierung ist tief zu halten. Als Richtwert gilt ein Anteil von jeweils maximal 15%.                
+=======
+Die Kosten der periodischen Nachführung und Homogenisierung werden vom zuständigen Nachführungsgeometer resp. der zuständigen Nachführungsgeometerin in zwei Etappen (Detektierung, Bereinigung) offeriert.
+                
+>>>>>>> f75d6af011527b54221c02bdad5f09fbd0942aad
                                                                                                                                                                                           
 Dokumentation
 --------------

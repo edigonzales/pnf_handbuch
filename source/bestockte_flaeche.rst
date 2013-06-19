@@ -1,7 +1,7 @@
 .. _ref_BestockteFlaechen:
 
 Bestockte Fläche
-=====================
+================
 In dieser Gruppe werden alle bestockten Flächen aus der amtlichen Vermessung auf deren Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
 
 Folgende Objekte werden geprüft:
@@ -193,6 +193,16 @@ Benötigende Layer im QGIS:
    Bestockte Fläche / Lagekontrolle   
                                 
 
+Objekt fehlt/löschen  
+^^^^^^^^^^^^^^^^^^^^
+Ist auf dem aktuellen Orthofoto eine Bestockung zu erkennen, die das Flächenkriterium von 500m2 nicht erfüllt (``BB.geschlossener Wald``) und eine Breite > 12 m aufweist, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung neu in der AV als ``BB.uebrige_Bestockte`` zu erfassen. Ist in der AV ein Objekt der Art``BB.uebrige_Bestockte`` vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen. 
+
+Benötigende Layer im QGIS:
+
+.. code-block:: none
+
+   Bestockte Fläche / Lagekontrolle  
+
 
 Objekt umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^ 
@@ -214,15 +224,6 @@ Beispiel:
 |   ``BB.uebrige_Bestocke`` ist umzuattribuieren in ``BB.geschlossener_Wald``.|   ``BB.uebrige_bestocke`` ist umzuattribuieren in ``BB.Hecke``.                   |  
 +-----------------------------------------------------------------------------+-----------------------------------------------------------------------------------+ 
 
-Objekt fehlt/löschen  
-^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto eine Bestockung zu erkennen, die das Flächenkriterium von 500m2 nicht erfüllt (``BB.geschlossener Wald``) und eine Breite > 12 m aufweist, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung neu in der AV als ``BB.uebrige_Bestockte`` zu erfassen. Ist in der AV ein Objekt der Art``BB.uebrige_Bestockte`` vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen. 
-
-Benötigende Layer im QGIS:
-
-.. code-block:: none
-
-   Bestockte Fläche / Lagekontrolle  
 
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
@@ -245,11 +246,14 @@ Benötigende Layer im QGIS:
 
    Bestockte Fläche / Lagekontrolle   
 
-Objekt fehlt/löschen/ umattribuieren
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto eine betockte Parkanlage zu erkennen, die nicht in der AV erfasst ist, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung **nicht** neu in der AV als ``BB.Parkanlage_bestockt`` zu erfassen. 
+Objekt fehlt / Objekt löschen/ Objekt umattribuieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ist auf dem aktuellen Orthofoto eine bestockte Parkanlage zu erkennen, die nicht in der AV erfasst ist, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung **nicht** neu in der AV als ``BB.Parkanlage_bestockt`` zu erfassen. 
 Ist in der AV eine ``BB.Parkanlage_bestockt`` erfasst, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Aufnahmekriterium nicht erfüllt, ist dieses Objekt zu löschen.
-Sind in der AV betockte Parkanlage erfasst, die gemäss Kriterium *Handbuches der amtlichen Vermessung Kanton Solothurn*  zu ``BB.übrige Bestockte``, ``BB.Hecke`` oder ``BB.geschlossener Wald`` gehören, sind die Objekte umzuattribuieren.
+Sind in der AV bestockte Parkanlagen erfasst, die gemäss Kriterium *Handbuch der amtlichen Vermessung Kanton Solothurn*  zu ``BB.übrige Bestockte``, ``BB.Hecke`` oder ``BB.geschlossener Wald`` gehören, sind die Objekte umzuattribuieren.
+
+Benötigte Layer in QGIS:
+
 .. code-block:: none
 
    Bestockte Fläche / Lagekontrolle   
@@ -270,10 +274,19 @@ Benötigende Layer im QGIS:
 
    Bestockte Fläche / Lagekontrolle   
 
+<<<<<<< HEAD
 Objekt fehlt/löschen
 ^^^^^^^^^^^^^^^^^^^^^
 Ist auf dem aktuellen Orthofoto ein Bestockung zu erkennen, die das Flächenkriterium gemäss TVAV Art. 13 (???????????) erfüllt, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung neu in der AV als ``BB.Hecke`` zu erfassen. 
 Ist in der AV eine ``BB.Hecke`` erfasst, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Flächenkriterium ??????? oder eher 500m2??? gemäss TVAV Art. 13 nicht nicht erfüllt, ist dieses Objekt zu löschen.
+=======
+Objekt fehlt / Objekt löschen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ist auf dem aktuellen Orthofoto eine Bestockung zu erkennen, die das Flächenkriterium gemäss TVAV Art. 13 (???????????) erfüllt, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung neu in der AV als ``BB.Hecke`` zu erfassen. 
+Ist in der AV eine ``BB.Hecke`` erfasst, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Flächenkriterium ??????? gemäss TVAV Art. 13 nicht nicht erfüllt, ist dieses Objekt zu löschen.
+>>>>>>> f75d6af011527b54221c02bdad5f09fbd0942aad
+
+Benötigte Layer in QGIS:
 
 .. code-block:: none
 
@@ -291,13 +304,12 @@ Beispiel:
    Beide ``BB.Hecke`` sind zu löschen, da diese das Flächenkriterium (TS3: 1000 m2) nicht erfüllen. 
     
 
-
 Objekt umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^ 
 Sind in der AV Hecken erfasst, die gemäss Kriterium *Handbuches der amtlichen Vermessung Kanton Solothurn*  zu ``BB.übrige Bestockte`` oder ``BB.geschlossener Wald`` gehören, sind sie dementsprechend anzupassen.
-
-
-                
+    
+Benötigte Layer in QGIS:
+      
 .. code-block:: none
 
    Bestockte Fläche / Lagekontrolle          
@@ -328,6 +340,8 @@ Objekt löschen
 ^^^^^^^^^^^^^^
                        
 Erfasste ``EO.schmale_bestockte_Fläche`` in der AV sind zu löschen. 
+
+Benötigte Layer in QGIS:
 
 .. code-block:: none
 
