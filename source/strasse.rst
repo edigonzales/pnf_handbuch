@@ -179,13 +179,10 @@ Beispiele:
 |   :width: 550px                                                                      |    :width: 550px                                                                      |
 |   :target: _static/Strasse_Hofdurchfahrt.png                                         |    :target: _static/Strasse_ueber_mehrere_parz.png                                    |                              
 |                                                                                      |                                                                                       |
-<<<<<<< HEAD
 |   ``BB.Strasse_Weg`` darf bei Hofdurchfahrten nicht unterbrochen sein.               |    ``BB.Strasse_Weg`` bei Erschliessung mehrerer Liegenschaften wird nicht korrigiert.|                                                                               
 |                                                                                      |                                                                                       |
-=======
 |   ``BB.Strasse_Weg`` darf bei Hofdurchfahrten nicht unterbrochen sein.               |    ``BB.Strasse_Weg`` bei Erschliessung mehrerer Liegenschaften wird nicht            |                                                                            
 |                                                                                      |    korrigiert.                                                                        |
->>>>>>> f75d6af011527b54221c02bdad5f09fbd0942aad
 +--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+   
 |.. _Strasse_Strassenveraengung:                                                       | .. _Strasse_pave:                                                                     |
 |                                                                                      |                                                                                       | 
@@ -277,17 +274,12 @@ Benötigte Layer in QGIS:
 .. code-block:: none                                                                                                                                                                                                                                                                                                       
                                                                                                                                         
   Strasse/ Lagekontrolle                                                                                                                                                         
-<<<<<<< HEAD
+
 
 .. _ref_ver:  
-
-Objekt umattribuieren 
-^^^^^^^^^^^^^^^^^^^^^ 
-=======
                                                                                                                                                                                                                                                                                         
 Objekt umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^
->>>>>>> f75d6af011527b54221c02bdad5f09fbd0942aad
 Verkehrsinseln sind komplett von ``BB.Strasse_Weg`` umgeben. Strassenverengungen, die humusiert sind, werden als ``BB.uebrige_humusierte`` attribuiert.
 Bei humusierten Trennstreifen z.B. bei Autobahnen oder zwischen Strassen und z.B. Radwegen ist die Bodenbedeckung ``BB.uebrige_humusierte`` und **nicht** ``BB.Verkehrsinsel``.
 
@@ -345,7 +337,7 @@ Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.
 Objekt fehlt/löschen/umattribuieren      
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
 Ist auf dem aktuellen Orthofoto eine übriger befestigte Fläche im Strassenbereich zu erkennen, ist diese im Rahmen der PNF/Homogenisierung **nicht** neu zu erfassen.
-Falls in der AV eine ``BB.übrige_befestigte `` Fläche im Strassenbereich vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen sind, sind dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen.  
+Falls in der AV eine ``BB.übrige_befestigte`` Fläche im Strassenbereich vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen sind, sind dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen.  
 Parkplätze die das Flächenkriterium von 100m2 nicht erfüllen gehören nicht zu  ``BB.übrige_befestigte Fläche``, sodern sind zu löschen.
 
 Benötigte Layer im QGIS:    
@@ -371,7 +363,7 @@ Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.
    
    
 BB.übrige_humusierte   
----------------------
+--------------------
 
 Lagedifferenz
 ^^^^^^^^^^^^^
@@ -385,7 +377,7 @@ Benötigte Layer in QGIS:
 
 
 Objekt fehlt/löschen/umattribuieren      
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
 Ist auf dem aktuellen Orthofoto eine übriger humusierte Fläche (z.B. humusierte Trennstreifen zwischen Strassen und Radwegen) im Strassenbereich zu erkennen, ist diese im Rahmen der PNF/Homogenisierung neu zu erfassen.
 Falls in der AV eine ``BB.übrige_humusierte`` Fläche im Strassenbereich vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen sind, sind dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen.  
  (siehe Verkehrsinsel :ref:`ref_ver`)
@@ -400,6 +392,8 @@ Darstellung nicht nach Richtlinie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
 Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.         
 
+
+.. _ref_laermschutz:
 
 EO.Lärmschutzwand               
 -----------------

@@ -517,8 +517,8 @@ EO.unterirdisches_Gebaeude
 --------------------------
 .. index:: unterirdisches Gebäude
 
-Lagefehler
-^^^^^^^^^^
+Lagedifferenz
+^^^^^^^^^^^^^
 Es sind lediglich Plausibilitätskontrollen möglich.
 
 Objekt fehlt
