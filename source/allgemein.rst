@@ -40,11 +40,7 @@ Gesetzliche Grundlagen
 ----------------------
 * Bundesgesetz über die Geoinformation `(Geoinformationsgesetz, GeoIG) <http://www.admin.ch/ch/d/sr/c510_62.html>`_
 
-.. code-block:: none
-
-   Art. 8: "Beim Erheben und Nachführen von Geobasisdaten sind Doppelspurigkeiten zu vermeiden. Für das Erheben und Nachführen von Geobasisdaten besteht Methodenfreiheit, sofern die Vergleichbarkeit der Ergebnisse gewährleistet ist."
-     
-* Verordnung über die amtliche Vermessung `(VAV) <http://bgs.so.ch/frontend/versions/4168>`_
+* Verordnung über die amtliche Vermessung `(VAV) <http://www.admin.ch/ch/d/sr/c211_432_2.html>`_
  
 .. code-block:: none
 
@@ -59,7 +55,7 @@ Gesetzliche Grundlagen
    Art. 16: "Daten, die nicht laufend nachgeführt werden, sind in der Regel alle sechs bis zwölf Jahre periodisch nachzuführen."
    
 * Handbuch der amtlichen Vermessung des Kantons Solothurn 
-* Richtlinie der Arbeitsgruppe KKVA „Periodische Nachführung der amtlichen Vermessung“
+* Richtlinie der Arbeitsgruppe KKVA „Periodische Nachführung der amtlichen Vermessung“ `(PNF_KKVA) <http://www.kkva.ch/de/downloads/richtlinien/pnf_av/KKVA_PNF-AV_081127.pdf>`_
 
 
 .. _ref_RefDaten:
@@ -81,8 +77,8 @@ Wanderwege                 kantonal flächendeckende Grundlage der Fuss- und Wan
 Freileitungen (ARP)        Freileitung                                                  Digitalisiert ab LK25,  SIKOSO-Daten              2007  
 Abbaustellen (AFU)         Richtplan - Abbaustellen                                                                                       2012
 Flachmoore (AFU)           Flachmoore                                                   Feldbegehung durch ANL AG, digitalisiert          2006
-Flachmoore (BAFU)          Bundesinventar der Flachmoore von nationaler Bedeutung       Feldbegehung durch ANL AG, digitalisiert          1990, 1996, 1998, 2000, 2003, 2007
-Hochmoore (BAFU)           Bundesinventar der Hochmoore von nationaler Bedeutung        Digitalisiert ab LK                               1990-2002, 2007
+Flachmoore (BAFU)          Bundesinventar der Flachmoore von nationaler Bedeutung       Digitalisiert ab Kartierung 1987-1990             1987-1990, 2001, 2004, 2007
+Hochmoore (BAFU)           Bundesinventar der Hochmoore von nationaler Bedeutung        Digitalisiert ab Kartierung 1988-1990             1988-1990, 2003, 2007
 Reservoir                  Gewässeranalyse Datenbank Solothurn GASO                     Digitale Eingabe der Koordinaten                  2006-2008
 Waldplan		   Forstliche Plangrundlagen			                AV als Grundlage, Feldkontrolle durch Förster     alle 10 Jahre neu erstellt 
 Radio- und Fernsehsender   Daten von geo.admin.ch                                         
@@ -101,7 +97,8 @@ Vorgehen beim Projekt *Periodische Nachführung und Homogenisierung*
 
 In einem ersten Schritt werden die Objekte, die nachzuführen resp. die zu homogenisieren sind, detektiert. Eine QGIS-Fachschale unterstützt die Detektierung. Dazu ist das AV-Operat im Interlis-Format in die QGIS-Fachschale zu importieren (siehe https://docs.google.com/document/d/1cA-7Qe-clG3pW9366pJQoRACNlejM9B9hvu0ljdrKQw/edit?pli=1#heading=h.f2eudjvbbct5 ).
 
-Als Referenz für die Detektierung wird hauptsächlich ein aktuelles Orthofoto verwendet. Dabei ist zu berücksichtigen, dass Mutationen in der AV, die jünger als das Orthofoto sind, nicht an die Situation des Orthofotos angepasst werden. Zum Beispiel kann ein Strassenobjekt (Ausbau einer Strasse) in der AV aktueller sein als auf dem Orthofoto.       
+.. important:: 
+   Als Referenz für die Detektierung wird hauptsächlich ein aktuelles Orthofoto verwendet. Dabei ist zu berücksichtigen, dass Mutationen in der AV, die jünger als das Orthofoto sind, nicht an die Situation des Orthofotos angepasst werden. Zum Beispiel kann ein Strassenobjekt (Ausbau einer Strasse) in der AV aktueller sein als auf dem Orthofoto.       
 
 
 Detektierung nach Gruppen
@@ -113,7 +110,7 @@ Folgenden Gruppen wurden gebildet:
 Gruppe              Bemerkung  
 ==================  ======================================================================================================
 Strasse             Alle Objekte im Strassenbereich werden kontrolliert.
-Bahn                Alle Objekte im Bahnbereich werden kontrolliert.
+Bahn                Alle Objekte im Bahnareal werden kontrolliert.
 Gewässer            Alle Objekte entlang dem fliessenden Gewässer und stehenden Gewässer werden kontrolliert.
 Bebautes Gebiet     Alle Objekte in bebauten Gebieten werden kontrolliert. Dazu zählen auch Höfe und Reservoire im TS3/4.
 Bestockte Fläche    Alle bestockten Objekte werden kontrolliert.
@@ -158,7 +155,7 @@ Werden Objekte gefunden, bei denen die AV angepasst werden muss, sind diese mit 
 +------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. note::
-   Falls mehrere der vordefinierten Attributwerte unter dem Attribut "Fehler" zum Mängelpunkt resp. Mängellinie passt, ist nur ein Mängelpunkt resp. eine Mängellinie zu erfassen. Eventuell ist bei solchen Fällen der Attributwert "weitere" zu verwenden. ???? oder doch z.B. 2 Mängel absetzen
+   Falls mehrere der vordefinierten Attributwerte unter dem Attribut *Fehler* zum Mängelpunkt resp. Mängellinie passt, ist nur ein Mängelpunkt resp. eine Mängellinie zu erfassen. Eventuell ist bei solchen Fällen der Attributwert ``weitere`` zu verwenden. ???? oder doch z.B. 2 Mängel absetzen
 
    
 .. _ref_Metherei:
@@ -206,7 +203,7 @@ Kostenverteilung              Beschreibung
 
                                             
  PNF/Homogenisierung          | alle Lagedifferenzen (ausgenommen Abbau oder Deponien)
-                              | alle Objekte auf öffentlichem Grund oder die älter als 10 Jahre sind, die fehlen resp. zu löschen sind
+                              | alle Objekte die älter als 10 Jahre sind, die fehlen resp. zu löschen sind
                               | alle Objekte, die umzuattribuieren sind     
                               | alle Objekte, die nicht nach Richtlinien dargestellt sind  
 ========================      =============================================================================                                            
@@ -240,14 +237,14 @@ Verifikation
 Die Verifikation wird in zwei Schritten durchgeführt. 
 
 1. Wird nach der Mängeldetektion durchgeführt. Dazu sind die detektierten Mängel als Shapefile und der Plan der Feldkontrolle (analog) ans AGI abzugeben.
-2. Wird nach der Bereinigung der Mängel durchgeführt. An das AGI ist hierbei das Operat in Interlis-Format (kontrolliert mit MOCHECKSO2) abzugeben.    
+2. Wird nach der Bereinigung der Mängel durchgeführt. An das AGI ist hierbei das Operat in Interlis-Format (kontrolliert mit MOCHECKSO) abzugeben.    
                                                                                        
 
 QGIS Fachschale PNF/Homogenisierung
 -----------------------------------
-Anleitungen zu QGIS Fachschale PNF/Homogenisierung
+Anleitungen zu QGIS Fachschale PNF/Homogenisierung ... offen
 
--  Raster für Überblick
+-  Raster/ Planeinteilung für Überblick
 
 |
 
