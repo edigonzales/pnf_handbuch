@@ -19,7 +19,7 @@ Inhalt:
    bebautes_gebiet
    landwirtschaft
    bestockte_flaeche 
-   seltene_Objekte
+   seltene_objekte
    weitere_ebenen
 
 
