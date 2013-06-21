@@ -96,7 +96,7 @@ Vorgehen beim Projekt *Periodische Nachführung und Homogenisierung*
 .. _Diagramm_Vorgehen:                                   
                                                          
 .. figure:: _static/Diagramm_Vorgehen.png               
-   :width: 350px                                         
+   :width: 400px                                         
    :target: _static/Diagramm_Vorgehen.png               
 
 In einem ersten Schritt werden die Objekte, die nachzuführen resp. die zu homogenisieren sind, detektiert. Eine QGIS-Fachschale unterstützt die Detektierung. Dazu ist das AV-Operat im Interlis-Format in die QGIS-Fachschale zu importieren (siehe https://docs.google.com/document/d/1cA-7Qe-clG3pW9366pJQoRACNlejM9B9hvu0ljdrKQw/edit?pli=1#heading=h.f2eudjvbbct5 ).
@@ -124,7 +124,7 @@ Perimeterrand       Kontrolle der Objekt am Perimeterrand mit der Nachbargemeind
    
 Mängelpunkte/-linien erfassen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
-Werden Objekte gefunden, bei denen die AV angepasst werden muss, sind diese mit einem Mängelpunkt oder -linie zu kennzeichnen. Mängellinien werden nur bei Lagedifferenzen oder bei fehlenden Objekten erfasst.    
+Werden Objekte gefunden, bei denen die AV angepasst werden muss, sind diese mit einem Mängelpunkt oder -linie zu kennzeichnen. Mängellinien werden nur bei Linien- und Flächenobjekten, welche eine Lagedifferenz aufweisen oder fehlen, erfasst.    
                              
 
 | Zu den Mängelpunkt/-linien werden folgende Attribute erfasst:
@@ -158,7 +158,7 @@ Werden Objekte gefunden, bei denen die AV angepasst werden muss, sind diese mit 
 +------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. note::
-   Falls mehrere der vordefinierten Attributwerte unter dem Attribut "Fehler" zum Mängelpunkt resp. Mängellinie passt, ist nur ein Mängelpunkt resp. eine Mängellinie zu erfassen. Eventuell ist bei solchen Fällen der Attributwert "weitere" zu verwenden.
+   Falls mehrere der vordefinierten Attributwerte unter dem Attribut "Fehler" zum Mängelpunkt resp. Mängellinie passt, ist nur ein Mängelpunkt resp. eine Mängellinie zu erfassen. Eventuell ist bei solchen Fällen der Attributwert "weitere" zu verwenden. ???? oder doch z.B. 2 Mängel absetzen
 
    
 .. _ref_Metherei:
@@ -212,8 +212,13 @@ Kostenverteilung              Beschreibung
 ========================      =============================================================================                                            
 
 
+<<<<<<< HEAD
 Die Kosten der periodischen Nachführung und Homogenisierung werden pauschal vom zuständigen Nachführungsgeometer resp. der zuständigen Nachführungsgeometerin in zwei Etappen (Detektierung, Bereinigung) offeriert.
+Der Anteil der Feldarbeiten in Prozent am Gesamtaufwand bei der PNF und Harmonisierung ist tief zu halten. Als Richtwert gilt ein Anteil von jeweils maximal 15%.                
+=======
+Die Kosten der periodischen Nachführung und Homogenisierung werden vom zuständigen Nachführungsgeometer resp. der zuständigen Nachführungsgeometerin in zwei Etappen (Detektierung, Bereinigung) offeriert.
                 
+>>>>>>> f75d6af011527b54221c02bdad5f09fbd0942aad
                                                                                                                                                                                           
 Dokumentation
 --------------

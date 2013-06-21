@@ -1,6 +1,6 @@
 Gewässer
 ========
-Bei dieser Gruppe werden alle Elemente des Gewässers aus der amtlichen Vermessung auf dessen Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
+In dieser Gruppe werden alle Elemente des Gewässers aus der amtlichen Vermessung auf dessen Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
 
 Folgende Objekte werden geprüft:
 
@@ -49,7 +49,7 @@ Beispiele:
                                                                                                                                                    
 
 
-Objekt fehlt/Löschen  
+Objekt fehlt/löschen  
 ^^^^^^^^^^^^^^^^^^^^
 Ist auf dem aktuellen Orthofoto ein stehendes Gewässer zu erkennen, welches öffentlich ist oder das Flächenkriterium erfüllt und nicht in der AV ist, ist dieses im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
 Ist in der AV ein stehendes Gewässer vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Flächenkriterium nicht erfüllt, ist dieses Objekt zu löschen.
@@ -89,7 +89,7 @@ Benötigte Layer im QGIS:
 
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
-Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
    
    
                                                           
@@ -173,7 +173,7 @@ Benötigte Layer im QGIS:
 
 Objekt fehlt/löschen/umattribuieren  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto ein Schilfgürtel vorhanden, welcher das Flächenkriterium erfüllt und nicht in der AV ist, ist dieser im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen ???. Ist in der AV eine Schilfgürtel vorhanden, der auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
+Ist auf dem aktuellen Orthofoto ein Schilfgürtel vorhanden, welcher das Flächenkriterium erfüllt und nicht in der AV ist, ist dieser im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. Ist in der AV eine Schilfgürtel vorhanden, der auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
    
 Benötigte Layer im QGIS:
 
@@ -189,7 +189,7 @@ EO.eingedoltes_oeffentliches_Gewaesser
 --------------------------------------   
 .. index:: eingedoltes öffentliches Gewässer   
 
-Lagedifferenz/ Löschen  
+Lagedifferenz / Objekt löschen  
 ^^^^^^^^^^^^^^^^^^^^^^   
 Sind zuverlässige Referenzdaten von eingedolten Gewässer (z.B. aus Leitungskataster) vorhanden, sind die Daten der AV nach diesen zu korrigieren. Falls keine solche Daten vorhanden sind, sind die Objekte aus der AV zu entfernen.
 
@@ -204,7 +204,7 @@ Benötigte Layer im QGIS:
    
 Objekt fehlt/umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Es ist zu kontrollieren, ob bei jeder Brücke und bei jedem Durchlass unter Strassen/Bahn ein ``EO.eingedoltes_oeffentliches_Gewaesser`` erfasst ist. Fehlende Objekte sind zu erfassen. Falls ein eingedoltes öffentliches Gewässer falsch attribuiert ist, ist dies entsprechend zu korrigieren.
+Es ist zu kontrollieren, ob bei jeder Brücke und bei jedem Durchlass unter Strassen/Bahnlinien ein ``EO.eingedoltes_oeffentliches_Gewaesser`` erfasst ist. Fehlende Objekte sind zu erfassen. Falls ein eingedoltes öffentliches Gewässer falsch attribuiert ist, ist dies entsprechend zu korrigieren.
    
 Benötigte Layer im QGIS:
 
@@ -217,7 +217,7 @@ Darstellung nicht nach Richtlinie
 Gewässerfläche, die durch eine andere Bodenbedeckungsart überlagert werden z.B. durch Gebäude oder Parkplätze werden als ``EO.eingedoltes_oeffentliches_Gewaesser`` erfasst.
 
    
-EO.Brücke, Passerelle   
+EO.Bruecke_Passerelle   
 ---------------------   
 Lagedifferenz
 ^^^^^^^^^^^^^
@@ -242,7 +242,7 @@ Benötigte Layer im QGIS:
    
 Darstellung nicht nach Richtlinie    
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^       
-Bei Brücken gilt die Vogelperspektive. Eine Korrektur der Ausdehnung auf die Widerlager oder die liechte Weite wird **nicht** vorgenommen. Der Elemententyp bei ``EO.Brücke, Passerelle `` ist Flächenelement.        
+Bei Brücken gilt die Vogelperspektive. Eine Korrektur der Ausdehnung auf die Widerlager oder die lichte Weite wird **nicht** vorgenommen. Der Elemententyp bei ``EO.Brücke, Passerelle `` ist Flächenelement.        
    
    
    
@@ -274,7 +274,7 @@ Benötigte Layer im QGIS:
 Objekt fehlt/löschen  
 ^^^^^^^^^^^^^^^^^^^^
 Ist auf dem aktuellen Orthofoto ein Rinnsal zu erkennen, das nicht in der AV vorhanden ist, ist dieses im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
-Ist in der AV ein fliessendes Gewässer vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
+Ist in der AV ein Rinnsal vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
                     
 Benötigte Layer im QGIS:
 
@@ -316,6 +316,7 @@ Erfasste ``EO.Quellen`` in der AV sind zu löschen.
 
 
 Benötigte Layer im QGIS:
+
 .. code-block:: none
 
    Gewässer / Checklayer / EO.Quelle

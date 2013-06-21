@@ -6,7 +6,8 @@ In dieser Mängelgruppe werden Objekte überprüft, die eher selten vorkommen. F
 
 ==================  =====================================    
 Topic  		    Art    
-==================  =====================================    
+==================  =====================================
+Bodenbedeckung      uebrige_befestigte    
 Bodenbedeckung      Sportanlage_befestigt 
 Bodenbedeckung      Boeschungsbauwerke
 Bodenbedeckung      Parkanlage_humusiert   
@@ -48,8 +49,28 @@ Einzelobjekt        Kruzifix_Bildstock
 Einzelobjekt        weitere
 ==================  =====================================    
 
-BB.Sportanlage_befestigt / BB.Sportanlage_humusiert / BB.Friedhof / BB.Parkanlage_humusiert / BB.Parkanlage_bestockt / BB.uebrige_humusierte
---------------------------------------------------------------------------------------------------------------------------------------------
+BB.uebrige_befestigte
+---------------------
+.. index:: übrige befestigte
+
+Lagedifferenz / Objekt fehlt
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Wird eine Lagedifferenz bei Panzersperren zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und der Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Das Objekt muss erfasst werden falls es in der amtlichen Vermessung fehlt.
+
+Benötigte Layer in QGIS:
+
+.. code-block:: none
+
+   Bebautes Gebiet / Lagekontrolle
+
+
+Objekt löschen / umattribuieren / Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+
+BB.Sportanlage_befestigt / BB.Sportanlage_humusiert / BB.Friedhof / BB.Parkanlage_humusiert / BB.uebrige_humusierte
+-------------------------------------------------------------------------------------------------------------------
 .. index:: Sportanlage_befestigt, Sportanlage_humusiert, Friedhof, Parkanlage_humusiert, Parkanlage_bestockt, übrige humusierte
 
 Lagedifferenz
@@ -100,11 +121,11 @@ Benötigte Layer im QGIS:
 
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
-Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.            
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.            
                                                                                
    
 BB.Boeschungsbauwerk 
--------------------
+--------------------
 .. index:: Boeschungsbauwerk
 
 Lagedifferenz
@@ -258,9 +279,9 @@ EO.Brunnen
 
 Lagedifferenz                                                                                    
 ^^^^^^^^^^^^^                                                               
-Im Rahmen der PNF/Homogenisierung werden keine Lagedifferenzen korrigiert. Sind Lagedifferenzen vorhanden die mittels Orthofoto ermittelt werden können, ist der ``EO.Brunnen`` zu löschen???    
+Im Rahmen der PNF/Homogenisierung werden keine Lagedifferenzen korrigiert. Sind Lagedifferenzen vorhanden die mittels Orthofoto ermittelt werden können, ist der ``EO.Brunnen`` zu löschen.    
                                                                                                   
-Objekt fehlt/ löschen   
+Objekt fehlt/löschen   
 ^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                              
 Brunnen mit öffentlichen Charakter, die in der AV nicht vorhanden sind, werden im Rahmen der PNF/Homogenisierung **nicht** erfasst. Private Brunnen die in der AV erfasst sind, sind zu löschen.      
 
@@ -272,7 +293,7 @@ Benötigte Layer im QGIS:
                                               
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
-Darzustellen ist die äusseren Umrandung der Brunnen inkl. Brunnenstock (siehe *Handbuch der amtlichen Vermessung Kanton Solothurn*). Falls mehr Details (z.B. Brunnenstock einzel oder Füllbereich) des Brunnen dargestellt sind, sind diese zu korrigieren. ?????            
+Darzustellen ist die äusseren Umrandung der Brunnen inkl. Brunnenstock (siehe *Handbuch der amtlichen Vermessung Kanton Solothurn*). Falls mehr Details (z.B. einzelner Brunnenstock oder Füllbereich) des Brunnen dargestellt sind, sind diese zu korrigieren.
 
 
 EO.Mast_Antenne / EO. Mast_Leitung / EO.Hochspannungsfreileitung
@@ -350,7 +371,9 @@ EO.einzelner_Fels
 -----------------                                                                      
 .. index:: Fels, einzelner Fels 
 
-Im Rahmen der PNF/Homogenisierung werden keine Lagedifferenzen korrigiert.  ????         
+Lagedifferenz
+^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Lagedifferenzen korrigiert.       
                                                                            
 
 Objekt fehlt/löschen
@@ -412,7 +435,7 @@ Benötigte Layer im QGIS:
    
 Darstellung nicht nach Richtlinie    
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        
-Darstellung ist zu korrigieren falls sie vom *Handbuch der amtlichen Vermessung Kanton Solothurn* abweicht ??? von KKVA übernehmen in SO Handbuch steht nichts????   
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
    
    
                                                                                                  
@@ -442,7 +465,8 @@ Benötigte Layer im QGIS:
 
 Darstellung nicht nach Richtlinie    
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^         
-Darstellung ist zu korrigieren falls sie vom *Handbuch der amtlichen Vermessung Kanton Solothurn* abweicht ??? von KKVA übernehmen in SO Handbuch steht nichts????     
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
 
 EO. Druckleitung / EO.Faehre / EO. Achse
 ----------------------------------------
@@ -468,7 +492,9 @@ Benötigte Layer im QGIS:
 
 Darstellung nicht nach Richtlinie    
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^         
-Darstellung ist zu korrigieren falls sie vom *Handbuch der amtlichen Vermessung Kanton Solothurn* abweicht ??? von KKVA übernehmen in SO Handbuch steht nichts????     |  
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+|
 
 
 

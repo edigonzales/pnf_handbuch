@@ -1,6 +1,6 @@
 Strasse
 =======
-Bei dieser Gruppe werden alle Elemente der Strassen aus der amtlichen Vermessung auf deren Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
+In dieser Gruppe werden alle Elemente der Strassen aus der amtlichen Vermessung auf deren Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
 
 Folgende Objekte werden geprüft:
 
@@ -122,7 +122,7 @@ Darstellung nicht nach Richtlinie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  
 BB.Strasse_Weg unterbrochen
 +++++++++++++++++++++++++++
-Das Objekt ``BB.Strasse_Weg`` darf z.B. bei Hofdurchfahrten oder bei niveaugleichen Kreuzungen nicht unterbrochen sein. Ist dies der Fall, muss dies im Rahmen der PNF/Homogenisierung bereinigt werden. Ziel ist es ein zusammenhängendes Strassen-/Wegnetz zu erhalten. Genauere Erläuterungen über die Erfassung der Niveauübergänge sind im *Handbuch der amtlichen Vermessung Kanton Solothurn* zu finden.                 
+Das Objekt ``BB.Strasse_Weg`` darf z.B. bei Hofdurchfahrten oder bei niveaugleichen Kreuzungen nicht unterbrochen sein. Ist dies der Fall, muss dies im Rahmen der PNF/Homogenisierung bereinigt werden. Ziel ist es ein zusammenhängendes Strassen- resp. Wegnetz zu erhalten. Genauere Erläuterungen über die Erfassung der Niveauübergänge sind im *Handbuch der amtlichen Vermessung Kanton Solothurn* zu finden.                 
     
 Benötigte Layer in QGIS:
 
@@ -138,7 +138,7 @@ Benötigte Layer in QGIS:
 
 .. code-block:: none 
 
-   Stasse / Checklayer / BB.Strasse_Weg>10000m2 
+   Stasse / Checklayer / BB.Strasse_Weg > 10000 m2 
 
 
 .. _ref_strasse_mehrere_liegenschaften:
@@ -146,7 +146,7 @@ Benötigte Layer in QGIS:
 BB.Strasse_Weg bei Erschliessung mehrerer Liegenschaften 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                                                                                                                                                                                                                                                        
-Strassen und Wege, die der Erschliessung mehrerer Liegenschaften oder mehrerer Gebäude dienen und die in der AV als ``BB.GEbäudeerschliessung`` erfasst sind, werden im Rahmen der PNF/Homogenisierung **nicht** korrigiert (siehe :ref:`Beispiel <Strasse_ueber_mehrere_parz>`). 
+Strassen und Wege, die der Erschliessung mehrerer Liegenschaften oder mehrerer Gebäude dienen und die in der AV als ``BB.Gebaeudeerschliessung`` erfasst sind, werden im Rahmen der PNF/Homogenisierung **nicht** korrigiert (siehe :ref:`Beispiel <Strasse_ueber_mehrere_parz>`). 
           
 
 Befestigte Strassenverengungen ohne Höhenunterschied und befahrbarer Teil des Kreisels (Pavé)    
@@ -167,7 +167,7 @@ Nicht parallele Darstellungen der ``BB.Strasse_Weg`` werden im Rahmen der PNF/Ho
 
 Durch Felspartien überdeckte Strassen
 +++++++++++++++++++++++++++++++++++++                                                                                                                                                                                       
-Bei den Strassen, die durch Felspartien überdeckt sind, gelten die Darstellungsrichtline gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn*. Unterscheidet sich die Darstellung in der AV von der von Richtlinie, ist sie entsprechend zu korrigieren.           
+Bei den Strassen, die durch Felspartien überdeckt sind, gelten die Darstellungsrichtlinen gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn*. Unterscheidet sich die Darstellung in der AV von der Richtlinie, ist sie entsprechend zu korrigieren.           
                                                                                                                                                                                                                                                              
 
 Beispiele:       
@@ -190,8 +190,8 @@ Beispiele:
 |   :width: 550px                                                                      |    :width: 550px                                                                      |
 |   :target: _static/Strasse_Verkehrsveraengung.png                                    |    :target: _static/Strasse_pave.png                                                  |
 |                                                                                      |                                                                                       |
-|   Befestigte Strassenverengungen ohne Niveauunterschied gehört zu ``BB.Strasse_Weg``.|    Befahrbarer Teil des Kreisels (Pavé) gehört zu ``BB.Strasse_Weg``.                 | 
-|                                                                                      |                                                                                       |
+|   Befestigte Strassenverengungen ohne Niveauunterschied gehören zu                   |    Befahrbarer Teil des Kreisels (Pavé) gehört zu ``BB.Strasse_Weg``.                 | 
+|   ``BB.Strasse_Weg``.                                                                |                                                                                       |
 +--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+         
                       
 
@@ -379,8 +379,7 @@ Benötigte Layer in QGIS:
 Objekt fehlt/löschen/umattribuieren      
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
 Ist auf dem aktuellen Orthofoto eine übriger humusierte Fläche (z.B. humusierte Trennstreifen zwischen Strassen und Radwegen) im Strassenbereich zu erkennen, ist diese im Rahmen der PNF/Homogenisierung neu zu erfassen.
-Falls in der AV eine ``BB.übrige_humusierte`` Fläche im Strassenbereich vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen sind, sind dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen.  
- (siehe Verkehrsinsel :ref:`ref_ver`)
+Falls in der AV eine ``BB.übrige_humusierte`` Fläche im Strassenbereich vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen sind, sind dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen. (siehe Verkehrsinsel :ref:`ref_ver`)
 
 Benötigte Layer im QGIS:    
 
@@ -458,9 +457,7 @@ Benötigte Layer in QGIS:
 
 Darstellung nicht nach Richtlinie    
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
-Falls in der AV  nicht jede Röhre des Tunnels Einzel dargestellt ist, wird dies im Rahmen der PNF/Homogenisierung **nicht** korrigiert. Befinden sich im Tunnel Trottoirs und / oder Fahrradwege, die gegenüber der Autofahrbahn einen
-Niveauunterschied aufweisen, so sind diese Abgrenzungen mit einem Linienelement zu erheben. ??? so machen?? oder keine Änderung??
-    
+Falls in der AV  nicht jede Röhre des Tunnels einzeln dargestellt ist, wird dies im Rahmen der PNF/Homogenisierung **nicht** korrigiert. 
 
 Benötigte Layer in QGIS:
 
@@ -468,8 +465,8 @@ Benötigte Layer in QGIS:
     
     Strasse / Lagekontrolle            
                                                     
-EO.Brücke_Passerelle                                   
---------------------
+EO.Bruecke_Passerelle                                   
+---------------------
 .. index:: Brücke, Passerelle
 
 Lagekontrolle  
@@ -485,7 +482,8 @@ Benötigte Layer in QGIS:
  
 Objekt fehlt/umattribuieren/löschen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Fehlende Objekte sind zu erfassen gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn*. Objekte die in der AV als ``EO.Brücke_Passerelle`` erfasst sind, aber gemäss Handbuch nicht zu ``EO.Brücke_Passerelle`` gehören, sind umzuattribuieren oder zu löschen.
+Fehlende Objekte sind zu erfassen gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn*. Objekte, die in der AV als ``EO.Bruecke_Passerelle`` erfasst sind, aber gemäss Handbuch nicht zu ``EO.Bruecke_Passerelle`` gehören, sind umzuattribuieren oder zu löschen.
+
 Benötigte Layer in QGIS:
 
 .. code-block:: none
@@ -507,7 +505,7 @@ EO.Pfeiler
 
 Lagekontrolle             
 ^^^^^^^^^^^^^                                                                                                                                                                 
-Wird lediglich durch eine Plausibilitätsprüfung (z.B. liegen die Pfeiler innerhalb der ``EO.Brücke_Passerelle``) kontrolliert. Die Lage wird nicht mittels einer Feldkontrolle kontrolliert. Korrekturen in der Lage werden im Rahmen der PNF/Homogenisierung selten bis nie durchgeführt.       
+Wird lediglich durch eine Plausibilitätsprüfung (z.B. liegen die Pfeiler innerhalb der ``EO.Brücke_Passerelle``) kontrolliert. Die Lage wird **nicht** mittels einer Feldkontrolle kontrolliert. Korrekturen in der Lage werden im Rahmen der PNF/Homogenisierung selten bis nie durchgeführt.       
 
 Benötigte Layer in QGIS:
 
@@ -525,7 +523,7 @@ Benötigte Layer in QGIS:
 .. code-block:: none
     
     Strasse / Lagekontrolle                                                      
-    Strasse / Checklayer / Pfeiler<0.25m2       
+    Strasse / Checklayer / Pfeiler < 0.25 m2       
      
     
 EO.schmaler_Weg
@@ -535,7 +533,7 @@ EO.schmaler_Weg
 
 Lagekontrolle 
 ^^^^^^^^^^^^^ 
-Wird eine Lagedifferenz zwischen der AV und dem aktuelle Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) festgestellt, so ist das Objekt in der AV zu korrigieren. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) festgestellt, so ist das Objekt in der AV zu korrigieren. 
 Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Bei den Wanderwegen, die ihren Verlauf jährlich ändern (z.B. Graswege), ist keine Korrektur vorzunehmen.
      
 
@@ -577,7 +575,7 @@ Benötigte Layer in QGIS:
 
 Objekt umattribieren
 ^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                            
-Sind in der TS2  Objekte als ``EO.schmaler_Weg`` erfasst, sind diese neu als ``BB.Strasse_Weg`` zu erfassen. Fusswege im TS2, sind immer der Bodenbedeckung (``BB.Strasse/Weg``) zuzuweisen.
+Sind in der TS2  Objekte als ``EO.schmaler_Weg`` erfasst, sind diese neu als ``BB.Strasse_Weg`` zu erfassen. Fusswege im TS2, sind immer der Bodenbedeckung (``BB.Strasse_Weg``) zuzuweisen.
 
                                                                                                                                                                                                                                                                                                                                      
 Benötigte Layer in QGIS:

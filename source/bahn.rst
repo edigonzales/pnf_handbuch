@@ -11,8 +11,8 @@ Topic  		               Art
 Bodenbedeckung                 Bahn
 Einzelobjekt                   Lärmschutzwand
 Einzelobjekt                   Bahnsteig
-Einzelobjekt                   Bahngleis
-Einzelobjekt                   Bahngleis_überdeckt      
+Einzelobjekt                   Bahngeleise
+Einzelobjekt                   Bahngeleise_ueberdeckt      
 =============================  ========================================
 
 BB.Bahn
@@ -65,8 +65,8 @@ Darstellung nicht nach Richtlinie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
 Bei Niveauübergängen geht die BB-Art Strasse_Weg der BB-Art Bahn vor.
  
-EO.Lärmschutzwand
------------------
+EO.Laermschutzwand
+------------------
 siehe :ref:`ref_laermschutz`
 
 EO.Bahnsteig
@@ -102,8 +102,8 @@ Benötigende Layer im QGIS:
 
     Bahn / Lagekontrolle   
 
-EO.Bahngleis
-------------
+EO.Bahngeleise
+--------------
 Lagedifferenz  
 ^^^^^^^^^^^^^   
 Wird eine Lagedifferenz zwischen der AV und den SBB-Daten detektiert, so ist das Objekt in der AV zu korrigieren.
@@ -123,13 +123,13 @@ Beispiele:
 |   :width: 550px                                                                            |   :width: 550px                                                                    |
 |   :target: _static/bahn_bahngleis_Lagedifferenz.png                                        |   :target: _static/bahn_bahngleis_Lagedifferenz_korr.png                           |
 |                                                                                            |                                                                                    |
-|   ``EO.Bahngleis`` ist zu korrigieren gemäss den SBB-Daten.                                |   ``EO.Bahngleis`` ist zu korrigieren gemäss der rot dargestellten Linie.          |
+|   ``EO.Bahngeleise`` ist zu korrigieren gemäss den SBB-Daten.                              |   ``EO.Bahngeleise`` ist zu korrigieren gemäss der rot gestrichelten Linie.        |
 +--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+ 
 
 
 Objekt fehlt/löschen/umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Fehlende Objekte sind neu in der AV zu erfassen und nicht mehr vorhandene Bahngleise sind zu löschen. Bahngelise im Tunnel sind als "EO.Bahngleise_überdeckt" zu attribuieren.
+Fehlende Objekte sind neu in der AV zu erfassen und nicht mehr vorhandene Bahngeleise sind zu löschen. Bahngeleise im Tunnel sind als ``EO.Bahngeleise_ueberdeckt`` zu attribuieren.
 
 Benötigende Layer im QGIS:
 
@@ -139,7 +139,7 @@ Benötigende Layer im QGIS:
 
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
-``EO.Bahngleise`` werden bei Unterführungen nicht unterbrochen???? Handbuch SO noch nicht so aber KKVA so..... Was ist wenn Gleis durch Industriehalle geht
+``EO.Bahngeleise`` werden bei Unterführungen nicht unterbrochen???? Handbuch SO noch nicht so aber KKVA so..... Was ist wenn Gleis durch Industriehalle geht
 
 Benötigende Layer im QGIS:
 
@@ -147,8 +147,9 @@ Benötigende Layer im QGIS:
 
     Bahn / Lagekontrolle   
 
-EO.Bahngleis_überdeckt
-----------------------
+
+EO.Bahngeleise_ueberdeckt
+-------------------------
 Wird eine Lagedifferenz zwischen der AV und den SBB-Daten detektiert, so ist das Objekt in der AV zu korrigieren.
 
 Benötigende Layer im QGIS:
@@ -159,7 +160,7 @@ Benötigende Layer im QGIS:
 
 Objekt fehlt/löschen/umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Fehlende Objekte sind neu in der AV zu erfassen und nicht mehr vorhandene Bahngleise sind zu löschen. Bahngelise nicht im Tunnel sind als "EO.Bahngleise" zu attribuieren.
+Fehlende Objekte sind neu in der AV zu erfassen und nicht mehr vorhandene Bahngeleise sind zu löschen. Bahngeleise nicht im Tunnel sind als ``EO.Bahngeleise`` zu attribuieren.
 
 Benötigende Layer im QGIS:
 
@@ -170,7 +171,7 @@ Benötigende Layer im QGIS:
 
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
-``EO.Bahngleise`` ist ein Linienelement.
+``EO.Bahngeleise`` ist ein Linienelement.
 
 Benötigende Layer im QGIS:
 
@@ -178,6 +179,6 @@ Benötigende Layer im QGIS:
 
     Bahn / Lagekontrolle   
 
-
+|
 
                                                                     

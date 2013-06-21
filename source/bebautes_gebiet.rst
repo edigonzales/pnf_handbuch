@@ -15,7 +15,6 @@ Bodenbedeckung      Wasserbecken
 Bodenbedeckung      Lagerplatz
 Bodenbedeckung      Gebaeudeerschliessung
 Bodenbedeckung      Parkplatz
-Bodenbedeckung      uebrige_befestigte
 Bodenbedeckung      Objektname
 Einzelobjekt        Mauer
 Einzelobjekt        unterirdisches_Gebaeude
@@ -72,7 +71,7 @@ Benötigte Layer in QGIS:
 
 Objekt löschen
 ^^^^^^^^^^^^^^
-Gebäude, die kleiner 6 m2 sind und keine Hausnummer haben oder nicht mehr vorhandens sind, sind zu löschen.
+Gebäude, die kleiner 6 m2 sind und keine Hausnummer haben oder nicht mehr vorhanden sind, sind zu löschen.
 
 Benötigte Layer in QGIS:
 
@@ -108,7 +107,7 @@ Benötigte Layer in QGIS:
 
 Darstellung nicht nach Richtlinie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Aneinandergebaute Gebäude sind - falls sie mehrere Adressen haben und baulich möglich resp. die Unterteilung sichtbar ist - korrekt zu unterteilen. Terassenhäuser werden als ein Gebäude erfasst und mittels ``EO.uebriger_Gebaeudeteil`` getrennt. 
+Aneinandergebaute Gebäude sind - falls sie mehrere Adressen haben und falls baulich möglich resp. die Unterteilung sichtbar ist - korrekt zu unterteilen. Terassenhäuser werden als ein Gebäude erfasst und mittels ``EO.uebriger_Gebaeudeteil`` getrennt. 
 
 Benötigte Layer in QGIS:
 
@@ -176,7 +175,10 @@ Sind in der AV Gartenanlagen  erfasst, die gemäss Kriterium *Handbuch der amtli
 
 Objekt fehlt
 ^^^^^^^^^^^^
-Fehlende Gartenanlagen sind zu erfassen. Alleinstehende Gebäude in ``BB.Acker_Wiese`` erhalten nicht in jedem Fall eine Gartenanlage.
+Fehlende Gartenanlagen sind zu erfassen. 
+
+.. note::
+  Alleinstehende Gebäude in ``BB.Acker_Wiese`` erhalten nicht in jedem Fall eine Gartenanlage.
 
 Benötigte Layer in QGIS:
 
@@ -207,7 +209,7 @@ Beispiele:
 
 Objekt umattribuieren  
 ^^^^^^^^^^^^^^^^^^^^^
-Sind in der AV Gebäudeerschliessungen erfasst, die gemäss Kriterium *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht zu ``BB.Gebaeudeerschliessungen`` gehören, sind die Objekte umzuattribuieren
+Sind in der AV Gebäudeerschliessungen erfasst, die gemäss Kriterium *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht zu ``BB.Gebaeudeerschliessungen`` gehören, sind die Objekte umzuattribuieren.
 
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -249,7 +251,7 @@ Beispiele:
 
 Objekt umattribuieren  
 ^^^^^^^^^^^^^^^^^^^^^
-Schwimmteiche sind gemäss Kriterien des *Handbuches der amtlichen Vermessung Kanton Solothurn* zu umzuattribuieren.
+Schwimmteiche sind gemäss Kriterien des *Handbuches der amtlichen Vermessung Kanton Solothurn* zu umzuattribuieren. Jauchegruben, die als Wasserbecken definiert sind, sind in ``EO.weitere`` umzuattribuieren.
 
 
 Darstellung nicht nach Richtlinie  
@@ -302,9 +304,14 @@ Beispiel:
    Die Lagedifferenz ist zu korrigieren.
 
 
-Objekt löschen / Objekt umattribuieren / Darstellung nicht nach Richtlinie
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Objekt löschen / Objekt umattribuieren 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Lagerplätze, die als Gebäudeerschliessung attribuiert sind, werden **nicht** als Lagerplatz ausgeschieden. Falls in der AV ein Lagerplatz vorhanden ist, der auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieser Objekt zu löschen.
+
+
+Darstellung nicht nach Richtlinie
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 
 BB.Gebaeudeerschliessung
@@ -337,7 +344,7 @@ Beispiele:
 
 Objekt fehlt / Objekt löschen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Fehlende Gebäudeerschliessungen sind zu erfassen. Falls in der AV eine Gebäudeerschliessung vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist diese Objekt zu löschen.
+Fehlende Gebäudeerschliessungen sind zu erfassen. Falls in der AV eine Gebäudeerschliessung vorhanden ist, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
 
 Benötigte Layer in QGIS:
 
@@ -385,18 +392,18 @@ Beispiele:
 |   :width: 550px                                                     |   :width: 550px                                                       |
 |   :target: _static/Bebaut_Parkplatz_Lagefehler1.png                 |   :target: _static/Bebaut_Parkplatz_Lagefehler2.png                   |
 |                                                                     |                                                                       |
-|   ``BB.Parkplatz`` falsch definiert und muss korrigiert werden.     |   ``BB.Parkplatz`` falsch definiert falsch und muss korrigiert werden.|
-|   Ein Teil ist als Gartenanlage erfasst                             |                                                                       |
+|   ``BB.Parkplatz`` falsch definiert und muss korrigiert werden.     |   ``BB.Parkplatz`` ist definiert falsch und muss korrigiert werden.   |
+|   Ein Teil ist als Gartenanlage erfasst.                            |                                                                       |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 Objekt fehlt / Objekt löschen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Fehlende Parkplätze, die als Gebäudeerschliessung attribuiert sind, werden nicht umattribuiert.
+Fehlende Parkplätze, die als Gebäudeerschliessung attribuiert sind, werden **nicht** umattribuiert.
 
 
 Objekt umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^
-Parkplätze kleiner 100 m2 sind zu löschen resp. umzuattribuieren. Können z.B. durch Strassen getrennte Parkplätze als Einheit angesehen werden, werden jedoch einzelne Parkplätz kleiner 100 m2 nicht gelöscht.
+Parkplätze kleiner 100 m2 sind zu löschen resp. umzuattribuieren. Können z.B. durch Strassen getrennte Parkplätze als Einheit angesehen werden, werden jedoch einzelne Parkplätz kleiner 100 m2 **nicht** gelöscht.
 
 Benötigte Layer in QGIS:
 
@@ -415,30 +422,9 @@ Beispiele:
 |   :target: _static/Bebaut_Parkplatz_loeschen.png                    |   :target: _static/Bebaut_Parkplatz_nicht_loeschen.png                |
 |                                                                     |                                                                       |
 |   ``BB.Parkplatz`` ist kleiner 100 m2 und wird zu                   |   Der östliche Teil des Parkplatzes ist kleiner 100 m2. Er wird       |
-|   ``BB.Gebaeudeerschliessung``umattribuiert.                        |   **nicht** umattribuiert, da er mit dem westlichen Teil eine Einheit |
+|   ``BB.Gebaeudeerschliessung`` umattribuiert.                       |   **nicht** umattribuiert, da er mit dem westlichen Teil eine Einheit |
 |                                                                     |   bildet.                                                             |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
-
-
-Darstellung nicht nach Richtlinie  
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
-
-
-
-BB.uebrige_befestigte
----------------------
-.. index:: übrige befestigte
-
-Lagedifferenz / Objekt fehlt
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Wird eine Lagedifferenz bei Panzersperren zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und der Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Das Objekt muss erfasst werden falls es in der amtlichen Vermessung fehlt.
-
-Benötigte Layer in QGIS:
-
-.. code-block:: none
-
-   Bebautes Gebiet / Lagekontrolle
 
 
 Darstellung nicht nach Richtlinie  
@@ -453,9 +439,6 @@ Lagedifferenz
 ^^^^^^^^^^^^^
 Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
-Objekt fehlt
-^^^^^^^^^^^^
-Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 Objekt löschen
 ^^^^^^^^^^^^^^
@@ -487,6 +470,12 @@ Benötigte Layer in QGIS:
 |   Mauer erfüllt Aufnahmekritieren und wird **nicht** gelöscht.      |   ``EO.Mauer`` Linienelement ausserhalb des Flächenelements ist zu    |
 |                                                                     |   löschen.                                                            |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
+
+
+Objekt fehlt
+^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
 
 Objekt umattribuieren  
 ^^^^^^^^^^^^^^^^^^^^^
@@ -571,9 +560,12 @@ Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 Objekt löschen / fehlt / umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Freistehende** flächige übrige Gebäudeteile sind entweder zu löschen oder umzuattribuieren (z.B. ``EO.Unterstand``). Flächige übrige Gebäudeteile **innerhalb** eines Gebäudes sind in ein EO.Linienobjekt umzuattribuieren. EO.Linienelemente der Art ``EO.uebriger_Gebaeudeteil`` **ausserhalb** von Gebäuden sind entweder zu löschen oder in ein EO.Flächenelement zumzuwandeln. 
+**Freistehende** flächige übrige Gebäudeteile sind entweder zu löschen oder umzuattribuieren (z.B. ``EO.Unterstand``). Flächige übrige Gebäudeteile **innerhalb** eines Gebäudes sind in ein EO.Linienobjekt umzuattribuieren. EO.Linienelemente der Art ``EO.uebriger_Gebaeudeteil`` **ausserhalb** von Gebäuden sind entweder zu löschen oder in ein EO.Flächenelement umzuwandeln. 
 
 Zu kleine Zwischenstützen sowie nicht plausible Kleinstobjekte sind zu löschen (Layer: EO.Flächenelement < 1.5 m2).
+
+.. note::
+  Für die Unterscheidung ``EO.Unterstand`` / ``EO.uebriger_Gebaeudeteil`` sind bei der Feldkontrolle **nicht** sämtliche Objekte zu begehen!
 
 Benötigte Layer in QGIS:
 
@@ -595,7 +587,7 @@ Beispiele:
 |   :target: _static/Bebaut_uebrigGeb_Flaeche_falsch.png              |   :target: _static/Bebaut_uebrigGeb_Flaeche_innerhalb.png             |
 |                                                                     |                                                                       |
 |   Freistehende flächige übrige Gebäudeteile sind nicht erlaubt.     |   Die EO.Flächenelemente sind in Linienelemente umzuwandeln.          |
-|   Das Objekt ist in ein Unterstanz umzuattribuieren ?????           |                                                                       |
+|   Das Objekt ist in ein Unterstanz umzuattribuieren.                |                                                                       |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 |.. _fig_bebaut_33:                                                   |                                                                       |
 |                                                                     |                                                                       |
@@ -651,7 +643,7 @@ Beispiele:
 
 Objekt löschen
 ^^^^^^^^^^^^^^
-Private Treppen (z.B. zu Hauseingänge und Kellerabgänge) sind zu löschen.
+Private Treppen (z.B. Hauseingänge und Kellerabgänge) sind zu löschen.
 
 Benötigte Layer in QGIS:
 
@@ -677,7 +669,7 @@ Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 Darstellung nicht nach Richtlinie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Die Modellbildung von Treppen ist zu kontrollieren und ggf. zu korrigieren. Jede Treppe (inkl. einzelner Treppentritte) entspricht einem EO.Objekt.
+Die Modellbildung von Treppen ist zu kontrollieren und ggf. zu korrigieren. Jede Treppe (inkl. einzelner Treppentritt) entspricht einem EO.Objekt.
 
 Benötigte Layer in QGIS:
 
@@ -714,12 +706,12 @@ Benötigte Layer in QGIS:
 
 Objekt löschen  
 ^^^^^^^^^^^^^^
-Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+Nicht mehr vorhandene Reservoirs sind zu löschen. Eine Feldkontrolle ist nur durchzuführen falls die Situation auf dem Orthofoto nicht klar ist und im AfU-Datensatz kein Reservoir mehr vorhanden ist.
 
 
 Objekt umattribuieren  
 ^^^^^^^^^^^^^^^^^^^^^
-Nicht mehr vorhandene Reservoirs sind zu löschen. Eine Feldkontrolle ist nur durchzuführen falls die Situation auf dem Orthofoto nicht klar ist und im AfU-Datensatz kein Reservoir mehr vorhanden ist.
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 
 Darstellung nicht nach Richtlinie
@@ -755,7 +747,7 @@ Benötigte Layer in QGIS:
 
 Beispiel:
 
-.. _fig_bebaut_38:
+.. _fig_bebaut_44:
 
 .. figure:: _static/Bebaut_Unterstand_fehlt.png
    :width: 550px
@@ -770,7 +762,7 @@ Falls in der AV ein Unterstand vorhanden ist, der auf dem aktuellen Orthofoto ni
 
 Objekt umattribuieren  
 ^^^^^^^^^^^^^^^^^^^^^
-Siehe ``EO.uebriger_Gebaeudeteil`` :ref:`ref_eo_uebriger_gebteil_umattr`. 
+Als ``BB.Gebaeude`` definierte Bushäuschen und Perrondächer etc. sind in ``EO.Unterstand`` umzuattribuieren. Weitere Informationen siehe ``EO.uebriger_Gebaeudeteil`` :ref:`ref_eo_uebriger_gebteil_umattr`. 
 
 
 Darstellung nicht nach Richtlinie

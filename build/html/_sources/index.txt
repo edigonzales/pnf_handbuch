@@ -14,6 +14,7 @@ Inhalt:
    allgemein
    toleranz
    strasse
+   bahn
    gewaesser
    bebautes_gebiet
    landwirtschaft
