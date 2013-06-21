@@ -537,7 +537,7 @@ EO.schmaler_Weg
 Lagekontrolle 
 ^^^^^^^^^^^^^ 
 Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) festgestellt, so ist das Objekt in der AV zu korrigieren. 
-Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Bei den Wanderwegen, die ihren Verlauf jährlich ändern (z.B. Graswege), ist **keine** Korrektur vorzunehmen.
+Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Ist der Verlauf auf dem Orthofoto nicht klar ersichtlich oder der Verlauf ändert sich jährlich (z.B. Graswege), ist **keine** Korrektur vorzunehmen.
      
 
 Benötigte Layer in QGIS:
@@ -613,7 +613,7 @@ Benötigte Layer in QGIS:
 
 Objekt fehlt/löschen  
 ^^^^^^^^^^^^^^^^^^^^
-**Neue Fahrspuren werden im Rahmen der PNF/Homogenisierung nicht erhoben**. ``EO.Fahrspuren``, die nicht mehr existieren, sind zu löschen. Für die Kontrolle, ob eine Fahrspur noch existiert, kann eine Feldkontolle sinnvoll sein. 
+Neue Fahrspuren werden im Rahmen der PNF/Homogenisierung **nicht** erhoben. ``EO.Fahrspuren``, die nicht mehr existieren, sind zu löschen. Für die Kontrolle, ob eine Fahrspur noch existiert, kann eine Feldkontolle sinnvoll sein. 
 
 Benötigte Layer in QGIS:
 
