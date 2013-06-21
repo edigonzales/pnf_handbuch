@@ -110,7 +110,7 @@ EO.Bahngeleise
 --------------
 Lagedifferenz  
 ^^^^^^^^^^^^^   
-Wird eine Lagedifferenz zwischen der AV und den SBB-Daten detektiert, so ist das Objekt in der AV zu korrigieren. ???? Muss Toleranz (hier ungleich :ref:`ref_Tz`) quantifiziert werden. 
+Wird eine Lagedifferenz zwischen der AV und den SBB-Daten detektiert, so ist das Objekt in der AV zu korrigieren. ???? Muss Toleranz (hier ungleich :ref:`ref_Tz`) quantifiziert werden? Z.B. liegt ausserhalb der dickeren blauen Linie (SBB-Datensatz) in QGIS?
 
 Benötigende Layer im QGIS:
 
@@ -154,7 +154,7 @@ Benötigende Layer im QGIS:
 
 EO.Bahngeleise_ueberdeckt
 -------------------------
-Wird eine Lagedifferenz zwischen der AV und den SBB-Daten detektiert, so ist das Objekt in der AV zu korrigieren. ???? Muss Toleranz (hier ungleich :ref:`ref_Tz`) quantifiziert werden. 
+Wird eine Lagedifferenz zwischen der AV und den SBB-Daten detektiert, so ist das Objekt in der AV zu korrigieren. ???? Muss Toleranz (hier ungleich :ref:`ref_Tz`) quantifiziert werden? Z.B. liegt ausserhalb der dickeren blauen Linie (SBB-Datensatz) in QGIS? 
 
 Benötigende Layer im QGIS:
 

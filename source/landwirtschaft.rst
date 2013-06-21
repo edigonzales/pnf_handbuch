@@ -49,7 +49,7 @@ Beispiele:
 .. _fig_landw_1:
 
 .. figure:: _static/Landwirtschaft_umattribuieren_Acker_Wiese.png
-   :width: 450px
+   :width: 550px
    :target: _static/Landwirtschaft_umattribuieren_Acker_Wiese.png
 
    Die beiden Acker_Wiesen-Objekte (rosa Linie) sind in ``BB.Gartenanlage`` umzuattribuieren.

@@ -21,6 +21,7 @@ Inhalt:
    bestockte_flaeche 
    seltene_objekte
    weitere_ebenen
+   perimeterrand
 
 
 Index
