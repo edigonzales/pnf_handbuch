@@ -193,7 +193,7 @@ EO.eingedoltes_oeffentliches_Gewaesser
 .. index:: eingedoltes öffentliches Gewässer   
 
 Lagedifferenz / Objekt löschen  
-^^^^^^^^^^^^^^^^^^^^^^   
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Sind zuverlässige Referenzdaten von eingedolten Gewässer (z.B. aus Leitungskataster) vorhanden, sind die Daten der AV nach diesen zu korrigieren. Falls keine solche Daten vorhanden sind, sind die Objekte aus der AV zu entfernen.
 
 .. important:: 

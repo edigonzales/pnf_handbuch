@@ -1,7 +1,7 @@
 
 Bahn
 ====
-In dieser Gruppe werden alle Objekte im Bahnareal aus der amtlichen Vermessung auf deren Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
+In dieser Gruppe werden alle Objekte im Bahnareal aus der amtlichen Vermessung auf deren Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft. Die SBB-Daten für eine allfällige Korrektur der AV-Daten sind via AGI zu beziehen.
 
 .. note::
    Unter Berücksichtigung von Sonderregelungen (z.B. Gebäude und Strassen) sind überflüssige Unterteilungslinien zu löschen. 

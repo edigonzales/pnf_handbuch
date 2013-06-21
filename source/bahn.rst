@@ -117,6 +117,9 @@ Benötigende Layer im QGIS:
 .. code-block:: none
 
     Bahn / Lagekontrolle   
+    
+.. note::
+  Als Referenzdaten dienen die Daten der SBB        
 
 Beispiele:
 
@@ -133,7 +136,7 @@ Beispiele:
 
 Objekt fehlt/löschen/umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Fehlende Objekte sind neu in der AV zu erfassen und nicht mehr vorhandene Bahngeleise sind zu löschen. Bahngeleise im Tunnel sind als ``EO.Bahngeleise_ueberdeckt`` zu attribuieren.
+Fehlende Objekte sind von den SBB-Daten zu übernehmen und nicht mehr vorhandene Bahngeleise sind zu löschen. Bahngeleise im Tunnel sind als ``EO.Bahngeleise_ueberdeckt`` zu attribuieren.
 
 Benötigende Layer im QGIS:
 
@@ -154,6 +157,8 @@ Benötigende Layer im QGIS:
 
 EO.Bahngeleise_ueberdeckt
 -------------------------
+Lagedifferenz  
+^^^^^^^^^^^^^ 
 Wird eine Lagedifferenz zwischen der AV und den SBB-Daten detektiert, so ist das Objekt in der AV zu korrigieren. ???? Muss Toleranz (hier ungleich :ref:`ref_Tz`) quantifiziert werden? Z.B. liegt ausserhalb der dickeren blauen Linie (SBB-Datensatz) in QGIS? 
 
 Benötigende Layer im QGIS:
@@ -161,17 +166,19 @@ Benötigende Layer im QGIS:
 .. code-block:: none
 
     Bahn / Lagekontrolle   
+    
+.. note::
+  Als Referenzdaten dienen die Daten der SBB    
 
 Objekt fehlt/löschen/umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Fehlende Objekte sind neu in der AV zu erfassen und nicht mehr vorhandene Bahngeleise sind zu löschen. Bahngeleise nicht im Tunnel sind als ``EO.Bahngeleise`` zu attribuieren.
+Fehlende Objekte sind von den SBB-Daten zu übernehmen und nicht mehr vorhandene Bahngeleise sind zu löschen. Bahngeleise nicht im Tunnel sind als ``EO.Bahngeleise`` zu attribuieren.
 
 Benötigende Layer im QGIS:
 
 .. code-block:: none
 
     Bahn / Lagekontrolle   
-    Bahn / SBB-Gleisnetz
 
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
