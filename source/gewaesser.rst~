@@ -15,6 +15,7 @@ Bodenbedeckung                 fliessendes Gewässer
 Bodenbedeckung                 Schilfgürtel
 Einzelobjekt                   Einged. öff. Gewässer
 Einzelobjekt                   Brücke, Passerelle
+Einzelobjekt                   Schwelle
 Einzelobjekt	               Rinnsal
 Einzelobjekt                   Quelle
 =============================  =========================
@@ -224,7 +225,7 @@ EO.Bruecke_Passerelle
 ---------------------   
 Lagedifferenz
 ^^^^^^^^^^^^^
-Wird lediglich durch eine Plausibilitätsprüfung kontrolliert. Die Lage wird jeweils nicht mittels einer Feldkontrolle kontrolliert. Korrekturen in der Lage werden im Rahmen der PNF/Homogenisierung selten bis nie durchgeführt.   
+Wird lediglich durch eine Plausibilitätsprüfung kontrolliert. Die Lage wird jeweils nicht mittels einer Feldkontrolle kontrolliert. Eine Korrektur der Ausdehnung auf die Widerlager oder die lichte Weite wird **nicht** vorgenommen.   
 
 Benötigte Layer im QGIS:
 
@@ -235,7 +236,7 @@ Benötigte Layer im QGIS:
    
 Objekt fehlt/umattribuieren   
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
-Fehlende Objekte sind gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* zu erfassen. Falls die Brücke/Passerelle falsch attribuiert ist, ist dies entsprechend zu korrigieren. Bei Brücken gilt das Prinzip der Vogelperspektive d.h. die über der Brücke resp. Passerelle verlaufende Bodenbedeckung wird durchgezogen. ????????????? > 4 m????????
+Fehlende Objekte sind gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* zu erfassen. Falls die Brücke/Passerelle falsch attribuiert ist, ist dies entsprechend zu korrigieren. Bei Brücken gilt das Prinzip der Vogelperspektive d.h. die über der Brücke resp. Passerelle verlaufende Bodenbedeckung wird durchgezogen.
    
 Benötigte Layer im QGIS:
 
@@ -245,8 +246,29 @@ Benötigte Layer im QGIS:
    
 Darstellung nicht nach Richtlinie    
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^       
-Bei Brücken gilt die Vogelperspektive. Eine Korrektur der Ausdehnung auf die Widerlager oder die lichte Weite wird **nicht** vorgenommen. Der Elemententyp bei ``EO.Brücke, Passerelle`` ist Flächenelement.        
+Der Elemententyp bei ``EO.Brücke, Passerelle`` ist Flächenelement.        
    
+EO.Schwelle
+-----------
+. index:: Schwelle
+
+Lagedifferenz                                                                                                                                                               
+^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Lagedifferenzen korrigiert.  
+
+Objekt fehlt/löschen/umattribuieren   
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+Ist auf dem aktuellen Orthofoto ein Objekt zu erkennen, das nicht in der AV ist, ist dieses im Rahmen der PNF/Homogenisierung **nicht** neu zu erfassen. Falls in der AV ein Objekt vorhanden ist, welches auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen oder evtl. einer anderen EO.Art zu zuweisen.
+
+Benötigte Layer im QGIS:       
+                                                                                                                                                                  
+.. code-block:: none   
+
+   Seltene Objekte / Lagekontrolle      
+   
+Darstellung nicht nach Richtlinie    
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
    
    
 EO.Rinnsal   
