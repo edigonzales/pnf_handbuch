@@ -2,7 +2,12 @@ Landwirtschaft
 ==============
 .. index:: Landwirtschaft
 
-In dieser Gruppe werden folgende Objekte der Bodenbedeckung auf ihre Richtigkeit geprüft:
+In dieser Mängelgruppe wird die landwirtschaftlich genutzte Fläche überprüft.
+
+.. note::
+   Unter Berücksichtigung von Sonderregelungen (z.B. Gebäude und Strassen) sind überflüssige Unterteilungslinien zu löschen. 
+
+Folgende Objekte werden geprüft:
 
 ==================  ==================
 Topic  		    Art    

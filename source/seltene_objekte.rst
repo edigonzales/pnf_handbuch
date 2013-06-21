@@ -2,7 +2,12 @@ Seltene Objekte
 ===============
 .. index:: seltene Objekte
 
-In dieser Mängelgruppe werden Objekte überprüft, die eher selten vorkommen. Folgende Objekte werden geprüft:
+In dieser Mängelgruppe werden Objekte überprüft, die eher selten vorkommen. 
+
+.. note::
+   Unter Berücksichtigung von Sonderregelungen (z.B. Gebäude und Strassen) sind überflüssige Unterteilungslinien zu löschen. 
+
+Folgende Objekte werden geprüft:
 
 ==================  =====================================    
 Topic  		    Art    

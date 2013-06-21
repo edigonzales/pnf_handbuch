@@ -4,6 +4,9 @@ Bestockte Fläche
 ================
 In dieser Gruppe werden alle bestockten Flächen aus der amtlichen Vermessung auf deren Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
 
+.. note::
+   Unter Berücksichtigung von Sonderregelungen (z.B. Gebäude und Strassen) sind überflüssige Unterteilungslinien zu löschen. 
+
 Folgende Objekte werden geprüft:
 
 =============================  ========================================

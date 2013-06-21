@@ -3,6 +3,9 @@ Bahn
 ====
 In dieser Gruppe werden alle Objekte im Bahnareal aus der amtlichen Vermessung auf deren Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
 
+.. note::
+   Unter Berücksichtigung von Sonderregelungen (z.B. Gebäude und Strassen) sind überflüssige Unterteilungslinien zu löschen. 
+
 Folgende Objekte werden geprüft:
 
 =============================  ========================================
@@ -22,8 +25,7 @@ BB.Bahn
 
 Lagedifferenz  
 ^^^^^^^^^^^^^                                              
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
-Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst.
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
 
 
 
@@ -73,14 +75,14 @@ EO.Bahnsteig
 ------------                                                                                                                                                   
 Lagedifferenz  
 ^^^^^^^^^^^^^                                              
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
-Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst.
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst.
 
 Benötigende Layer im QGIS:
 
 .. code-block:: none
 
     Bahn / Lagekontrolle   
+
 
 Objekt fehlt/löschen/umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -92,6 +94,7 @@ Benötigende Layer im QGIS:
 
     Bahn / Lagekontrolle   
 
+
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
 ``EO.Bahnsteig`` ist ein Flächenelement.
@@ -102,11 +105,12 @@ Benötigende Layer im QGIS:
 
     Bahn / Lagekontrolle   
 
+
 EO.Bahngeleise
 --------------
 Lagedifferenz  
 ^^^^^^^^^^^^^   
-Wird eine Lagedifferenz zwischen der AV und den SBB-Daten detektiert, so ist das Objekt in der AV zu korrigieren.
+Wird eine Lagedifferenz zwischen der AV und den SBB-Daten detektiert, so ist das Objekt in der AV zu korrigieren. ???? Muss Toleranz (hier ungleich :ref:`ref_Tz`) quantifiziert werden? Z.B. liegt ausserhalb der dickeren blauen Linie (SBB-Datensatz) in QGIS?
 
 Benötigende Layer im QGIS:
 
@@ -139,7 +143,7 @@ Benötigende Layer im QGIS:
 
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
-``EO.Bahngeleise`` werden bei Unterführungen nicht unterbrochen???? Handbuch SO noch nicht so aber KKVA so..... Was ist wenn Gleis durch Industriehalle geht
+``EO.Bahngeleise`` werden bei Unterführungen nicht unterbrochen???? Handbuch SO noch nicht so aber KKVA so..... Was ist wenn Gleis durch Industriehalle geht?
 
 Benötigende Layer im QGIS:
 
@@ -150,7 +154,7 @@ Benötigende Layer im QGIS:
 
 EO.Bahngeleise_ueberdeckt
 -------------------------
-Wird eine Lagedifferenz zwischen der AV und den SBB-Daten detektiert, so ist das Objekt in der AV zu korrigieren.
+Wird eine Lagedifferenz zwischen der AV und den SBB-Daten detektiert, so ist das Objekt in der AV zu korrigieren. ???? Muss Toleranz (hier ungleich :ref:`ref_Tz`) quantifiziert werden? Z.B. liegt ausserhalb der dickeren blauen Linie (SBB-Datensatz) in QGIS? 
 
 Benötigende Layer im QGIS:
 

@@ -2,6 +2,9 @@ Gewässer
 ========
 In dieser Gruppe werden alle Elemente des Gewässers aus der amtlichen Vermessung auf dessen Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
 
+.. note::
+   Unter Berücksichtigung von Sonderregelungen (z.B. Gebäude und Strassen) sind überflüssige Unterteilungslinien zu löschen. 
+
 Folgende Objekte werden geprüft:
 
 =============================  =========================
@@ -190,7 +193,7 @@ EO.eingedoltes_oeffentliches_Gewaesser
 .. index:: eingedoltes öffentliches Gewässer   
 
 Lagedifferenz / Objekt löschen  
-^^^^^^^^^^^^^^^^^^^^^^   
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Sind zuverlässige Referenzdaten von eingedolten Gewässer (z.B. aus Leitungskataster) vorhanden, sind die Daten der AV nach diesen zu korrigieren. Falls keine solche Daten vorhanden sind, sind die Objekte aus der AV zu entfernen.
 
 .. important:: 
@@ -232,7 +235,7 @@ Benötigte Layer im QGIS:
    
 Objekt fehlt/umattribuieren   
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
-Fehlende Objekte sind gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* zu erfassen. Falls die Brücke/Passerelle falsch attribuiert ist, ist dies entsprechend zu korrigieren. Bei Brücken gilt das Prinzip der Vogelperspektive d.h. die über der Brücke resp. Passerelle verlaufende Bodenbedeckung wird durchgezogen. ????????????? >4m????????
+Fehlende Objekte sind gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* zu erfassen. Falls die Brücke/Passerelle falsch attribuiert ist, ist dies entsprechend zu korrigieren. Bei Brücken gilt das Prinzip der Vogelperspektive d.h. die über der Brücke resp. Passerelle verlaufende Bodenbedeckung wird durchgezogen. ????????????? > 4 m????????
    
 Benötigte Layer im QGIS:
 
@@ -242,7 +245,7 @@ Benötigte Layer im QGIS:
    
 Darstellung nicht nach Richtlinie    
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^       
-Bei Brücken gilt die Vogelperspektive. Eine Korrektur der Ausdehnung auf die Widerlager oder die lichte Weite wird **nicht** vorgenommen. Der Elemententyp bei ``EO.Brücke, Passerelle `` ist Flächenelement.        
+Bei Brücken gilt die Vogelperspektive. Eine Korrektur der Ausdehnung auf die Widerlager oder die lichte Weite wird **nicht** vorgenommen. Der Elemententyp bei ``EO.Brücke, Passerelle`` ist Flächenelement.        
    
    
    

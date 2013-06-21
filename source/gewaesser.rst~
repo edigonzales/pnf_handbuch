@@ -2,6 +2,9 @@ Gewässer
 ========
 In dieser Gruppe werden alle Elemente des Gewässers aus der amtlichen Vermessung auf dessen Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
 
+.. note::
+   Unter Berücksichtigung von Sonderregelungen (z.B. Gebäude und Strassen) sind überflüssige Unterteilungslinien zu löschen. 
+
 Folgende Objekte werden geprüft:
 
 =============================  =========================
@@ -49,7 +52,7 @@ Beispiele:
                                                                                                                                                    
 
 
-Objekt fehlt/Löschen  
+Objekt fehlt/löschen  
 ^^^^^^^^^^^^^^^^^^^^
 Ist auf dem aktuellen Orthofoto ein stehendes Gewässer zu erkennen, welches öffentlich ist oder das Flächenkriterium erfüllt und nicht in der AV ist, ist dieses im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
 Ist in der AV ein stehendes Gewässer vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Flächenkriterium nicht erfüllt, ist dieses Objekt zu löschen.
@@ -232,7 +235,7 @@ Benötigte Layer im QGIS:
    
 Objekt fehlt/umattribuieren   
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
-Fehlende Objekte sind gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* zu erfassen. Falls die Brücke/Passerelle falsch attribuiert ist, ist dies entsprechend zu korrigieren. Bei Brücken gilt das Prinzip der Vogelperspektive d.h. die über der Brücke resp. Passerelle verlaufende Bodenbedeckung wird durchgezogen. ????????????? >4m????????
+Fehlende Objekte sind gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* zu erfassen. Falls die Brücke/Passerelle falsch attribuiert ist, ist dies entsprechend zu korrigieren. Bei Brücken gilt das Prinzip der Vogelperspektive d.h. die über der Brücke resp. Passerelle verlaufende Bodenbedeckung wird durchgezogen. ????????????? > 4 m????????
    
 Benötigte Layer im QGIS:
 
@@ -242,7 +245,7 @@ Benötigte Layer im QGIS:
    
 Darstellung nicht nach Richtlinie    
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^       
-Bei Brücken gilt die Vogelperspektive. Eine Korrektur der Ausdehnung auf die Widerlager oder die lichte Weite wird **nicht** vorgenommen. Der Elemententyp bei ``EO.Brücke, Passerelle `` ist Flächenelement.        
+Bei Brücken gilt die Vogelperspektive. Eine Korrektur der Ausdehnung auf die Widerlager oder die lichte Weite wird **nicht** vorgenommen. Der Elemententyp bei ``EO.Brücke, Passerelle`` ist Flächenelement.        
    
    
    
