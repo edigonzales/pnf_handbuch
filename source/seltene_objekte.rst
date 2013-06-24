@@ -406,7 +406,7 @@ Benötigte Layer im QGIS:
 
 Objekt fehlt/löschen/umattribuieren    
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
-Ist auf dem aktuellen Orthofoto eine Gondelbahn, Sesselbahn, Materialseilbahn oder ein Skilift zu erkennen, die nicht in der AV ist, ist diese/dieser im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV eine Gondelbahn, Sesselbahn, Materialseilbahn oder ein Skilift vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder nicht mehr bewirtschaftet wird, ist dieses Objekt zu löschen oder evtl. einer anderen EO.Art zu zuweisen.
+Ist auf dem aktuellen Orthofoto eine Gondelbahn, Sesselbahn, Materialseilbahn oder ein Skilift zu erkennen, die nicht in der AV ist, ist diese/dieser im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV eine Gondelbahn, Sesselbahn, Materialseilbahn oder ein Skilift vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder nicht mehr bewirtschaftet wird, ist dieses Objekt zu löschen.
 
 Benötigte Layer im QGIS:       
 
@@ -466,7 +466,7 @@ Benötigte Layer im QGIS:
 
 Objekt fehlt/löschen/umattribuieren   
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
-Ist auf dem aktuellen Orthofoto ein Objekt zu erkennen, das nicht in der AV ist, ist dieses im Rahmen der PNF/Homogenisierung **nicht** neu zu erfassen. Falls in der AV eine Objekt vorhanden ist, welches auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder den Aufnahmekriterien gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht genügt, ist dieses Objekt zu löschen oder evtl. einer anderen EO.Art zu zuweisen. Zur Überprüfung ob die Objekte der Art ``EO. Grotte_Hoehleneingang``, welche in der AV erfasst ist, wirklich existieren, kann eine Feldkontrolle sinnvoll sein oder eine Abklärung mit einer orstkundigen Person.
+Ist auf dem aktuellen Orthofoto ein Objekt zu erkennen, das nicht in der AV ist, ist dieses im Rahmen der PNF/Homogenisierung **nicht** neu zu erfassen. Falls in der AV eine Objekt vorhanden ist, welches auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder den Aufnahmekriterien gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht genügt, ist dieses Objekt zu löschen oder evtl. einer anderen EO.Art zu zuweisen. Zur Überprüfung ob die Objekte der Art ``EO.Grotte_Hoehleneingang``, welche in der AV erfasst ist, wirklich existieren, kann eine Feldkontrolle sinnvoll sein oder eine Abklärung mit einer orstkundigen Person.
 
 Benötigte Layer im QGIS:       
 
