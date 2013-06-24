@@ -12,7 +12,7 @@ Abgrenzungen weden im Projekt *periodische Nachführung und Homogenisierung* nur
 +==================================+===========+===========+===========+=================================================+===================================================+
 | befestigte Fläche **ohne**       |   1.0 m   |   1.5 m   |   1.5 m   | Strasse_Weg, Bahn, Sportanlage_befestigt,       | Uferverbauung, Lawinenverbauung,                  |
 | Abschluss                        |           |           |           | übrige befestigte                               | Ruine_archäologisches_Objekt, Druckleitung,       |
-|                                  |           |           |           |                                                 | Grotte_Höhleneingang, Achse, wichtiger_Einzelbaum |            
+|                                  |           |           |           |                                                 | Grotte_Höhleneingang, Achse                       |            
 +----------------------------------+-----------+-----------+-----------+-------------------------------------------------+---------------------------------------------------+
 | befestigte Fläche **mit**        |   0.5 m   |   1.0 m   |   1.5 m   | Strasse_Weg, Trottoir, Verkehrsinsel, Flugplatz,| Bahnsteig, Hochkamin, Denkmal, Mast_Antenne,      |
 | Abschluss                        |           |           |           | Sportanlage_befestigt, Parkplatz,               | Mast_Leitung, Aussichtsturm, Uferverbauung        |
@@ -20,8 +20,8 @@ Abgrenzungen weden im Projekt *periodische Nachführung und Homogenisierung* nur
 |                                  |           |           |           |                                                 | Hochspannungsfreileitung, Gondelbahn_Sesselbahn,  |
 |                                  |           |           |           |                                                 | Materialseilbahn, Skilift, Kruzifix               |                                                                                                                         
 +----------------------------------+-----------+-----------+-----------+-------------------------------------------------+---------------------------------------------------+
-| unbefestigte Fläche              |   2.0 m   |   3.0 m   |   3.0 m   | Acker_Wiese, Reben, Obstkultur,                 | schmaler_Weg, Fahrspur, Rinnsal                   |
-|                                  |           |           |           | übrige_Intensivkultur, Gartenanlage,            |                                                   |
+| unbefestigte Fläche              |   2.0 m   |   3.0 m   |   3.0 m   | Acker_Wiese, Reben, Obstkultur,                 | schmaler_Weg, Fahrspur, Rinnsal, Fähre,           |
+|                                  |           |           |           | übrige_Intensivkultur, Gartenanlage,            | wichtiger_Einzelbaum                              |
 |                                  |           |           |           | Parkanlage_humusiert, Sportanlage_humusiert,    |                                                   |
 |                                  |           |           |           | Friedhof, Hoch_Flachmoor, übrige_humusiert,     |                                                   |
 |                                  |           |           |           | stehendes_Gewässer, fliessendes_Gewässer,       |                                                   |
