@@ -38,5 +38,4 @@ Strassenachsen
 Falscher Verlauf
 ^^^^^^^^^^^^^^^^
 Liegen die Strassenachsen nach einer Lagekorrektur der Bodenbedeckungsart ``Strasse_Weg`` **ausserhalb** derselben, so sind die Achsen so zu korrigieren, dass sie wieder innerhalb der Strasse resp. des Weges liegen. Nicht korrigiert werden Achsen, die aufgrund einer Korrektur der Bodenbedeckung nicht mehr korrekt in der Mitte der Strasse resp. des Weges liegen.
- 
-|
+Attribut IstAchse ist hier auf ``Nein`` zu setzen 

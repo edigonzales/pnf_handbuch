@@ -518,7 +518,7 @@ Benötigte Layer in QGIS:
 
 Objekt fehlt/umattribuieren/löschen/Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
-Im Rahmen der PNF/Homogenisierung werden **keine** neuen ``EO.Pfeiler`` erfasst. Pfeiler mit einer Seitenlänge < 50cm sind aus der AV zu löschen. Pfeiler die nicht der richtigen Art zugewiesen sind, sind umzuattribuieren.      
+Im Rahmen der PNF/Homogenisierung werden **keine** neuen ``EO.Pfeiler`` erfasst. Pfeiler mit einer Seitenlänge < 50cm sind aus der AV zu löschen. Pfeiler, die nicht der richtigen Art zugewiesen sind, sind umzuattribuieren.      
                                  
 
 Benötigte Layer in QGIS:

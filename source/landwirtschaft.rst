@@ -9,15 +9,15 @@ In dieser Mängelgruppe wird die landwirtschaftlich genutzte Fläche überprüft
 
 Folgende Objekte werden geprüft:
 
-==================  ==================
+==================  =========================
 Topic  		    Art    
-==================  ================== 
+==================  ========================= 
 Bodenbedeckung      Acker_Wiese 
 Bodenbedeckung      Weide
 Bodenbedeckung      Reben
 Bodenbedeckung      Obstkultur
 Bodenbedeckung      uebrige_Intensivkultur
-==================  ==================
+==================  =========================
 
 BB.Acker_Wiese / BB.Weide
 -------------------------
@@ -42,7 +42,6 @@ Benötigte Layer in QGIS:
 
    Landwirtschaft / Lagekontrolle
    Landwirtschaft / Checklayer / Acker_Wiese in TS2 (TODO)
-   Landwirtschaft / Checklayer / Weide in TS2 (TODO)
 
 Beispiele:
 
@@ -87,8 +86,6 @@ BB.Reben / BB.Obstkultur / BB.uebrige_Intensivkulturen
 ------------------------------------------------------
 .. index:: Reben, Obstkultur, übrige Intensivkulturen  
 
-Die drei Bodenbedeckungsarten ``BB.Reben``, ``BB.Obstkultur`` und ``BB.uebrige_Intensivkulturen`` sind auf ihre Vollständigkeit, Aktualität sowie Lagekorrektheit zu prüfen:
-
 Lagedifferenz
 ^^^^^^^^^^^^^
 Die korrekte Lage ist mit dem aktuellen Orthofoto zu prüfen. Korrigiert werden Abweichungen ausserhalb der Toleranzbereiche (siehe :ref:`ref_Tz`)
@@ -98,7 +95,6 @@ Benötigte Layer in QGIS:
 .. code-block:: none
 
    Landwirtschaft / Lagekontrolle
-   Landwirtschaft / Checklayer / BB.Kulturen < 1000 m2
 
 Beispiele:
 
@@ -109,8 +105,8 @@ Beispiele:
 |   :width: 550px                                                     |   :width: 550px                                                       |
 |   :target: _static/Landwirtschaft_Lagedifferenz_Kulturen.png        |   :target: _static/Landwirtschaft_Lagedifferenz_Kulturen_korr.png     |
 |                                                                     |                                                                       |
-|   ``BB.Obstkultur`` (gelbe Linie) ist zu korrigieren.               |   Die Obstkultur kann ausgeschieden werden (rote Linie) werden sofern |
-|                                                                     |   sie grösser 1000 m2 ist.                                            |
+|   ``BB.Obstkultur`` (gelbe Linie) ist zu korrigieren.               |   Die ``BB.Obstkultur`` (> 1000 m2) ist zu korrigieren gemäss der     |
+|                                                                     |   rot dargestellten Linie.                                            |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 Objekt fehlt

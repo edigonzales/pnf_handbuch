@@ -114,8 +114,8 @@ Beispiele:
 +--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+ 
                                                                                                                                                                                        
 
-Objekt fehlt/löschen
-^^^^^^^^^^^^^^^^^^^^
+Objekt fehlt/ löschen
+^^^^^^^^^^^^^^^^^^^^^
 Ist auf dem aktuellen Orthofoto ein geschlossener Wald zu erkennen, welcher das Flächenkriterium von 500 m2 erfüllt und die Breite > 12 m ist, ist dieser im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. Ist in der AV ein geschlossener Wald vorhanden, der auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen. 
                                                                                                                                                                    
 Benötigende Layer im QGIS:
@@ -128,7 +128,7 @@ Benötigende Layer im QGIS:
 
 Beispiel:
                                                                      
-.. _Gewaesser_stehendes_Gewaesser_loeschen:                                                                                                                                                               
+.. _bestockte_Flaeche_geschlossener_Wald_fehlt:                                                                                                                                                               
                                                                      
 .. figure:: _static/bestockte_Flaeche_geschlossener_Wald_fehlt.png       
    :width: 550px                                                     
@@ -175,7 +175,7 @@ Beispiele:
 
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
-Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.
+Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen. Die Waldgrenze wird **nicht** an die Liegenschaftsgrenze angepasst.
  
 
 BB.uebrige_Bestockte
@@ -194,8 +194,8 @@ Benötigende Layer im QGIS:
    Bestockte Fläche / Lagekontrolle   
                                 
 
-Objekt fehlt/löschen  
-^^^^^^^^^^^^^^^^^^^^
+Objekt fehlt/ löschen  
+^^^^^^^^^^^^^^^^^^^^^
 Ist auf dem aktuellen Orthofoto eine Bestockung zu erkennen, die das Flächenkriterium von 500m2 nicht erfüllt (``BB.geschlossener Wald``) und eine Breite > 12 m aufweist, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung neu in der AV als ``BB.uebrige_Bestockte`` zu erfassen. Ist in der AV ein Objekt der Art ``BB.uebrige_Bestockte`` vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen. 
 
 Benötigende Layer im QGIS:
@@ -276,7 +276,7 @@ Benötigende Layer im QGIS:
    Bestockte Fläche / Lagekontrolle   
 
 
-Objekt fehlt/löschen
+Objekt fehlt/ löschen
 ^^^^^^^^^^^^^^^^^^^^^
 Ist auf dem aktuellen Orthofoto ein Bestockung zu erkennen, die das Flächenkriterium gemäss TVAV Art. 13 (???????????) erfüllt, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung neu in der AV als ``BB.Hecke`` zu erfassen. 
 Ist in der AV eine ``BB.Hecke`` erfasst, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Flächenkriterium ??????? oder eher 500m2??? gemäss TVAV Art. 13 nicht nicht erfüllt, ist dieses Objekt zu löschen.

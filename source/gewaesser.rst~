@@ -250,7 +250,7 @@ Der Elemententyp bei ``EO.Brücke, Passerelle`` ist Flächenelement.
    
 EO.Schwelle
 -----------
-. index:: Schwelle
+.. index:: Schwelle
 
 Lagedifferenz                                                                                                                                                               
 ^^^^^^^^^^^^^

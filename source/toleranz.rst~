@@ -10,7 +10,7 @@ Abgrenzungen weden im Projekt *periodische Nachführung und Homogenisierung* nur
 +----------------------------------+-----------+-----------+-----------+-----------------------------------------------+-----------------------------------+  
 |Beschreibung                      |    TS2    |    TS3    |    TS4    | Bodenbedeckungsarten                          | Einzelobjektarten                 |
 +==================================+===========+===========+===========+===============================================+===================================+
-| befestigte Fläche **ohne**       |   1.0 m   |   1.5 m   |   1.5 m   | Strasse_Weg, Sportanlage_befestigt            |                                   |
+| befestigte Fläche **ohne**       |   1.0 m   |   1.5 m   |   1.5 m   | Strasse_Weg, Sportanlage_befestigt, Bahn      |                                   |
 | Abschluss                        |           |           |           |                                               |                                   |
 +----------------------------------+-----------+-----------+-----------+-----------------------------------------------+-----------------------------------+
 | befestigte Fläche **mit**        |   0.5 m   |   1.0 m   |   1.5 m   | Strasse_Weg, Sportanlage_befestigt            |                                   |

@@ -4,7 +4,14 @@ Bebautes Gebiet
 ===============
 .. index:: bebautes Gebiet
 
-In dieser Mängelgruppe wird das bebaute Gebiet überprüft. Das bebaute Gebiet beinhaltet die TS2 und sämtliche Bauten inkl. Umschwung in der TS3 und TS4. Die Toleranzen bleiben TS-abhängig (siehe :ref:`ref_Tz`). Folgende Objekte werden geprüft:
+In dieser Mängelgruppe wird das bebaute Gebiet überprüft. Das bebaute Gebiet beinhaltet die TS2 und sämtliche Bauten inkl. Umschwung in der TS3 und TS4. Die Toleranzen bleiben TS-abhängig (siehe :ref:`ref_Tz`). 
+
+.. note::
+   | Unter Berücksichtigung von Sonderregelungen (z.B. Gebäude und Strassen) sind überflüssige Unterteilungslinien zu löschen. 
+   | Bei Einzelobjekten ist die Modellbildung zu überprüfen. Es darf nicht nur pro Gemeinde ein Objekt pro EO-Art existieren. Sondern es muss für jedes erfasste Objekt ein EO-Objekt erfasst werden (Checklayer: Ein EO.Objekt pro Element). 
+   
+
+Folgende Objekte werden geprüft:
 
 ==================  ==================
 Topic  		    Art    
@@ -90,7 +97,8 @@ Beispiele:
 |   :width: 550px                                                     |   :width: 550px                                                       |
 |   :target: _static/Bebaut_Loeschen_Gebaeude_6m2.png                 |   :target: _static/Bebaut_Loeschen_Gebaeude.png                       |
 |                                                                     |                                                                       |
-|   ``BB.Gebaeude`` ist zu löschen, da kleiner 6 m2.                  |   ``BB.Gebaeude`` ist zu löschen, da es nicht mehr vorhanden ist.     |
+|   ``BB.Gebaeude`` ist zu löschen, da es kleiner 6 m2 ist und keine  |   ``BB.Gebaeude`` ist zu löschen, da es nicht mehr vorhanden ist.     |
+|   Hausnummer hat.                                                   |                                                                       |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 
@@ -227,7 +235,11 @@ Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 Objekt fehlt/löschen
 ^^^^^^^^^^^^^^^^^^^^
-Fehlende Wasserbecken und Schwimmteiche sind gemäss Kriterien des *Handbuches der amtlichen Vermessung Kanton Solothurn* zu erfassen. Falsch erfasste (z.B. zu kleine oder oberirdische Bassins aus Kunststoff, Holz etc.) sind zu löschen. Oberirdische Bassins sind womöglich am Schattenwurf auf dem Orthofoto zu erkennen.
+Fehlende Wasserbecken sind gemäss Kriterien des *Handbuches der amtlichen Vermessung Kanton Solothurn* zu erfassen. Falsch erfasste (z.B. zu kleine oder oberirdische Bassins aus Kunststoff, Holz etc.) sind zu löschen. 
+Für die Kontrolle, ob ein Wasserbecken die Aufnahmekriterien erfüllt, kann eine Feldkontolle sinnvoll sein.
+
+.. note::
+Oberirdische Wasserbecken sind auf dem Orthofoto durch ihren Schattenwurf zu erkennen.
 
 Benötigte Layer in QGIS:
 
@@ -245,8 +257,8 @@ Beispiele:
 |   :width: 550px                                                     |   :width: 550px                                                       |
 |   :target: _static/Bebaut_Wasserbecken_aufnehmen.png                |   :target: _static/Bebaut_Wasserbecken_nicht_aufnehmen.png            |
 |                                                                     |                                                                       |
-|   ``BB.Wasserbecken`` fehlt und ist zu erfassen.                    |   ``BB.Wasserbecken`` ist mit grosser Wahrscheinlichkeit **nicht** zu |
-|                                                                     |   erfassen.                                                           |
+|   ``BB.Wasserbecken`` fehlt und ist zu erfassen.                    |   ``BB.Wasserbecken`` ist **nicht** zu erfassen.                      |
+|                                                                     |                                                                       |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 Objekt umattribuieren  
@@ -306,7 +318,7 @@ Beispiel:
 
 Objekt löschen / Objekt umattribuieren 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Lagerplätze, die als Gebäudeerschliessung attribuiert sind, werden **nicht** als Lagerplatz ausgeschieden. Falls in der AV ein Lagerplatz vorhanden ist, der auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieser Objekt zu löschen.
+Lagerplätze, die als Gebäudeerschliessung attribuiert sind, werden **nicht** als Lagerplatz ausgeschieden. Falls in der AV ein Lagerplatz vorhanden ist, der auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
 
 
 Darstellung nicht nach Richtlinie
@@ -392,8 +404,8 @@ Beispiele:
 |   :width: 550px                                                     |   :width: 550px                                                       |
 |   :target: _static/Bebaut_Parkplatz_Lagefehler1.png                 |   :target: _static/Bebaut_Parkplatz_Lagefehler2.png                   |
 |                                                                     |                                                                       |
-|   ``BB.Parkplatz`` falsch definiert und muss korrigiert werden.     |   ``BB.Parkplatz`` ist definiert falsch und muss korrigiert werden.   |
-|   Ein Teil ist als Gartenanlage erfasst.                            |                                                                       |
+|   ``BB.Parkplatz`` falsch definiert und muss korrigiert werden.     |   ``BB.Parkplatz``ist zu korrigieren, weil die Lagedifferenz grösser  |
+|   Ein Teil ist als Gartenanlage erfasst.                            |   als die Toleranz (TS2: 0.5m) ist.                                   |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 Objekt fehlt / Objekt löschen
@@ -421,8 +433,8 @@ Beispiele:
 |   :width: 550px                                                     |   :width: 550px                                                       |
 |   :target: _static/Bebaut_Parkplatz_loeschen.png                    |   :target: _static/Bebaut_Parkplatz_nicht_loeschen.png                |
 |                                                                     |                                                                       |
-|   ``BB.Parkplatz`` ist kleiner 100 m2 und wird zu                   |   Der östliche Teil des Parkplatzes ist kleiner 100 m2. Er wird       |
-|   ``BB.Gebaeudeerschliessung`` umattribuiert.                       |   **nicht** umattribuiert, da er mit dem westlichen Teil eine Einheit |
+|   ``BB.Parkplatz`` ist kleiner 100 m2 und wird gelöscht.            |   Der östliche Teil des Parkplatzes ist kleiner 100 m2. Er wird       |
+|                                                                     |   **nicht** umattribuiert, da er mit dem westlichen Teil eine Einheit |
 |                                                                     |   bildet.                                                             |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
@@ -442,7 +454,8 @@ Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 Objekt löschen
 ^^^^^^^^^^^^^^
-Mauern, die nicht den Erfassungsrichtlinien gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* entsprechen sind zu löschen. Freistehende Mauer-Linienelemente und Maueranzüge < 30 cm sind ebenfalls zu löschen. Sind in der AV Mauern erfasst, die gemäss Kriterium *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht zu ``EO.Mauer`` gehören, sind die Objekte zu löschen.
+Freistehende Mauer (d.h. die nicht entlang von öffentlichen Strassen, Wegen, Plätzen, Liegenschaftsgrenzen und Gewässern verlaufen oder nicht im Zusammenhang mit Bauten stehen) 
+und Maueranzüge < 30 cm sind zu löschen. Sind in der AV Mauern erfasst, die gemäss Kriterium *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht zu ``EO.Mauer`` gehören, sind die Objekte zu löschen.
 
 Benötigte Layer in QGIS:
 
@@ -489,7 +502,9 @@ Benötigte Layer in QGIS:
 
 .. code-block:: none
 
-   Bebautes Gebiet / Checklayer / EO.Mauer freistehend
+   Bebautes Gebiet / Checklayer / EO.Mauer nicht ein Objekt
+   
+   
 
 Beispiel:
 
@@ -587,7 +602,7 @@ Beispiele:
 |   :target: _static/Bebaut_uebrigGeb_Flaeche_falsch.png              |   :target: _static/Bebaut_uebrigGeb_Flaeche_innerhalb.png             |
 |                                                                     |                                                                       |
 |   Freistehende flächige übrige Gebäudeteile sind nicht erlaubt.     |   Die EO.Flächenelemente sind in Linienelemente umzuwandeln.          |
-|   Das Objekt ist in ein Unterstanz umzuattribuieren.                |                                                                       |
+|   Das Objekt ist in ein Unterstand umzuattribuieren.                |                                                                       |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 |.. _fig_bebaut_33:                                                   |                                                                       |
 |                                                                     |                                                                       |
@@ -684,7 +699,7 @@ EO.Reservoir
 
 Lagedifferenz
 ^^^^^^^^^^^^^
-Wird eine Lagedifferenz (Plausibilität beachten) zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und der Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren.
+Es sind lediglich Plausibilitätskontrollen möglich.
 
 Benötigte Layer in QGIS:
 
@@ -770,14 +785,17 @@ Darstellung nicht nach Richtlinie
 Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 
-
 EO.Silo_Turm_Gasometer
 ----------------------
 .. index:: Silo, Turm, Gasometer, Silo_Turm_Gasometer
 
-Lagedifferenz / Objekt fehlt / Objekt löschen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und der Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Fehlende Objekte sind zu erfassen, nicht mehr vorhandene zu löschen.
+Lagedifferenz
+^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+
+Objekt fehlt / löschen
+^^^^^^^^^^^^^^^^^^^^^^
+Fehlende Objekte sind zu erfassen, nicht mehr vorhandene zu löschen.
 
 Benötigte Layer in QGIS:
 
@@ -811,19 +829,6 @@ Darstellung nicht nach Richtlinie
 Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 
-EO.alle
--------
-Darstellung nicht nach Richtlinie
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Die Modellbildung ist bei jeder Art zu überprüfen. Es darf nicht nur pro Gemeinde ein Objekt pro EO-Art existieren. Sondern es muss für jedes erfasste Objekt ein EO-Objekt erfasst werden.
-
-Benötigte Layer in QGIS:
-
-.. code-block:: none
-
-   Bebautes Gebiet / Checklayer / Ein EO.Objekt pro Element
-
-
 BB/EO.Objektname
 ----------------
 .. index:: Objektename
@@ -842,7 +847,4 @@ Benötigte Layer in QGIS:
    Bebautes Gebiet / Checklayer / EO.Objektname 'u.'
 
 
-Objekt umattribuieren
-^^^^^^^^^^^^^^^^^^^^^
-Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 

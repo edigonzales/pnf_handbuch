@@ -17,12 +17,11 @@ Inhalt:
    bahn
    gewaesser
    bebautes_gebiet
-   landwirtschaft
    bestockte_flaeche 
+   landwirtschaft
    seltene_objekte
-   weitere_ebenen
    perimeterrand
-
+   weitere_ebenen
 
 Index
 ==================

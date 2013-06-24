@@ -137,11 +137,7 @@ Benötigte Layer im QGIS:
 .. code-block:: none
 
    Gewässer / Lagekontrolle
-   
-.. note::
-  Als Referenzdaten dienen zusätzlich die Daten aus dem Gewässerinformationssystem (GEWISSO) (siehe :ref:`ref_RefDaten`).
-
-Beispiele:   
+   Gewässer / Lagekontrolle/ GEWISSO
    
                                                                        
 Objekt umattribuieren

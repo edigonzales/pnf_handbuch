@@ -4,6 +4,9 @@ Bestockte Fläche
 ================
 In dieser Gruppe werden alle bestockten Flächen aus der amtlichen Vermessung auf deren Vollständigkeit und Richtigkeit in der Lage so wie in der Darstellung überprüft.
 
+.. note::
+   Unter Berücksichtigung von Sonderregelungen (z.B. Gebäude und Strassen) sind überflüssige Unterteilungslinien zu löschen. 
+
 Folgende Objekte werden geprüft:
 
 =============================  ========================================
@@ -125,7 +128,7 @@ Benötigende Layer im QGIS:
 
 Beispiel:
                                                                      
-.. _Gewaesser_stehendes_Gewaesser_loeschen:                                                                                                                                                               
+.. _bestockte_Flaeche_geschlossener_Wald_fehlt:                                                                                                                                                               
                                                                      
 .. figure:: _static/bestockte_Flaeche_geschlossener_Wald_fehlt.png       
    :width: 550px                                                     
@@ -172,7 +175,7 @@ Beispiele:
 
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
-Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.
+Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen. Die Waldgrenze wird **nicht** an die Liegenschaftsgrenze angepasst.
  
 
 BB.uebrige_Bestockte

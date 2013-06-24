@@ -50,8 +50,8 @@ Beispiele:
 |   :width: 550px                                                     |   :width: 550px                                                       |
 |   :target: _static/Strasse_Lagedifferenz_Kreuzung.png               |   :target: _static/Strasse_Lagedifferenz_Kreuzung_korr.png            |
 |                                                                     |                                                                       |
-|   ``BB.Strasse_Weg`` ist zu korrigieren, weil die Lagedifferenz     |   ``BB.Strasse_Weg`` ist im Bereich der Toleranzüberschreitung zu     |
-|   grösser als die Toleranz (TS3: 1.5m) ist.                         |   korrigieren gemäss den rot dargestellten Linien.                    |
+|   ``BB.Strasse_Weg`` (ohne Abschluss) ist zu korrigieren, weil die  |   ``BB.Strasse_Weg`` ist im Bereich der Toleranzüberschreitung zu     |
+|   Lagedifferenz grösser als die Toleranz (TS3: 1.5m) ist.           |   korrigieren gemäss den rot dargestellten Linien.                    |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 |.. _Strasse_Lagedifferenz_TS2:                                       |.. _Strasse_Lagedifferenz_TS2_korr:                                    |
 |                                                                     |                                                                       |
@@ -60,7 +60,7 @@ Beispiele:
 |   :target: _static/Strasse_Lagedifferenz_TS2.png                    |   :target: _static/Strasse_Lagedifferenz_TS2_korr.png                 |
 |                                                                     |                                                                       |
 |   ``BB.Strasse_Weg`` ist zu korrigieren, weil die Lagedifferenz     |   ``BB.Strasse_Weg`` ist zu korrigieren gemäss den rot dargestellten  |
-|   grösser als die Toleranz (bebautes Gebiet: 0.5 m) ist.            |   Linien.                                                             |
+|   grösser als die Toleranz (TS2: 0.5 m) ist.                        |   Linien.                                                             |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 |.. _Strasse_Lagedifferenz_TS3:                                       |.. _Strasse_Lagedifferenz_TS4:                                         |
 |                                                                     |                                                                       |
@@ -117,7 +117,7 @@ Beispiele:
    :width: 550px                                                                    
    :target: _static/Strasse_umattribuieren.png                          
                                                                                     
-   ``BB.Strasse_Weg`` ist in ``EO.Fahrspur`` um zu attribuieren
+   ``BB.Strasse_Weg`` ist in ``EO.Fahrspur`` umzuattribuieren
    
               
 
@@ -183,9 +183,6 @@ Beispiele:
 |   :target: _static/Strasse_Hofdurchfahrt.png                                         |    :target: _static/Strasse_ueber_mehrere_parz.png                                    |                              
 |                                                                                      |                                                                                       |
 |   ``BB.Strasse_Weg`` darf bei Hofdurchfahrten nicht unterbrochen sein.               |    ``BB.Strasse_Weg`` bei Erschliessung mehrerer Liegenschaften wird nicht korrigiert.|                                                                               
-|                                                                                      |                                                                                       |
-|   ``BB.Strasse_Weg`` darf bei Hofdurchfahrten nicht unterbrochen sein.               |    ``BB.Strasse_Weg`` bei Erschliessung mehrerer Liegenschaften wird nicht            |                                                                            
-|                                                                                      |    korrigiert.                                                                        |
 +--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+   
 |.. _Strasse_Strassenveraengung:                                                       | .. _Strasse_pave:                                                                     |
 |                                                                                      |                                                                                       | 
@@ -403,6 +400,9 @@ EO.Lärmschutzwand
 .. index:: Lärmschutzwand
 
 
+Lagedifferenz  
+^^^^^^^^^^^^^
+
 ????? wirklich machen??????
 
 
@@ -537,7 +537,7 @@ EO.schmaler_Weg
 Lagekontrolle 
 ^^^^^^^^^^^^^ 
 Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) festgestellt, so ist das Objekt in der AV zu korrigieren. 
-Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Bei den Wanderwegen, die ihren Verlauf jährlich ändern (z.B. Graswege), ist keine Korrektur vorzunehmen.
+Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Ist der Verlauf auf dem Orthofoto nicht klar ersichtlich oder der Verlauf ändert sich jährlich (z.B. Graswege), ist **keine** Korrektur vorzunehmen.
      
 
 Benötigte Layer in QGIS:
@@ -557,7 +557,7 @@ Beispiele:
 |   :target: _static/Strasse_schmaler_weg.png                                |   :target: _static/Strasse_Lagedifferenz_schmaler_Weg.png             |       
 |                                                                            |                                                                       |       
 |   ``EO.schmaler_Weg`` ist **nicht** zu korrigieren, weil auf dem Orthofoto |   ``EO.schmaler_Weg`` ist zu korrigieren, weil die Lagedifferenz      |       
-|   der Verlauf nicht klar ersichtlich ist.                                  |   grösser als die Toleranz (TS4: 1.5m) ist und weil der Verlauf auf   | 
+|   der Verlauf nicht klar ersichtlich ist.                                  |   grösser als die Toleranz (TS4: 3 m) ist und weil der Verlauf auf    | 
 |									     |   dem Orthofoto klar zu erkennen ist.                                 |              
 +----------------------------------------------------------------------------+-----------------------------------------------------------------------+       
                                                                                                                                                                
@@ -613,7 +613,7 @@ Benötigte Layer in QGIS:
 
 Objekt fehlt/löschen  
 ^^^^^^^^^^^^^^^^^^^^
-**Neue Fahrspuren werden im Rahmen der PNF/Homogenisierung nicht erhoben**. ``EO.Fahrspuren``, die nicht mehr existieren, sind zu löschen. Für die Kontrolle, ob eine Fahrspur noch existiert, kann eine Feldkontolle sinnvoll sein. 
+Neue Fahrspuren werden im Rahmen der PNF/Homogenisierung **nicht** erhoben. ``EO.Fahrspuren``, die nicht mehr existieren, sind zu löschen. Für die Kontrolle, ob eine Fahrspur noch existiert, kann eine Feldkontolle sinnvoll sein. 
 
 Benötigte Layer in QGIS:
 

@@ -12,6 +12,7 @@ Folgende Objekte werden geprüft:
 ==================  =====================================    
 Topic  		    Art    
 ==================  =====================================
+Bodenbedeckung      Flugplatz
 Bodenbedeckung      uebrige_befestigte    
 Bodenbedeckung      Sportanlage_befestigt 
 Bodenbedeckung      Boeschungsbauwerke
@@ -20,9 +21,8 @@ Bodenbedeckung      Sportanlage_humusiert
 Bodenbedeckung      Friedhof
 Bodenbedeckung      Hoch_Flachmoor
 Bodenbedeckung      uebrige_humusierte       
-Bodenbedeckung      Parkanlage_bestockt 
 Bodenbedeckung      Fels
-Bodenbedeckung      Geroell, Sand
+Bodenbedeckung      Geroell_Sand
 Bodenbedeckung      uebrige_vegetationslose
 Bodenbedeckung      Steinbruch
 Bodenbedeckung      Kiesgrube
@@ -32,7 +32,7 @@ Einzelobjekt        Brunnen
 Einzelobjekt        Mast_Antenne
 Einzelobjekt        Mast_Leitung
 Einzelobjekt        Hochspannungsfreileitung
-Einzelobjekt        Einzelner Fels
+Einzelobjekt        Einzelner_Fels
 Einzelobjekt        Gondelbahn_Sesselbahn
 Einzelobjekt        Materialseilbahn
 Einzelobjekt        Skilift
@@ -42,12 +42,12 @@ Einzelobjekt        Hochkamin
 Einzelobjekt        Denkmal
 Einzelobjekt        Uferverbauung
 Einzelobjekt        Lawinenverbauung
-Einzelobjekt        massiver Sockel
-Einzelobjekt        Ruine, archäologisches Objekt
+Einzelobjekt        massiver_Sockel
+Einzelobjekt        Ruine_archäologisches_Objekt
 Einzelobjekt        Landungssteg
 Einzelobjekt        Druckleitung
 Einzelobjekt        Fähre
-Einzelobjekt        Grotte, Höhleneingang
+Einzelobjekt        Grotte_Höhleneingang
 Einzelobjekt        Achse
 Einzelobjekt        wichtiger_Einzelbaum
 Einzelobjekt        Kruzifix_Bildstock
@@ -74,9 +74,9 @@ Objekt löschen / umattribuieren / Darstellung nicht nach Richtlinie
 Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 
-BB.Sportanlage_befestigt / BB.Sportanlage_humusiert / BB.Friedhof / BB.Parkanlage_humusiert / BB.uebrige_humusierte
--------------------------------------------------------------------------------------------------------------------
-.. index:: Sportanlage_befestigt, Sportanlage_humusiert, Friedhof, Parkanlage_humusiert, Parkanlage_bestockt, übrige humusierte
+BB. Flugplatz/ BB.Sportanlage_befestigt / BB.Sportanlage_humusiert / BB.Friedhof / BB.Parkanlage_humusiert / BB.uebrige_humusierte 
+----------------------------------------------------------------------------------------------------------------------------------
+.. index:: Flugplatz, Sportanlage_befestigt, Sportanlage_humusiert, Friedhof, Parkanlage_humusiert, Parkanlage_bestockt, übrige humusierte
 
 Lagedifferenz
 ^^^^^^^^^^^^^
@@ -116,7 +116,7 @@ Beispiele:
 
 Objekt fehlt/löschen/umattribuieren      
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
-Ist auf dem aktuellen Orthofoto ein Sportplatz, Friedhof oder eine Parkanlage, die das Flächenkriterium erfüllen, zu erkennen, sind diese im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV ein Sportplatz, Friedhof oder eine Parkanlage vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen sind, sind dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen.  
+Ist auf dem aktuellen Orthofoto ein Flugplatz, Sportplatz, Friedhof oder eine Parkanlage, die das Flächenkriterium erfüllen, zu erkennen, sind diese im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV ein Sportplatz, Friedhof oder eine Parkanlage vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen sind, sind dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen.  
 
 Benötigte Layer im QGIS:    
 
@@ -135,7 +135,7 @@ BB.Boeschungsbauwerk
 
 Lagedifferenz
 ^^^^^^^^^^^^^
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst.   
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 Benötigte Layer im QGIS:    
 
@@ -323,7 +323,7 @@ Beispiel:
    :width: 550px                                                                  
    :target: _static/seltene_Objekte_Mast_Leitung_Lagedifferenz.png        
                                                                                   
-   ``EO.Mast_Leitung`` ist zu korrigieren, weil die Lagedifferenz grösser als die Toleranz (TS2: 1.5 m) ist.                                        
+   ``EO.Mast_Leitung`` ist zu korrigieren, weil die Lagedifferenz grösser als die Toleranz (TS3: 1.0 m) ist.                                        
       
    
   
@@ -331,7 +331,7 @@ Objekt fehlt/löschen/umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    
 .. |pfeil| image:: _static/pfeil.png
 
-|  Zur Vollständigkeitskontrolle der Hochspannungsfreileitung und deren Masten kann der Layer "Freileitungen (ARP)" verwendet werden. In QGIS ist mit dem Abfragetool (|pfeil| auf Objekt klicken ) das Attribut "voltage" zu überprüfen. Nur Leitungen mit > 50kV werden in der AV geführt. 
+|  Zur Vollständigkeitskontrolle der Hochspannungsfreileitung und deren Masten kann der Layer ``Freileitungen (ARP)`` verwendet werden. In QGIS ist mit dem Abfragetool (|pfeil| auf Objekt klicken ) das Attribut ``voltage`` zu überprüfen. Nur Leitungen mit > 50kV werden in der AV geführt. 
    Hochspannungsfreileitungen und deren Masten, die auf dem aktuellen Orthofoto nicht mehr vorhandnen sind oder bei deren die Spannung der Hochspannungsfreileitung < 50kV ist, sind zu löschen.
 |  Als Volständigkeitskontrolle der Antennen dienen die Daten der Radio-/Fernsehsender und Mobilfunkantennen des Bundes. Auch hier sind die Objekte, die auf dem aktuellen Orthofoto nicht mehr zu erkennen sind, zu löschen.
 |  Fehlende Masten bei Gondelbahnen und Sesselbahnen sind zu erfassen. Hingegen sind die erfassten Masten bei Materialseilbahnen und Skilifte zu löschen.
@@ -384,6 +384,12 @@ Im Rahmen der PNF/Homogenisierung werden **keine** Lagedifferenzen korrigiert.
 Objekt fehlt/löschen
 ^^^^^^^^^^^^^^^^^^^^^ 
 Es werden keine **neuen** Objekte der Art ``EO.einzelner_Fels`` erfasst. Falls in der AV Objekte der Art ``EO.Einzelner Fels`` vorhanden sind, die keine erratische Blöcke oder kein wichtiger Einzelsfels sind, sind diese aus der AV zu löschen.
+
+
+Darstellung nicht nach Richtlinie  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
+Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.          
+                          
 
 EO. Gondelbahn_Sesselbahn / EO. Materialseilbahn / EO.Skilift 
 -------------------------------------------------------------
