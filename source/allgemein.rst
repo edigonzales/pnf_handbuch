@@ -56,35 +56,36 @@ Gesetzliche Grundlagen
    
 * Handbuch der amtlichen Vermessung des Kantons Solothurn 
 * Richtlinie der Arbeitsgruppe KKVA „Periodische Nachführung der amtlichen Vermessung“ `(PNF_KKVA) <http://www.kkva.ch/de/downloads/richtlinien/pnf_av/KKVA_PNF-AV_081127.pdf>`_
+* AV-Express Nr. 2010 / 08: Grundlagen für die Pauschalierung der bundesbeitragsberechtigten Kosten bei der «ersten» periodischen Nachführung (PNF) der amtlichen Vermessung (AV) 
 
 
 .. _ref_RefDaten:
 
-Referenzdaten
--------------
+Vergleichsdaten
+---------------
 
-Als Referenz dient hauptsächlich das aktuelle Orthofoto. 
-Weitere Referenzdaten sind in der QGIS-Fachschale integriert:
+Als Referenz dient hauptsächlich das aktuelle Orthofoto. Um die Vollständigket der Daten der amtlichen Vermessng zu üebrprüfen können weitere Vergleichsdaten helfen. Solche Vergelichsdaten sind meist unabhängig der amtlichen Vermessung erfasst und können deshalb für einen Vollständigkeitsvergleich sinvoll sein. Folgende Vergelichsdaten sind in der QGIS-Fachschale integriert:
 
 .. important::    
-   Die Richtigkeit und Vollständigkeit dieser Daten wird nicht garantiert.
+   Bitte die Herkunft dieser Daten beachten. Die Richtigkeit und Vollständigkeit dieser Daten kann nicht garantiert werden.
 
-=========================  ===========================================================  =============================================     ===================================                  
-Layername (QGIS)            Beschreibung                                                 Herkunft                                         Erhebungszeitpunkt 
-=========================  ===========================================================  =============================================     ===================================  
-GEWISSO	                   Gewässerinformationssystem                                   Digitalisiert ab Übersichtsplan 1:10'000          2012
-Wanderwege                 kantonal flächendeckende Grundlage der Fuss- und Wanderwege  Digitalisiert ab LK25                             2012
-Freileitungen (ARP)        Freileitung                                                  Digitalisiert ab LK25,  SIKOSO-Daten              2007  
-Abbaustellen (AFU)         Richtplan - Abbaustellen                                                                                       2012
-Flachmoore (AFU)           Flachmoore                                                   Feldbegehung durch ANL AG, digitalisiert          2006
-Flachmoore (BAFU)          Bundesinventar der Flachmoore von nationaler Bedeutung       Digitalisiert ab Kartierung 1987-1990             1987-1990, 2001, 2004, 2007
-Hochmoore (BAFU)           Bundesinventar der Hochmoore von nationaler Bedeutung        Digitalisiert ab Kartierung 1988-1990             1988-1990, 2003, 2007
-Reservoir                  Gewässeranalyse Datenbank Solothurn GASO                     Digitale Eingabe der Koordinaten                  2006-2008
-Waldplan		   Forstliche Plangrundlagen			                AV als Grundlage, Feldkontrolle durch Förster     alle 10 Jahre neu erstellt 
+=========================  ===========================================================  ======================================================  ===================================                  
+Layername (QGIS)           Beschreibung                                                 Herkunft                                                Erhebungszeitpunkt 
+=========================  ===========================================================  ======================================================  ===================================  
+GEWISSO	                   Gewässerinformationssystem                                   Digitalisiert ab Übersichtsplan 1:10'000                2012
+Wanderwege                 kantonal flächendeckende Grundlage der Fuss- und Wanderwege  Digitalisiert ab LK25                                   2012
+Freileitungen (ARP)        Freileitung                                                  Digitalisiert ab LK25,  SIKOSO-Daten                    2007  
+Abbaustellen (AFU)         Richtplan - Abbaustellen                                                                                             2012
+Flachmoore (AFU)           Flachmoore                                                   Feldbegehung durch ANL AG, digitalisiert                2006
+Flachmoore (BAFU)          Bundesinventar der Flachmoore von nationaler Bedeutung       Digitalisiert ab Kartierung 1987-1990                   1987-1990, 2001, 2004, 2007
+Hochmoore (BAFU)           Bundesinventar der Hochmoore von nationaler Bedeutung        Digitalisiert ab Kartierung 1988-1990                   1988-1990, 2003, 2007
+Reservoir                  Gewässeranalyse Datenbank Solothurn GASO                     Digitale Eingabe der Koordinaten                        2006-2008
+Waldplan		   Forstliche Plangrundlagen			                AV als Grundlage, Feldkontrolle durch Förster           alle 10 Jahre neu erstellt 
 Radio- und Fernsehsender   Daten von geo.admin.ch                                         
 Mobilfunkantennen UMTS     Daten von geo.admin.ch                                                                                           
-Mobilfunkantennen GSM      Daten von geo.admin.ch                                                                                                
-=========================  ===========================================================  =============================================     ===================================
+Mobilfunkantennen GSM      Daten von geo.admin.ch 
+SBB                        Daten vom Bahnunternehmen                                    Messung (Anforderung Qualität AV93 erfüllt VAV Ar. 46)  laufende Nachführung
+=========================  ===========================================================  ======================================================  ===================================
                                                                                                                                  
 
 Vorgehen beim Projekt *Periodische Nachführung und Homogenisierung* 
@@ -139,12 +140,12 @@ Werden Objekte gefunden, bei denen die AV angepasst werden muss, sind diese mit 
 |                              | ``Löschen``                            Objekt ist aus der AV zu löschen. Dies ist auch der Fall, wenn das Objekt den Aufnahmekriterien nicht genügt.          |                             
 |                              | ``fehlt``                              Objekt fehlt in der AV                                                                                                 |                            
 |                              | ``umattribuieren``                     Objekt ist falsch attribuiert und eventuell in der falschen Topic (EO <-> BB). Geometrie wird nicht verändert.         |                     
-|                              | ``Darstellung nicht nach Richtlinie``  Objekt ist nicht nach Richtlinie dargestellt                                                                           |                        
+|                              | ``Darstellung nicht nach Richtlinie``  Objekt ist nicht nach aktuellen Richtlinie dargestellt                                                                 |                        
 |                              | ``weitere``                            Falls ein Fehler in keine Fehlerart passt, kann dieser unter "weitere" erfasst werden                                  |                             
 |                              | =====================================  =======================================================================================================================|                            
 +------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Feldkontrolle                | Falls eine Interpretation auf dem Orthofoto schwierig ist (z.B. durch Schatten oder Sichthindernisse wie Bäume), können die betroffenen Objekte auf dem Feld  |
-|                              | kontrolliert werden. Dazu ist ein Häklein zu setzen. So können die Objekte auf dem Feld gezielt begangen werden.                                              |
+| Feldkontrolle                | Falls eine Interpretation auf dem Orthofoto nicht möglich ist (z.B. durch Schatten oder Sichthindernisse wie Bäume), können die betroffenen Objekte auf dem   |
+|                              | Feld kontrolliert werden. Dazu ist ein Häklein zu setzen. So können die Objekte auf dem Feld gezielt begangen werden.                                         |
 |                              | Falls die Feldkontrolle ergibt, dass keine Bereingung in der AV vorgenommen werden muss, kann der Mängelpunkt resp. die Mängellinien gelöscht werden.         |                                          
 +------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+                        
 | Laufende Nachführung         | Für die Kostenverteilung der Bereinigungsarbeiten muss zwingend zwischen laufender und periodischer Nachführung resp. Homogenisierung unterschieden werden.   | 
@@ -155,7 +156,7 @@ Werden Objekte gefunden, bei denen die AV angepasst werden muss, sind diese mit 
 +------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. note::
-   Falls mehrere der vordefinierten Attributwerte unter dem Attribut *Fehler* zum Mängelpunkt resp. Mängellinie passt, ist nur ein Mängelpunkt resp. eine Mängellinie zu erfassen. Eventuell ist bei solchen Fällen der Attributwert ``weitere`` zu verwenden. ???? oder doch z.B. 2 Mängel absetzen
+   Falls mehrere der vordefinierten Attributwerte unter dem Attribut *Fehler* zum Mängelpunkt resp. Mängellinie passt, wird pro Fehler ein Mängelpunkt resp. eine Mängellinie erfasst.
 
    
 .. _ref_Metherei:
@@ -182,8 +183,8 @@ Die Mängel sind zu bereinigen. Dazu können die Objekte falls möglich ab dem a
 Kosten
 ------
                                                                                                  
-Die Kosten für die laufende Nachführung werden dem Verursacher in Rechnung gestellt. Die laufende Nachführung kann zeitlich mit der PNF/Homogenisierung oder nachträglich erfolgen. 
-Für die Kostenverteilung der Bereinigungsarbeiten muss zwingend zwischen laufender und periodischer Nachführung resp. Homogenisierung unterschieden werden.          
+Die Kosten für die laufende Nachführung werden dem Verursacher in Rechnung gestellt. Als Beilage zu der Rechnung ist das Schreiben XXXXXXXX beizulegen. Die laufende Nachführung kann zeitlich mit der PNF/Homogenisierung oder nachträglich erfolgen. 
+Für die Kostenverteilung der Bereinigungsarbeiten muss zwingend zwischen laufender und periodischer Nachführung resp. Homogenisierung unterschieden werden.         
  
 ========================      =============================================================================
 Kostenverteilung              Beschreibung
@@ -225,7 +226,7 @@ Bereinigung
 Können Objekte nur durch Aufnahmen (GNSS oder Tachymeter) im Feld erfasst werden, sind diese Aufnahmen gemäss Anhang B der TVAV zu protokollieren. Objekte, die digitalisiert werden, können direkt angepasst werden. Ein ITF (an AGI abzugeben) vor der Bereinigung sichert den alten Zustand. Durch das Attribut *digitalisieren ab Orthofoto* in der Mängelliste ist genau nachzuvollziehen, wo digitalisiert wurde. 
  
 .. important:: 
-   Auf korrekte Erfassung in Tabelle BBNachführung und EONachführung ist zu achten.
+   Auf korrekte Erfassung in Tabelle BBNachführung und EONachführung ist zu achten. D.h. die Objekte der Tabelle Bodenbedeckung und Einzelobjekt müssen einem Objekt in Tabelle BBNachführung resp. EONachführung mit ``Beschnreibung`` *PNF* zugeordnet werden.
 
                                                                                                                                                          
 Unternehmerbericht
