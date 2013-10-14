@@ -32,7 +32,7 @@ BB.Strasse_Weg
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) festgestellt, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranzwerte, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann eine Feldkontrolle sinnvoll sein. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) festgestellt, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranzwerte, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, ist eine Feldkontrolle sinnvoll. 
 
 Benötigte Layer in QGIS:
 
@@ -241,7 +241,7 @@ Benötigte Layer in QGIS:
 Darstellung nicht nach Richtlinie    
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                        
 
-???? Bei Strasseneinfahrten geht das ``BB.Trottoir`` der ``BB.Strasse_Weg`` vor, wenn sich dieses baulich oder niveaumässig von der Strasse abhebt.  ????? oder wir nicht korrigiert? 
+Bei Strasseneinfahrten geht das ``BB.Trottoir`` der ``BB.Strasse_Weg`` vor, wenn sich dieses baulich oder niveaumässig von der Strasse abhebt. 
 
 
 BB.Verkehrsinsel                                                                
@@ -403,7 +403,7 @@ EO.Lärmschutzwand
 Lagedifferenz  
 ^^^^^^^^^^^^^
 
-????? wirklich machen??????
+Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 
 Objekt fehlt
@@ -411,7 +411,7 @@ Objekt fehlt
 Ist auf dem aktuellen Orthofoto eine Lärmschutzwand zu erkennen, die nicht in der AV erfasst ist, muss überprüft werden, ob sie die Aufnahmekriterien gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn* erfüllt. Falls dies der Fall ist, ist die Lärmschutzwand terrestrisch zu erfassen.
                                                                                                    
 .. note::
-   Fehlende (?????????) Lärmschutzwände sind über die laufende Nachführung abzurechnen.   
+   Fehlende Lärmschutzwände sind über die laufende Nachführung abzurechnen.   
    
 Benötigte Layer in QGIS:
 

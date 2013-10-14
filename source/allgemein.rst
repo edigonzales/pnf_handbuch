@@ -174,8 +174,8 @@ Die Mängel sind zu bereinigen. Dazu können die Objekte falls möglich ab dem a
 |   :width: 600px                                                                                  |   :width: 350px                                                    |
 |   :target: _static/Erfassungsmethode.png                                                         |   :target: _static/Legende_Erfassungsmethode.png                   |
 |                                                                                                  |                                                                    |
-|   Beurteilung der Methoden; Quelle: Richtlinie der Arbeitsgruppe KKVA                            |                                                                    |
-|   periodischen Nachführung der amtlichen Vermessung                                              |                                                                    |
+|   Beurteilung der Methoden; Quelle: Richtlinie der Arbeitsgruppe KKVA periodischen Nachführung   |                                                                    |
+|   der amtlichen Vermessung mit kantonalen Anpassungen (Anpassungen sind markiert mit *)          |                                                                    |
 +--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+ 
 
   

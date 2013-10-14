@@ -36,16 +36,16 @@ Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als
 Beispiele:
 
 
-+-----------------------------------------------------------------------+-------------------------------------------------------------------------+
-|.. _bahn_bahn_Lagedifferenz:                                           |.. _bahn_bahn_Lagedifferenz_korr:                                        |
-|                                                                       |                                                                         |
-|.. figure:: _static/bahn_bahn_Lagedifferenz.png                        |.. figure:: _static/bahn_bahn_Lagedifferenz_korr.png                     |
-|   :width: 550px                                                       |   :width: 550px                                                         |
-|   :target: _static/bahn_bahn_Lagedifferenz.png                        |   :target: _static/bahn_bahn_Lagedifferenz_korr.png                     |
-|                                                                       |                                                                         |
-|   ``BB.Bahn`` ist zu korrigieren, weil die Lagedifferenz              |   ``BB.Bahn`` ist  gemäss den rot dargestellten Linien zu               |
-|   grösser als die Toleranz (TS2: 1.0m) ist.                           |   korrigieren. Die Böschung ist als``BB.übrige_humusierte`` zu erfassen.|
-+-----------------------------------------------------------------------+-------------------------------------------------------------------------+
++-----------------------------------------------------------------------+--------------------------------------------------------------------------+
+|.. _bahn_bahn_Lagedifferenz:                                           |.. _bahn_bahn_Lagedifferenz_korr:                                         |
+|                                                                       |                                                                          |
+|.. figure:: _static/bahn_bahn_Lagedifferenz.png                        |.. figure:: _static/bahn_bahn_Lagedifferenz_korr.png                      |
+|   :width: 550px                                                       |   :width: 550px                                                          |
+|   :target: _static/bahn_bahn_Lagedifferenz.png                        |   :target: _static/bahn_bahn_Lagedifferenz_korr.png                      |
+|                                                                       |                                                                          |
+|   ``BB.Bahn`` ist zu korrigieren, weil die Lagedifferenz              |   ``BB.Bahn`` ist  gemäss den rot dargestellten Linien zu                |
+|   grösser als die Toleranz (TS2: 1.0m) ist.                           |   korrigieren. Die Böschung ist als ``BB.übrige_humusierte`` zu erfassen.|
++-----------------------------------------------------------------------+--------------------------------------------------------------------------+
 
                                                                                                                                                                                        
 
@@ -110,7 +110,7 @@ EO.Bahngeleise
 --------------
 Lagedifferenz  
 ^^^^^^^^^^^^^   
-Wird eine Lagedifferenz zwischen der AV und den SBB-Daten detektiert, so ist das Objekt in der AV zu korrigieren. ???? Muss Toleranz (hier ungleich :ref:`ref_Tz`) quantifiziert werden? Z.B. liegt ausserhalb der dickeren blauen Linie (SBB-Datensatz) in QGIS?
+Wird eine Lagedifferenz > 20 cm zwischen der AV und den SBB-Daten detektiert, so ist das Objekt in der AV zu korrigieren.  
 
 Benötigende Layer im QGIS:
 
@@ -157,22 +157,11 @@ Benötigende Layer im QGIS:
 
 EO.Bahngeleise_ueberdeckt
 -------------------------
-Lagedifferenz  
-^^^^^^^^^^^^^ 
-Wird eine Lagedifferenz zwischen der AV und den SBB-Daten detektiert, so ist das Objekt in der AV zu korrigieren. ???? Muss Toleranz (hier ungleich :ref:`ref_Tz`) quantifiziert werden? Z.B. liegt ausserhalb der dickeren blauen Linie (SBB-Datensatz) in QGIS? 
+ 
 
-Benötigende Layer im QGIS:
-
-.. code-block:: none
-
-    Bahn / Lagekontrolle   
-    
-.. note::
-  Als Referenzdaten dienen die Daten der SBB    
-
-Objekt fehlt/löschen/umattribuieren
+Objekt löschen/umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Fehlende Objekte sind von den SBB-Daten zu übernehmen und nicht mehr vorhandene Bahngeleise sind zu löschen. Bahngeleise nicht im Tunnel sind als ``EO.Bahngeleise`` zu attribuieren.
+Die Einzelobjektart ``EO.Bahngeleise_ueberdeckt`` wird nicht mehr geführt. Vorhandene Objekte sind zu löschen oder als ``EO.Bahngeleise`` zu attribuieren.
 
 Benötigende Layer im QGIS:
 
@@ -180,16 +169,5 @@ Benötigende Layer im QGIS:
 
     Bahn / Lagekontrolle   
 
-Darstellung nicht nach Richtlinie  
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
-``EO.Bahngeleise`` ist ein Linienelement.
-
-Benötigende Layer im QGIS:
-
-.. code-block:: none
-
-    Bahn / Lagekontrolle   
-
-|
 
                                                                     
