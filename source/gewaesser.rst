@@ -191,10 +191,8 @@ EO.eingedoltes_oeffentliches_Gewaesser
 
 Lagedifferenz / Objekt löschen  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Sind zuverlässige Referenzdaten von eingedolten Gewässer (z.B. aus Leitungskataster) vorhanden, sind die Daten der AV nach diesen zu korrigieren. Falls keine solche Daten vorhanden sind, sind die Objekte aus der AV zu entfernen.
+Sind zuverlässige Referenzdaten von eingedolten Gewässer (z.B. aus Leitungskataster) vorhanden, sind die Daten der AV nach diesen zu korrigieren. Sind Objekte in der AV vorhanden, bei denen nachweislich die Geometrie unsicher ist, sind diese aus der AV zu löschen.
 
-.. important:: 
-   Sind keine verlässlichen Geometrien vorhanden, ist auf die Darstellung eines eingedolten Gewässers in der AV zu verzichten.
 
 Benötigte Layer im QGIS:
 
@@ -346,16 +344,27 @@ Benötigte Layer im QGIS:
 
 Objektnamen
 -----------
+.. index:: Objektnamen, Gewässerobjektname
 
 Die Objektnamen (BB und EO) der Gewässer sind mit den Daten des Gewässerinformationssystem (GEWISSO) zu kontrollieren und wenn nötig zu bereinigen.  
 
-|
+Symbol
+------
 
+Die Position und Orientrierung der Symbole ist falls nötig anzupassen.
 
+Benötigte Layer im QGIS:
 
+.. code-block:: none
 
+   Gewässer / Lagekontrolle / Symbol
 
-
+.. _Gewaesser_symbol: 
+.. figure:: _static/Gewaesser_symbol.png    
+   :width: 550px                                                         
+   :target: _static/Gewaesser_symbol.png    
+                                                                         
+   Die Orientierung des Fliessrichtungssymbol ist hier anzupassen
 
 
 
