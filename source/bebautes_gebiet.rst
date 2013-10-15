@@ -78,7 +78,7 @@ Benötigte Layer in QGIS:
 
 Objekt löschen
 ^^^^^^^^^^^^^^
-Gebäude, die kleiner 6 m2 sind und keine Hausnummer haben oder nicht mehr vorhanden sind, sind zu löschen.
+Gebäude, die kleiner 6 m2 sind, sind zu löschen.
 
 Benötigte Layer in QGIS:
 
@@ -97,8 +97,8 @@ Beispiele:
 |   :width: 550px                                                     |   :width: 550px                                                       |
 |   :target: _static/Bebaut_Loeschen_Gebaeude_6m2.png                 |   :target: _static/Bebaut_Loeschen_Gebaeude.png                       |
 |                                                                     |                                                                       |
-|   ``BB.Gebaeude`` ist zu löschen, da es kleiner 6 m2 ist und keine  |   ``BB.Gebaeude`` ist zu löschen, da es nicht mehr vorhanden ist.     |
-|   Hausnummer hat.                                                   |                                                                       |
+|   ``BB.Gebaeude`` ist zu löschen, da es kleiner 6 m2 ist.           |   ``BB.Gebaeude`` ist zu löschen, da es nicht mehr vorhanden ist.     |
+|                                                                     |                                                                       |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 
@@ -115,7 +115,9 @@ Benötigte Layer in QGIS:
 
 Darstellung nicht nach Richtlinie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Aneinandergebaute Gebäude sind - falls sie mehrere Adressen haben und falls baulich möglich resp. die Unterteilung sichtbar ist - korrekt zu unterteilen. Terassenhäuser werden als ein Gebäude erfasst und mittels ``EO.uebriger_Gebaeudeteil`` getrennt. 
+
+Bei Doppel-, Gruppen- und Reihenhäusern zählt jedes Gebäude als selbständig, wenn es einen eigenen Zugang von aussen hat und wenn zwischen den Gebäuden eine senkrechte vom Erdgeschoss bis zum Dach reichende tragende Trennmauer besteht.
+Terassenhäuser werden als ein Gebäude erfasst und mittels ``EO.uebriger_Gebaeudeteil`` getrennt. 
 
 Benötigte Layer in QGIS:
 
@@ -142,7 +144,7 @@ Beispiele:
 |   :target: _static/Bebaut_Richtlinie_Terassen_falsch.png            |   :target: _static/Bebaut_Richtlinie_Terassen_richtig.png             |
 |                                                                     |                                                                       |
 |   Die Terassenhäuser sind als einzelne ``BB.Gebaeude`` erfasst.     |   Terassenhäuser sind als ein Gebäude zu erfassen und mittels         | 
-|                                                                     |   ``EO.uebriger_Gebaeudeteil`` zu unterteilen.                        |
+|                                                                     |    ``EO.uebriger_Gebaeudeteil`` zu unterteilen.                       |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 
@@ -167,13 +169,12 @@ Beispiele:
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 |.. _fig_bebaut_19:                                                   |.. _fig_bebaut_20:                                                     |
 |                                                                     |                                                                       |
-|.. figure:: _static/Bebaut_Abgrenzung_Gartenanlage.png               |.. figure:: _static/Bebaut_Abgrenzung_Gartenanlage_2.png               |
+|.. figure:: _static/Bebaut_Abgrenzung_Gartenanlage_3.png             |.. figure:: _static/Bebaut_Abgrenzung_Gartenanlage_2.png               |
 |   :width: 550px                                                     |   :width: 550px                                                       |
-|   :target: _static/Bebaut_Abgrenzung_Gartenanlage.png               |   :target: _static/Bebaut_Abgrenzung_Gartenanlage_2.png               |
+|   :target: _static/Bebaut_Abgrenzung_Gartenanlage_3.png             |   :target: _static/Bebaut_Abgrenzung_Gartenanlage_2.png               |
 |                                                                     |                                                                       |
-|   Die Abgrenzung zwischen ``BB.Gartenanlage`` und                   |   Die Abgrenzung zwischen ``BB.Gartenanlage`` und ``BB.Acker_Wiese``  |
-|   ``BB.Acker_Wiese`` ist zu löschen und alles ist als               |   ist falsch und gemäss roter Linie zu korrigieren.                   |
-|   ``BB.Gartenanlage`` zu attribuieren.                              |                                                                       |
+|   Die Abgrenzung zwischen ``BB.Gartenanlage`` und ``BB.Acker_Wiese``|   Die Abgrenzung zwischen ``BB.Gartenanlage`` und ``BB.Acker_Wiese``  |
+|   ist falsch und gemäss roter Linie zu korrigieren.                 |   ist falsch und gemäss roter Linie zu korrigieren.                   |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 Objekt löschen
@@ -197,27 +198,27 @@ Benötigte Layer in QGIS:
 
 Beispiele:
 
-+---------------------------------------------------------------------+-----------------------------------------------------------------------+
-|.. _fig_bebaut_21:                                                   |.. _fig_bebaut_22:                                                     |
-|                                                                     |                                                                       |
-|.. figure:: _static/Bebaut_Gartenanlage_fehlt_1.png                  |.. figure:: _static/Bebaut_Gartenanlage_fehlt_2.png                    |
-|   :width: 550px                                                     |   :width: 550px                                                       |
-|   :target: _static/Bebaut_Gartenanlage_fehlt_1.png                  |   :target: _static/Bebaut_Gartenanlage_fehlt_2.png                    |
-|                                                                     |                                                                       |
-|   Fehlende Gartenanlage ist zu erfassen.                            |   Fehlende Gartenanlage ist zu erfassen.                              |
-+---------------------------------------------------------------------+-----------------------------------------------------------------------+
-|.. _fig_bebaut_23:                                                   |.. _fig_bebaut_24:                                                     |
-|                                                                     |                                                                       |
-|.. figure:: _static/Bebaut_Gartenanlage_fehlt_nicht_1.png            |.. figure:: _static/Bebaut_Gartenanlage_fehlt_nicht_2.png              |
-|   :width: 550px                                                     |   :width: 550px                                                       |
-|   :target: _static/Bebaut_Gartenanlage_fehlt_nicht_1.png            |   :target: _static/Bebaut_Gartenanlage_fehlt_nicht_2.png              |
-|                                                                     |                                                                       |
-|   Fehlende Gartenanlage ist **nicht** zu erfassen.                  |   Fehlende Gartenanlage ist **nicht** zu erfassen.                    |
-+---------------------------------------------------------------------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------+-------------------------------------------------------------------------+
+|.. _fig_bebaut_21:                                                   |.. _fig_bebaut_22:                                                       |
+|                                                                     |                                                                         |
+|.. figure:: _static/Bebaut_Gartenanlage_fehlt_1.png                  |.. figure:: _static/Bebaut_Gartenanlage_fehlt_1_korr.png                 |
+|   :width: 550px                                                     |   :width: 550px                                                         | 
+|   :target: _static/Bebaut_Gartenanlage_fehlt_1.png                  |   :target: _static/Bebaut_Gartenanlage_fehlt_1_korr.png                 | 
+|                                                                     |                                                                         |
+|   Gartenanlage ist zu erfassen.                                     |   Fehlende Gartenanlage ist gemäss der äusseren roten Linie zu erfassen.|
++---------------------------------------------------------------------+-------------------------------------------------------------------------+
+|.. _fig_bebaut_23:                                                   |.. _fig_bebaut_24:                                                       |
+|                                                                     |                                                                         |
+|.. figure:: _static/Bebaut_Gartenanlage_fehlt_nicht_3.png            |.. figure:: _static/Bebaut_Gartenanlage_fehlt_nicht_2.png                | 
+|   :width: 550px                                                     |   :width: 550px                                                         |
+|   :target: _static/Bebaut_Gartenanlage_fehlt_nicht_3.png            |   :target: _static/Bebaut_Gartenanlage_fehlt_nicht_2.png                |
+|                                                                     |                                                                         |
+|   Eine ``BB.Gartenanlage`` ist hier **nicht** zu erfassen.          |   Eine ``BB.Gartenanlage`` ist hier **nicht** zu erfassen.              | 
++---------------------------------------------------------------------+-------------------------------------------------------------------------+
 
 Objekt umattribuieren  
 ^^^^^^^^^^^^^^^^^^^^^
-Sind in der AV Gebäudeerschliessungen erfasst, die gemäss Kriterium *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht zu ``BB.Gebaeudeerschliessungen`` gehören, sind die Objekte umzuattribuieren.
+Sind in der AV Gartenanlagen erfasst, die gemäss Kriterium *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht zu ``BB.Gartenanlagen`` gehören, sind die Objekte umzuattribuieren.
 
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -332,7 +333,7 @@ BB.Gebaeudeerschliessung
 
 Lagedifferenz
 ^^^^^^^^^^^^^
-Es werden nur grobe Lagedifferenzen korrigiert.
+Es werden nur grobe Lagedifferenzen (d.h. der Verlauf der Gebäudeerschliessung in der AV gegenüber der Realität ist ganz anders) korrigiert.
 
 Benötigte Layer in QGIS:
 
@@ -350,7 +351,7 @@ Beispiele:
 |   :target: _static/Bebaut_Geberschliessung_falsch.png               |   :target: _static/Bebaut_Geberschliessung_nicht_korrigieren.png      |
 |                                                                     |                                                                       |
 |   ``BB.Gebaeuderschliessung`` ist grob falsch und muss korrigiert   |   ``BB.Gebaeuderschliessung`` ist **nicht** grob falsch und muss      |
-|   werden.                                                           |   **nicht** korrigiert werden.                                        |
+|   werden.                                                           |    **nicht** korrigiert werden.                                       |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 
@@ -374,6 +375,12 @@ Beispiel:
    :target: _static/Bebaut_Geberschliessung_fehlt.png
 
    Bei beiden Gebäuden fehlt die Gebäuderschliessung.
+
+
+Objekt umattribuieren  
+^^^^^^^^^^^^^^^^^^^^^
+Sind in der AV Gebäudeerschliessungen erfasst, die gemäss Kriterium *Handbuch der amtlichen Vermessung Kanton Solothurn* nicht zu ``BB.Gebaeudeerschliessungen`` gehören, sind die Objekte umzuattribuieren.
+
 
 
 Darstellung nicht nach Richtlinie  
@@ -434,7 +441,7 @@ Beispiele:
 |   :target: _static/Bebaut_Parkplatz_loeschen.png                    |   :target: _static/Bebaut_Parkplatz_nicht_loeschen.png                |
 |                                                                     |                                                                       |
 |   ``BB.Parkplatz`` ist kleiner 100 m2 und wird gelöscht.            |   Der östliche Teil des Parkplatzes ist kleiner 100 m2. Er wird       |
-|                                                                     |   **nicht** umattribuiert, da er mit dem westlichen Teil eine Einheit |
+|                                                                     |    **nicht** umattribuiert, da er mit dem westlichen Teil eine Einheit|
 |                                                                     |   bildet.                                                             |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
@@ -580,7 +587,8 @@ Objekt löschen / fehlt / umattribuieren
 Zu kleine Zwischenstützen sowie nicht plausible Kleinstobjekte sind zu löschen (Layer: EO.Flächenelement < 1.5 m2).
 
 .. note::
-  Für die Unterscheidung ``EO.Unterstand`` / ``EO.uebriger_Gebaeudeteil`` sind bei der Feldkontrolle **nicht** sämtliche Objekte zu begehen!
+  Eine Umattribuierung von ``EO.Unterstand`` auf ``EO.uebriger_Gebaeudeteil`` und umgekehrt ist nur vorzunehmen, wenn die Unterscheidung auf dem Orthofoto offensichtlich ist. Generell ist eine Umattribuierung der Arten ``EO.Unterstand`` und ``EO.uebriger_Gebaeudeteil`` zurückhaltend vorzunehmen.
+ 
 
 Benötigte Layer in QGIS:
 
@@ -747,6 +755,18 @@ EO.Unterstand
 
 Lagedifferenz
 ^^^^^^^^^^^^^
+Lagemässig fehlerhaft erfasste Unterstände (z.B. Verdrehungen des Grundrisses) sind zu korrigieren. Können die Unterstände nicht aus bestehenden Aufnahmen korrekt gerechnet werden, muss die Neuaufnahme terrestrisch erfolgen. 
+
+.. note::
+   Fehler aus der laufenden Nachführung können nicht über die PNF/Homogenisierung abgerechnet werden.
+
+Benötigte Layer in QGIS:
+
+.. code-block:: none
+
+   Bebautes Gebiet / Lagekontrolle
+
+
 Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 
