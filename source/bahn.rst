@@ -136,7 +136,7 @@ Beispiele:
 
 Objekt fehlt/löschen/umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Fehlende Objekte sind von den SBB-Daten zu übernehmen und nicht mehr vorhandene Bahngeleise sind zu löschen. Bahngeleise im Tunnel sind als ``EO.Bahngeleise_ueberdeckt`` zu attribuieren.
+Fehlende Objekte sind von den SBB-Daten zu übernehmen und nicht mehr vorhandene Bahngeleise sind zu löschen. 
 
 Benötigende Layer im QGIS:
 
@@ -146,7 +146,7 @@ Benötigende Layer im QGIS:
 
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     
-``EO.Bahngeleise`` werden bei Unterführungen nicht unterbrochen???? Handbuch SO noch nicht so aber KKVA so..... Was ist wenn Gleis durch Industriehalle geht?
+``EO.Bahngeleise`` werden bei Unterführungen und Unterständen nicht unterbrochen.
 
 Benötigende Layer im QGIS:
 

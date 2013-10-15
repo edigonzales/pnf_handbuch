@@ -130,9 +130,13 @@ Benötigte Layer in QGIS:
 
    Landwirtschaft / Lagekontrolle
    Landwirtschaft / Checklayer / BB.Kulturen < 1000 m2
+   
+Objekt umattribuieren   
+^^^^^^^^^^^^^^^^^^^^^
+Falsch attribuierte Intensivkulturen sind zu korrigieren.
 
-Objekt umattribuieren / Darstellung nicht nach Richtlinie
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Darstellung nicht nach Richtlinie
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 |
