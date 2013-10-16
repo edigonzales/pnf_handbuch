@@ -1,4 +1,4 @@
 Übersicht der Fehlergruppen
 ===========================                                            
 
-`Übersicht der Fehlergruppen <_sources/Uebersicht_Fehlergruppe.pdf>`_
+`Übersicht der Fehlergruppen <../../source/_static/Uebersicht_Fehlergruppe.pdf>`_
