@@ -168,6 +168,12 @@ Parallele Darstellung
 Nicht parallele Darstellungen der ``BB.Strasse_Weg`` werden im Rahmen der PNF/Homogenisierung **nicht** korrigiert.
 
 
+Darstellung der Strasse bei Brücken
++++++++++++++++++++++++++++++++++++
+ 
+Die Brüstungsmauer ist Teil der Brücke und somit auch Teil der Bodenbedeckungsart ``BB.Strasse_Weg`` siehe *Handbuch der amtlichen Vermessung Kanton Solothurn*.
+
+
 Durch Felspartien überdeckte Strassen
 +++++++++++++++++++++++++++++++++++++                                                                                                                                                                                       
 Bei den Strassen, die durch Felspartien überdeckt sind, gelten die Darstellungsrichtlinen gemäss *Handbuch der amtlichen Vermessung Kanton Solothurn*. Unterscheidet sich die Darstellung in der AV von der Richtlinie, ist sie entsprechend zu korrigieren.           

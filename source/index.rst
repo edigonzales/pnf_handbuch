@@ -22,6 +22,8 @@ Inhalt:
    seltene_objekte
    perimeterrand
    weitere_ebenen
+   uebersicht_fehlergruppen
+
 
 Index
 ==================

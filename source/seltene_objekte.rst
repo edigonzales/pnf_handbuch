@@ -242,13 +242,10 @@ Lagedifferenz
 ^^^^^^^^^^^^^
 Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Objekten, bei denen die Abgrenzungen auf dem Orthofoto nicht genau zu erkennen sind, sind so zu belassen.
 
-Objekt fehlt
-^^^^^^^^^^^^
 
-
-Objekt löschen/umattribuieren   
+Objekt löschen/fehlt/umattribuieren   
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto eine Fläche mit Geröll,Sand oder übrigen Vegetationslosen zu erkennen, die/der das Flächenkriterium erfüllt, ist diese im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV eine Fläche mit Geröll, Sand oder übrigen vegetationslos vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Flächenkriterium nicht erfüllt, ist dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen.
+Ist auf dem aktuellen Orthofoto eine Fläche mit Geröll, Sand oder übrigen Vegetationslosen zu erkennen, die das Flächenkriterium erfüllt, ist diese im Rahmen der PNF/Homogenisierung neu zu erfassen. Falls in der AV eine Fläche mit Geröll, Sand oder übrigen vegetationslos vorhanden ist, welche auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Flächenkriterium nicht erfüllt, ist dieses Objekt zu löschen oder evtl. einer anderen BB.Art zu zuweisen.
                                     
 
 Benötigte Layer im QGIS:    

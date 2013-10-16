@@ -6,19 +6,23 @@ Toleranzen
 
 Abgrenzungen weden im Projekt *periodische Nachführung und Homogenisierung* nur korrigiert, falls sie ausserhalb folgender Toleranzwerte liegen:
 
+.. important::
+   Dort wo zwei Objekte mit unterschiedlichen Toleranzen aufeinander stossen, gilt immer die kleinere Toleranz. z.B. Abgrenzung BB.geschlossener_Wald zu BB.Acker_Wiese in TS3 gilt die Toleranz von 3.0m
+
                                                                                                                                                           
 +----------------------------------+-----------+-----------+-----------+-------------------------------------------------+---------------------------------------------------+  
 |Beschreibung                      |    TS2    |    TS3    |    TS4    | Bodenbedeckungsarten                            | Einzelobjektarten                                 |
 +==================================+===========+===========+===========+=================================================+===================================================+
 | befestigte Fläche **ohne**       |   1.0 m   |   1.5 m   |   1.5 m   | Strasse_Weg, Bahn, Sportanlage_befestigt,       | Uferverbauung, Lawinenverbauung,                  |
-| Abschluss                        |           |           |           | übrige befestigte                               | Ruine_archäologisches_Objekt, Druckleitung,       |
+|  Abschluss                       |           |           |           | übrige befestigte                               | Ruine_archäologisches_Objekt, Druckleitung,       |
 |                                  |           |           |           |                                                 | Grotte_Höhleneingang, Achse                       |            
 +----------------------------------+-----------+-----------+-----------+-------------------------------------------------+---------------------------------------------------+
 | befestigte Fläche **mit**        |   0.5 m   |   1.0 m   |   1.5 m   | Strasse_Weg, Trottoir, Verkehrsinsel, Flugplatz,| Bahnsteig, Hochkamin, Denkmal, Mast_Antenne,      |
-| Abschluss                        |           |           |           | Sportanlage_befestigt, Parkplatz,               | Mast_Leitung, Aussichtsturm, Uferverbauung        |
-|                                  |           |           |           | übrige befestigte                               | massiver Sockel, Landungssteg,                    | 
+|  Abschluss                       |           |           |           | Sportanlage_befestigt, Parkplatz,               | Mast_Leitung, Aussichtsturm, Uferverbauung        |
+|                                  |           |           |           | übrige befestigte                               | massiver Sockel, Landungssteg, Mauer, Brunnen,    | 
 |                                  |           |           |           |                                                 | Hochspannungsfreileitung, Gondelbahn_Sesselbahn,  |
-|                                  |           |           |           |                                                 | Materialseilbahn, Skilift, Kruzifix               |                                                                                                                         
+|                                  |           |           |           |                                                 | Materialseilbahn, Skilift, Kruzifix,              | 
+|                                  |           |           |           |                                                 | wichtige Treppe                                   |                                                                                                                 
 +----------------------------------+-----------+-----------+-----------+-------------------------------------------------+---------------------------------------------------+
 | unbefestigte Fläche              |   2.0 m   |   3.0 m   |   3.0 m   | Acker_Wiese, Reben, Obstkultur,                 | schmaler_Weg, Fahrspur, Rinnsal, Fähre,           |
 |                                  |           |           |           | übrige_Intensivkultur, Gartenanlage,            | wichtiger_Einzelbaum                              |
@@ -26,7 +30,7 @@ Abgrenzungen weden im Projekt *periodische Nachführung und Homogenisierung* nur
 |                                  |           |           |           | Friedhof, Hoch_Flachmoor, übrige_humusiert,     |                                                   |
 |                                  |           |           |           | stehendes_Gewässer, fliessendes_Gewässer,       |                                                   |
 |                                  |           |           |           | Schilfgürtel,                                   |                                                   |
-|                                  |           |           |           | Fels, Geröll_Sand, Steinbruch, Kiesgrube,       |                                                   |
+|                                  |           |           |           | Geröll_Sand, Steinbruch, Kiesgrube,             |                                                   |
 |                                  |           |           |           | Deponie, übriger Abbau, übrige_vegetationslose  |                                                   |
 +----------------------------------+-----------+-----------+-----------+-------------------------------------------------+---------------------------------------------------+
 | bestockte Fläche [#f1]_          |   4.0 m   |   6.0 m   |   6.0 m   | geschlossener_Wald,  Hecke, übrige_Bestockte,   |                                                   |

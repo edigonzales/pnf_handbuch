@@ -758,7 +758,7 @@ Lagedifferenz
 Lagemässig fehlerhaft erfasste Unterstände (z.B. Verdrehungen des Grundrisses) sind zu korrigieren. Können die Unterstände nicht aus bestehenden Aufnahmen korrekt gerechnet werden, muss die Neuaufnahme terrestrisch erfolgen. 
 
 .. note::
-   Fehler aus der laufenden Nachführung können nicht über die PNF/Homogenisierung abgerechnet werden.
+  Fehler aus der laufenden Nachführung können nicht über die PNF/Homogenisierung abgerechnet werden.
 
 Benötigte Layer in QGIS:
 
