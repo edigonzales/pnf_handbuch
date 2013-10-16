@@ -19,7 +19,7 @@ LFP1 / LFP2
                                
 Punktzeichen nicht erfasst 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-Die Punktzeichen von LFP1 und LFP2 sind zu erfassen. Die korrekte Vermarkungsart ist dem FPDS resp. dem Export (beim AGI zu beziehen???) zu entnehmen.
+Die Punktzeichen von LFP1 und LFP2 sind zu erfassen. Die korrekte Vermarkungsart ist dem FPDS resp. dem Export (<https://dav0.bgdi.admin.ch/fpds/Interlis/>`_ ) zu entnehmen.
 
 
 Hilfsfixpunkte
@@ -28,7 +28,7 @@ Hilfsfixpunkte
 
 Hilfsfixpunkt nicht separat ausgeschieden
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Hilfsfixpunkte sind nicht in der Tabelle LFP3 zu führen sondern separat in der Tabelle Hilfsfixpunkte. Erlaubte Vermarkungsarten sind: ``unversichert`` und ``weitere``. ????
+Hilfsfixpunkte sind nicht in der Tabelle LFP3 zu führen sondern separat in der Tabelle Hilfsfixpunkte. Erlaubte Vermarkungsarten sind: ``unversichert`` und ``weitere``. 
 
 
 Strassenachsen
