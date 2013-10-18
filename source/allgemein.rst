@@ -64,7 +64,7 @@ Gesetzliche Grundlagen
 Vergleichsdaten
 ---------------
 
-Als Referenz dient hauptsächlich das aktuelle Orthofoto. Um die Vollständigket der Daten der amtlichen Vermessng zu üebrprüfen können weitere Vergleichsdaten helfen. Solche Vergelichsdaten sind meist unabhängig der amtlichen Vermessung erfasst und können deshalb für einen Vollständigkeitsvergleich sinvoll sein. Folgende Vergelichsdaten sind in der QGIS-Fachschale integriert:
+Als Referenz dient hauptsächlich das aktuelle Orthofoto. Um die Vollständigkeit der Daten der amtlichen Vermessung zu überprüfen können weitere Vergleichsdaten helfen. Solche Vergleichsdaten sind meist unabhängig der amtlichen Vermessung erfasst und können deshalb für einen Vollständigkeitsvergleich sinnvoll sein. Folgende Vergleichsdaten sind in der QGIS-Fachschale integriert:
 
 .. important::    
    Bitte die Herkunft dieser Daten beachten. Die Richtigkeit und Vollständigkeit dieser Daten kann nicht garantiert werden.
@@ -226,7 +226,7 @@ Bereinigung
 Können Objekte nur durch Aufnahmen (GNSS oder Tachymeter) im Feld erfasst werden, sind diese Aufnahmen gemäss Anhang B der TVAV zu protokollieren. Objekte, die digitalisiert werden, können direkt angepasst werden. Ein ITF (an AGI abzugeben) vor der Bereinigung sichert den alten Zustand. Durch das Attribut *digitalisieren ab Orthofoto* in der Mängelliste ist genau nachzuvollziehen, wo digitalisiert wurde. 
  
 .. important:: 
-   Auf korrekte Erfassung in Tabelle BBNachführung und EONachführung ist zu achten. D.h. die Objekte der Tabelle Bodenbedeckung und Einzelobjekt müssen einem Objekt in Tabelle BBNachführung resp. EONachführung mit ``Beschnreibung`` *PNF* zugeordnet werden.
+   Auf korrekte Erfassung in Tabelle BBNachführung und EONachführung ist zu achten. D.h. die Objekte der Tabelle Bodenbedeckung und Einzelobjekt müssen einem Objekt in Tabelle BBNachführung resp. EONachführung mit ``Beschreibung`` *PNF* zugeordnet werden.
 
                                                                                                                                                          
 Unternehmerbericht

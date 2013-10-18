@@ -15,7 +15,7 @@ Topic  		               Art
 Bodenbedeckung                 geschlossener Wald
 Bodenbedeckung                 Parkanlage bestockt
 Bodenbedeckung                 Hecke
-Bodenbedeckung		       übrige bestockte	
+Bodenbedeckung		           übrige bestockte	
 Einzelobjekt                   schmale best. Fläche
 =============================  ========================================
 
@@ -53,14 +53,14 @@ Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist
 
 .. note::
    Durch die Kreisförster wird im Zyklus von 10 Jahren der Wald anhand des Waldgesetzes auf dem Waldplan erhoben. Als Grundlage für diese Waldpläne dient die AV. Die Anpassungen auf dem Waldplan durch die Kreisförster sind jeweils bei der PNF zu berücksichtigen.
-   Stand der Waldpläne siehe Link Termin Waldplan???????????
+   Stand der Waldpläne siehe  `Planung der Waldpläne <../../source/_static/WAP_BST_Jahr_Operate_20130521.pdf>`_
 
 Benötigende Layer im QGIS:
 
 .. code-block:: none
 
    Bestockte Fläche / Lagekontrolle   
-   Waldplan?????????????????
+   Waldplan
                                 
 Beispiele:
 
@@ -117,13 +117,16 @@ Beispiele:
 Objekt fehlt/ löschen
 ^^^^^^^^^^^^^^^^^^^^^
 Ist auf dem aktuellen Orthofoto ein geschlossener Wald zu erkennen, welcher das Flächenkriterium von 500 m2 erfüllt und die Breite > 12 m ist, ist dieser im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. Ist in der AV ein geschlossener Wald vorhanden, der auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen. 
+
+.. important:: 
+   Rodungsflächen gehören zu ``BB.geschlossener_Wald``.
                                                                                                                                                                    
 Benötigende Layer im QGIS:
 
 .. code-block:: none
 
    Bestockte Fläche / Lagekontrolle  
-
+   Bestockte Fläche / Waldplan
 
 
 Beispiel:
@@ -151,6 +154,7 @@ Benötigende Layer im QGIS:
 .. code-block:: none
 
    Bestockte Fläche / Lagekontrolle 
+   Bestockte Fläche / Waldplan
 
 Beispiele:
 
@@ -196,7 +200,8 @@ Benötigende Layer im QGIS:
 
 Objekt fehlt/ löschen  
 ^^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto eine Bestockung zu erkennen, die das Flächenkriterium von 500m2 nicht erfüllt (``BB.geschlossener Wald``) und eine Breite > 12 m aufweist, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung neu in der AV als ``BB.uebrige_Bestockte`` zu erfassen. Ist in der AV ein Objekt der Art ``BB.uebrige_Bestockte`` vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen. 
+Ist auf dem aktuellen Orthofoto eine Bestockung zu erkennen, welche die Kriterien gemäss *Handbuches der amtlichen Vermessung Kanton Solothurn* erfüllt, ist dieses Objekt zu erfassen.löschen. 
+Falls in der AV eine Fläche mit Art ``BB.uebrige_Bestockte`` vorhanden ist, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder die Kriterien gemäss *Handbuches der amtlichen Vermessung Kanton Solothurn* nichr erfüllt, ist dieses Objekt zu löschen. 
 
 Benötigende Layer im QGIS:
 
@@ -211,7 +216,6 @@ Sind in der AV ``BB.uebrige_Bestockte``-Objekte erfasst, die zu ``BB.Hecke`` ode
 
 .. note::
    * Aufforstungen gehören zu ``BB.geschlossener_Wald``.
-   * An ``BB.geschlossener_Wald`` draf kein ``BB.uebrige_Bestockte`` grenzen
 
 Beispiel:
 
@@ -279,7 +283,7 @@ Benötigende Layer im QGIS:
 Objekt fehlt/ löschen
 ^^^^^^^^^^^^^^^^^^^^^
 Ist auf dem aktuellen Orthofoto ein Bestockung zu erkennen, die das Flächenkriterium gemäss TVAV Art. 13 (???????????) erfüllt, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung neu in der AV als ``BB.Hecke`` zu erfassen. 
-Ist in der AV eine ``BB.Hecke`` erfasst, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Flächenkriterium ??????? oder eher 500m2??? gemäss TVAV Art. 13 nicht nicht erfüllt, ist dieses Objekt zu löschen.
+Ist in der AV eine ``BB.Hecke`` erfasst, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Aufnahmekriterium (Fläche zischen ...m2 bis <500m2 oder Fläche > 500m2 aber Breite <12m) nicht erfüllt, ist dieses Objekt zu löschen.
 
 Benötigte Layer in QGIS:
 
