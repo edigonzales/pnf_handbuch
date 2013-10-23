@@ -144,7 +144,7 @@ Beispiele:
 |   :target: _static/Bebaut_Richtlinie_Terassen_falsch.png            |   :target: _static/Bebaut_Richtlinie_Terassen_richtig.png             |
 |                                                                     |                                                                       |
 |   Die Terassenhäuser sind als einzelne ``BB.Gebaeude`` erfasst.     |   Terassenhäuser sind als ein Gebäude zu erfassen und mittels         | 
-|                                                                     |    ``EO.uebriger_Gebaeudeteil`` zu unterteilen.                       |
+|                                                                     |   ``EO.uebriger_Gebaeudeteil`` zu unterteilen.                        |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 
@@ -240,7 +240,7 @@ Fehlende Wasserbecken sind gemäss Kriterien des *Handbuches der amtlichen Verme
 Für die Kontrolle, ob ein Wasserbecken die Aufnahmekriterien erfüllt, kann eine Feldkontolle sinnvoll sein.
 
 .. note::
-Oberirdische Wasserbecken sind auf dem Orthofoto durch ihren Schattenwurf zu erkennen.
+   Oberirdische Wasserbecken sind auf dem Orthofoto durch ihren Schattenwurf zu erkennen.
 
 Benötigte Layer in QGIS:
 
@@ -351,7 +351,7 @@ Beispiele:
 |   :target: _static/Bebaut_Geberschliessung_falsch.png               |   :target: _static/Bebaut_Geberschliessung_nicht_korrigieren.png      |
 |                                                                     |                                                                       |
 |   ``BB.Gebaeuderschliessung`` ist grob falsch und muss korrigiert   |   ``BB.Gebaeuderschliessung`` ist **nicht** grob falsch und muss      |
-|   werden.                                                           |    **nicht** korrigiert werden.                                       |
+|   werden.                                                           |   **nicht** korrigiert werden.                                        |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 
@@ -441,7 +441,7 @@ Beispiele:
 |   :target: _static/Bebaut_Parkplatz_loeschen.png                    |   :target: _static/Bebaut_Parkplatz_nicht_loeschen.png                |
 |                                                                     |                                                                       |
 |   ``BB.Parkplatz`` ist kleiner 100 m2 und wird gelöscht.            |   Der östliche Teil des Parkplatzes ist kleiner 100 m2. Er wird       |
-|                                                                     |    **nicht** umattribuiert, da er mit dem westlichen Teil eine Einheit|
+|                                                                     |   **nicht** umattribuiert, da er mit dem westlichen Teil eine Einheit |
 |                                                                     |   bildet.                                                             |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 

@@ -346,7 +346,7 @@ Objekt fehlt/löschen/umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    
 .. |pfeil| image:: _static/pfeil.png
 
-|  Zur Volständigkeitskontrolle der Antennen dienen die Daten der Radio-/Fernsehsender und Mobilfunkantennen des Bundes. Antennen die auf dem aktuellen Orthofoto nicht mehr vorhandnen sind, sind zu löschen.
+Zur Volständigkeitskontrolle der Antennen dienen die Daten der Radio-/Fernsehsender und Mobilfunkantennen des Bundes. Antennen die auf dem aktuellen Orthofoto nicht mehr vorhandnen sind, sind zu löschen.
 
                                                                         
         
@@ -373,8 +373,8 @@ Benötigte Layer im QGIS:
 
    
 
-EO. Mast_Leitung / EO.Hochspannungsfreileitung
-----------------------------------------------
+EO.Mast_Leitung / EO.Hochspannungsfreileitung
+---------------------------------------------
 .. index:: Mast_Leitung, Leitung, Hochspannungsfreileitung
 
 
@@ -402,8 +402,6 @@ Beispiel:
   
 Objekt fehlt/löschen/umattribuieren   
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    
-.. |pfeil| image:: _static/pfeil.png
-
 Zur Vollständigkeitskontrolle der Hochspannungsfreileitung und deren Masten kann der Layer ``Freileitungen (ARP)`` verwendet werden. In QGIS ist mit dem Abfragetool (|pfeil| auf Objekt klicken ) das Attribut ``voltage`` zu überprüfen. Nur Leitungen mit > 50kV werden in der AV geführt. 
 Hochspannungsfreileitungen und deren Masten, die auf dem aktuellen Orthofoto nicht mehr vorhandnen sind oder bei deren die Spannung der Hochspannungsfreileitung < 50kV ist, sind zu löschen.
 Fehlende Masten bei Gondelbahnen und Sesselbahnen sind zu erfassen. Hingegen sind die erfassten Masten bei Materialseilbahnen und Skilifte zu löschen.
@@ -461,8 +459,8 @@ Darstellung nicht nach Richtlinie
 Im Rahmen der PNF/Homogenisierung werden keine Änderungen vorgenommen.          
                           
 
-EO. Gondelbahn_Sesselbahn / EO. Materialseilbahn / EO.Skilift 
--------------------------------------------------------------
+EO.Gondelbahn_Sesselbahn / EO.Materialseilbahn / EO.Skilift 
+-----------------------------------------------------------
 
 Lagedifferenz                                                                                                                                                               
 ^^^^^^^^^^^^^
@@ -493,8 +491,8 @@ Der Elemententyp ist Linienelement.
                                                                                                                                                                            
                
    
-EO. Aussichtsturm / EO.Hochkamin / EO.Uferverbauung / EO.Lawinenverbauung / EO.massiver Sockel / EO.Ruine_archaeologisches_Objekt / EO.Landungssteg
----------------------------------------------------------------------------------------------------------------------------------------------------
+EO.Aussichtsturm / EO.Hochkamin / EO.Uferverbauung / EO.Lawinenverbauung / EO.massiver Sockel / EO.Ruine_archaeologisches_Objekt / EO.Landungssteg
+--------------------------------------------------------------------------------------------------------------------------------------------------
 .. index:: Aussichtsturm, Hochkamin, Uferverbauung, massiver Sockel, Ruine, archäologisches Objekt, Landungssteg
 
 Lagedifferenz                                                                                                                                                               
@@ -552,8 +550,8 @@ Darstellung nicht nach Richtlinie
 Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 
-EO. Druckleitung / EO.Faehre / EO. Achse
-----------------------------------------
+EO.Druckleitung / EO.Faehre / EO.Achse
+--------------------------------------
 Lagedifferenz                                                                                                                                                               
 ^^^^^^^^^^^^^
 Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
