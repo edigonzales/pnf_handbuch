@@ -194,7 +194,7 @@ Benötigte Layer in QGIS:
 .. code-block:: none
 
    Bebautes Gebiet / Lagekontrolle
-   Bebautes Gebiet / Checklayer / BB.Gebaeude ohne Gartenanlage oder Erschliessung
+   Bebautes Gebiet / Checklayer / BB.Gebaeude ohne Gartenanlage
 
 Beispiele:
 
@@ -364,7 +364,7 @@ Benötigte Layer in QGIS:
 .. code-block:: none
 
    Bebautes Gebiet / Lagekontrolle
-   Bebautes Gebiet / Checklayer / BB.Gebaeude ohne Gartenanlage oder Erschliessung
+   Bebautes Gebiet / Checklayer / BB.Gebaeude ohne Erschliessung
 
 Beispiel:
 
