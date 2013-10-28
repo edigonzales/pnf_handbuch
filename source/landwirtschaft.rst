@@ -27,6 +27,8 @@ Lagedifferenz
 ^^^^^^^^^^^^^
 Lagedifferenzen zwischen ``BB.Gartenanlage`` resp. bestockten Flächen und ``BB.Acker_Wiese`` resp. ``BB.Weide`` sind in den Mängelgruppen :ref:`ref_BebautesGebiet` und :ref:`ref_BestockteFlaechen` zu erfassen.
 
+
+
 Objekt fehlt / Objekt löschen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
@@ -41,7 +43,7 @@ Benötigte Layer in QGIS:
 .. code-block:: none
 
    Landwirtschaft / Lagekontrolle
-   Landwirtschaft / Checklayer / Acker_Wiese in TS2 (TODO)
+   Landwirtschaft / Checklayer / BB.Acker_Weide_Wiese in TS2
 
 Beispiele:
 

@@ -191,7 +191,7 @@ EO.eingedoltes_oeffentliches_Gewaesser
 
 Lagedifferenz / Objekt löschen  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Sind zuverlässige Referenzdaten von eingedolten Gewässer (z.B. aus Leitungskataster) vorhanden, sind die Daten der AV nach diesen zu korrigieren. Sind Objekte in der AV vorhanden, bei denen nachweislich die Geometrie unsicher ist, sind diese aus der AV zu löschen.
+Sind zuverlässige Vergleichsdaten von eingedolten Gewässer (z.B. aus Leitungskataster) vorhanden, sind die Daten der AV nach diesen zu korrigieren. Sind Objekte in der AV vorhanden, bei denen nachweislich die Geometrie unsicher ist, sind diese aus der AV zu löschen.
 
 
 Benötigte Layer im QGIS:
@@ -213,6 +213,12 @@ Benötigte Layer im QGIS:
 Darstellung nicht nach Richtlinie  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Gewässerfläche, die durch eine andere Bodenbedeckungsart überlagert werden z.B. durch Gebäude oder Parkplätze werden als ``EO.eingedoltes_oeffentliches_Gewaesser`` erfasst.
+
+Benötigte Layer im QGIS:
+
+.. code-block:: none
+
+   Gewässer / Checklayer / EO.eingedoltes_Gewaesser auf BB.Gewaesser
 
    
 EO.Bruecke_Passerelle   
@@ -302,7 +308,7 @@ Benötigte Layer im QGIS:
    Gewässer / Lagekontrolle
    
 .. note::
-  Als Referenzdaten dienen zusätzlich die Daten aus dem Gewässerinformationssystem (GEWISSO) (siehe :ref:`ref_RefDaten`).  
+  Als Vergleichsdaten dienen zusätzlich die Daten aus dem Gewässerinformationssystem (GEWISSO) (siehe :ref:`ref_RefDaten`).  
 
 Beispiele:   
    
@@ -357,7 +363,8 @@ Benötigte Layer im QGIS:
 
 .. code-block:: none
 
-   Gewässer / Lagekontrolle / Symbol
+   Gewässer / Lagekontrolle / BB.Symbole
+   Gewässer / Lagekontrolle / EO.Symbole
 
 .. _Gewaesser_symbol: 
 .. figure:: _static/Gewaesser_symbol.png    

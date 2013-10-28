@@ -154,6 +154,7 @@ Benötigende Layer im QGIS:
 .. code-block:: none
 
    Bestockte Fläche / Lagekontrolle 
+   Bestockte Fläche / Checklayer / BB.Wald in TS2
    Bestockte Fläche / Waldplan
 
 Beispiele:

@@ -150,7 +150,7 @@ Werden Objekte gefunden, bei denen die AV angepasst werden muss, sind diese mit 
 +------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+                        
 | Laufende Nachführung         | Für die Kostenverteilung der Bereinigungsarbeiten muss zwingend zwischen laufender und periodischer Nachführung resp. Homogenisierung unterschieden werden.   | 
 +------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+  
-| Digitalisieren ab Orthofoto  | Für die Berechnung der Kosten ist die Information, ob ab dem Orthofoto digitalisiert werden kann, relevant. (siehe :ref:`ref_Metherei`)                       |
+| Terrestrische Aufnahme       | Für die Berechnung der Kosten ist die Information, ob eine Terrestrische Aufnahme nötig ist, relevant.  (siehe :ref:`ref_Metherei`)                           |
 +------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+ 
 | Bemerkung                    | Beliebige Bemerkungen können hier angebracht werden. Falls ein Objekt umattribuiert wird, ist hier die neu BB.Art oder EO.Art aufzuführen.                    |
 +------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -183,7 +183,7 @@ Die Mängel sind zu bereinigen. Dazu können die Objekte falls möglich ab dem a
 Kosten
 ------
                                                                                                  
-Die Kosten für die laufende Nachführung werden dem Verursacher in Rechnung gestellt. Als Beilage zu der Rechnung ist das Schreiben XXXXXXXX beizulegen. Die laufende Nachführung kann zeitlich mit der PNF/Homogenisierung oder nachträglich erfolgen. 
+Die Kosten für die laufende Nachführung werden dem Verursacher in Rechnung gestellt. Als Beilage zu der Rechnung ist das Schreiben `Warum diese Rechnung <_static/Warum_diese_Rechnung.pdf>`_ beizulegen. Die laufende Nachführung kann zeitlich mit der PNF/Homogenisierung oder nachträglich erfolgen. 
 Für die Kostenverteilung der Bereinigungsarbeiten muss zwingend zwischen laufender und periodischer Nachführung resp. Homogenisierung unterschieden werden.         
  
 ========================      =============================================================================

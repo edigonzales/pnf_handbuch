@@ -14,11 +14,11 @@ Abgrenzungen weden im Projekt *periodische Nachführung und Homogenisierung* nur
 |Beschreibung                      |    TS2    |    TS3    |    TS4    | Bodenbedeckungsarten                            | Einzelobjektarten                                 |
 +==================================+===========+===========+===========+=================================================+===================================================+
 | befestigte Fläche **ohne**       |   1.0 m   |   1.5 m   |   1.5 m   | Strasse_Weg, Bahn, Sportanlage_befestigt,       | Uferverbauung, Lawinenverbauung,                  |
-|  Abschluss                       |           |           |           | übrige befestigte                               | Ruine_archäologisches_Objekt, Druckleitung,       |
+| Abschluss                        |           |           |           | übrige befestigte                               | Ruine_archäologisches_Objekt, Druckleitung,       |
 |                                  |           |           |           |                                                 | Grotte_Höhleneingang, Achse                       |            
 +----------------------------------+-----------+-----------+-----------+-------------------------------------------------+---------------------------------------------------+
 | befestigte Fläche **mit**        |   0.5 m   |   1.0 m   |   1.5 m   | Strasse_Weg, Trottoir, Verkehrsinsel, Flugplatz,| Bahnsteig, Hochkamin, Denkmal, Mast_Antenne,      |
-|  Abschluss                       |           |           |           | Sportanlage_befestigt, Parkplatz,               | Mast_Leitung, Aussichtsturm, Uferverbauung        |
+| Abschluss                        |           |           |           | Sportanlage_befestigt, Parkplatz,               | Mast_Leitung, Aussichtsturm, Uferverbauung        |
 |                                  |           |           |           | übrige befestigte                               | massiver Sockel, Landungssteg, Mauer, Brunnen,    | 
 |                                  |           |           |           |                                                 | Hochspannungsfreileitung, Gondelbahn_Sesselbahn,  |
 |                                  |           |           |           |                                                 | Materialseilbahn, Skilift, Kruzifix,              | 

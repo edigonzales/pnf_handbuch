@@ -125,6 +125,7 @@ Benötigte Layer in QGIS:
 
    Bebautes Gebiet / Lagekontrolle
    Bebautes Gebiet / Checklayer / BB.Gebaeude mit mehreren Adressen
+   Bebautes Gebiet / Checklayer / EO.Unterstand auf Gebäude
 
 Beispiele:
 
@@ -566,7 +567,13 @@ Benötigte Layer in QGIS:
 
 Darstellung nicht nach Richtlinie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
+Ein ``EO.unterirdisches_Gebaeude`` ist in der Regel kein Linienelement.
+
+Benötigte Layer in QGIS:
+
+.. code-block:: none
+   
+   Bebautes Gebiet / Checklayer / EO.Linienelement unterird. Gebaeude
 
 
 EO.uebriger_Gebaeudeteil
@@ -584,7 +591,7 @@ Objekt löschen / fehlt / umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Freistehende** flächige übrige Gebäudeteile sind entweder zu löschen oder umzuattribuieren (z.B. ``EO.Unterstand``). Flächige übrige Gebäudeteile **innerhalb** eines Gebäudes sind in ein EO.Linienobjekt umzuattribuieren. EO.Linienelemente der Art ``EO.uebriger_Gebaeudeteil`` **ausserhalb** von Gebäuden sind entweder zu löschen oder in ein EO.Flächenelement umzuwandeln. 
 
-Zu kleine Zwischenstützen sowie nicht plausible Kleinstobjekte sind zu löschen (Layer: EO.Flächenelement < 1.5 m2).
+Zu kleine Zwischenstützen sowie nicht plausible Kleinstobjekte sind zu löschen (Layer: EO.uebriger_Gebaeudeteil < 1.5 m2).
 
 .. note::
   Eine Umattribuierung von ``EO.Unterstand`` auf ``EO.uebriger_Gebaeudeteil`` und umgekehrt ist nur vorzunehmen, wenn die Unterscheidung auf dem Orthofoto offensichtlich ist. Generell ist eine Umattribuierung der Arten ``EO.Unterstand`` und ``EO.uebriger_Gebaeudeteil`` zurückhaltend vorzunehmen.
@@ -598,7 +605,7 @@ Benötigte Layer in QGIS:
    Bebautes Gebiet / Checklayer / EO.Flächenelement 'übrig. Geb.teil' freistehend   
    Bebautes Gebiet / Checklayer / EO.Linienelement 'übrig. Geb.teil' ausserhalb Gebäude
    Bebautes Gebiet / Checklayer / EO.Flächenelement 'übrig. Geb.teil' innerhalb Gebäude
-   Bebautes Gebiet / Checklayer / EO.Flächenelement < 1.5 m2
+   Bebautes Gebiet / Checklayer / EO.uebriger_Gebaeudeteil < 1.5 m2
 
 Beispiele:
 

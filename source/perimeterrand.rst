@@ -18,14 +18,14 @@ Bodenbedeckung / Einzelobjekte
 
 Lagedifferenz
 ^^^^^^^^^^^^^
-Lagedifferenzen zwischen den Gemeinden sind zu korrigieren. Betrifft die Korrektur eine Nachbargemeinde eines anderen Nachführungsgeometers ist das AGI zu kontaktieren. ???? Vergleich mit anderen Kantonen? -> WMS? -> Datenimport?
+Lagedifferenzen zwischen den Gemeinden sind zu korrigieren. Betrifft die Korrektur eine Nachbargemeinde eines anderen Nachführungsgeometers ist das AGI zu kontaktieren.
 
 Benötigte Gruppen in QGIS:
 
 .. code-block:: none
 
    Gemeinde
-   Nachbargemeinde
+   AV-WMS (V+D)
 
 Beispiel:
 
@@ -38,5 +38,4 @@ Beispiel:
    Trottoir und Strasse sind anzupassen.
 
 
-|
 

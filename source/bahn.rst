@@ -167,7 +167,7 @@ Benötigende Layer im QGIS:
 
 .. code-block:: none
 
-    Bahn / Lagekontrolle   
+    Bahn / Checklayer / EO.Bahngeleise_ueberdeckt 
 
 
                                                                     
