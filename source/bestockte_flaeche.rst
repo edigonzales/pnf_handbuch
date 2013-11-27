@@ -201,7 +201,7 @@ Benötigende Layer im QGIS:
 
 Objekt fehlt/ löschen  
 ^^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto eine Bestockung zu erkennen, welche die Kriterien gemäss *Handbuches der amtlichen Vermessung Kanton Solothurn* erfüllt, ist dieses Objekt zu erfassen.löschen. 
+Ist auf dem aktuellen Orthofoto eine Bestockung zu erkennen, welche die Kriterien gemäss *Handbuches der amtlichen Vermessung Kanton Solothurn* erfüllt, ist dieses Objekt zu erfassen. 
 Falls in der AV eine Fläche mit Art ``BB.uebrige_Bestockte`` vorhanden ist, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder die Kriterien gemäss *Handbuches der amtlichen Vermessung Kanton Solothurn* nichr erfüllt, ist dieses Objekt zu löschen. 
 
 Benötigende Layer im QGIS:
@@ -283,8 +283,8 @@ Benötigende Layer im QGIS:
 
 Objekt fehlt/ löschen
 ^^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto ein Bestockung zu erkennen, die das Flächenkriterium gemäss TVAV Art. 13 (???????????) erfüllt, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung neu in der AV als ``BB.Hecke`` zu erfassen. 
-Ist in der AV eine ``BB.Hecke`` erfasst, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Aufnahmekriterium (Fläche zischen ...m2 bis <500m2 oder Fläche > 500m2 aber Breite <12m) nicht erfüllt, ist dieses Objekt zu löschen.
+Ist auf dem aktuellen Orthofoto ein Bestockung zu erkennen, die das Flächenkriterium 250m2 erfüllt, ist diese bestockte Fläche im Rahmen der PNF/Homogenisierung neu in der AV als ``BB.Hecke`` zu erfassen. 
+Ist in der AV eine ``BB.Hecke`` erfasst, die auf dem aktuellen Orthofoto nicht mehr zu erkennen ist oder das Aufnahmekriterium (Fläche zischen 250m2 bis <500m2 oder Fläche > 500m2 aber Breite <12m) nicht erfüllt, ist dieses Objekt zu löschen.
 
 Benötigte Layer in QGIS:
 
