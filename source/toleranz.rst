@@ -7,7 +7,7 @@ Toleranzen
 Abgrenzungen weden im Projekt *periodische Nachführung und Homogenisierung* nur korrigiert, falls sie ausserhalb folgender Toleranzwerte liegen:
 
 .. important::
-   Dort wo zwei Objekte mit unterschiedlichen Toleranzen aufeinander stossen, gilt immer die kleinere Toleranz. z.B. Abgrenzung BB.geschlossener_Wald zu BB.Acker_Wiese in TS3 gilt die Toleranz von 3.0m
+   Dort, wo zwei Objekte mit unterschiedlichen Toleranzen aufeinander stossen, gilt immer die kleinere Toleranz. Ausnahme hierbei ist die Abgrenzung *bestockte Fläche* zu *unbefestigte Fläche*, hier gilt die Toleranz für bestockte Flächen.
 
                                                                                                                                                           
 +----------------------------------+-----------+-----------+-----------+-------------------------------------------------+---------------------------------------------------+  
