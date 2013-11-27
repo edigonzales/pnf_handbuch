@@ -295,13 +295,13 @@ Benötigte Layer in QGIS:
 
 Beispiel:
 
-.. _bestockte_Flaeche_Heck_loeschen:                             
+.. _bestockte_Flaeche_Hecke_fehlt:                             
                                
-.. figure:: _static/bestockte_Flaeche_Heck_loeschen.png
+.. figure:: _static/bestockte_Flaeche_Hecke_fehlt.png
    :width: 550px               
-   :target: _static/bestockte_Flaeche_Heck_leoschen.png  
+   :target: _static/bestockte_Flaeche_Hecke_fehlt.png
                                                                   
-   Beide ``BB.Hecke`` sind zu löschen, da diese das Flächenkriterium (TS3: 1000 m2) nicht erfüllen. 
+   Die ``BB.Hecke`` ist zu erfassen, da diese das Flächenkriterium von 250 m2 erfüllen. Die Baumgruppe unten rechts wird nicht erfasst als Hecke. Diese Baumgruppe gehört zu Gartenanlage.
     
 
 Objekt umattribuieren
