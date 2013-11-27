@@ -301,7 +301,7 @@ Beispiel:
    :width: 550px               
    :target: _static/bestockte_Flaeche_Hecke_fehlt.png
                                                                   
-   Die ``BB.Hecke`` ist zu erfassen, da diese das Flächenkriterium von 250 m2 erfüllen. Die Baumgruppe unten rechts wird nicht erfasst als Hecke. Diese Baumgruppe gehört zu Gartenanlage.
+   Die ``BB.Hecke`` ist zu erfassen, da diese das Flächenkriterium von 250 m2 erfüllen. Die Baumgruppe unten rechts wird nicht als Hecke erfasst. Diese Baumgruppe gehört zu Gartenanlage.
     
 
 Objekt umattribuieren
