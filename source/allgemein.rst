@@ -96,7 +96,7 @@ Vorgehen beim Projekt *Periodische Nachführung und Homogenisierung*
    :width: 400px                                         
    :target: _static/Diagramm_Vorgehen.png               
 
-In einem ersten Schritt werden die Objekte, die nachzuführen resp. die zu homogenisieren sind, detektiert. Eine QGIS-Fachschale unterstützt die Detektierung. Dazu ist das AV-Operat im Interlis-Format in die QGIS-Fachschale zu importieren (siehe https://docs.google.com/document/d/1cA-7Qe-clG3pW9366pJQoRACNlejM9B9hvu0ljdrKQw/edit?pli=1#heading=h.f2eudjvbbct5 ).
+In einem ersten Schritt werden die Objekte, die nachzuführen resp. die zu homogenisieren sind, detektiert. Eine QGIS-Fachschale unterstützt die Detektierung. Dazu ist das AV-Operat im Interlis-Format in die QGIS-Fachschale zu importieren (siehe https://docs.google.com/document/d/1gqRfLml-pzGj5gfxZ5RQd_sEf8mH1z1lM3nReK4J1QA/edit).
 
 .. important:: 
    Als Referenz für die Detektierung wird hauptsächlich ein aktuelles Orthofoto verwendet. Dabei ist zu berücksichtigen, dass Mutationen in der AV, die jünger als das Orthofoto sind, nicht an die Situation des Orthofotos angepasst werden. Zum Beispiel kann ein Strassenobjekt (Ausbau einer Strasse) in der AV aktueller sein als auf dem Orthofoto.       
@@ -243,9 +243,7 @@ Die Verifikation wird in zwei Schritten durchgeführt.
 
 QGIS Fachschale PNF/Homogenisierung
 -----------------------------------
-Anleitungen zu QGIS Fachschale PNF/Homogenisierung ... offen
-
--  Raster/ Planeinteilung für Überblick
+Anleitungen zu QGIS Fachschale PNF/Homogenisierung unter: https://docs.google.com/document/d/1gqRfLml-pzGj5gfxZ5RQd_sEf8mH1z1lM3nReK4J1QA/edit
 
 |
 
