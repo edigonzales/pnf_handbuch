@@ -231,14 +231,14 @@ Können Objekte nur durch Aufnahmen (GNSS oder Tachymeter) im Feld erfasst werde
                                                                                                                                                          
 Unternehmerbericht
 ^^^^^^^^^^^^^^^^^^                          
-Nach Abschluss der Arbeiten ist ein Unternehmerbericht gemäss dem vordefinierten Raster zu verfassen.
+Nach Abschluss der Arbeiten ist ein technischer Bericht gemäss der `Vorlage <_static/Vorlage_Technischer_Bericht.pdf>`_ zu verfassen.
 
 Verifikation
 ------------
 Die Verifikation wird in zwei Schritten durchgeführt. 
 
-1. Wird nach der Mängeldetektion durchgeführt. Dazu sind die detektierten Mängel als Shapefile und der Plan der Feldkontrolle (analog) ans AGI abzugeben.
-2. Wird nach der Bereinigung der Mängel durchgeführt. An das AGI ist hierbei das Operat in Interlis-Format (kontrolliert mit MOCHECKSO) abzugeben.    
+1. Wird nach der Mängeldetektion durchgeführt. Dazu ist die Mängelliste (als Excelliste und als Shape-File) und ein ITF SO  pro Gemeinde auf einer DVD abzugeben. Der Feldplan mit den Kommentaren der Feldbegehung und ein technischer Bericht ist ebenfalls mit abzugeben. 
+2. Wird nach der Bereinigung der Mängel durchgeführt. An das AGI ist pro Gemeinde ein ITF SO vor der Bereinigung und ein ITF SO nach der Bereinigung (kontrolliert mit MOCHECKSO) auf einer DVD abzugeben. Die abgearbeitete Mängelliste und der ergänzte technische Bericht ist ebenfalls mit abzuliefern. 
                                                                                        
 
 QGIS Fachschale PNF/Homogenisierung
