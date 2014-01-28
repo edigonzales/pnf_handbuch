@@ -53,7 +53,7 @@ Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist
 
 .. note::
    Durch die Kreisförster wird im Zyklus von 10 Jahren der Wald anhand des Waldgesetzes auf dem Waldplan erhoben. Als Grundlage für diese Waldpläne dient die AV. Die Anpassungen auf dem Waldplan durch die Kreisförster sind jeweils bei der PNF zu berücksichtigen.
-   Stand der Waldpläne siehe  `Planung der Waldpläne <../../source/_static/WAP_BST_Jahr_Operate_20130521.pdf>`_
+   Stand der Waldpläne siehe  `Planung der Waldpläne <_static/WAP_BST_Jahr_Operate_20130521.pdf>`_
 
 Benötigende Layer im QGIS:
 
