@@ -175,7 +175,7 @@ Die Mängel sind zu bereinigen. Dazu können die Objekte falls möglich ab dem a
 |   :target: _static/Erfassungsmethode.png                                                         |   :target: _static/Legende_Erfassungsmethode.png                   |
 |                                                                                                  |                                                                    |
 |   Beurteilung der Methoden; Quelle: Richtlinie der Arbeitsgruppe KKVA periodischen Nachführung   |                                                                    |
-|   der amtlichen Vermessung mit kantonalen Anpassungen (Anpassungen sind markiert mit *)          |                                                                    |
+|   der amtlichen Vermessung mit kantonalen Anpassungen (Anpassungen sind markiert mit ``*``)      |                                                                    |
 +--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+ 
 
   
@@ -223,7 +223,7 @@ Die Objekte, die auf dem Orthofoto schwierig zu interpretieren sind, werden auf 
 
 Bereinigung
 ^^^^^^^^^^^
-Können Objekte nur durch Aufnahmen (GNSS oder Tachymeter) im Feld erfasst werden, sind diese Aufnahmen gemäss Anhang B der TVAV zu protokollieren. Objekte, die digitalisiert werden, können direkt angepasst werden. Ein ITF (an AGI abzugeben) vor der Bereinigung sichert den alten Zustand. Durch das Attribut *digitalisieren ab Orthofoto* in der Mängelliste ist genau nachzuvollziehen, wo digitalisiert wurde. 
+Können Objekte nur durch Aufnahmen (GNSS oder Tachymeter) im Feld erfasst werden, sind diese Aufnahmen gemäss Anhang B der TVAV zu protokollieren. Objekte, die digitalisiert werden, können direkt angepasst werden. Ein ITF (an AGI abzugeben) vor der Bereinigung sichert den alten Zustand. Durch das Attribut *Terrestrische Aufnahme* in der Mängelliste ist genau nachzuvollziehen, wo digitalisiert wurde. 
  
 .. important:: 
    Auf korrekte Erfassung in Tabelle BBNachführung und EONachführung ist zu achten. D.h. die Objekte der Tabelle Bodenbedeckung und Einzelobjekt müssen einem Objekt in Tabelle BBNachführung resp. EONachführung mit ``Beschreibung`` *PNF* zugeordnet werden.

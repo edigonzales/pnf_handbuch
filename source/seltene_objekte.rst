@@ -75,7 +75,7 @@ Im Rahmen der PNF/Homogenisierung werden **keine** Änderungen vorgenommen.
 
 
 BB.Flugplatz / BB.Sportanlage_befestigt / BB.Sportanlage_humusiert / BB.Friedhof / BB.Parkanlage_humusiert / BB.uebrige_humusierte 
----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
 .. index:: Flugplatz, Sportanlage_befestigt, Sportanlage_humusiert, Friedhof, Parkanlage_humusiert, Parkanlage_bestockt, übrige humusierte
 
 Lagedifferenz

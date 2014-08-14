@@ -41,6 +41,8 @@ Lagedifferenz
 ^^^^^^^^^^^^^
 Lagemässig fehlerhaft erfasste Gebäude (z.B. Verdrehungen des Grundrisses) sind zu korrigieren. Verkippungen von Gebäuden in Orthofotos sind keine Lagedifferenzen. Können die Gebäude nicht aus bestehenden Aufnahmen korrekt gerechnet werden, muss die Neuaufnahme terrestrisch erfolgen. 
 
+Gebäude mit bestehenden Flügelmauern werden im Rahmen der PNF/Homogenisierung nicht angepasst.
+
 .. note::
    Fehler aus der laufenden Nachführung können nicht über die PNF/Homogenisierung abgerechnet werden.
 
@@ -345,15 +347,25 @@ Benötigte Layer in QGIS:
 Beispiele:
 
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
-|.. _fig_bebaut_12:                                                   |.. _fig_bebaut_13:                                                     |
+|.. _fig_bebaut_12:                                                   |.. _fig_bebaut_12a:                                                    |
 |                                                                     |                                                                       |
-|.. figure:: _static/Bebaut_Geberschliessung_falsch.png               |.. figure:: _static/Bebaut_Geberschliessung_nicht_korrigieren.png      |
+|.. figure:: _static/Bebaut_Geberschliessung_falsch_2.png             |.. figure:: _static/Bebaut_Geberschliessung_falsch_3.png               |
 |   :width: 550px                                                     |   :width: 550px                                                       |
-|   :target: _static/Bebaut_Geberschliessung_falsch.png               |   :target: _static/Bebaut_Geberschliessung_nicht_korrigieren.png      |
+|   :target: _static/Bebaut_Geberschliessung_falsch_2.png             |   :target: _static/Bebaut_Geberschliessung_falsch_3.png               |
 |                                                                     |                                                                       |
-|   ``BB.Gebaeuderschliessung`` ist grob falsch und muss korrigiert   |   ``BB.Gebaeuderschliessung`` ist **nicht** grob falsch und muss      |
-|   werden.                                                           |   **nicht** korrigiert werden.                                        |
+|   ``BB.Gebaeudeerschliessung`` ist grob falsch und muss korrigiert  |   ``BB.Gebaeudeerschliessung`` ist grob falsch und muss korrigiert    |
+|   werden.                                                           |   werden.                                                             |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
+|.. _fig_bebaut_13:                                                   |                                                                       |
+|                                                                     |                                                                       |
+|.. figure:: _static/Bebaut_Geberschliessung_nicht_korrigieren.png    |                                                                       | 
+|   :width: 550px                                                     |                                                                       |
+|   :target: _static/Bebaut_Geberschliessung_nicht_korrigieren.png    |                                                                       |
+|                                                                     |                                                                       |
+|   ``BB.Gebaeuderschliessung`` ist **nicht** grob falsch und muss    |                                                                       | 
+|   **nicht** korrigiert werden.                                      |                                                                       | 
++---------------------------------------------------------------------+-----------------------------------------------------------------------+
+
 
 
 Objekt fehlt / Objekt löschen
@@ -412,7 +424,7 @@ Beispiele:
 |   :width: 550px                                                     |   :width: 550px                                                       |
 |   :target: _static/Bebaut_Parkplatz_Lagefehler1.png                 |   :target: _static/Bebaut_Parkplatz_Lagefehler2.png                   |
 |                                                                     |                                                                       |
-|   ``BB.Parkplatz`` falsch definiert und muss korrigiert werden.     |   ``BB.Parkplatz``ist zu korrigieren, weil die Lagedifferenz grösser  |
+|   ``BB.Parkplatz`` falsch definiert und muss korrigiert werden.     |   ``BB.Parkplatz`` ist zu korrigieren, weil die Lagedifferenz grösser |
 |   Ein Teil ist als Gartenanlage erfasst.                            |   als die Toleranz (TS2: 0.5m) ist.                                   |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
