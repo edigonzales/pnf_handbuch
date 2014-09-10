@@ -96,7 +96,7 @@ Vorgehen beim Projekt *Periodische Nachführung und Homogenisierung*
    :width: 400px                                         
    :target: _static/Diagramm_Vorgehen.png               
 
-In einem ersten Schritt werden die Objekte, die nachzuführen resp. die zu homogenisieren sind, detektiert. Eine QGIS-Fachschale unterstützt die Detektierung. Dazu ist das AV-Operat im Interlis-Format in die QGIS-Fachschale zu importieren (siehe https://docs.google.com/document/d/1gqRfLml-pzGj5gfxZ5RQd_sEf8mH1z1lM3nReK4J1QA/edit).
+In einem ersten Schritt werden die Objekte, die nachzuführen resp. die zu homogenisieren sind, detektiert. Eine QGIS-Fachschale unterstützt die Detektierung. Dazu ist das AV-Operat im Interlis-Format in die QGIS-Fachschale zu importieren (siehe https://docs.google.com/document/d/17wjFH5ijcSMELjZeC_23ZwY4X9RuDFk7_Rudk6peHGI/edit?usp=sharing).
 
 .. important:: 
    Als Referenz für die Detektierung wird hauptsächlich ein aktuelles Orthofoto verwendet. Dabei ist zu berücksichtigen, dass Mutationen in der AV, die jünger als das Orthofoto sind, nicht an die Situation des Orthofotos angepasst werden. Zum Beispiel kann ein Strassenobjekt (Ausbau einer Strasse) in der AV aktueller sein als auf dem Orthofoto.       
