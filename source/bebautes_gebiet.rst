@@ -41,8 +41,6 @@ Lagedifferenz
 ^^^^^^^^^^^^^
 Lagemässig fehlerhaft erfasste Gebäude (z.B. Verdrehungen des Grundrisses) sind zu korrigieren. Verkippungen von Gebäuden in Orthofotos sind keine Lagedifferenzen. Können die Gebäude nicht aus bestehenden Aufnahmen korrekt gerechnet werden, muss die Neuaufnahme terrestrisch erfolgen. 
 
-Gebäude mit bestehenden Flügelmauern werden im Rahmen der PNF/Homogenisierung nicht angepasst.
-
 .. note::
    Fehler aus der laufenden Nachführung können nicht über die PNF/Homogenisierung abgerechnet werden.
 
@@ -120,6 +118,8 @@ Darstellung nicht nach Richtlinie
 
 Bei Doppel-, Gruppen- und Reihenhäusern zählt jedes Gebäude als selbständig, wenn es einen eigenen Zugang von aussen hat und wenn zwischen den Gebäuden eine senkrechte vom Erdgeschoss bis zum Dach reichende tragende Trennmauer besteht.
 Terassenhäuser werden als ein Gebäude erfasst und mittels ``EO.uebriger_Gebaeudeteil`` getrennt. 
+
+Gebäude mit bestehenden Flügelmauern werden im Rahmen der PNF/Homogenisierung nicht angepasst.
 
 Benötigte Layer in QGIS:
 
