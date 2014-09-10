@@ -243,7 +243,7 @@ Die Verifikation wird in zwei Schritten durchgeführt.
 
 QGIS Fachschale PNF/Homogenisierung
 -----------------------------------
-Anleitungen zu QGIS Fachschale PNF/Homogenisierung unter: https://docs.google.com/document/d/1gqRfLml-pzGj5gfxZ5RQd_sEf8mH1z1lM3nReK4J1QA/edit
+Anleitungen zu QGIS Fachschale PNF/Homogenisierung unter: https://docs.google.com/document/d/17wjFH5ijcSMELjZeC_23ZwY4X9RuDFk7_Rudk6peHGI/edit?usp=sharing
 
 |
 
