@@ -32,7 +32,7 @@ BB.Strasse_Weg
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) festgestellt, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranzwerte, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, ist eine Feldkontrolle sinnvoll. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) festgestellt, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranzwerte, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann das digitale Terrainmodell (DTM) hinzugeschaltet werden. 
 
 Benötigte Layer in QGIS:
 
@@ -71,6 +71,16 @@ Beispiele:
 |   ``BB.Strasse_Weg`` ist **nicht** zu korrigieren, weil die         |   ``BB.Strasse_Weg`` ist **nicht** zu korrigieren, weil die           |
 |   Lagedifferenz kleiner als die Toleranz (TS3: 1.5 m) ist.          |   Lagedifferenz kleiner als die Toleranz (TS4: 1.5 m) ist.            |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
+|.. _Strasse_Lidar_Ortho:                                             |.. _Strasse_Lidar_DTM:                                                 |
+|                                                                     |                                                                       |
+|.. figure:: _static/OrthoStrasse.jpg                                 |.. figure:: _static/LidarStrasse.jpg                                   |     
+|   :width:  550px                                                    |   :width:  550px                                                      |
+|   :target: _static/OrthoStrasse.jpg                                 |   :target: _static/LidarStrasse.jpg                                   |
+|                                                                     |                                                                       |
+|   ``BB.Strasse_Weg`` ist überhaupt nicht resp. nur sehr schlecht    |   ``BB.Strasse_Weg`` ist in DTM gut sichtbar (und muss korrigiert     | 
+|   sichtbar.                                                         |   werden).                                                            |
++---------------------------------------------------------------------+-----------------------------------------------------------------------+
+
 
 
 Objekt fehlt/löschen  

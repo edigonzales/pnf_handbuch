@@ -20,7 +20,7 @@ Einzelobjekt                   schmale best. Fläche
 =============================  ========================================
 
 .. note::
-   Das Orthofoto mit der Darstellung des Infrarot-Kanals kann für eine bessere Interpretation der bestockten Flächen dienen.
+   Das Orthofoto mit der Darstellung des Infrarot-Kanals und das digitale Oberflächenmodell (DOM) können für eine bessere Interpretation der bestockten Flächen hinzugefügt werden.
 
 +-------------------------------------------------------------------------------+------------------------------------------------------------------------------------+ 
 |.. _Orthofoto_RGB:                                                             |.. _Orthofoto_CIR:                                                                  | 
@@ -41,8 +41,9 @@ Lagedifferenz
 ^^^^^^^^^^^^^                        
 .. index:: Wald, geschlossener Wald   
                                
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und der Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren.                                                 
-Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist auf dem Orthofoto nicht klar ersichtlich, wo der Waldrand verläuft, wird in der AV keine Korrektur vorgenommen.
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und der Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst.  
+
+Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schaffenwurf oder Sichthindernisse) nicht möglich, kann das digitale Oberflächenmodell hinzugeschaltet werden. Ist selbst mithilfe des digitalen Oberflächenmodells nicht klar ersichtlich, wo der Waldrand verläuft, wird in der AV keine Korrektur vorgenommen.
 
 .. important:: 
    * Nicht unnötig zusätzlichen Wald generieren! Wald eher knapp als zu grosszügig definieren.
@@ -112,7 +113,16 @@ Beispiele:
 |   ``BB.geschlossener_Wald`` ist **nicht** zu korrigieren, weil die                         |   ``BB.geschlossener_Wald`` ist **nicht** zu korrigieren, weil die                 |
 |   Lagedifferenz  kleiner als die Toleranz (TS3: 6.0 m) ist.                                |   Lagedifferenz kleiner als die Toleranz (TS3: 6.0 m) ist.                         |
 +--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+ 
-                                                                                                                                                                                       
+|.. _Wald_Lidar_Ortho:                                                                       |.. _Wald_Lidar_DTM:                                                                 |
+|                                                                                            |                                                                                    |
+|.. figure:: _static/OrthoWald.jpg                                                           |.. figure:: _static/LidarWald.jpg                                                   |     
+|   :width:  550px                                                                           |   :width:  550px                                                                   |
+|   :target: _static/OrthoWald.jpg                                                           |   :target: _static/LidarWald.jpg                                                   |
+|                                                                                            |                                                                                    | 
+|   ``BB.geschlossener_Wald`` ist überhaupt nicht resp. nur sehr schlecht                    |   ``BB.geschlossener_Wald`` ist in DOM gut sichtbar (und muss **nicht** korrigiert | 
+|   sichtbar.                                                                                |   werden).                                                                         |
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+
 
 Objekt fehlt/ löschen
 ^^^^^^^^^^^^^^^^^^^^^
@@ -190,7 +200,7 @@ BB.uebrige_Bestockte
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und die Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz und der Feststellungsgenauigkeit, wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und die Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schaffenwurf oder Sichthindernisse) nicht möglich, kann das digitale Oberflächenmodell hinzugeschaltet werden. Liegt die Differenz innerhalb der Toleranz und der Feststellungsgenauigkeit, wird das Objekt nicht angepasst. 
 
 Benötigende Layer im QGIS:
 
@@ -244,7 +254,7 @@ BB.Parkanlage_bestockt
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und die Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz und der Feststellungsgenauigkeit, wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und die Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schaffenwurf oder Sichthindernisse) nicht möglich, kann das digitale Oberflächenmodell hinzugeschaltet werden. Liegt die Differenz innerhalb der Toleranz und der Feststellungsgenauigkeit, wird das Objekt nicht angepasst. 
 
 Benötigende Layer im QGIS:
 
@@ -272,7 +282,7 @@ BB.Hecke
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und die Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz und der Feststellungsgenauigkeit, wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und die Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schaffenwurf oder Sichthindernisse) nicht möglich, kann das digitale Oberflächenmodell hinzugeschaltet werden. Liegt die Differenz innerhalb der Toleranz und der Feststellungsgenauigkeit, wird das Objekt nicht angepasst. 
 
 Benötigende Layer im QGIS:
 

@@ -29,7 +29,7 @@ BB.stehendes_Gewaesser
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann das digitale Terrainmodell (DTM) hinzugeschaltet werden.
 
 Benötigte Layer im QGIS:
 
@@ -104,7 +104,8 @@ BB.fliessendes_Gewaesser
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann das digitale Terrainmodell (DTM) hinzugeschaltet werden.
+
 
 Benötigte Layer im QGIS:
 
@@ -163,7 +164,8 @@ BB.Schilfgürtel
 
 Lagedifferenz  
 ^^^^^^^^^^^^^   
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann das digitale Terrainmodell (DTM) hinzugeschaltet werden.
+
  
 Benötigte Layer im QGIS:
 
@@ -279,7 +281,8 @@ EO.Rinnsal
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann das digitale Terrainmodell (DTM) hinzugeschaltet werden.
+ 
 
 Benötigte Layer im QGIS:
 
@@ -294,6 +297,18 @@ Benötigte Layer im QGIS:
    :target: _static/Gewaesser_Rinnsal.png    
                                                                          
    ``EO.Rinnsal`` ist **nicht** zu korrigieren, weil die Lagedifferenz kleiner als die Toleranz (TS3: 3.0 m) ist.                            
+
++--------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+|.. _Gewaesser_Lidar_Ortho:                                                |.. _Gewaesser_Lidar_DTM:                                                           |
+|                                                                          |                                                                                   |
+|.. figure:: _static/OrthoRinnsal.jpg                                      |.. figure:: _static/LidarRinnsal.jpg                                               |     
+|   :width:  550px                                                         |   :width:  550px                                                                  |
+|   :target: _static/OrthoRinnsal.jpg                                      |   :target: _static/LidarRinnsal.jpg                                               |
+|                                                                          |                                                                                   |
+|   ``EO.Rinnsal`` ist überhaupt nicht resp. nur sehr schlecht             |   ``EO.Rinnsal`` ist in DTM gut sichtbar (und muss **nicht** korrigiert           | 
+|   sichtbar.                                                              |   werden).                                                                        |
++--------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+
                                                                                                                                                       
 
 Objekt fehlt/löschen  

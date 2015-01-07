@@ -64,14 +64,16 @@ Gesetzliche Grundlagen
 Vergleichsdaten
 ---------------
 
-Als Referenz dient hauptsächlich das aktuelle Orthofoto. Um die Vollständigkeit der Daten der amtlichen Vermessung zu überprüfen können weitere Vergleichsdaten helfen. Solche Vergleichsdaten sind meist unabhängig der amtlichen Vermessung erfasst und können deshalb für einen Vollständigkeitsvergleich sinnvoll sein. Folgende Vergleichsdaten sind in der QGIS-Fachschale integriert:
+Als Referenz dient hauptsächlich das aktuelle Orthofoto. Um die Vollständigkeit der Daten der amtlichen Vermessung zu überprüfen oder bei Interpretationsschwierigkeiten können weitere Vergleichsdaten helfen. Solche Vergleichsdaten sind meist unabhängig der amtlichen Vermessung erfasst und können deshalb für einen Vollständigkeitsvergleich sinnvoll sein. Folgende Vergleichsdaten sind in der QGIS-Fachschale integriert:
 
 .. important::    
    Bitte die Herkunft dieser Daten beachten. Die Richtigkeit und Vollständigkeit dieser Daten kann nicht garantiert werden.
 
 =========================  ===========================================================  ======================================================  ===================================                  
 Layername (QGIS)           Beschreibung                                                 Herkunft                                                Erhebungszeitpunkt 
-=========================  ===========================================================  ======================================================  ===================================  
+=========================  ===========================================================  ======================================================  =================================== 
+DTM                        Digitales Höhenmodell (Gradientenbild)                       Abgeleitetes LiDAR-Produkt                              2014 
+DOM                        Digitales Oberflächenmodell (Relief)                         Abgeleitetes LiDAR-Produkt                              2014 
 GEWISSO	                   Gewässerinformationssystem                                   Digitalisiert ab Übersichtsplan 1:10'000                2012
 Wanderwege                 kantonal flächendeckende Grundlage der Fuss- und Wanderwege  Digitalisiert ab LK25                                   2012
 Freileitungen (ARP)        Freileitung                                                  Digitalisiert ab LK25,  SIKOSO-Daten                    2007  
@@ -80,7 +82,7 @@ Flachmoore (AFU)           Flachmoore                                           
 Flachmoore (BAFU)          Bundesinventar der Flachmoore von nationaler Bedeutung       Digitalisiert ab Kartierung 1987-1990                   1987-1990, 2001, 2004, 2007
 Hochmoore (BAFU)           Bundesinventar der Hochmoore von nationaler Bedeutung        Digitalisiert ab Kartierung 1988-1990                   1988-1990, 2003, 2007
 Reservoir                  Gewässeranalyse Datenbank Solothurn GASO                     Digitale Eingabe der Koordinaten                        2006-2008
-Waldplan		   Forstliche Plangrundlagen			                AV als Grundlage, Feldkontrolle durch Förster           alle 10 Jahre neu erstellt 
+Waldplan                   Forstliche Plangrundlagen                                    AV als Grundlage, Feldkontrolle durch Förster           alle 10 Jahre neu erstellt 
 Radio- und Fernsehsender   Daten von geo.admin.ch                                         
 Mobilfunkantennen UMTS     Daten von geo.admin.ch                                                                                           
 Mobilfunkantennen GSM      Daten von geo.admin.ch 
