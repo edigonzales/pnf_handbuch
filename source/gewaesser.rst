@@ -29,7 +29,7 @@ BB.stehendes_Gewaesser
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann das digitale Terrainmodell (DTM) hinzugeschaltet werden.
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann das aktuelle digitale Terrainmodell (DTM) hinzugeschaltet werden.
 
 Benötigte Layer im QGIS:
 
@@ -104,7 +104,7 @@ BB.fliessendes_Gewaesser
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann das digitale Terrainmodell (DTM) hinzugeschaltet werden.
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann das aktuelle digitale Terrainmodell (DTM) hinzugeschaltet werden.
 
 
 Benötigte Layer im QGIS:
@@ -164,7 +164,7 @@ BB.Schilfgürtel
 
 Lagedifferenz  
 ^^^^^^^^^^^^^   
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann das digitale Terrainmodell (DTM) hinzugeschaltet werden.
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann das aktuelle digitale Terrainmodell (DTM) hinzugeschaltet werden.
 
  
 Benötigte Layer im QGIS:
@@ -277,12 +277,15 @@ EO.Rinnsal
 ----------            
                        
 .. index:: Rinnsal
+                                                                                        
+Lagedifferenz
+^^^^^^^^^^^^^
+Im Rahmen der PNF/Homogenisierung werden **keine** Lagedifferenzen korrigiert.
 
-Lagedifferenz  
-^^^^^^^^^^^^^                        
-                         
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann das digitale Terrainmodell (DTM) hinzugeschaltet werden.
- 
+
+Objekt fehlt/löschen  
+^^^^^^^^^^^^^^^^^^^^
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto oder dem aktuellen digitalen Terrainmodell grösser als die Toleranz (siehe :ref:`ref_Tz`) konstant überschritten, so ist das Objekt in der AV zu löschen. Das AGI übernimmt im Zweifelsfall den Stichentscheid.
 
 Benötigte Layer im QGIS:
 
@@ -296,7 +299,7 @@ Benötigte Layer im QGIS:
    :width: 550px                                                         
    :target: _static/Gewaesser_Rinnsal.png    
                                                                          
-   ``EO.Rinnsal`` ist **nicht** zu korrigieren, weil die Lagedifferenz kleiner als die Toleranz (TS3: 3.0 m) ist.                            
+   ``EO.Rinnsal`` ist **nicht** zu löschen, weil die Lagedifferenz kleiner als die Toleranz (TS3: 3.0 m) ist.                            
 
 +--------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 |.. _Gewaesser_Lidar_Ortho:                                                |.. _Gewaesser_Lidar_DTM:                                                           |
@@ -305,29 +308,13 @@ Benötigte Layer im QGIS:
 |   :width:  550px                                                         |   :width:  550px                                                                  |
 |   :target: _static/OrthoRinnsal.jpg                                      |   :target: _static/LidarRinnsal.jpg                                               |
 |                                                                          |                                                                                   |
-|   ``EO.Rinnsal`` ist überhaupt nicht resp. nur sehr schlecht             |   ``EO.Rinnsal`` ist in DTM gut sichtbar (und muss **nicht** korrigiert           | 
+|   ``EO.Rinnsal`` ist überhaupt nicht resp. nur sehr schlecht             |   ``EO.Rinnsal`` ist im DTM gut sichtbar (und muss **nicht** gelöscht             | 
 |   sichtbar.                                                              |   werden).                                                                        |
 +--------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
-
-                                                                                                                                                      
-
-Objekt fehlt/löschen  
-^^^^^^^^^^^^^^^^^^^^
-Ist auf dem aktuellen Orthofoto ein Rinnsal zu erkennen, das nicht in der AV vorhanden ist, ist dieses im Rahmen der PNF/Homogenisierung neu in der AV zu erfassen. 
-Ist in der AV ein Rinnsal vorhanden, das auf dem aktuellen Orthofoto nicht mehr zu erkennen ist, ist dieses Objekt zu löschen.
-                    
-Benötigte Layer im QGIS:
-
-.. code-block:: none
-
-   Gewässer / Lagekontrolle
-   
-.. note::
-  Als Vergleichsdaten dienen zusätzlich die Daten aus dem Gewässerinformationssystem (GEWISSO) (siehe :ref:`ref_RefDaten`).  
-
-Beispiele:   
-   
-                                                                       
+                   
+Neue Rinnsale werden im Rahmen der PNF/Homogenisierung **nicht** erhoben.                   
+                   
+                                                                          
 Objekt umattribuieren
 ^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                          
 Sind in der AV Rinnsale erfasst deren Breite grösser als 50 cm sind, sind diese nach ``BB.fliessendes Gewässer`` umzuattribuieren. 

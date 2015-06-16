@@ -43,7 +43,7 @@ Lagedifferenz
                                
 Wird eine Lagedifferenz zwischen der AV und dem aktuellen Othofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) und der Feststellungsgenauigkeit detektiert, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranz, wird das Objekt nicht angepasst.  
 
-Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schaffenwurf oder Sichthindernisse) nicht möglich, kann das digitale Oberflächenmodell hinzugeschaltet werden. Ist selbst mithilfe des digitalen Oberflächenmodells nicht klar ersichtlich, wo der Waldrand verläuft, wird in der AV keine Korrektur vorgenommen.
+Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schaffenwurf oder Sichthindernisse) nicht möglich, kann das aktuelle digitale Oberflächenmodell hinzugeschaltet werden. Ist selbst mithilfe des digitalen Oberflächenmodells nicht klar ersichtlich, wo der Waldrand verläuft, wird in der AV keine Korrektur vorgenommen.
 
 .. important:: 
    * Nicht unnötig zusätzlichen Wald generieren! Wald eher knapp als zu grosszügig definieren.
@@ -119,7 +119,7 @@ Beispiele:
 |   :width:  550px                                                                           |   :width:  550px                                                                   |
 |   :target: _static/OrthoWald.jpg                                                           |   :target: _static/LidarWald.jpg                                                   |
 |                                                                                            |                                                                                    | 
-|   ``BB.geschlossener_Wald`` ist überhaupt nicht resp. nur sehr schlecht                    |   ``BB.geschlossener_Wald`` ist in DOM gut sichtbar (und muss **nicht** korrigiert | 
+|   ``BB.geschlossener_Wald`` ist überhaupt nicht resp. nur sehr schlecht                    |   ``BB.geschlossener_Wald`` ist im DOM gut sichtbar (und muss **nicht** korrigiert | 
 |   sichtbar.                                                                                |   werden).                                                                         |
 +--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
 

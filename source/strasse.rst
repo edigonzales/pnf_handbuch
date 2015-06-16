@@ -32,7 +32,7 @@ BB.Strasse_Weg
 Lagedifferenz  
 ^^^^^^^^^^^^^                        
                          
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) festgestellt, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranzwerte, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann das digitale Terrainmodell (DTM) hinzugeschaltet werden. 
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) festgestellt, so ist das Objekt in der AV zu korrigieren. Liegt die Differenz innerhalb der Toleranzwerte, wird das Objekt nicht angepasst. Ist die Lagekontrolle mit dem Orthofoto auf Grund von Interpretationsschwierigkeiten (z.B. durch Schatten oder Sichthindernisse wie Bäume) nicht möglich, kann das aktuelle  digitale Terrainmodell (DTM) hinzugeschaltet werden. 
 
 Benötigte Layer in QGIS:
 
@@ -77,7 +77,7 @@ Beispiele:
 |   :width:  550px                                                    |   :width:  550px                                                      |
 |   :target: _static/OrthoStrasse.jpg                                 |   :target: _static/LidarStrasse.jpg                                   |
 |                                                                     |                                                                       |
-|   ``BB.Strasse_Weg`` ist überhaupt nicht resp. nur sehr schlecht    |   ``BB.Strasse_Weg`` ist in DTM gut sichtbar (und muss korrigiert     | 
+|   ``BB.Strasse_Weg`` ist überhaupt nicht resp. nur sehr schlecht    |   ``BB.Strasse_Weg`` ist im DTM gut sichtbar (und muss korrigiert     | 
 |   sichtbar.                                                         |   werden).                                                            |
 +---------------------------------------------------------------------+-----------------------------------------------------------------------+
 
@@ -552,8 +552,9 @@ EO.schmaler_Weg
 
 Lagekontrolle 
 ^^^^^^^^^^^^^ 
-Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto grösser als die Toleranz (siehe :ref:`ref_Tz`) festgestellt, so ist das Objekt in der AV zu korrigieren. 
-Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Ist der Verlauf auf dem Orthofoto nicht klar ersichtlich oder der Verlauf ändert sich jährlich (z.B. Graswege), ist **keine** Korrektur vorzunehmen.
+Wird eine Lagedifferenz zwischen der AV und dem aktuellen Orthofoto oder dem aktuellen digitalen Terrainmodell (DTM) grösser als die Toleranz (siehe :ref:`ref_Tz`) konstant überschritten, so ist das Objekt in der AV zu korrigieren, sofern es sich um einen offiziellen Wanderweg handelt. Nicht offizielle Wanderwegen sind in diesem Fall zu löschen. Das AGI übernimmt im Zweifelsfall den Stichentscheid.
+
+Liegt die Differenz innerhalb der Toleranz wird das Objekt nicht angepasst. Ist der Verlauf auf dem aktuellen Orthofoto oder dem aktuellen digitalen Terrainmodell (DTM) nicht klar ersichtlich oder der Verlauf ändert sich jährlich (z.B. Graswege), ist **keine** Korrektur vorzunehmen.
      
 
 Benötigte Layer in QGIS:
@@ -573,8 +574,8 @@ Beispiele:
 |   :target: _static/Strasse_schmaler_weg.png                                |   :target: _static/Strasse_Lagedifferenz_schmaler_Weg.png             |       
 |                                                                            |                                                                       |       
 |   ``EO.schmaler_Weg`` ist **nicht** zu korrigieren, weil auf dem Orthofoto |   ``EO.schmaler_Weg`` ist zu korrigieren, weil die Lagedifferenz      |       
-|   der Verlauf nicht klar ersichtlich ist.                                  |   grösser als die Toleranz (TS4: 3 m) ist und weil der Verlauf auf    | 
-|									     |   dem Orthofoto klar zu erkennen ist.                                 |              
+|   der Verlauf nicht klar ersichtlich ist.                                  |   konstant (über längere Distanz) grösser als die Toleranz (TS4: 3 m) |
+|                                                                            |   ist und weil der Verlauf auf dem Orthofoto klar zu erkennen ist.    | 
 +----------------------------------------------------------------------------+-----------------------------------------------------------------------+       
                                                                                                                                                                
 
