@@ -122,6 +122,15 @@ Beispiele:
 |   ``BB.geschlossener_Wald`` ist überhaupt nicht resp. nur sehr schlecht                    |   ``BB.geschlossener_Wald`` ist im DOM gut sichtbar (und muss **nicht** korrigiert | 
 |   sichtbar.                                                                                |   werden).                                                                         |
 +--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|.. _Wald_Lidar_Ortho2:                                                                      |.. _Wald_Lidar_DTM2:                                                                |
+|                                                                                            |                                                                                    |
+|.. figure:: _static/Wald2_Ortho.jpg                                                         |.. figure:: _static/Wald2_Lidar.jpg                                                 |     
+|   :width:  550px                                                                           |   :width:  550px                                                                   |
+|   :target: _static/Wald2_Ortho.jpg                                                         |   :target: _static/Wald2_Lidar.jpg                                                 |
+|                                                                                            |                                                                                    | 
+|   ``BB.geschlossener_Wald`` ist schlecht sichtbar.                                         |   ``BB.geschlossener_Wald`` ist im DTM aufgrund der Bodenstruktur gut sichtbar     | 
+|                                                                                            |   (und muss **nicht** korrigiert werden).                                          |
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
 
 
 Objekt fehlt/ löschen

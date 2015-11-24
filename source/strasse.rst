@@ -654,8 +654,8 @@ Beispiele:
                                                                                  
            
 
-Objekt umattribieren
-^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                            
+Objekt umattribuieren
+^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                            
 Befestigte ``EO.Fahrspuren`` sind in ``BB.Strasse_Weg`` und ``EO.Fahrspuren``, die als Fusswege genutzt werden, sind in ``EO.schmaler_Weg`` umzuattribuieren.
                                                                                                                                                                                                                                                                                                                                      
 Benötigte Layer in QGIS:
